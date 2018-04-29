@@ -1,0 +1,911 @@
+[{
+	"id"    :  1,
+	"title" : "Escuela Provincial N1 Domingo F. Sarmiento",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 2 , "bedRoom":2, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/Escuela1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.3070901,
+	"lat"   : -54.80786734
+},{
+	"id"    :  2,
+	"title" : "Museo del Fin del Mundo",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom":2 , "bedRoom": 2 , "perimeter": 130, "room": 4},
+	"img"   : "images/Museos/museo1.jpg",
+	"propertyType" : "museo",
+	"url"   : "#",
+	"lon"   : -68.30001695,
+	"lat"   : -54.80607416
+},{
+	"id"    :  3,
+	"title" : "Museo de la Legislatura Fueguina",
+	"description" : " texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 2, "bedRoom": 2 , "perimeter":130 , "room": 4},
+	"img"   : "images/Museos/museo2.jpg",
+	"propertyType" : "museo",
+	"url"   : "#",
+	"lon"   : -68.30406189,
+	"lat"   : -54.80712612
+},{
+	"id"    :  4,
+	"title" : "Museo Maritimo y del Presidio",
+	"description" : "Morbi non convallis lectus. Vivamus ipsum arcu, fringilla auctor justo sit amet, laoreet auctor sem. Cras mattis, lectus non tincidunt placerat, ante nisi finibus libero: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/Museos/museo3.jpg",
+	"propertyType" : "museo",
+	"url"   : "#",
+	"lon"   : -68.29790689,
+	"lat"   : -54.80347777
+},{
+	"id"    :  5,
+	"title" : "IPES Florentino Ameguino",
+	"description" : "Morbi non convallis lectus. Vivamus ipsum arcu, fringilla auctor justo sit amet, laoreet auctor sem. Cras mattis, lectus non tincidunt placerat, ante nisi finibus libero: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/IPES1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.30184639,
+	"lat"   : -54.80467744
+},{
+	"id"    :  6,
+	"title" : "Escuela N15",
+	"description": "Morbi non convallis lectus. Vivamus ipsum arcu, fringilla auctor justo sit amet, laoreet auctor sem. Cras mattis, lectus non tincidunt placerat, ante nisi finibus libero: 960-F8971B",
+	"info"  : {"price": "", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/escuela15.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.26845946,
+	"lat"   : -54.7913639
+},{
+	"id"    :  7,
+	"title" : "Museo Fueguino de Arte",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Museos/museorg1.jpg",
+	"propertyType" : "museo",
+	"url"   : "#",
+	"lon"   : -67.6973441,
+	"lat"   : -53.7825191
+},{
+	"id"    :  8,
+	"title" : "Colegio T�cnico Olga Bronzovich de Arko",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/epet1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.324435,
+	"lat"   : -54.8092205
+},{
+	"id"    :  9,
+	"title" : "Escuela 13 Almirante Guillermo Brown",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/escuela13.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.3263919,
+	"lat"   : -54.8103811
+},{
+	"id"    :  10,
+	"title" : "otro 10",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.73895264,
+	"lat"   : -53.81200414
+},{
+	"id"    :  11,
+	"title" : "otro 11",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.72521973,
+	"lat"   : -53.81038243
+},{
+	"id"    :  12,
+	"title" : "otro12",
+	"description": "texto: 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.71423341,
+	"lat"   : -53.79902867
+},{
+	"id"    :  13,
+	"title" : "otro 13",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.7142334,
+	"lat"   : -53.80389494
+},{
+	"id"    :  14,
+	"title" : "otro 14",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.74169922,
+	"lat"   : -53.82335438
+},{
+	"id"    :  15,
+	"title" : "otro 15",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.76092529,
+	"lat"   : -53.82497559
+},{
+	"id"    :  16,
+	"title" : "otro 16",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-beauty.jpg",
+	"propertyType" : "cottage",
+	"url"   : "#",
+	"lon"   : -67.73071289,
+	"lat"   : -53.76981919
+},{
+	"id"    :  17,
+	"title" : "otro 17",
+	"description": "texto: 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.71972656,
+	"lat"   : -53.77468885
+},{
+	"id"    :  18,
+	"title" : "otro 18",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.71697998,
+	"lat"   : -53.78604919
+},{
+	"id"    :  19,
+	"title" : "Negocio 1",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.73071289,
+	"lat"   : -53.78604919
+},{
+	"id"    :  20,
+	"title" : Negocio 188",
+	"description": "texto: 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.73895264,
+	"lat"   : -53.78767184
+},{
+	"id"    :  21,
+	"title" : "Negocio 121",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.74993896,
+	"lat"   : -53.78929444
+},{
+	"id"    :  22,
+	"title" : "Negocio 1",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.74993896,
+	"lat"   : -53.79578418
+},{
+	"id"    :  23,
+	"title" : "Restaurante",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.75817871,
+	"lat"   : -53.79902867
+},{
+	"id"    :  24,
+	"title" : "deporte",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.7142334,
+	"lat"   : -53.78767184
+},{
+	"id"    :  25,
+	"title" : "negocio 2",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.73345947,
+	"lat"   : -53.79416184
+},{
+	"id"    :  26,
+	"title" : "negocio 4",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.74444581,
+	"lat"   : -53.79091697
+},{
+	"id"    :  27,
+	"title" : "Escuela 27",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.73895264,
+	"lat"   : -53.84280479
+},{
+	"id"    :  28,
+	"title" : "otro 28",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.74719238,
+	"lat"   : -53.84118426
+},{
+	"id"    :  29,
+	"title" : "Belleza 29",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-beauty.jpg",
+	"propertyType" : "cottage",
+	"url"   : "#",
+	"lon"   : -67.76641846,
+	"lat"   : -53.83956368
+},{
+	"id"    :  30,
+	"title" : "Real hotel30",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.75268555,
+	"lat"   : -53.76494896
+},{
+	"id"    :  31,
+	"title" : "Restaurante 431",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.74169922,
+	"lat"   : -53.76981919
+},{
+	"id"    :  32,
+	"title" : "negocio32",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.72796631,
+	"lat"   : -53.76981919
+},{
+	"id"    :  33,
+	"title" : "negocio 33",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.71697998,
+	"lat"   : -53.77306569
+},{
+	"id"    :  34,
+	"title" : "otro 34",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-beauty.jpg",
+	"propertyType" : "cottage",
+	"url"   : "#",
+	"lon"   : -67.70599365,
+	"lat"   : -53.77631194
+},{
+	"id"    :  35,
+	"title" : "Otro mas 35",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.71148682,
+	"lat"   : -53.78767184
+},{
+	"id"    :  36,
+	"title" : "Otro mas36",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.73895264,
+	"lat"   : -53.79416184
+},{
+	"id"    :  37,
+	"title" : "museo 37",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.76367187,
+	"lat"   : -53.79902867
+},{
+	"id"    :  38,
+	"title" : "museo 38",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.76916504,
+	"lat"   : -53.80713881
+},{
+	"id"    :  39,
+	"title" : "otro 39",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-beauty.jpg",
+	"propertyType" : "cottage",
+	"url"   : "#",
+	"lon"   : -67.75543213,
+	"lat"   : -53.80713881
+},{
+	"id"    :  40,
+	"title" : "otro 40",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.75817871,
+	"lat"   : -53.80227292
+},{
+	"id"    :  41,
+	"title" : "otro 41",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-beauty.jpg",
+	"propertyType" : "cottage",
+	"url"   : "#",
+	"lon"   : -67.76641846,
+	"lat"   : -53.80551691
+},{
+	"id"    :  42,
+	"title" : "otro 42",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -53.82011177,
+	"lat"   : -67.76367187
+},{
+	"id"    :  43,
+	"title" : "otro 43",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.75817871,
+	"lat"   : -53.83308071
+},{
+	"id"    :  44,
+	"title" : "otro 44",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.75817871,
+	"lat"   : -53.82821783
+},{
+	"id"    :  45,
+	"title" : "otro 45",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.74993896,
+	"lat"   : -53.82497559
+},{
+	"id"    :  46,
+	"title" : "otro 46",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.73620605,
+	"lat"   : -53.82335438
+},{
+	"id"    :  47,
+	"title" : "otro 47",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.72796631,
+	"lat"   : -53.82659674
+},{
+	"id"    :  48,
+	"title" : "otro 48",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.73071289,
+	"lat"   : -53.81849037
+},{
+	"id"    :  49,
+	"title" : "otro 49",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.72247314,
+	"lat"   : -53.82497559
+},{
+	"id"    :  50,
+	"title" : "otro",
+	"description": "texto: 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.73071289,
+	"lat"   : -53.82011177
+},{
+	"id"    :  51,
+	"title" : "otro 51",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.67578125,
+	"lat"   : -53.83956368
+},{
+	"id"    :  52,
+	"title" : "otro 52",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.67578125,
+	"lat"   : -53.82011177
+},{
+	"id"    :  53,
+	"title" : "otro 53",
+	"description": "texto: 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.71972656,
+	"lat"   : -53.83308071
+},{
+	"id"    :  54,
+	"title" : "otro 54",
+	"description": "texto: 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -68.24707031,
+	"lat"   : -54.7943516
+},{
+	"id"    :  55,
+	"title" : "otro 55",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -68.2800293,
+	"lat"   : -54.7943516
+},{
+	"id"    :  56,
+	"title" : "otro 56",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -68.23608398,
+	"lat"   : -54.7943516
+},{
+	"id"    :  57,
+	"title" : "otro 57",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -68.17016602,
+	"lat"   : -54.78801735
+},{
+	"id"    :  58,
+	"title" : "otro 58",
+	"description": "texto: 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -68.09326172,
+	"lat"   : -54.7626704
+},{
+	"id"    :  59,
+	"title" : "Vehiculos 59",
+	"description": "texto: 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -68.13720703,
+	"lat"   : -54.76267041
+},{
+	"id"    :  60,
+	"title" : "Vehiculos 60",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -68.09326172,
+	"lat"   : -54.75633118
+},{
+	"id"    :  61,
+	"title" : "otro 61",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.44506836,
+	"lat"   : -54.68018311
+},{
+	"id"    :  62,
+	"title" : "otro 62",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.37915039,
+	"lat"   : -54.66112372
+},{
+	"id"    :  63,
+	"title" : "otro 63",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.32421875,
+	"lat"   : -54.66112372
+},{
+	"id"    :  64,
+	"title" : "otro 64",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.39013672,
+	"lat"   : -54.66112372
+},{
+	"id"    :  65,
+	"title" : "Vehiculos 65",
+	"description": " texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.22534180,
+	"lat"   : -54.37415845
+},{
+	"id"    :  66,
+	"title" : "otro 66",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.23632812,
+	"lat"   : -54.34855278
+},{
+	"id"    :  67,
+	"title" : "otro 67",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.23632812,
+	"lat"   : -54.30370444
+},{
+	"id"    :  68,
+	"title" : "otro 68",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.09350586,
+	"lat"   : -54.36775852
+},{
+	"id"    :  69,
+	"title" : "otro 69",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.10449219,
+	"lat"   : -54.34855278
+},{
+	"id"    :  70,
+	"title" : "otro 70",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.12646484,
+	"lat"   : -54.32933805
+},{
+	"id"    :  71,
+	"title" : "Vehiculos 71",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.12646484,
+	"lat"   : -54.30370444
+},{
+	"id"    :  72,
+	"title" : "otro 72",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -67.08251953,
+	"lat"   : -54.31011434
+},{
+	"id"    :  73,
+	"title" : "otro 73",
+	"description" : "texto: 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-sport.jpg",
+	"propertyType" : "condominium",
+	"url"   : "#",
+	"lon"   : -67.04956055,
+	"lat"   : -54.31011434
+},{
+	"id"    :  74,
+	"title" : "otro 74",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -67.01660156,
+	"lat"   : -54.33574396
+},{
+	"id"    :  75,
+	"title" : "Shoping 75",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.04956055,
+	"lat"   : -54.32293114
+},{
+	"id"    :  76,
+	"title" : "Vehiculos 76",
+	"description": "texto: 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.00561523,
+	"lat"   : -54.32293114
+},{
+	"id"    :  77,
+	"title" : "otro 77",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-realestate.jpg",
+	"propertyType" : "building-area",
+	"url"   : "#",
+	"lon"   : -66.97265625,
+	"lat"   : -54.29729354
+},{
+	"id"    :  78,
+	"title" : "Vehiculos 78",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -66.93969727,
+	"lat"   : -54.29729354
+},{
+	"id"    :  79,
+	"title" : "otro 79",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "$615", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/map-restu.jpg",
+	"propertyType" : "apartement",
+	"url"   : "#",
+	"lon"   : -66.82983398,
+	"lat"   : -54.34855278
+},{
+	"id"    :  80,
+	"title" : "Shoping 80",
+	"description": "texto: 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -66.89575195,
+	"lat"   : -54.33574396
+},{
+	"id"    :  81,
+	"title" : "Vehiculos 81",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -66.89575191,
+	"lat"   : -54.31652324
+},{
+	"id"    :  82,
+	"title" : "Shoping 82",
+	"description": "text : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.40112305,
+	"lat"   : -54.50194751
+},{
+	"id"    :  83,
+	"title" : "Shoping 83",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.4670402,
+	"lat"   : -54.5210815
+},{
+	"id"    :  84,
+	"title" : "Vehiculos 84",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.4679000,
+	"lat"   : -54.5083265
+},{
+	"id"    :  85,
+	"title" : "Vehiculos 85",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.29125977,
+	"lat"   : -54.63569731
+},{
+	"id"    :  86,
+	"title" : "Shoping 86",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.13745117,
+	"lat"   : -54.59752785
+},{
+	"id"    :  87,
+	"title" : "Shoping 87",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.85210000,
+	"lat"   : -54.85210000
+},{
+	"id"    :  88,
+	"title" : "Shoping 88",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.24731445,
+	"lat"   : -54.6420554
+},{
+	"id"    :  89,
+	"title" : "Vehiculos 89",
+	"description": "texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.02758789,
+	"lat"   : -54.5210815
+},{
+	"id"    :  90,
+	"title" : "Shoping 90",
+	"description": "texto : 503-DB4436",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-shoping.jpg",
+	"propertyType" : "single-home",
+	"url"   : "#",
+	"lon"   : -67.20336914,
+	"lat"   : -54.47003761
+},{
+	"id"    :  91,
+	"title" : "Vehiculos 91",
+	"description": " texto : 960-F8971B",
+	"info"  : {"price": "280,000", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/map-vehicles.jpg",
+	"propertyType" : "family-house",
+	"url"   : "#",
+	"lon"   : -67.18139648,
+	"lat"   : -54.50194751
+}]

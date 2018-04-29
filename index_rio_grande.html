@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Guia23-Rio-Grande</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/color-green.css">
+    <link rel="shortcut icon" href="images/short_icon.png">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script type="text/javascript" src="js/google-map.js"></script>
+    <script type="text/javascript" src="js/neary-by-place.js"></script>
+
+</head>
+
+<body>
+
+     <!-- LOADER -->
+    <div class="loader">
+      <div class="cssload-svg"><img src="images/42-3.gif" alt="image">
+      </div>
+    </div>
+    <!--LOADER-->
+
+    <!-- HEADER -->
+    <header id="main_header_2">
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="top-contact">
+                            <p>Mas info: <span>+54 2901 487488</span>email: <span>info@guia23.com.ar</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="top_right_links2">
+                            <ul class="top_links">
+                                <li><a href="views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i> Perfil</a> </li>
+                                <li><a href="views/login/login-registerd.html"><i class="fa fa-lock" aria-hidden="true"></i> Login / Registro</a> </li>
+                            </ul>
+                            <div class="add-listing"> <a href="views/advertsings/require_advertsing.php"><i class="fa fa-plus" aria-hidden="true"></i> Publicar</a> </div>
+                        </div>
+                    </div>
+                    <div class="top_right_links2-bg"></div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Start Header Navigation -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand sticky_logo" href="index.html"><img src="images/1@.png" class="logo" alt="">
+                            </a>
+                        </div>
+                        <!-- End Header Navigation -->
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            
+                                <li class="dropdown"> <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Inicio</a>
+                                     <!-- <ul class="dropdown-menu">
+                                          <li><a href="index.html">Home Style 1</a>
+                                          </li>
+                                          <li><a href="index-2.html">Home Style 2</a>
+                                          </li>
+                                          <li><a href="index-3.html">Home Style 3</a>
+                                          </li>
+                                          <li><a href="index-5.html">Home Style 4</a>
+                                          </li>
+                                      </ul>-->
+                                  </li>
+
+                                <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Categorias</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="restaurant.html">Restaurantes</a>
+                                        </li>
+                                        <li><a href="Hoteles.html">Hoteles</a>
+                                        </li>
+                                        <li><a href="Turismo.html">Turismo</a>
+                                        </li>
+                                        <li><a href="Deportes.html">Deportes</a>
+                                        </li>
+                                        <li><a href="Profesionales.html">Profesionales</a>
+                                        </li>
+                                        <li><a href="Hogar.html">Hogar</a>
+                                     </li>
+                                        <li><a href="Salud-Belleza.html">Salud - Belleza</a>
+                                        </li>
+                                        <li><a href="Vehiculos.html">Vehiculos</a>
+                                        </li>
+                                        <li><a href="Otros Servicios.html">Otros Servicios</a>
+                                        </li>
+                                    </ul>
+                                </li>
+      
+                                <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Ciudades</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index_rio_grande.html">Rio Grande</a>
+                                        </li>
+                                        <li><a href="index-tolhuin.html">Tolhuin</a>
+                                        </li>
+                                        <li><a href="index_ushu.html">Ushuaia</a>
+                                        </li>
+                                       <!-- <li><a href="#"></a>
+                                        </li>-->
+                                    </ul>
+                                </li>
+      
+                                <li class="dropdown megamenu-fw">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Paginas</a>
+                                    <ul class="dropdown-menu megamenu-content" role="menu">
+                                        <li>
+                                            <div class="row">
+      
+                                                <div class="col-menu col-md-3">
+                                                    <h6 class="title">Puntos de Interes</h6>
+                                                    <div class="content">
+                                                        <ul class="menu-col">
+                                                            <li><a href="Museos.html">Museos</a>
+                                                            </li>
+                                                            <li><a href="Hospitales.html">Hospitales</a>
+                                                            </li>
+                                                            <li><a href="Comisarias.html">Comisarias</a>
+                                                            </li>
+                                                            <li><a href="Bomberos.html">Bomberos</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+      
+                                                <div class="col-menu col-md-3">
+                                                    <h6 class="title">Paginas</h6>
+                                                    <div class="content">
+                                                        <ul class="menu-col">
+                                                            <li><a href="favorites.html">Favoritos</a>
+                                                            </li>
+                                                            <li><a href="about.html">Nosotros</a>
+                                                            </li>
+                                                            <li><a href="views/advertsings/require_advertsing.php">Publicar</a>
+                                                            </li>
+                                                            <li><a href="views/login/login-registerd.html">Login / Registro</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+      
+                                                <div class="col-menu col-md-3">
+                                                    <h6 class="title">Paginas</h6>
+                                                    <div class="content">
+                                                        <ul class="menu-col">
+                                                            <li><a href="views/user_profile/index.php">Perfil</a>
+                                                            </li>
+                                                            <li><a href="views/contact.php">Contacto</a>
+                                                            </li>
+                                                            <li><a href="views/login/login-registerd.html">Registro</a>
+                                                            </li>
+                                                            <li><a href=""></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-menu col-md-3">
+                                                    <h6 class="title">Paginas</h6>
+                                                    <div class="content">
+                                                        <ul class="menu-col">
+                                                            <li><a href="views/advertsings/packages.php">Planes Publicitarios</a>
+                                                            </li>
+                                                            <li><a href="Galeria.html">Galeria</a>
+                                                            </li>
+                                                            <li><a href="#"></a>
+                                                            </li>
+                                                            <li><a href="#"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+      
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+      
+                                <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Contacto</a>
+                                    <ul class="dropdown-menu slideInDown">
+                                        <li><a href="views/contact.php">Contactenos</a>
+                                        </li>
+                                       <!-- <li><a href="#"></a>
+                                        </li>-->
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER  -->
+
+    <!-- Inner Banner -->
+    <section id="inner-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner_banner_detail">
+                        <h2>Guia23  -  Rio Grande</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    <div class="inner_banner_detail">
+                        <p><a href="Index-tdf.html"> Inicio </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inner Banner -->
+
+    <!-- Popular Listing -->
+    <section id="popular-listing" class="p_b70 p_t70">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="sort-by">
+                        <div class="sort-category"> <span>Ordenar</span>
+                            <div class="single-query form-group">
+                                <div class="intro">
+                                    <select>
+                                        <option class="active">Mas Popular</option>
+                                        <option>Mas Recientes</option>
+                                        <option>Mas Antiguos</option>
+                                        <option>Mejor Rating</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs sort-listing" role="tablist">
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                </li>
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                                </li>
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-th-list" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20171016_161947.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Restaurantes</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20171008_173443.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Turismo x</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-3.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Deporte</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-4.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Belleza & Spa</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-5.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Shoping</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-6.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Otros</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-1.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Restaurantes</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-2.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Otro Mas</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-4.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Belleza & Spa</a></h3>
+                                            <p>Descripciom.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-5.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Shoping</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade  in active" id="home">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20151107_131405.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Restaurantes</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20151107_131413.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Deporte</a></h3>
+                                            <p>Descripcion..</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20160206_165238.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Shoping</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20160206_165440.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Turismo</a></h3>
+                                            <p>Agencias Turisticas</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/20171008_173443.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Restaurantes</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="popular-listing-box">
+                                        <div class="popular-listing-img">
+                                            <figure class="effect-ming"> <img src="images/popular-3-2.jpg" alt="image">
+                                                <figcaption>
+                                                    <ul>
+                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                    </ul>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="popular-listing-detail">
+                                            <h3><a href="#">Deportes</a></h3>
+                                            <p>Descripcion.</p>
+                                        </div>
+                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="messages">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-1.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Restaurante</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-2.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Deporte</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-3.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Shoping</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-4.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Turismo</a></h3>
+                                                    <p>Desceipcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-1.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Restaurante</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Descripcion</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-2.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Deporte</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="popular-listing-box">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                                <div class="popular-listing-img">
+                                                    <figure class="effect-ming"> <img src="images/popular-3-3.jpg" alt="image">
+                                                        <figcaption>
+                                                            <ul>
+                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            </ul>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                                <div class="popular-listing-detail">
+                                                    <h3><a href="#">Shoping</a></h3>
+                                                    <p>Descripcion.</p>
+                                                </div>
+                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-example" data-example-id="disabled-active-pagination">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+                                </li>
+                                <li class="active"><a href="#">1 <span class="sr-only">(primera)</span></a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                <li><a href="#">3</a>
+                                </li>
+                                <li><a href="#">4</a>
+                                </li>
+                                <li><a href="#">5</a>
+                                </li>
+                                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 listing-rightbar">
+
+                    <div class="right-bar">
+                        <h4><span>Categorias</span></h4>
+                        <ul class="right-bar-listing">
+                            <li><a href="restaurant.html"><i class="fa fa-glass" aria-hidden="true"></i> Restaurantes <span>(08)</span></a>
+                            </li>
+                            <li><a href="Hoteles.html"><i class="fa fa-hotel" aria-hidden="true"></i> Hoteles <span>(15)</span></a>
+                            </li>
+                            <li><a href="Turismo.html"><i class="fa fa-tumblr-square" aria-hidden="true"></i> Turismo <span>(21)</span></a>
+                            </li>
+                            <li><a href="Deportes.html"><i class="fa fa-futbol-o" aria-hidden="true"></i>Deportes<span>(18)</span></a>
+                            </li>
+                            <li><a href="Profesionales.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Profesionales <span>(28)</span></a>
+                            </li>
+                            <li><a href="Hogar.html"><i class="fa fa-home" aria-hidden="true"></i> Hogar <span>(2)</span></a>
+                            </li>
+                            <li><a href="Salud-Belleza.html"><i class="fa fa-female" aria-hidden="true"></i>Salud - Belleza<span>(20)</span></a>
+                            </li>
+                            <li><a href="Enseñanza.html"><i class="fa fa-hourglass" aria-hidden="true"></i> Enseñanza <span>(10)</span></a>
+                            </li>
+                            <li><a href="Vehiculos.html"><i class="fa fa-car" aria-hidden="true"></i> Vehiculos <span>(17)</span></a>
+                            </li>
+                            <li><a href="Otros Servicios.html"><i class="fa fa-globe" aria-hidden="true"></i> Other Servicios <span>(50)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-bar">
+                        <h4><span>Nuevo</span></h4>
+
+                        <div class="places-list">
+                            <h5><a href="#">Hotel Los Ñiree</a></h5>
+                            <p> Los ñires 1987 , Ushuaia</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="images/footer-latest-1.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><i class="fa fa-glass" aria-hidden="true"></i> Restaurantes</h6>
+                                    <img src="images/stars.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="places-list">
+							<h5><a href="#">Turismo x </a></h5>
+                            <p> Roca 12345, Ushuaia</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="images/footer-latest-2.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><i class="fa fa-glass" aria-hidden="true"></i> Turismo x</h6>
+                                    <img src="images/stars.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="places-list">
+                            <h5><a href="#">Belleza & Spa</a></h5>
+                            <p> San Martin 1241, Ushuaia</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="images/footer-latest-3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><i class="fa fa-glass" aria-hidden="true"></i> Belleza & Spa</h6>
+                                    <img src="images/stars.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="places-list">
+                            <h5><a href="#">Shoping</a></h5>
+                            <p> Lasserre 123435, Ushuaia</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="images/footer-latest-4.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><i class="fa fa-glass" aria-hidden="true"></i> Shoping</h6>
+                                    <img src="images/stars.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="right-bar">
+                        <h4><span>Recientes</span></h4>
+                        <div id="recent-listing" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-1.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Trabajo</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-2.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Decoracion</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-1.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Trabajo</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-2.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Turismo</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-1.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Algo</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                                <div class="recent-listing-img">
+                                    <img src="images/recent-2.jpg" alt="image">
+                                    <div class="recent-listing-links">
+                                        <a href="#" class="recent-jobs">Algo mas</a>
+                                        <a href="views/listing/listing.php" class="recent-readmore">Vea Mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Popular Listing -->
+
+    <!-- Footer -->
+    <footer id="footer_1" class="bg_blue p_t70 p_b30">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer_logo">
+                        <img src="images/1@.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                    <ul class="footer_link">
+                        <li><a href="index.html">Inicio</a>
+                        </li>
+                        <li><a href="views/advertsings/require_advertsing.php">Publicar</a>
+                        </li>
+                        <li><a href="about.html">Nosotros</a>
+                        </li>
+                        <li><a href="views/login/login-registerd.html">Registro</a>
+                        </li>
+                        <li><a href="views/contact.php">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="header-top-links">
+                        <div class="social-icons text-right">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_line"></div>
+        </div>
+        <div class="footer_botom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-6 col-sm-12">
+                        <p>Copyrights 2017 ©  www.guia23.com.ar. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 col-md-6 col-sm-12 text-right">
+                        <p>Powered <i class="fa fa-heart-o" aria-hidden="true"></i>by <a href="www.guia23.com.ar">Nestor J. Maldonado</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Popups -->
+    <section id="best-thing-model">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Tierra del Fuego</h4>
+                        <ul class="best-things-listing">
+                            <li><a href="#">3 Ciudades,</a>
+                            </li>
+                            <li><a href="#">1300 Coemrcios,</a>
+                            </li>
+                            <li><a href="#">6753 Vistas </a>
+                            </li>
+                        </ul>
+                        <img src="images/stars-2.png" alt="image">
+                    </div>
+                    <div class="modal-body">
+
+                        <div id="best-thing-slider" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/20151107_131405.jpg" alt="image">
+                            </div>
+                            <div class="item">
+                                <img src="images/20151107_131413.jpg" alt="image">
+                            </div>
+                            <div class="item">
+                                <img src="images/20160206_165440.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="best-thing-model-description">
+                                    <h4>Descripcion</h4>
+                                    <p>Descripcion </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="best-thing-model-feature">
+                                    <h4>Categorias</h4>
+                                    <ul>
+                                        <li>Restaurantes (46)</li>
+                                        <li>Hoteles (66)</li>
+                                        <li>Turismo (25)</li>
+                                        <li>Deportes (16)</li>
+                                        <li>Profesionales (28)</li>
+                                        <li>Hogar (26)</li>
+                                        <li>Salud - Belleza(06)</li>
+                                        <li>Enseñanza (12)</li>
+                                        <li>Vehiculos (25)</li>
+                                        <li>Otros servicios (67)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="best-thing-model-description">
+                            <h4>Lo Nuevo</h4>
+                            <img src="images/stars-2.png" alt="image">
+                            <p>Descripcion </p>
+
+                            <div class="best-thing-model-btn">
+                                <a href="views/listing/listing.php">Mas Detalles</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popups -->
+
+    <script src="js/jquery.2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery-countTo.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <script src="js/zelect.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/modernizr.custom.26633.js"></script>
+    <script src="js/jquery.gridrotator.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
