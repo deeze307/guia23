@@ -55,7 +55,7 @@ if (!isset($_SESSION))
 
                 <div class="col-md-12 text-center">
                     <div class="inner_banner_2_detail">
-                        <p><a href="../Index-tdf.html">Inicio</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </p>
+                        <p><a href="../Index-tdf.html">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i> </p>
                     </div>
                 </div>
 

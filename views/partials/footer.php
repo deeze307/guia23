@@ -15,13 +15,13 @@
                 <ul class="footer_link">
                     <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23">Inicio</a>
                     </li>
-                    <li><a href="">Categorias</a>
+                    <li><a href="views/login/login-registerd.php">Registro</a>
                     </li>
-                    <li><a href="">Profesionales</a>
+                    <li><a href="about.php">Nosotros</a>
                     </li>
-                    <li><a href="">Otros Servicios</a>
+                    <li><a href="views/contact.php">Contacto</a>
                     </li>
-                    <li><a href="">Contacto</a>
+                    <li><a href="">Publicar</a>
                     </li>
                 </ul>
             </div>
