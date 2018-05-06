@@ -1,0 +1,9 @@
+# MAINTENANCE-PAGE REDIRECT.
+# Solo cambiar RewriteEngine de OFF a ON para redireccionar a página de mantenimiento
+ <IfModule mod_rewrite.c>
+ RewriteEngine off
+ RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+ RewriteCond %{REQUEST_URI} !/maintenance.html$ [NC]
+ RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif) [NC]
+ RewriteRule .* /guia23/maintenance.html [R=302,L]
+</IfModule>

@@ -12,16 +12,37 @@ if(isset($_POST['plan']))
 elseif(isset($_POST['_submitted']))
 {
     $adv = new AdvertsingsController();
-
-    if(isset($_COOKIE["images"]))
+    if(isset($_SESSION['new_ads']))
     {
-        $files = $_COOKIE["images"];
+        if(isset($_SESSION["images"]))
+        {
+            $files = $_SESSION["images"];
+        }
+        else
+        {
+            $files = "vacio";
+        }
+        $adv->createAdvertsing($_POST,$files);
     }
     else
     {
-        $files = "vacio";
+        $post = $_POST;
+        $adv->updateAdvertsing($post);
     }
-    $adv->createAdvertsing($_POST,$files);
+
+}
+
+if(isset($_POST['edit']))
+{
+    $adv = new AdvertsingsController();
+    return $adv->editAdvertsing($_POST['adv']);
+
+}
+
+if(isset($_POST['id']))
+{
+    $adv = new AdvertsingsController();
+    return $adv->deleteAdvertsing($_POST['id']);
 
 }
 
@@ -97,57 +118,90 @@ class AdvertsingsController
             "plan_id"=>$post["_plan"],
             "social_networks"=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"],
             "keywords"=>$post["keywords"],
-            "commercial_image"=>"",
-            "files"=>$files,
+            "commercial_image"=>$files,
         );
-        print_r($data_for_ads_detail);
-//        // inserto en tabla de detalle de publicación y recupero id de inserción
-//        $ads_detail_id = $advertsing_detail->create($data_for_ads_detail);
-//        if($ads_detail_id > 0)
-//        {
-//            //recopilo datos para insertar en tabla de publicación
-//            $data_for_ads = Array(
-//                "user_id"=>$user_id,
-//                "advertsing_detail_id"=>$ads_detail_id,
-//                "created_at"=>$date,
-//            );
-//
-//            //inserto en tabla de publicación
-//            $ads = new Advertsings();
-//            $ads_id = $ads->create($data_for_ads);
-//
-//            if($ads_id)
-//            {
-//                $_SESSION["message"] = "Publicidad creada Exitosamente.";
-//                $mail = new Mailer();
-//
-//                $mail_obj = new \stdClass();
-//                $mail_obj->to_address = $post["email_notify"];
-//                $mail_obj->from_address = "deeze.designs@gmail.com";
-//                $mail_obj->subject = "Publicidad Creada Exitosamente (#".$ads_id.")";
-//                $mail_obj->ammount_to_pay = $post["_plan_price"];
-//                $mail_obj->ads_id = $ads_id;
-//                $mail_obj->titulo = $post["titulo"];
-//                $mail_obj->duration = $post["_plan_duration"];
-//                $sended = $mail->send($mail_obj);
-//                if($sended != 'exito')
-//                {
-//                    $_SESSION["message"] = $_SESSION["message"]." | ".$sended;
-//                }
-//
-//            }
-//            else
-//            {
-//                $_SESSION["error"] = "Ocurrió un error al intentar crear la Publicidad[".$ads_id."].";
-//            }
-//        }
-//        else
-//        {
-//            $_SESSION["error"] = "Ocurrió un error al intentar crear la Publicidad[0][".$ads_detail_id."].";
-//        }
-//
-//        // Redirecciono a pagina de publicaciones con mensaje exitoso o de error
-//        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing.php");
+        // inserto en tabla de detalle de publicación y recupero id de inserción
+        $ads_detail_id = $advertsing_detail->create($data_for_ads_detail);
+        if($ads_detail_id > 0)
+        {
+            //recopilo datos para insertar en tabla de publicación
+            $data_for_ads = Array(
+                "user_id"=>$user_id,
+                "advertsing_detail_id"=>$ads_detail_id,
+                "created_at"=>$date,
+            );
+
+            //inserto en tabla de publicación
+            $ads = new Advertsings();
+            $ads_id = $ads->create($data_for_ads);
+
+            if($ads_id)
+            {
+                $_SESSION["message"] = "Publicidad creada Exitosamente.";
+                $mail = new Mailer();
+
+                $mail_obj = new \stdClass();
+                $mail_obj->to_address = $post["email_notify"];
+                $mail_obj->from_address = "deeze.designs@gmail.com";
+                $mail_obj->subject = "Publicidad Creada Exitosamente (#".$ads_id.")";
+                $mail_obj->ammount_to_pay = $post["_plan_price"];
+                $mail_obj->ads_id = $ads_id;
+                $mail_obj->titulo = $post["titulo"];
+                $mail_obj->duration = $post["_plan_duration"];
+                $mail_obj->mail_type = "moderador";
+                $sended = $mail->send($mail_obj);
+                if($sended != 'exito')
+                {
+                    $_SESSION["message"] = $_SESSION["message"]." | ".$sended;
+                }
+
+            }
+            else
+            {
+                $_SESSION["error"] = "Ocurrió un error al intentar crear la Publicidad[".$ads_id."].";
+            }
+        }
+        else
+        {
+            $_SESSION["error"] = "Ocurrió un error al intentar crear la Publicidad[0][".$ads_detail_id."].";
+        }
+
+        // Redirecciono a pagina de publicaciones con mensaje exitoso o de error
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing.php");
+
+    }
+
+    public function deleteAdvertsing($id)
+    {
+        $adv = new Advertsings();
+        if($adv->delete($id))
+        {
+            $_SESSION['message'] = "Publicidad eliminada exitosamente.";
+            Logger::write('advertsings_'.date('d-m-Y'),"Publicidad (".$id.") eliminada || ".date('d-m-Y H:i:s'));
+            return "exito";
+        }
+        else
+        {
+            $_SESSION['error'] = "Ocurrió un error al intentar eliminar la publicidad.";
+            Logger::write('advertsings_'.date('d-m-Y'),"Publicidad (".$id.") No se pudo eliminar || ".date('d-m-Y H:i:s'));
+            return "error";
+        }
+
+    }
+
+    public function editAdvertsing($id)
+    {
+        $adv = new Advertsings();
+        $response = $adv->request($id);
+        if($response)
+        {
+            return $response;
+        }
+        else
+        {
+            return 'error';
+        }
+
     }
 
     // Provinces & Cities//

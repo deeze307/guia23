@@ -14,6 +14,7 @@ require_once __GUIA23__."/model/General.php";
 require_once __GUIA23__."/model/Menu.php";
 
 require_once __GUIA23__."/controller/Mailer.php";
+require_once __GUIA23__."/core/Logger.php";
 
 //*************************//
 //******** MODELOS ********//

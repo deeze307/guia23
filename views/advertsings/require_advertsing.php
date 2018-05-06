@@ -12,10 +12,15 @@ if(isset($_COOKIE["PLAN"]))
     $adv_categories = $adv->getCategories();
     $provinces = $adv->getProvinces();
     $cities = $adv->getCities();
+    if(isset($_COOKIE["EDIT"]))
+    {
+        $adv_data = $adv->editAdvertsing($_COOKIE["ADV_ID"]);
+    }
 }
 else {
     header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
 }
+
 ?>
 
 
@@ -75,7 +80,12 @@ else {
     <section id="add-listing" class="p_b70 p_t70 bg_lightgry">
       <form class="registerd" id="formAdvertsing" action="../../app/controller/AdvertsingsController.php" method="post" enctype="multipart/form-data">
         <div class="container">
-
+<!--            --><?php
+//                if(isset($adv_data))
+//                {
+//                    var_dump($adv_data);
+//                }
+//            ?>
 
             <div class="row">
                 <div class="col-md-12">
@@ -90,11 +100,11 @@ else {
                                     <div class="form-group">
                                         <label><span>Titulo de la Publicidad </span>
                                         </label>
-                                        <input type="text" name="titulo" class="form-control" placeholder="Ingrse el Titulo de su publicidad para que se vea en todo el mundo." required>
+                                        <input type="text" name="titulo" class="form-control" placeholder="Ingrse el Titulo de su publicidad para que se vea en todo el mundo." value="<?php if(isset($adv_data->title)){echo $adv_data->title;} ?>" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="text" name="subtitulo" class="form-control" placeholder="Escriba el Subtitulo">
+                                        <input type="text" name="subtitulo" class="form-control" placeholder="Escriba el Subtitulo" value="<?php if(isset($adv_data->subtitle)){echo $adv_data->subtitle;} ?>">
                                     </div>
 
                                 </div>
@@ -110,7 +120,15 @@ else {
                                                     <option class="active" value="">Seleccione la Categoria...</option>
                                                     <?php
                                                         foreach($adv_categories as $category) {
-                                                            echo "<option value='".$category->advertsings_categories_id."'>".$category->name."</option>";
+                                                            if((isset($adv_data)) && ($adv_data->category_id == $category->advertsings_categories_id))
+                                                            {
+                                                                echo "<option value='".$category->advertsings_categories_id."' selected='selected'>".$category->name."</option>";
+                                                            }
+                                                            else
+                                                            {
+                                                                echo "<option value='".$category->advertsings_categories_id."'>".$category->name."</option>";
+                                                            }
+
                                                         }
                                                     ?>
                                                 </select>
@@ -129,7 +147,14 @@ else {
                                                     <option class="active" value="" >Seleccione la Provincia...</option>
                                                     <?php
                                                     foreach($provinces as $province) {
-                                                        echo "<option value='".$province->province_id."'>".$province->name."</option>";
+                                                        if((isset($adv_data)) && ($adv_data->province_id == $province->province_id))
+                                                        {
+                                                            echo "<option value='" . $province->province_id . "' selected='selected'>" . $province->name . "</option>";
+                                                        }
+                                                        else
+                                                        {
+                                                            echo "<option value='" . $province->province_id . "'>" . $province->name . "</option>";
+                                                        }
                                                     }
                                                     ?>
                                                 </select>
@@ -148,7 +173,14 @@ else {
                                                     <option class="active" value=""  >Seleccione la Ciudad...</option>
                                                     <?php
                                                     foreach($cities as $city) {
-                                                        echo "<option value='".$city->city_id."'>".$city->name."</option>";
+                                                        if((isset($adv_data)) && ($adv_data->city_id == $city->city_id))
+                                                        {
+                                                            echo "<option value='".$city->city_id."' selected='selected'>".$city->name."</option>";
+                                                        }
+                                                        else
+                                                        {
+                                                            echo "<option value='".$city->city_id."'>".$city->name."</option>";
+                                                        }
                                                     }
                                                     ?>
                                                 </select>
@@ -161,7 +193,7 @@ else {
                                     <div class="form-group">
                                         <label> <span>Telefono</span>
                                         </label>
-                                        <input type="number" name="telefono" class="form-control" placeholder="Número de telefono" required>
+                                        <input type="number" name="telefono" class="form-control" placeholder="Número de telefono" value="<?php if(isset($adv_data->phone)){echo $adv_data->phone;} ?>" required>
                                     </div>
                                 </div>
 
@@ -170,7 +202,7 @@ else {
                                     <div class="form-group">
                                         <label> <span>Sitio Web</span>
                                         </label>
-                                        <input type="text" name="web" class="form-control" placeholder="http://">
+                                        <input type="text" name="web" class="form-control" placeholder="http://" value="<?php if(isset($adv_data->website)){echo $adv_data->website;} ?>">
                                     </div>
 
                                 </div>
@@ -179,14 +211,14 @@ else {
                                     <div class="form-group">
                                         <label><span>Direccion Comercial</span>
                                         </label>
-                                        <input type="text" name="direccion" class="form-control" placeholder="Escriba su direccion Comercial...">
+                                        <input type="text" name="direccion" class="form-control" placeholder="Escriba su direccion Comercial..." value="<?php if(isset($adv_data->geolocation)){echo $adv_data->geolocation;} ?>">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
                                                 <label><span>Latitud </span>
                                                 </label>
-                                                <input type="number" name="latitud" class="form-control" placeholder="-54.792645">
+                                                <input type="number" name="latitud" class="form-control" placeholder="-54.792645" value="<?php if(isset($adv_data->latitude)){echo $adv_data->latitude;} ?>">
                                             </div>
                                         </div>
 
@@ -194,7 +226,7 @@ else {
                                             <div class="form-group">
                                                 <label> <span>Longitud</span>
                                                 </label>
-                                                <input type="number" name="longitud" class="form-control" placeholder="-68.231501">
+                                                <input type="number" name="longitud" class="form-control" placeholder="-68.231501" value="<?php if(isset($adv_data->longitude)){echo $adv_data->longitude;} ?>">
                                             </div>
                                         </div>
 
@@ -253,35 +285,35 @@ else {
                                                  <br>
                                                 <div class="col-md-4 col-sm-4 col-xs-12">
                                                     <div class="form-group">
-                                                        <input type="text" name="dia1" class="form-control" placeholder=" Dia Ej: lunes ">
+                                                        <input type="text" name="dia1" class="form-control" placeholder=" Dia Ej: lunes " value="<?php if(isset($adv_data->first_schedule_attention)){echo $adv_data->first_schedule_attention;} ?>">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <div class="col-md-6 col-sm-6 col-sm-12">
                                                         <div class="form-group">
-                                                            <input type="time" name="hora1_desde" class="form-control" placeholder=" Ej: 09:30" value="00:00" max="23:59" min="00:00" step="1">
+                                                            <input type="time" name="hora1_desde" class="form-control" placeholder=" Ej: 09:30" value="<?php if(isset($adv_data->first_schedule_attention_from)){echo $adv_data->first_schedule_attention_from;} ?>" max="23:59" min="00:00" step="1" >
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-sm-12">
                                                         <div class="form-group">
-                                                            <input type="time" name="hora1_hasta" class="form-control" placeholder="Ej:12:30"  value="00:00" max="23:59" min="00:00" step="1">
+                                                            <input type="time" name="hora1_hasta" class="form-control" placeholder="Ej:12:30"  value="<?php if(isset($adv_data->first_schedule_attention_to)){echo $adv_data->first_schedule_attention_to;} ?>" max="23:59" min="00:00" step="1">
                                                         </div>
                                                     </div>
 												</div>
                                                 <div class="col-md-4 col-sm-4 col-xs-12">
                                                     <div class="form-group">
-                                                        <input type="text" name="dia2" class="form-control" placeholder=" Dia Ej: Sabado ">
+                                                        <input type="text" name="dia2" class="form-control" placeholder=" Dia Ej: Sabado " value="<?php if(isset($adv_data->second_schedule_attention)){echo $adv_data->second_schedule_attention;} ?>">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <div class="col-md-6 col-sm-6 col-sm-12">
                                                         <div class="form-group">
-                                                            <input type="time" name="hora2_desde" class="form-control" placeholder=" Ej: 09:30"  value="00:00" max="23:59" min="00:00" step="1">
+                                                            <input type="time" name="hora2_desde" class="form-control" placeholder=" Ej: 09:30"  value="<?php if(isset($adv_data->second_schedule_attention)){echo $adv_data->second_schedule_attention_from;} ?>" max="23:59" min="00:00" step="1">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-sm-12">
                                                         <div class="form-group">
-                                                            <input type="time" name="hora2_hasta" class="form-control" placeholder="Ej:12:30"  value="00:00" max="23:59" min="00:00" step="1">
+                                                            <input type="time" name="hora2_hasta" class="form-control" placeholder="Ej:12:30"  value="<?php if(isset($adv_data->second_schedule_attention)){echo $adv_data->second_schedule_attention_to;} ?>" max="23:59" min="00:00" step="1">
                                                         </div>
                                                     </div>
 												</div>
@@ -298,6 +330,12 @@ else {
                                                     </label>
                                                 </div>
 
+                                                <?php
+                                                    if(isset($adv_data))
+                                                    {
+
+                                                    }
+                                                ?>
                                                 <div class="col-md-6 col-sm-6 col-sm-12">
                                                     <div class="form-group">
                                                         <input type="text" name="facebook_url" class="form-control" placeholder="Su URL de Facebook">
@@ -335,7 +373,7 @@ else {
                                             <div class="form-group">
                                                 <label>Descripción <span>*</span>
                                                 </label>
-                                                <textarea class="form-control" name="description" placeholder="Detalle la descripción de su comercio"></textarea>
+                                                <textarea class="form-control" name="description" placeholder="Detalle la descripción de su comercio"><?php if(isset($adv_data->description)){echo $adv_data->description;} ?></textarea>
                                             </div>
 
                                         </div>
@@ -345,7 +383,7 @@ else {
                                             <div class="form-group">
                                                 <label>Palabras Clave<span>*</span> <small>(Separadas por coma)</small>
                                                 </label>
-                                                <textarea class="form-control" name="keywords" placeholder="Palabra Clave"></textarea>
+                                                <textarea class="form-control" name="keywords" placeholder="Palabra Clave" ><?php if(isset($adv_data->keywords)){echo $adv_data->keywords;} ?></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -387,7 +425,7 @@ else {
                                             <div class="form-group">
                                                 <label><span>Ingrese su email para ser notificado por la aprobación de su publicidad</span>
                                                 </label>
-                                                <input type="email" class="form-control" name="email_notify" placeholder="E-Mail" required>
+                                                <input type="email" class="form-control" name="email_notify" placeholder="E-Mail" required value="<?php if(isset($adv_data->email_notify)){echo $adv_data->email_notify;} ?>">
                                             </div>
                                         </div>
                                     </div>
@@ -405,7 +443,19 @@ else {
                                                 <input type="hidden" name="_plan_price" value="<?php echo $plan->price; ?>">
                                                 <input type="hidden" name="_plan_duration" value="<?php echo $plan->duration; ?>">
                                                 <input type="hidden" name="_submitted" >
-                                                <button type="submit" id ="new_ads" name="new_ads">Enviar y Pagar</button>
+                                                <?php
+                                                if(isset($_COOKIE['EDIT']))
+                                                {
+                                                    unset($_COOKIE['EDIT']);
+                                                    echo '<button type="submit" id ="upd_ad" name="upd_ad">Guardar Cambios</button>';
+                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_detail_id.'">';
+                                                }
+                                                else
+                                                {
+                                                    echo '<button type="submit" id ="new_ads" name="new_ads">Enviar y Pagar</button>';
+                                                }
+                                                ?>
+
                                             </div>
                                         </div>
                                     </div>

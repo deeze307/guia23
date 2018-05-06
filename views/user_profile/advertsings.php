@@ -31,6 +31,19 @@ $ads_counter = count($advertsings->advertsings);
 
 <body>
 
+<?php
+if(isset($_SESSION["message"]))
+{
+    echo "<div class='label-success text-center' style='color:white;'>". $_SESSION['message']."</div>";
+    unset($_SESSION["message"]);
+}
+elseif(isset($_SESSION["error"]))
+{
+    echo "<div class='label-danger text-center' style='color:white;'>". $_SESSION['error']."</div>";
+    unset($_SESSION["error"]);
+}
+?>
+
 <!-- LOADER -->
 <div class="loader">
     <div class="cssload-svg"><img src="../../images/42-3.gif" alt="image">
@@ -91,7 +104,8 @@ $ads_counter = count($advertsings->advertsings);
                                         echo "<td><span class='label label-danger'>NO</span></td>";
                                     }
                                     echo "<td>$adv->enabled_until</td>";
-                                    echo "<td><button class='btn btn-xs btn-info'>Editar</button></td>";
+                                    echo "<td><button class='btn btn-xs btn-info' onclick='edit_advertsing(" . $adv->advertsing_id . ",". $adv->plan_id .")'>Editar</button></td>";
+                                    echo "<td><button class='btn btn-xs btn-danger' onclick='delete_advertsing(" . $adv->advertsing_id . ")'>Eliminar</button></td>";
                                 echo "</tr>";
                             }
                             echo '</table>';
@@ -118,16 +132,9 @@ $ads_counter = count($advertsings->advertsings);
 
 <script src="../../js/jquery.2.2.3.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/jquery.appear.js"></script>
-<script src="../../js/jquery-countTo.js"></script>
-<script src="../../js/owl.carousel.min.js"></script>
-<script src="../../js/jquery.fancybox.min.js"></script>
-<script src="../../js/bootsnav.js"></script>
-<script src="../../js/zelect.js"></script>
-<script src="../../js/parallax.min.js"></script>
-<script src="../../js/modernizr.custom.26633.js"></script>
-<script src="../../js/jquery.gridrotator.js"></script>
 <script src="../../js/functions.js"></script>
+<script src="js/profile_advertsings.js"></script>
+
 </body>
 
 </html>

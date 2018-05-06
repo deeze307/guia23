@@ -30,13 +30,26 @@ class Advertsings
         }
     }
 
+    public function request($advertsing_id)
+    {
+        try{
+            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+            $adv = $this->db->where("a.advertsing_id",$advertsing_id)
+                        ->objectBuilder()
+                        ->getOne('advertsings a',null,'a.*,ad.*');
+            return $adv;
+        }catch(Exception $ex){
+            return false;
+        }
+    }
+
     public function requestAllForUser($user_id)
     {
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
         $this->db->join("plan p","ad.plan_id = p.plan_id");
         $result = $this->db->where("a.user_id",$user_id)
                         ->objectBuilder()
-                        ->get('advertsings a',null,'a.*,ad.title,p.duration');
+                        ->get('advertsings a',null,'a.*,ad.title,ad.plan_id,p.duration');
         return $result;
     }
 
@@ -48,13 +61,23 @@ class Advertsings
         return $result;
     }
 
-    public function update($advertsing_id)
+    public function update()
     {
+
 
     }
 
     public function delete($advertsing_id)
     {
-
+        $this->db->where('advertsing_id',$advertsing_id);
+        $result = $this->db->delete('advertsings');
+        if($result)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

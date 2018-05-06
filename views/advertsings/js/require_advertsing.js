@@ -49,13 +49,6 @@ jQuery(document).ready(function() {
                     }
                 });
             }
-            //sending: function(file, xhr, formData) {
-            //    formData.append("carrier", $('#carrier').val());
-            //    formData.append("store", $('#tienda').val());
-            //    formData.append("valor", $('#valor').val());
-            //    formData.append("descripcion_envio", $('#confirmacion').val());
-            //    formData.append("tracking_number", $('#tracking').val());
-            //}
         });
     }
 });
