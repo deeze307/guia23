@@ -203,6 +203,43 @@ class AdvertsingsController
         }
 
     }
+    public function updateAdvertsing($post)
+    {
+        $data = Array(
+            'title'=>$post['titulo'],
+            'subtitle'=>$post['subtitulo'],
+            'category_id'=>$post['categoria'],
+            'province_id'=>$post['provincia'],
+            'city_id'=>$post['ciudad'],
+            'phone'=>$post['telefono'],
+            'website'=>$post['web'],
+            'address'=>$post['direccion'],
+            'latitude'=>$post['latitud'],
+            'longitude'=>$post['longitud'],
+            'first_schedule_attention'=>$post['dia1'],
+            'second_schedule_attention'=>$post['dia2'],
+            'first_schedule_attention_from'=>$post['hora1_desde'],
+            'first_schedule_attention_to'=>$post['hora1_hasta'],
+            'second_schedule_attention_from'=> $post['hora2_desde'],
+            'second_schedule_attention_to'=> $post['hora2_hasta'],
+            'description'=> $post['description'],
+            'keywords'=>$post['keywords'],
+            'plan_id'=>$post['_plan'],
+            'email_notify'=>$post['email_notify'],
+            'social_networks'=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"]
+        );
+        $ad = new AdvertsingDetail();
+        if($ad->update($data,$post['_adv_detail_id']) == "exito")
+        {
+            $_SESSION['message'] = "Publicidad Actualizada exitosamente!";
+            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing.php");
+        }
+        else
+        {
+            $_SESSION['error'] = "Ocurrió un error al intentar editar la publicidad.";
+            Logger::write('advertsings_'.date('d-m-Y'),"Publicidad ".$post['titulo']." No se pudo editar || ".date('d-m-Y H:i:s'));
+        }
+    }
 
     // Provinces & Cities//
     public function getProvinces()

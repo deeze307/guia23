@@ -401,7 +401,7 @@ else {
                             <div class="col-md-12">
                                 <div class="listing-title-area">
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 <?php if(isset($_COOKIE['EDIT'])) { echo 'hidden';} ?>" >
                                             <div class="form-group">
                                                 <label> <span>imagenes de su comercio</span>
                                                 </label>

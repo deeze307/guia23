@@ -67,6 +67,23 @@ class Advertsings
 
     }
 
+    public function updateTimeFromAdvertsingDetail($ad_detail_id)
+    {
+        // Recolecto los datos para guardar en la tabla de detalle de la publicación
+        $date_format = strtotime('now');
+        $date = date("Y-m-d h:i", $date_format);
+
+        $this->db->where('advertsing_detail_id',$ad_detail_id);
+        if($this->db->update('advertsings',['updated_at'=>$date]))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public function delete($advertsing_id)
     {
         $this->db->where('advertsing_id',$advertsing_id);

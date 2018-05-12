@@ -47,20 +47,27 @@ class AdvertsingDetail
         return $result;
     }
 
-    public function update($post_data)
+    public function update($post_data,$adv_detail_id)
     {
-        $data = Array(
-            'title'=>$post_data->title,
-            'subtitle'=>$post_data->subtitle,
-            'category_id'=>$post_data->category_id,
-            'province_id'=>$post_data->province_id,
-            'city_id'
-        );
-        $this->db->where('advertsing_detail_id',$post_data->_adv_detail_id);
-        if ($this->db->update ('users', $data))
-            return 'exito' ;
+        $this->db->where('advertsing_detail_id',$adv_detail_id);
+        if ($this->db->update ('advertsing_detail', $post_data))
+        {
+            $ad = new Advertsings();
+            if ($ad->updateTimeFromAdvertsingDetail($adv_detail_id))
+            {
+                return "exito";
+            }
+            else
+            {
+                return "update failed: " . $this->db->getLastError();
+            }
+
+        }
+
         else
-            return 'update failed: ' . $this->db->getLastError();
+        {
+            return "update failed: " . $this->db->getLastError();
+        }
     }
 
     public function delete($advertsing_id)
