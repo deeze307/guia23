@@ -44,4 +44,17 @@ class AdvertsingsCategories
     {
 
     }
+
+    public function countAds()
+    {
+        $categories = self::request();
+        $adDetails = new AdvertsingDetail();
+        $arr = Array();
+        foreach($categories as $cat)
+        {
+            $cat->count = $adDetails->getForCategory($cat->advertsings_categories_id);
+            array_push($arr,$cat);
+        }
+        return $arr;
+    }
 }

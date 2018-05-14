@@ -74,4 +74,10 @@ class AdvertsingDetail
     {
 
     }
+
+    public function getForCategory($cat_id)
+    {
+        $this->db->where('category_id',$cat_id)->get('advertsing_detail');
+        return $this->db->count;
+    }
 }

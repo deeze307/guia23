@@ -97,4 +97,17 @@ class Advertsings
             return false;
         }
     }
+
+    public function requestLastAdded()
+    {
+        try{
+            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
+            $this->db->where("a.enabled","T");
+            $adv = $this->db->objectBuilder()->get('advertsings a',5,'a.*,ad.*,ac.*');
+            return $adv;
+        }catch(Exception $ex){
+            return $ex->getMessage();
+        }
+    }
 }

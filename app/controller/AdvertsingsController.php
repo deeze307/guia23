@@ -255,5 +255,17 @@ class AdvertsingsController
     }
     ///////////////
 
+    public function countAdsByCategories()
+    {
+        $ads = new AdvertsingsCategories();
+        return $ads->countAds();
+    }
+
+    public function getLastAdded()
+    {
+        $ads = new Advertsings();
+        return $ads->requestLastAdded();
+    }
+
 
 }

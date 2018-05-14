@@ -80,12 +80,6 @@ else {
     <section id="add-listing" class="p_b70 p_t70 bg_lightgry">
       <form class="registerd" id="formAdvertsing" action="../../app/controller/AdvertsingsController.php" method="post" enctype="multipart/form-data">
         <div class="container">
-<!--            --><?php
-//                if(isset($adv_data))
-//                {
-//                    var_dump($adv_data);
-//                }
-//            ?>
 
             <div class="row">
                 <div class="col-md-12">
