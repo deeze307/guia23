@@ -42,14 +42,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="restaurant.html">Restaurantes</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]?>/guia23/views/Restaurantes.php">Restaurantes</a></h3>
                                         <p>Descripcion</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -62,14 +62,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Turismo.html">Turismo</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Turismo.php">Turismo</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -82,14 +82,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Deportes.html">Deportes</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -102,14 +102,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Salud-Belleza.html">Peluqueria</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Salud-Belleza.php">Peluqueria</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Tolhuin</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -122,14 +122,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Otros Servicios.html">Shoping</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Otros Servicios.php">Shoping</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -142,14 +142,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Vehiculos.html">Agencias</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Vehiculos.php">Agencias</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -166,14 +166,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Hoteles.html">Hoteles</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Hoteles.php">Hoteles</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -186,14 +186,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Deportes.html">Deportes</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -206,14 +206,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Salud-Belleza.html">Farmacias</a></h3>
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Salud-Belleza.php">Farmacias</a></h3>
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -226,14 +226,14 @@
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="Museos.html"></a></h3>Casa Beban
+                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Museos.php"></a></h3>Casa Beban
                                         <p>Descripcion.</p>
                                     </div>
                                     <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -252,7 +252,7 @@
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -261,7 +261,7 @@
                                         </div>
                                         <div class="col-md-7 col-sm-7 col-xs-12">
                                             <div class="popular-listing-detail">
-                                                <h3><a href="restaurant.html">Restaurantes</a></h3>
+                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Restaurantes.php">Restaurantes</a></h3>
                                                 <p>Descripcion.</p>
                                             </div>
                                             <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -280,7 +280,7 @@
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -289,7 +289,7 @@
                                         </div>
                                         <div class="col-md-7 col-sm-7 col-xs-12">
                                             <div class="popular-listing-detail">
-                                                <h3><a href="Deportes.html">Deportes</a></h3>
+                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
                                                 <p>Descripcion.</p>
                                             </div>
                                             <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia </span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -308,7 +308,7 @@
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -317,7 +317,7 @@
                                         </div>
                                         <div class="col-md-7 col-sm-7 col-xs-12">
                                             <div class="popular-listing-detail">
-                                                <h3><a href="Profesionales.html">Profesionales</a></h3>
+                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Profesionales.php">Profesionales</a></h3>
                                                 <p>Descripcion.</p>
                                             </div>
                                             <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Tolhuin</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -336,7 +336,7 @@
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="listing.html"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -345,7 +345,7 @@
                                         </div>
                                         <div class="col-md-7 col-sm-7 col-xs-12">
                                             <div class="popular-listing-detail">
-                                                <h3><a href="Museos.html">Museos</a></h3>
+                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Museos.php">Museos</a></h3>
                                                 <p>Descripcion.</p>
                                             </div>
                                             <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
@@ -386,15 +386,15 @@
                             <div class="recent-listing-img">
                                 <img src="images/20171017_192752_001.jpg" width="254" height="153" alt="image">
                                 <div class="recent-listing-links">
-                                    <a href="Deportes.html" class="recent-jobs">Deportes</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php" class="recent-jobs">Deportes</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                             <div class="recent-listing-img">
                                 <img src="images/20160206_165238.jpg" width="254" height="153" alt="image">
                                 <div class="recent-listing-links">
-                                    <a href="Turismo.html" class="recent-jobs">Turismo</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Turismo.php" class="recent-jobs">Turismo</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                         </div>
@@ -402,15 +402,15 @@
                             <div class="recent-listing-img">
                                 <img src="images/recent-1.jpg" alt="image">
                                 <div class="recent-listing-links">
-                                    <a href="Museos.html" class="recent-jobs">Museos</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Museos.php" class="recent-jobs">Museos</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                             <div class="recent-listing-img">
                                 <img src="images/recent-2.jpg" alt="image">
                                 <div class="recent-listing-links">
                                     <a href="" class="recent-jobs">Farmacias</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                         </div>
@@ -418,15 +418,15 @@
                             <div class="recent-listing-img">
                                 <img src="images/recent-1.jpg" alt="image">
                                 <div class="recent-listing-links">
-                                    <a href="Escuelas.html" class="recent-jobs">Escuelas</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Escuelas.php" class="recent-jobs">Escuelas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                             <div class="recent-listing-img">
                                 <img src="images/recent-2.jpg" alt="image">
                                 <div class="recent-listing-links">
-                                    <a href="Hoteles.html" class="recent-jobs">Hotel xx</a>
-                                    <a href="listing.html" class="recent-readmore">Vea Mas</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Hoteles.php" class="recent-jobs">Hotel xx</a>
+                                    <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php" class="recent-readmore">Vea Mas</a>
                                 </div>
                             </div>
                         </div>
