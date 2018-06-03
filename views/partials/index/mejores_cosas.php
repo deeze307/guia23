@@ -13,11 +13,11 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="images/20160206_165238.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20160206_165238.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/index-rio-grande.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -44,11 +44,11 @@
 
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="images/20171008_173443.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171008_173443.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/index-tolhuin.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -79,11 +79,11 @@
 
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="images/20160206_165238.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20160206_165238.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" data-target="#myModal" href="index_ushu.html"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index_ushu.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -110,11 +110,11 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="images/20171017_192758.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171017_192758.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>

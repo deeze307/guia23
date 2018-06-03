@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/master.css">
     <link rel="stylesheet" type="text/css" href="../css/color-green.css">
     <link rel="shortcut icon" href="../images/short_icon.png">
+    <link href="../css/guia23.min.css" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-    <script type="text/javascript" src="../js/google-map.js"></script>
-    <script type="text/javascript" src="js/neary-by-place.js"></script>
+
+
 </head>
 
 <body>
@@ -39,8 +39,8 @@
 
                 <div class="col-md-12 text-center">
                     <div class="inner_banner_2_detail">
-                        <h2 align="center">Detalles </h2>
-                        <p><a href="../Index-tdf.html">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                        <h2 align="center"><span></span>Detalles </h2>
+                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
                     </div>
                 </div>
 
@@ -58,10 +58,10 @@
                 <div class="col-md-12">
 
                     <div class="details-heading heading">
-                        <h2><a href="#"> <span>Titulo del Comercio </span></a></h2>
-                        <span>4.5 <img src="../images/stars.png" alt="image"></span>
+                        <h2><a href="#"> <span>Hotel xx </span></a></h2>
+                        <span>5.0 <img src="../images/stars.png" alt="image"></span>
                         <div class="details-heading-address">
-                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Calle Nueva 152, Ushuaia</p>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Gobernador Deloqui 156, Ushuaia</p>
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> +54 2901 2541</li>
                                 <li><i class="fa fa-envelope" aria-hidden="true"></i> hotelxx@email.com</li>
@@ -72,9 +72,8 @@
                         <div class="details-heading-address2">
                             <ul>
                                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i>Deje un Comentario</a> </li>
-                                <li><a href="contact.html"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envie un Mensaje</a> </li>
+                                <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envie un Mensaje</a> </li>
                                 <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>
-                                <li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Obtener Cita</a> </li>
                             </ul>
                         </div>
 
@@ -90,7 +89,7 @@
 
                     <div class="details-heading heading">
 
-                        <h2 class="p_b40"> <span>Nosotros</span></h2>
+                        <h2 class="p_b40"> <span>Nuestros Servicos</span></h2>
 
                         <p>Aca una breve descripcion del Comercio.</p>
 
@@ -104,29 +103,48 @@
                         </ul>
 
                     </div>
+                    <section id="least">
+                    <div id="least">
+                        <div class="least-preview"></div>
 
+                            <ul class="least-gallery">
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Habitaciones" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Hall" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Transportes" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Play room" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                </li>
+                            </ul>
+                    </section>
                     <div class="details-heading heading">
 
-                        <h2 class="p_b20"> <span>Nuestros Servicios</span></h2>
+                        <h2 class="p_b20"><span>Reserva Avanzada</span></h2>
 
-                        <p>Aca otra descripcion de los servicios ofrecidos.</p>
-
-                        <div class="main">
-
-           
-
-                            <div class="add-more text-center">
-                                <a href="#">Agregar Mas</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="details-heading heading">
-
-                        <h2 class="p_b20"><span> Avanzada</span></h2>
-
-                        <p>Descripcion del Comercio, algo mas.</p>
+                        <p>Descripcion de la habitacion, algo mas.</p>
 
                         <div class="panel-group m_t40" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -134,10 +152,10 @@
 
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Descripcion 1
-                              </a>
-                            </h4>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Habitaciones de Lujo
+                                        </a>
+                                    </h4>
                                 </div>
 
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -147,7 +165,7 @@
 
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="listing-special">
-                                                    <img src="images/listing-services-2-2.jpg" alt="image">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="image">
                                                 </div>
                                             </div>
 
@@ -155,20 +173,26 @@
 
                                                 <div class="listing-special-detail">
 
-                                                    <h3 class="p_b20">Rubro descripcion <span>$800</span></h3>
+                                                    <h3 class="p_b20">Habitacion de Lujo <span>$800</span></h3>
 
                                                     <span>4.5 <img src="../images/stars-2.png" alt="image"></span>
 
                                                     <p>Descripcion... del contenido.</p>
 
-                                                    
+                                                    <ul class="listing-amenities">
+                                                        <li><b>Comodidades:</b>
+                                                        </li>
+                                                        <li><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</li>
+                                                        <li><i class="fa fa-window-restore" aria-hidden="true"></i> Aire </li>
+                                                        <li><i class="fa fa-bath" aria-hidden="true"></i> Piscina</li>
+                                                        <li><i class="fa fa-glass" aria-hidden="true"></i> Bar</li>
+                                                    </ul>
 
                                                     <div class="details-heading-address2">
                                                         <ul>
                                                             <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Deje un Comentario</a> </li>
                                                             <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envienos un Mensaje</a> </li>
                                                             <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>
-                                                            <li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i> Reserva</a> </li>
                                                         </ul>
                                                     </div>
 
@@ -183,15 +207,72 @@
 
                             </div>
 
+                            <div class="panel panel-default">
+
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo" class="collapsed">
+                                            Habitaciones Premium (Ejecutivos)
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="collapsetwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+
+                                        <div class="row">
+
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                <div class="listing-special">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg"  alt="image">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-8 col-sm-8 col-xs-12">
+
+                                                <div class="listing-special-detail">
+
+                                                    <h3 class="p_b20"> Habitaciones Premium (Ejecutivos) <span>$500</span></h3>
+
+                                                    <span>4.5 <img src="../images/stars-2.png" alt="image"></span>
+
+                                                    <p>Descripcion de la habitacion.</p>
+
+                                                    <ul class="listing-amenities">
+                                                        <li><b>Comodidades:</b>
+                                                        </li>
+                                                        <li><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</li>
+                                                        <li><i class="fa fa-window-restore" aria-hidden="true"></i> Aire </li>
+                                                        <li><i class="fa fa-bath" aria-hidden="true"></i> Piscina</li>
+                                                        <li><i class="fa fa-glass" aria-hidden="true"></i> Bar</li>
+                                                    </ul>
+
+                                                    <div class="details-heading-address2">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Deje un Comentario</a> </li>
+                                                            <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envienos un Mensaje</a> </li>
+                                                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
 
                             <div class="panel panel-default">
 
                                 <div class="panel-heading" role="tab" id="headingThree">
                                     <h4 class="panel-title">
-                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false" aria-controls="collapsethree" class="collapsed">
-                                 Descripcion 2 (xxx)
-                              </a>
-                            </h4>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false" aria-controls="collapsethree" class="collapsed">
+                                            Habitaciones Normales(xxx)
+                                        </a>
+                                    </h4>
                                 </div>
 
                                 <div id="collapsethree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
@@ -201,7 +282,7 @@
 
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="listing-special">
-                                                    <img src="images/listing-services-2-2.jpg" alt="image">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="image">
                                                 </div>
                                             </div>
 
@@ -209,19 +290,26 @@
 
                                                 <div class="listing-special-detail">
 
-                                                    <h3 class="p_b20">Descripcion () <span>$300</span></h3>
+                                                    <h3 class="p_b20">Habitaciones Normales() <span>$300</span></h3>
 
                                                     <span>4.5 <img src="../images/stars-2.png" alt="image"></span>
 
-                                                    <p>Descripcion del comercio.</p>
+                                                    <p>Descripcion de la Habitacion.</p>
 
-                                                   
-                                                   <div class="details-heading-address2">
+                                                    <ul class="listing-amenities">
+                                                        <li><b>Comodidades:</b>
+                                                        </li>
+                                                        <li><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</li>
+                                                        <li><i class="fa fa-window-restore" aria-hidden="true"></i> Aire </li>
+                                                        <li><i class="fa fa-bath" aria-hidden="true"></i> Piscina</li>
+                                                        <li><i class="fa fa-glass" aria-hidden="true"></i> Bar</li>
+                                                    </ul>
+
+                                                    <div class="details-heading-address2">
                                                         <ul>
                                                             <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Deje un Comentario</a> </li>
                                                             <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envienos un Mensaje</a> </li>
-                                                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>
-                                                            <li><a href="#" class="bg_blue"><i class="fa fa-usd" aria-hidden="true"></i>Obtener Cita</a> </li>
+                                                            <li><a href="#" class="bg-success"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>
                                                         </ul>
                                                     </div>
 
@@ -270,9 +358,11 @@
                                         </ul>
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
-                        
+
                         <div class="details-heading-review m_t30">
 
                             <div class="media">
@@ -315,9 +405,9 @@
 
                                 <div class="media-body">
                                     <div class="review-detail">
-                                        <h3>L. Hernandez <span>4.5 <img src="../images/stars-2.png" alt="image"></span></h3>
-                                        <span>17th October, 2017</span>
-                                        <p>Comentario xxxxxxx.</p>
+                                        <h3> Jose Hernandez <span>4.5 <img src="../images/stars-2.png" alt="image"></span></h3>
+                                        <span>17 Dic, 2017</span>
+                                        <p>Descripcion</p>
                                         <ul class="listing-amenities">
                                             <li><a href="#!"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Like</span></a> </li>
                                             <li><a href="#!"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> <span>Dis-Like</span></a> </li>
@@ -431,7 +521,7 @@
                     <div class="right-bar bg_white">
                         <h4><span>Otra Informacion</span></h4>
                         <ul class="right-bar-listing">
-                            <li><a href="#">Adquiera Hoy <span class="bg_blue color_white">(Abierto)</span></a>
+                            <li><a href="#">Hoy <span class="bg_blue color_white">(Abierto)</span></a>
                             </li>
                             <li><a href="#">Experiencias  <span>(12)</span></a>
                             </li>
@@ -462,14 +552,14 @@
                                     <img src="images/recent-1.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Turismo</a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                                 <div class="recent-listing-img">
                                     <img src="images/recent-2.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Hoteles</a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -478,14 +568,14 @@
                                     <img src="images/20160207_053613.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Turismo</a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                                 <div class="recent-listing-img">
                                     <img src="images/recent-2.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Deportes</a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -494,14 +584,14 @@
                                     <img src="images/recent-1.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Hogar </a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                                 <div class="recent-listing-img">
                                     <img src="images/recent-2.jpg" alt="image">
                                     <div class="recent-listing-links">
                                         <a href="#" class="recent-jobs">Vehiculos</a>
-                                        <a href="#" class="recent-readmore">Lea Mas</a>
+                                        <a href="../listing.html" class="recent-readmore">Vea Mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +677,7 @@
                              <p> Algiunas Palabras</p>
 
                             <div class="best-thing-model-btn">
-                                <a href="listing-details.html">Mas Detalles</a>
+                                <a href="../listing-details.html">Mas Detalles</a>
                             </div>
                         </div>
 
@@ -606,20 +696,25 @@
     <script src="../js/jquery.fancybox.min.js"></script>
     <script src="../js/bootsnav.js"></script>
     <script src="../js/modernizr.custom.js"></script>
-    <script src="../js/grid.js"></script>
     <script src="../js/zelect.js"></script>
     <script src="../js/parallax.min.js"></script>
     <script src="../js/modernizr.custom.26633.js"></script>
     <script src="../js/jquery.gridrotator.js"></script>
-    <script src="js/richmarker-compiled.js"></script>
+    <script src="../js/richmarker-compiled.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script>
     <script src="../js/google-map.js"></script>
     <script src="../js/functions.js"></script>
+    <script src="../js/least.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/guia23.min.js"></script>
     <script>
-        $(function() {
-            Grid.init();
+        $(document).ready(function(){
+            $('.least-gallery').least();
         });
     </script>
+
+
+
 </body>
 
 </html>
