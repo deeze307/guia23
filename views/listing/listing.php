@@ -12,9 +12,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-<script type="text/javascript" src="../../js/google-map.js"></script>
-<script type="text/javascript" src="js/neary-by-place.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script type="text/javascript" src="../../js/google-map.js"></script>
 
 </head>
 <body>
@@ -265,156 +264,6 @@
 <!-- Footer -->
 
     <!-- Popups -->
-    <section id="best-thing-model">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Tierra del Fuego</h4>
-                        <ul class="best-things-listing">
-                            <li><a href="#">3 Ciudades,</a>
-                            </li>
-                            <li><a href="#">130 Publicidades,</a>
-                            </li>
-                            <li><a href="#">6753 Vistas</a>
-                            </li>
-                        </ul>
-                        <img src="../../images/stars-2.png" alt="image">
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="best-thing-slider" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="images/20171016_161947.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/20160206_165238.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/20171017_192758.jpg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-description">
-                                    <h4>Descripcion</h4>
-                                    <p>Descripcion</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-feature">
-                                    <h4>Categorias</h4>
-                                    <ul>
-                                        <li>Restaurantes (16)</li>
-                                        <li>Hoteles (36)</li>
-                                        <li>Turismo (25)</li>
-                                        <li>Deportes (10)</li>
-                                        <li>Profesionales (26)</li>
-                                        <li>Hogar (22)</li>
-                                        <li>Salud-Belleza (06)</li>
-                                        <li>Enseñanza (12)</li>
-                                        <li>Vehiculos (27)</li>
-                                        <li>Otros Servicios (67)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="best-thing-model-description">
-                            <h4>Lo Ultimo</h4>
-                            <img src="../../images/stars-2.png" alt="image">
-                            <p>Descripcion </p>
-
-                            <div class="best-thing-model-btn">
-                                <a href="listing.php">Mas Detalles</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <section id="best-thing-model">
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Tierra de pruebas</h4>
-                        <ul class="best-things-listing">
-                            <li><a href="#">3 Ciudades,</a>
-                            </li>
-                            <li><a href="#">130 Publicidades,</a>
-                            </li>
-                            <li><a href="#">6753 Vistas</a>
-                            </li>
-                        </ul>
-                        <img src="../../images/stars-2.png" alt="image">
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="best-thing-slider" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="images/20171016_161947.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/20160206_165238.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/20171017_192758.jpg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-description">
-                                    <h4>Descripcion</h4>
-                                    <p>Descripcion</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-feature">
-                                    <h4>Categorias</h4>
-                                    <ul>
-                                        <li>Restaurantes (16)</li>
-                                        <li>Hoteles (36)</li>
-                                        <li>Turismo (25)</li>
-                                        <li>Deportes (10)</li>
-                                        <li>Profesionales (26)</li>
-                                        <li>Hogar (22)</li>
-                                        <li>Salud-Belleza (06)</li>
-                                        <li>Enseñanza (12)</li>
-                                        <li>Vehiculos (27)</li>
-                                        <li>Otros Servicios (67)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="best-thing-model-description">
-                            <h4>Lo Ultimo</h4>
-                            <img src="../../images/stars-2.png" alt="image">
-                            <p>Descripcion </p>
-
-                            <div class="best-thing-model-btn">
-                                <a href="listing.php">Mas Detalles</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Popups -->
 
@@ -430,7 +279,7 @@
 <script src="../../js/map/jquery-finddo.js"></script>
 <script src="../../js/map/markercluster.min.js"></script>
 <script src="../../js/map/custom-map.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=myMap"></script>
 <script src="../../js/modernizr.custom.26633.js"></script>
 <script src="../../js/jquery.gridrotator.js"></script>
 <script src="../../js/functions.js"></script>

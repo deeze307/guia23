@@ -46,7 +46,7 @@ class Users
                     }
                 }
             }
-            elseif($user_obj->scoped_user_id!="")
+            elseif(isset($user_obj) && $user_obj->scoped_user_id!="")
             {
                 $this->scoped_user_id = $user_obj->scoped_user_id;
                 $this->email = $user_obj->email;
@@ -110,7 +110,14 @@ class Users
             if($user_id)
             {
                 $this->user_id = $user_id;
-                $this->request();
+                if($this->createProfile($this->user_id))
+                {
+                    $this->request();
+                }
+                else
+                {
+                    $this->error ="Ocurrió un error al intentar crear el Perfil de Usuario";
+                }
             }
             else
             {
@@ -122,6 +129,13 @@ class Users
     public function isAdmin()
     {
         $this->user->profile;
+    }
+
+    public function requestAll()
+    {
+        $this->db->join("roles r","u.role_id = r.role_id");
+        $this->db->join("user_origin uo","u.origin = uo.origin_id");
+        return $this->db->objectBuilder()->get('users u',null,"u.*,r.description as role_description,uo.origin as origin_name");
     }
 
     public function request()
@@ -170,6 +184,7 @@ class Users
                 }
             }
             $_SESSION["user_id"] = $this->user->user->user_id;
+            $_SESSION["role_id"] = $this->user->user->role_id;
 
             // Actualiza el último inicio de sesion
 
@@ -270,6 +285,5 @@ class Users
 
             $this->user->profile = $profile;
         }
-
     }
 }

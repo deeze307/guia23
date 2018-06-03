@@ -283,10 +283,10 @@ h5 {
 /* ---------- Header  Css  --------- */
 /* ================================= */
 .add-listing > a > .fa {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .add-listing > button > .fa {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .top_right_links {
   text-align: right;
@@ -1272,8 +1272,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 .popular-listing-img,
 .best-things-details{
-  position: relative;
-  overflow:hidden;
+    position: relative;
+    overflow:hidden;
+    width: 400px;
+    height: 300px;
+
 }
 figure.effect-ming {
 	background: #030c17;
@@ -2330,7 +2333,7 @@ footer#footer::after {
 	padding: 90px 0 70px;
 }
 .inner_banner_2_detail h2{
-	color:#fff;
+	color:#3a3a3a;
 	font-size:36px;
 	padding-bottom:20px;
 }

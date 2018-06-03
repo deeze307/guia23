@@ -4,6 +4,17 @@ if (!isset($_SESSION))
 { session_start(); }
 require("UploadFile.php");
 
+if(isset($_GET['cat']))
+{
+    $adv = new AdvertsingsController();
+    $adv_cat_id = $adv->getAdvCatId($_GET['cat']);
+    $advertsings = $adv->getAdvsForCatId($adv_cat_id);
+    setcookie("CAT",$adv_cat_id,time() + 3600,"/");
+    setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
+//    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
+    $_SESSION['ADVS_FOR_CAT'] = $advertsings;
+    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/publicidades/publicidades.php");
+}
 if(isset($_POST['plan']))
 {
     setcookie("PLAN",$_POST['plan'],time() + 3600,"/");
@@ -59,6 +70,19 @@ class AdvertsingsController
     {
         $plan = new Plan();
         return $plan->request("all");
+    }
+
+    public function getAdvCatId($adv_cat_name)
+    {
+        $adv_cat = new AdvertsingsCategories();
+        $result = $adv_cat->getAdvCatId($adv_cat_name);
+        return $result;
+    }
+
+    public function getAdvsForCatId($category_id)
+    {
+        $ads = new Advertsings();
+        return $ads->requestAllForCategory($category_id);
     }
 
     public function getOnePlan($plan_id)
@@ -203,6 +227,7 @@ class AdvertsingsController
         }
 
     }
+
     public function updateAdvertsing($post)
     {
         $data = Array(

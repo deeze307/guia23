@@ -72,9 +72,8 @@
 		var prefixes = ['webkit','moz','ms','o'];
 
 		// if 'hidden' is natively supported just return it
-		if ('hidden' in document){
-			return 'hidden';
-		}
+		if ('hidden' in document) return 'hidden';
+
 		// otherwise loop over all the known prefixes until we find one
 		for (var i = 0; i < prefixes.length; i++){
 			if ((prefixes[i] + 'Hidden') in document) 
@@ -86,8 +85,7 @@
 	}
 	function isHidden() {
 		var prop = getHiddenProp();
-		if (!prop) {
-			return false;
+		if (!prop) return false;
 
 		return document[prop];
 	}
@@ -255,7 +253,7 @@
 
 					}
 
-				} ).attr( 'src', src );
+				} ).attr( 'src', src )
 				 
 			} );
 
@@ -549,7 +547,7 @@
 				endInProp : endInProp,
 				endOutProp : endOutProp,				
 				delay : delay,
-				animSpeed : speed !== undefined ? speed : this.options.animSpeed
+				animSpeed : speed != undefined ? speed : this.options.animSpeed
 			};
 
 		},
@@ -654,7 +652,7 @@
 			var randArray = [];
 
 			for( var i = 0; i < limit; ++i ) {
-				randArray.push( i );
+				randArray.push( i )
 			}
 			
 			return randArray.shuffle().slice( 0, cnt );
@@ -755,4 +753,4 @@
 		
 	};
 	
-})( jQuery, window );
+} )( jQuery, window );

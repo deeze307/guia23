@@ -24,7 +24,7 @@ $head = $main->getGeneraData();
                                 <?php if(isset($_SESSION['username']) && ($_SESSION["username"]!="")){?>
                                         <li><a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/guia23/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $_SESSION["name"]." ".$_SESSION["lastname"];?></a> </li>
                                         <div class="add-listing"><button type="submit" name="logout" value="logout"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</button></div>
-                                    <div class="add-listing"> <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/guia23/views/advertsings/packages.php"><i class="fa fa-plus" aria-hidden="true"></i> Publicar</a> </div>
+                                        <div class="add-listing"> <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/guia23/views/advertsings/packages.php"><i class="fa fa-plus" aria-hidden="true"></i> Publicar</a> </div>
                                 <?php
                                 }
                                 else

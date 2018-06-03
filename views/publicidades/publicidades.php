@@ -32,9 +32,6 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-
-
 </head>
 <body>
 
@@ -50,7 +47,8 @@ elseif(isset($_SESSION["error"]))
     unset($_SESSION["error"]);
 }
 
-var_dump($new_added);
+//var_dump($_COOKIE);
+var_dump($_SESSION);
 ?>
 
 
@@ -65,6 +63,20 @@ var_dump($new_added);
 <?php include("../../app/controller/Main.php"); ?>
 <?php require "../partials/header.php"; ?>
 <!-- HEADER  -->
+
+<!-- Inner Banner -->
+<section id="inner-banner-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="inner_banner_2_detail">
+                    <h2><?php echo $_COOKIE['CAT_NAME'] ?></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Inner Banner -->
 
 <!-- POPULAR LISTING -->
 <?php require "../partials/popular-listing.php" ?>

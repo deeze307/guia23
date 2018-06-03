@@ -1,12 +1,12 @@
     jQuery(document).ready(function($){
 	//Aca seteamos los parametros de LAtitud y longitud
-	var latitude = -54.4830,
-		longitude = -68.1830,
-		map_zoom = 14;
+	var latitude = -54.8053998,
+		longitude = -68.3242061,
+		map_zoom = 15;
 
 	//google Marcadores- .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-	var marker_url = ( is_internetExplorer11 ) ? 'images/icons/marker-rest.png' : 'images/icons/marker-rest.png';
+	var marker_url = ( is_internetExplorer11 ) ? '../images/icons/marker-rest.png' : '../images/icons/marker-rest.png';
 		
 	//define color del mapa/ tambien brillo
 	var	main_color = '#2d313f',

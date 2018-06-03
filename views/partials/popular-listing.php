@@ -1,4 +1,4 @@
-
+<?php  ?>
 
     <!-- Popular Listing -->
     <section id="popular-listing" class="p_b70 p_t70">
@@ -34,531 +34,257 @@
                     <div class="tab-content">
 
                         <div role="tabpanel" class="tab-pane fade" id="profile">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="##">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Decripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="#">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Decripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span><span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="##">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Decripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="#">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>-->
+<!--                                            <p>Decripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span><span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-4 col-sm-6 col-xs-12">-->
+<!--                                    <div class="popular-listing-box">-->
+<!--                                        <div class="popular-listing-img">-->
+<!--                                            <figure class="effect-ming"> <img src="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/guia23/images/1@.png" alt="image">-->
+<!--                                                <figcaption>-->
+<!--                                                    <ul>-->
+<!--                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
+<!--                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
+<!--                                                    </ul>-->
+<!--                                                </figcaption>-->
+<!--                                            </figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-detail">-->
+<!--                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>-->
+<!--                                            <p>Descripcion.</p>-->
+<!--                                        </div>-->
+<!--                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade  in active" id="home">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Aca la descripcion .</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="popular-listing-box">
-                                        <div class="popular-listing-img">
-                                            <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                <figcaption>
-                                                    <ul>
-                                                        <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                        <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                    </ul>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="popular-listing-detail">
-                                            <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                            <p>Descripcion.</p>
-                                        </div>
-                                        <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                <?php
+                                foreach($_SESSION['ADVS_FOR_CAT'] as $advertsing)
+                                {
+                                    $image = explode(',',$advertsing->commercial_image);
+                                    if($image[0] != "")
+                                    {
+//                                        $image = '1@.png';
+                                        $image = $_COOKIE['CAT_NAME'].'/'.$image[0];
+                                    }
+                                    else
+                                    {
+                                        $image = '1@.png';
+                                    }
 
-                        <div role="tabpanel" class="tab-pane fade" id="messages">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                    if(isset($advertsing->geolocation))
+                                    {
+                                        $advertsing->geolocation = $advertsing->geolocation.', ';
+                                    }
+
+                                    echo '<div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="popular-listing-box">
                                                 <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
+                                                    <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image" height="300" width="400">
                                                         <figcaption>
                                                             <ul>
                                                                 <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                                 <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                             </ul>
                                                         </figcaption>
                                                     </figure>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
                                                 <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                                    <p>Descripcion.</p>
+                                                    <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/views/listing/listing.php">'.$advertsing->title.'</a></h3>
+                                                    <p>'.$advertsing->description.'</p>
                                                 </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
+                                                <div class="popular-listing-add">
+                                                    <span><img src="../../images/stars.png" alt="image"></span>
+                                                    <span><i class="fa fa-map-marker" aria-hidden="true"></i>'.$advertsing->geolocation.$advertsing->city_name.' ('.$advertsing->province_name.')</span>
                                                 </div>
                                             </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio</a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing-details.html">Nombre del comercio</a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio </a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio </a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="popular-listing-box">
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                                <div class="popular-listing-img">
-                                                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/1@.png" alt="image">
-                                                        <figcaption>
-                                                            <ul>
-                                                                <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                            </ul>
-                                                        </figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-12">
-                                                <div class="popular-listing-detail">
-                                                    <h3><a href="listing/listing.php">Nombre del comercio </a></h3>
-                                                    <p>Descripcion.</p>
-                                                </div>
-                                                <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Ciudad</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </div>';
+                                }
+                                ?>
+
                             </div>
                         </div>
                     </div>

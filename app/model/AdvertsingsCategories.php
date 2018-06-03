@@ -57,4 +57,12 @@ class AdvertsingsCategories
         }
         return $arr;
     }
+
+    public function getAdvCatId($adv_cat)
+    {
+        $result = $this->db->where('name',$adv_cat)
+                            ->objectBuilder()
+                            ->getOne('advertsings_categories','advertsings_categories_id');
+        return $result->advertsings_categories_id;
+    }
 }

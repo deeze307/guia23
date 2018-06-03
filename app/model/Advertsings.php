@@ -53,6 +53,28 @@ class Advertsings
         return $result;
     }
 
+    public function requestAllForCategory($category_id)
+    {
+        $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+        $this->db->join("cities c","ad.city_id = c.city_id");
+        $this->db->join("provinces p","ad.province_id = p.province_id");
+        $result = $this->db->where("ad.category_id",$category_id)
+            ->objectBuilder()
+            ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,ad.title,ad.description,ad.geolocation,ad.commercial_image');
+        return $result;
+    }
+
+    public function requestAllPendentForAdmin()
+    {
+        $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+        $this->db->join("plan p","ad.plan_id = p.plan_id");
+        $this->db->join("users u","a.user_id = u.user_id");
+        $result = $this->db->where("a.enabled","F")
+            ->objectBuilder()
+            ->get('advertsings a',null,'a.*,u.username,ad.title,ad.plan_id,p.duration');
+        return $result;
+    }
+
     public function requestAllEnabled()
     {
         $result = $this->db->where('enabled','1')

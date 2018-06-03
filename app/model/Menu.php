@@ -52,8 +52,18 @@ class Menu
                             <ul class="dropdown-menu">';
                             foreach($obj->submenuesSimple as $submenuSimple)
                             {
-                                echo'
-                                <li><a href="http://'.$_SERVER["SERVER_NAME"].'/guia23/'.$submenuSimple->link.'"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                if(!isset($submenuSimple->permission))
+                                {
+                                    echo'<li><a href="http://'.$_SERVER["SERVER_NAME"].'/guia23/'.$submenuSimple->link.'"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                }
+                                else
+                                {
+                                    if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $submenuSimple->permission)
+                                    {
+                                        echo'<li><a href="http://'.$_SERVER["SERVER_NAME"].'/guia23/'.$submenuSimple->link.'"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                    }
+                                }
+
                             }
                             echo'
                             </ul>
@@ -61,10 +71,23 @@ class Menu
             }
             else
             {
-                echo'
-                <li class="dropdown">
-                    <a href="http://'.$_SERVER["SERVER_NAME"].'/guia23/'.$menuSimple->link.'"><i class="'.$menuSimple->icon.'"></i> '.$menuSimple->title.'</a>
-                </li>';
+                if(!isset($menuSimple->permission))
+                {
+                    echo '
+                    <li class="dropdown">
+                        <a href="http://' . $_SERVER["SERVER_NAME"] . '/guia23/' . $menuSimple->link . '"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
+                    </li>';
+                }
+                else
+                {
+                    if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $menuSimple->permission)
+                    {
+                        echo '
+                        <li class="dropdown">
+                            <a href="http://' . $_SERVER["SERVER_NAME"] . '/guia23/' . $menuSimple->link . '"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
+                        </li>';
+                    }
+                }
             }
         }
 

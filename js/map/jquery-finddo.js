@@ -8,17 +8,17 @@
         // default values (if not modified in the plugin init)
         defaults: {
             places: [],            //list of places objects {title, address, phone, tags, lat, lng, img},
-            lat: -53.50000000,       //latitude of the center
-            lng: -66.20000000,       //longitude of the center
-            zoom: 10,              //default zoom level between 0 and 21
+            lat: -54.8053998,       //latitude of the center
+            lng: -68.3242061,       //longitude of the center
+            zoom: 15,              //default zoom level between 0 and 21
             cluster: true,         //enables / disables clustering for large amounts of markers
             mapType: 'roadmap',    //map type : "roadmap", "satellite", "perspective"
             posPanel: 'left',      //position of the removable panel : "left" or "right"
             showPanel: true,       //shows / hides the removable panel
-            radius: 0,             //max radius in kilometers
+            radius: 15,             //max radius in kilometers
             country: null,         //country limit for location input (ex. "ca": Canada, "us": United States, "fr": France...)
-            autogeolocate: false,  //auto geolocation to set the center of the map
-            icon: 'images/icons/marker.png',
+            autogeolocate: true,  //auto geolocation to set the center of the map
+            icon: '../../images/map/icons/marker.png',
             styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
             request: 'large',      //type of request "large" or "strict"
             locationTypes: ['geocode','establishment'] //types of locations returned by autocomplete requests
@@ -130,9 +130,9 @@
                     else mycontent = '<h4 class="finddo-title">'+place.title+'</h4>';
                     if(place.address != undefined && place.address != '') mycontent += place.address+'<br>';
                     if(place.phone != undefined && place.phone != '') mycontent += place.phone+'<br>';
-                    if(place.url != undefined && place.url != '') mycontent += '<a data-toggle="modal" data-target="#myModal" href="'+place.url+'" target="_blank">'+place.url+'</a><br></div>';
+                    if(place.url != undefined && place.url != '') mycontent += '<a  href="../listing-details.php" href="\'+place.url+\'" target="_blank">'+place.url+'</a><br></div>';
 
-                    //Info window init
+                    //Info window init'
                     infoWindow[i] = new google.maps.InfoWindow({
                         content  : mycontent,
                         position : myLatlng
@@ -482,4 +482,4 @@
                 _init();
         }
     });
-})(jQuery);
+})(jQuery)
