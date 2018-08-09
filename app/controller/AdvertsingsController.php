@@ -4,16 +4,65 @@ if (!isset($_SESSION))
 { session_start(); }
 require("UploadFile.php");
 
+if(isset($_GET['listing_detail_adv_id']) || isset($_POST['listing_detail_adv_id']))
+{
+    if(isset($_GET['listing_detail_adv_id']))
+    {
+        $listing_detail_id = $_GET['listing_detail_adv_id'];
+        $cat_name = $_GET['cat_name'];
+    }
+    else
+    {
+        $listing_detail_id = $_POST['listing_detail_adv_id'];
+        $cat_name = $_POST['cat_name'];
+    }
+    $adv_detail = new Advertsings();
+    $_SESSION['adv_detail'] = $adv_detail->requestWithDetail($listing_detail_id);
+    if($cat_name != 'Hoteles')
+    {
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/listing-details.php");
+    }
+    else
+    {
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/listing-details-1.php");
+    }
+}
+
+//// Panel del Admin ////
+
+if(isset($_GET['toggle']))
+{
+    $advs = new AdvertsingsController();
+    return $advs->toggleAdvertsing($_GET['adv_id'],$_GET['toggle']);
+}
+
+if(isset($_POST['delete']))
+{
+    $advs = new AdvertsingsController();
+    return $advs->deleteAdvertsing($_POST['adv_id']);
+}
+
+/////////////////////////
 if(isset($_GET['cat']))
 {
     $adv = new AdvertsingsController();
-    $adv_cat_id = $adv->getAdvCatId($_GET['cat']);
-    $advertsings = $adv->getAdvsForCatId($adv_cat_id);
-    setcookie("CAT",$adv_cat_id,time() + 3600,"/");
-    setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
-//    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
-    $_SESSION['ADVS_FOR_CAT'] = $advertsings;
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/publicidades/publicidades.php");
+
+    if(!isset($_GET['only_data']))
+    {
+        $adv_cat_id = $adv->getAdvCatId($_GET['cat']);
+        $advertsings = $adv->getAdvsForCatId($adv_cat_id);
+        setcookie("CAT",$adv_cat_id,time() + 3600,"/");
+        setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
+    //    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
+        $_SESSION['ADVS_FOR_CAT'] = $advertsings;
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/publicidades/publicidades.php");
+    }
+    else
+    {
+        $advertsings = $adv->getAdvsForCatId($_GET['cat']);
+        Logger::write("debug_custom_map","[".date('d-m-Y h:i:s')."] ");
+        echo json_encode($advertsings);
+    }
 }
 if(isset($_POST['plan']))
 {
@@ -23,7 +72,7 @@ if(isset($_POST['plan']))
 elseif(isset($_POST['_submitted']))
 {
     $adv = new AdvertsingsController();
-    if(isset($_SESSION['new_ads']))
+    if(isset($_POST['new_ads']))
     {
         if(isset($_SESSION["images"]))
         {
@@ -40,11 +89,11 @@ elseif(isset($_POST['_submitted']))
         $post = $_POST;
         $adv->updateAdvertsing($post);
     }
-
 }
 
 if(isset($_POST['edit']))
 {
+    unset($_POST['edit']);
     $adv = new AdvertsingsController();
     return $adv->editAdvertsing($_POST['adv']);
 
@@ -94,7 +143,13 @@ class AdvertsingsController
     public function getCategories($adv_cat_id="")
     {
         $adv_categories = new AdvertsingsCategories();
-        return $adv_categories->request($adv_cat_id="");
+        return $adv_categories->request(false,$adv_cat_id="");
+    }
+
+    public function getCategoryName($cat_id)
+    {
+        $adv_categories = new AdvertsingsCategories();
+        return $adv_categories->request(false,$cat_id);
     }
 
     public function getAdvertsings($user_id="")
@@ -130,6 +185,7 @@ class AdvertsingsController
             "city_id"=>$post["ciudad"],
             "phone"=>$post["telefono"],
             "website"=>$post["web"],
+            "address"=>$post["direccion"],
             "latitude"=>$post["latitud"],
             "longitude"=>$post["longitud"],
             "first_schedule_attention"=>$post["dia1"],
@@ -191,22 +247,25 @@ class AdvertsingsController
         }
 
         // Redirecciono a pagina de publicaciones con mensaje exitoso o de error
-        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing.php");
+        Logger::write("debug","[".date('d-m-Y h:i:s')."] ".$_SESSION['images']);
+        unset($_SESSION['images']);
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing_response.php");
 
     }
 
     public function deleteAdvertsing($id)
     {
         $adv = new Advertsings();
-        if($adv->delete($id))
+        $result = $adv->delete($id);
+        if($result == "exito")
         {
-            $_SESSION['message'] = "Publicidad eliminada exitosamente.";
+            $_SESSION['message'] = "Publicidad eliminada exitosamente. (".$id.")";
             Logger::write('advertsings_'.date('d-m-Y'),"Publicidad (".$id.") eliminada || ".date('d-m-Y H:i:s'));
             return "exito";
         }
         else
         {
-            $_SESSION['error'] = "Ocurrió un error al intentar eliminar la publicidad.";
+            $_SESSION['error'] = "Ocurrió un error al intentar eliminar la publicidad. (".$id.")";
             Logger::write('advertsings_'.date('d-m-Y'),"Publicidad (".$id.") No se pudo eliminar || ".date('d-m-Y H:i:s'));
             return "error";
         }
@@ -226,6 +285,21 @@ class AdvertsingsController
             return 'error';
         }
 
+    }
+
+    public function toggleAdvertsing($adv_id,$toggle)
+    {
+        $adv = new Advertsings();
+        $result = $adv->toggleEnableAdvertsing($adv_id,$toggle);
+            if($result == "exito")
+            {
+                $_SESSION['message'] = "Estado de Publicidad Actualizado!";
+            }
+            else
+            {
+                $_SESSION['error'] = "Ocurrió un error al intentar actualizar el estado de la Publicidad.";
+            }
+        return $result;
     }
 
     public function updateAdvertsing($post)
@@ -254,16 +328,17 @@ class AdvertsingsController
             'social_networks'=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"]
         );
         $ad = new AdvertsingDetail();
-        if($ad->update($data,$post['_adv_detail_id']) == "exito")
+        $upd = $ad->update($data,$post['_adv_detail_id']);
+        if( $upd == "exito")
         {
             $_SESSION['message'] = "Publicidad Actualizada exitosamente!";
-            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing.php");
         }
         else
         {
-            $_SESSION['error'] = "Ocurrió un error al intentar editar la publicidad.";
+            $_SESSION['error'] = "Ocurrió un error al intentar editar la publicidad. (".$upd.")";
             Logger::write('advertsings_'.date('d-m-Y'),"Publicidad ".$post['titulo']." No se pudo editar || ".date('d-m-Y H:i:s'));
         }
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/advertsings/require_advertsing_response.php");
     }
 
     // Provinces & Cities//
@@ -280,11 +355,38 @@ class AdvertsingsController
     }
     ///////////////
 
+    //// CONTADORES ////
     public function countAdsByCategories()
     {
         $ads = new AdvertsingsCategories();
         return $ads->countAds();
     }
+
+    public function countAllAds()
+    {
+        $ads = new Advertsings();
+        return $ads->countAllEnabled();
+    }
+
+    public function countAllCategories()
+    {
+        $ads = new AdvertsingsCategories();
+        return $ads->countCategories();
+    }
+
+    public function countAllUsers()
+    {
+        $users = new Users();
+        return $users->countAllUsersEnabled();
+    }
+
+    public function countAllCities()
+    {
+        $cities = new Cities();
+        return $cities->countAllCities();
+    }
+
+    ////////////////////
 
     public function getLastAdded()
     {
@@ -292,5 +394,10 @@ class AdvertsingsController
         return $ads->requestLastAdded();
     }
 
+    public function requestAllPointsOfInterest()
+    {
+        $adv = new Advertsings();
+        return $adv->requestPointsOfInterest();
+    }
 
 }

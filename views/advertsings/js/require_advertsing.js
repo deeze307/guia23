@@ -10,23 +10,23 @@ jQuery(document).ready(function() {
 
         $("#fileSubmit").dropzone({
             //paramName: "file",
-            //url: "../../media/uploaded",
+            //url: "../../media",
             url:"../../app/controller/AdvertsingsController.php",
             addRemoveLinks: true,
             parallelUploads:100,
-            maxFiles: 2,
+            maxFiles: 6,
             acceptedFiles:".jpeg,.jpg,.png",
-            autoProcessQueue: false,
+            autoProcessQueue: true,
             ulpoadMultiple: true,
             init: function() {
                 dzClosure = this; // Makes sure that 'this' is understood inside the functions below.
+                dzClosure.processQueue();
 
                 // for Dropzone to process the queue (instead of default form behavior):
-                document.getElementById("new_ads").addEventListener("click", function(e) {
+                $("#new_ads").click(function(e) {
                     // Make sure that the form isn't actually being sent.
-                    e.preventDefault();
+
                     e.stopPropagation();
-                    dzClosure.processQueue();
 
                 });
 
@@ -35,10 +35,16 @@ jQuery(document).ready(function() {
 
                 });
                 this.on("queuecomplete", function(file, responseText) {
-                    document.getElementById("formAdvertsing").submit();
+                    $("form[name='formAdvertsing']").submit();
+                    console.log("hecho");
+
                 });
 
                 this.on("addedfile", function(file) {
+                    var expires = new Date();
+                    expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+                    document.cookie = 'CATEGORIA=' + $("#categoria").val() + ';expires=' + expires.toUTCString()+ ';path=/';
+                    console.log("cookie guardada");
                     if (this.files.length) {
                         var _i, _len, _ref = this.files.slice();
                         for (_i = 0, _len = this.files.length; _i < _len - 1; _i++) {

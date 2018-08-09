@@ -14,7 +14,12 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/guia23/app/core/Core.php";
      public function getPendentReviews()
      {
          $adv = new Advertsings();
-         return $adv->requestAllPendentForAdmin();
+         return $adv->requestAllForAdmin(false);
+     }
+     public function getAllReviews()
+     {
+         $adv = new Advertsings();
+         return $adv->requestAllForAdmin(true);
      }
 
      public function getUsers()

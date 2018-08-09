@@ -1,3 +1,8 @@
+<?php
+require_once("app/controller/AdvertsingsController.php");
+$advertsingsController = new AdvertsingsController();
+$cities = $advertsingsController->getCities();
+?>
 <!DOCTYPE html>
 <html lang="Es">
 
@@ -10,10 +15,14 @@
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
-
+<style>
+    body{
+        background-image: url("images/bg-argentina-index.jpg");
+    }
+</style>
 
   </head>
 
@@ -28,49 +37,20 @@
 
     <!-- HEADER -->
     <?php require "app/controller/Main.php"; ?>
-    <?php require "views/partials/header.php"; ?>
     <!-- HEADER  -->
 
     <!-- BANNER -->
-    <?php require "views/partials/banner.php"?>
+    <div class="banner-text-index center-screen">
+        <h2><span>Bienvenido a Guia23</span></h2>
+        <p>Seleccione la ciudad que desea visitar</p>
+        <?php
+        foreach ($cities as $city)
+        {
+            echo '<a href="app/controller/Main.php?city_id='.$city->city_id.'&city_name='.$city->name.'">'.$city->name.'</a>';
+        }
+        ?>
+    </div>
     <!-- BANNER -->
-
-    <!-- Directorio Categorias -->
-    <?php require "views/partials/categorias_carousel.php"?>
-    <!-- Directorio Categorias -->
-
-    <!-- Populares -->
-    <?php require "views/partials/index/populares.php" ?>
-    <!-- Popular  -->
-
-    <!-- Most visited places -->
-    <?php require "views/partials/index/mas_visitados.php"?>
-    <!-- Most visited places -->
-
-    <!-- Counter Section -->
-    <?php require "views/partials/index/contador.php"?>
-    <!-- Counter Section -->
-
-    <!-- Best Things -->
-    <?php require "views/partials/index/mejores_cosas.php"?>
-    <!-- Best Things -->
-
-    <!-- Latest News -->
-    <?php require "views/partials/index/noticias.php"?>
-    <!-- Latest News -->
-
-    <!-- User -->
-    <?php require "views/partials/index/usuario.php"?>
-    <!-- Useer -->
-
-    <!-- Footer -->
-    <?php require "views/partials/footer.php" ?>
-    <!-- Footer -->
-
-    <!-- Popups -->
-    <?php require "views/partials/index/popups.php"?>
-    <!--Fin  Popups -->
-
 
 
     <script src="js/jquery.2.2.3.min.js"></script>

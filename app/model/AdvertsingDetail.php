@@ -75,6 +75,15 @@ class AdvertsingDetail
 
     }
 
+    public function getAdvertsingDetail($adv_id)
+    {
+        $this->db->join("cities c","ad.city_id = c.city_id");
+        $this->db->join("provinces p","ad.province_id= p.province_id");
+        return  $this->db->where('ad.advertsing_detail_id',$adv_id)
+                ->objectBuilder()
+                ->getOne('advertsing_detail ad',null,'ad.*,c.name as city_name,p.name as province_name');
+    }
+
     public function getForCategory($cat_id)
     {
         $this->db->where('category_id',$cat_id)->get('advertsing_detail');

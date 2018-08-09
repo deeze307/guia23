@@ -1,7 +1,8 @@
 <?php
-
 if(!empty($_FILES)){
-    $upload_dir = "../../media/uploaded/".$_SESSION['user_id']."/";
+    $adv_controller = new AdvertsingsController();
+    $category = $adv_controller->getCategoryName($_COOKIE["CATEGORIA"]);
+    $upload_dir = "../../images/".$category->name."/".$_SESSION['user_id']."/";
     if (!file_exists($upload_dir)) {
         mkdir($upload_dir, 0777, true);
     }
@@ -13,12 +14,18 @@ if(!empty($_FILES)){
         if(isset($_SESSION["images"]))
         {
             Logger::write("test_files","[".date('d-m-Y h:i:s')."] ".$_FILES['file']['name']);
-            Logger::write("advertsings_images","[".date('d-m-Y h:i:s')."] Imagenes importadas de usuario con id = ".$_SESSION['user_id']." |files : ".$fileName);
-            $_SESSION["images"] = $_SESSION["images"].",".$_SESSION['user_id']."/".$fileName;
+            $_SESSION["images"] = $_SESSION["images"].",".$category->name."/".$_SESSION['user_id']."/".$fileName;
+            Logger::write("advertsings_images","[".date('d-m-Y h:i:s')."] Imagenes importadas de usuario con id = ".$_SESSION['user_id']." | Categoria : ".$category->name." | files : ".$_SESSION["images"]);
         }
         else
         {
-            $_SESSION["images"] = $_SESSION['user_id']."/".$fileName;
+            $_SESSION["images"] = $category->name."/".$_SESSION['user_id']."/".$fileName;
         }
     }
+
+    if(isset($_SESSION["images"]))
+    {
+    Logger::write("debug","[".date('d-m-Y h:i:s')."] imagenes importadas: ".$_SESSION["images"]);
+    }
+
 }

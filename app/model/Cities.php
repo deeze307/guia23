@@ -53,4 +53,10 @@ class Cities
     {
 
     }
+
+    public function countAllCities()
+    {
+        $this->db->where('name','','!=')->get('cities');
+        return $this->db->count;
+    }
 }

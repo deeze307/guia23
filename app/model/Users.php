@@ -286,4 +286,10 @@ class Users
             $this->user->profile = $profile;
         }
     }
+
+    public function countAllUsersEnabled()
+    {
+        $this->db->where('enabled','T')->get('users');
+        return $this->db->count;
+    }
 }

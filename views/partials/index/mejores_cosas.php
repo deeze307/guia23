@@ -17,7 +17,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/index-rio-grande.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Rio Grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -48,7 +48,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/index-tolhuin.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -83,7 +83,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index_ushu.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -114,7 +114,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Tierra del Fuego"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>

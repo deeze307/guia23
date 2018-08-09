@@ -32,6 +32,10 @@ require_once __GUIA23__."/model/Cities.php";
 require_once __GUIA23__."/model/Advertsings.php";
 require_once __GUIA23__."/model/AdvertsingsCategories.php";
 require_once __GUIA23__."/model/AdvertsingDetail.php";
+require_once __GUIA23__."/model/AdvertsingsCounter.php";
+
+require_once __GUIA23__."/model/Valuations.php";
+
 class Core
 {
     public static $env_path;

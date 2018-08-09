@@ -19,6 +19,7 @@ class Menu
                                 ->where("root",0)
                                 ->where("title <> 'Inicio'")
                                 ->where("type","simple")
+                                ->where("enabled","T")
                                 ->orderBy("title",'ASC')
                                 ->objectBuilder()->get("menu");
 
@@ -27,12 +28,13 @@ class Menu
                                 ->where("root",0)
                                 ->where("title <> 'Inicio'")
                                 ->where("type","mega")
+                                ->where("enabled","T")
                                 ->orderBy("title",'ASC')
                                 ->objectBuilder()->get("menu");
 
         echo'
                 <li class="dropdown">
-                    <a href="http://'.$_SERVER["SERVER_NAME"]."/guia23".'"><i class="'.$obj->inicio->icon.'"></i> '.$obj->inicio->title.'</a>
+                    <a href="http://'.$_SERVER["SERVER_NAME"].'/guia23/'.$obj->inicio->link.'"><i class="'.$obj->inicio->icon.'"></i> '.$obj->inicio->title.'</a>
                 </li>';
 
         // Se imprimen los items de Menu Simple
@@ -40,6 +42,7 @@ class Menu
         {  //Repetira el siguiente echo con todos los datos de la consulta
             $obj->submenuesSimple = $db->where("app","%w%","LIKE")
                                         ->where('root',$menuSimple->menu_id)
+                                        ->where("enabled","T")
                                         ->orderBy('title','ASC')
                                         ->objectBuilder()->get('menu');
 
@@ -80,7 +83,7 @@ class Menu
                 }
                 else
                 {
-                    if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $menuSimple->permission)
+                    if(isset($_SESSION["role_id"]) && $this->chkPermission($_SESSION["role_id"],$menuSimple->permission))
                     {
                         echo '
                         <li class="dropdown">
@@ -96,6 +99,7 @@ class Menu
         {
             $obj->submenuesMega = $db->where("app","%w%","LIKE")
                                     ->where('root',$menuMega->menu_id)
+                                    ->where("enabled","T")
                                     ->orderBy('title','ASC')
                                     ->objectBuilder()->get('menu');
 
@@ -110,6 +114,7 @@ class Menu
                                     {
                                         $obj->submenuesMegaSegundoNivel = $db->where("app","%w%","LIKE")
                                                                             ->where('root',$submenuMega->menu_id)
+                                                                            ->where("enabled","T")
                                                                             ->orderBy('title','ASC')
                                                                             ->objectBuilder()->get('menu');
                                         echo'
@@ -142,5 +147,15 @@ class Menu
                 </li>';
             }
         }
+    }
+
+    private function chkPermission($user_role,$permissions)
+    {
+        $permisos_explode = explode(',',$permissions);
+        foreach($permisos_explode as $permission)
+        {
+            if($user_role == $permission){ return true;}
+        }
+        return false;
     }
 }

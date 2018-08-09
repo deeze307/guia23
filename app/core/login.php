@@ -23,7 +23,7 @@ if(isset($_POST["login"]))
         if($users->error == "")
         {
 
-            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
+            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
         }
         else
         {
@@ -58,7 +58,7 @@ else
 
         $login_social = new LoginSocial($origin);
         $login_social->login();
-        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
     }
 
 }
@@ -131,7 +131,7 @@ class LoginSocial
         session_destroy();
         $_SESSION = array();
 
-        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
+        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
     }
 
 

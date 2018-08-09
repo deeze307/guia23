@@ -48,7 +48,7 @@ elseif(isset($_SESSION["error"]))
 }
 
 //var_dump($_COOKIE);
-var_dump($_SESSION);
+//var_dump($_SESSION['ADVS_FOR_CAT']);
 ?>
 
 

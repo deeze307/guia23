@@ -43,6 +43,23 @@ class Advertsings
         }
     }
 
+    public function requestWithDetail($advertsing_id)
+    {
+        try{
+            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+            $this->db->join("cities c","ad.city_id = c.city_id");
+            $this->db->join("provinces p","ad.province_id = p.province_id");
+            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id");
+//            $this->db->join("profile pr","a.user_id = pr.user_id");
+            $adv = $this->db->where("a.advertsing_id",$advertsing_id)
+                ->objectBuilder()
+                ->getOne('advertsings a','a.*,ad.*,ac.name as category_name,c.name as city_name, p.name as province_name'/*,pr.name as first_name'*/);
+            return $adv;
+        }catch(Exception $ex){
+            return $ex->getMessage();
+        }
+    }
+
     public function requestAllForUser($user_id)
     {
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
@@ -60,18 +77,31 @@ class Advertsings
         $this->db->join("provinces p","ad.province_id = p.province_id");
         $result = $this->db->where("ad.category_id",$category_id)
             ->objectBuilder()
-            ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,ad.title,ad.description,ad.geolocation,ad.commercial_image');
+            ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,ad.category_id,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image');
         return $result;
     }
 
-    public function requestAllPendentForAdmin()
+    public function requestAllForAdmin($allReviews = false)
     {
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
         $this->db->join("plan p","ad.plan_id = p.plan_id");
         $this->db->join("users u","a.user_id = u.user_id");
-        $result = $this->db->where("a.enabled","F")
-            ->objectBuilder()
-            ->get('advertsings a',null,'a.*,u.username,ad.title,ad.plan_id,p.duration');
+        $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id");
+        if(!$allReviews)
+        {
+            $result = $this->db->where("a.enabled","F")
+                ->orderBy('a.advertsing_id','DESC')
+                ->objectBuilder()
+                ->get('advertsings a',null,'a.*,u.username,ad.title,ad.plan_id,ac.name as cat_name,p.duration');
+        }
+        else
+        {
+            $result = $this->db
+                ->orderBy('a.advertsing_id','DESC')
+                ->objectBuilder()
+                ->get('advertsings a',null,'a.*,u.username,ad.title,ad.plan_id,ac.name as cat_name,p.duration');
+        }
+
         return $result;
     }
 
@@ -83,8 +113,23 @@ class Advertsings
         return $result;
     }
 
-    public function update()
+    public function toggleEnableAdvertsing($adv_id,$toggle)
     {
+        try
+        {
+            $this->db->where('advertsing_id',$adv_id);
+            $update = $this->db->update('advertsings',['enabled'=>$toggle]);
+            if($update)
+            {
+                return 'exito';
+            }
+            else
+            {
+                return $this->db->getLastError();
+            }
+        }
+        catch(Exception $ex)
+        {return $ex->getMessage();}
 
 
     }
@@ -108,16 +153,21 @@ class Advertsings
 
     public function delete($advertsing_id)
     {
-        $this->db->where('advertsing_id',$advertsing_id);
-        $result = $this->db->delete('advertsings');
-        if($result)
-        {
-            return true;
+        try{
+            $this->db->where('advertsing_id',$advertsing_id);
+            $result = $this->db->delete('advertsings');
+            if($result)
+            {
+                return "exito";
+            }
+            else
+            {
+                return $this->db->getLastError();
+            }
+        }catch(Exception $ex){
+            return $ex->getMessage();
         }
-        else
-        {
-            return false;
-        }
+
     }
 
     public function requestLastAdded()
@@ -129,6 +179,26 @@ class Advertsings
             $adv = $this->db->objectBuilder()->get('advertsings a',5,'a.*,ad.*,ac.*');
             return $adv;
         }catch(Exception $ex){
+            return $ex->getMessage();
+        }
+    }
+
+    public function countAllEnabled()
+    {
+        $this->db->where('enabled','T')->get('advertsings');
+        return $this->db->count;
+    }
+
+    public function requestPointsOfInterest()
+    {
+        try{
+            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
+            $this->db->where('a.enabled','T')->where('ac.permission','1');
+            $points = $this->db->objectBuilder()->get('advertsings a',null,'a.advertsing_id,a.advertsing_detail_id,a.enabled,ad.*,(SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas');
+            return $points;
+        }
+        catch(Exception $ex){
             return $ex->getMessage();
         }
     }

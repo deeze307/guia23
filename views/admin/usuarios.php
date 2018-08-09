@@ -9,7 +9,7 @@ if(!isset($_SESSION['role_id']) || $_SESSION["role_id"] != 1)
 
 require_once("../../app/controller/AdminController.php");
 $admin = new AdminController();
-$pendents = $admin->getPendentReviews();
+$pendentsCounter = $admin->getPendentReviews();
 $users = $admin->getUsers();
 
 ?>

@@ -78,7 +78,7 @@ elseif(isset($_SESSION["error"]))
                             </div>
                         </div>
                     </div>
-<!--                    --><?php //var_dump($advertsings);?>
+                    <?php //var_dump($advertsings);?>
                     <!-- /.box-header -->
                     <div class="box-body table-responsive no-padding">
                         <?php

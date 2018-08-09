@@ -15,12 +15,12 @@ if(isset($_COOKIE["PLAN"]))
     if(isset($_COOKIE["EDIT"]))
     {
         $adv_data = $adv->editAdvertsing($_COOKIE["ADV_ID"]);
+        setcookie("EDIT","true",time()-3600,"/");
     }
 }
 else {
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
+    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
 }
-
 ?>
 
 
@@ -38,12 +38,16 @@ else {
 
     <link rel="shortcut icon" href="../../images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
     <![endif]-->
 
+    <style>
 
-
+        #map {width: 350px;height: 450px;}
+        #floating-panel { position: absolute;bottom: 310px;left: 0%;z-index: 0;background-color: #fff;padding: 0px;border: 1px solid #999;text-align: left;font-family: 'Roboto','sans-serif';line-height: 30px;padding-left: 0px;}
+        #coords{ width: 345px;} #address { width: 275px;}
+    </style>
 
 </head>
 
@@ -60,6 +64,13 @@ else {
         echo "<div class='label-danger text-center' style='color:white;'>". $_SESSION['error']."</div>";
         unset($_SESSION["error"]);
     }
+
+
+    if(isset($_SESSION["images"]))
+    {
+        unset($_SESSION["images"]);
+    }
+
 ?>
 
 
@@ -110,17 +121,31 @@ else {
                                         </label>
                                         <div class="single-query form-group">
                                             <div class="intro">
-                                                <select name="categoria" class="form-control" required>
+                                                <select id="categoria" name="categoria" class="form-control" required>
                                                     <option class="active" value="">Seleccione la Categoria...</option>
                                                     <?php
                                                         foreach($adv_categories as $category) {
                                                             if((isset($adv_data)) && ($adv_data->category_id == $category->advertsings_categories_id))
                                                             {
-                                                                echo "<option value='".$category->advertsings_categories_id."' selected='selected'>".$category->name."</option>";
+                                                                if(strpos($category->permission, 1) !== false  || strpos($category->permission, 2) !== false )
+                                                                {
+                                                                    echo "<option value='".$category->advertsings_categories_id."' selected='selected'>".$category->name."  (Admin)</option>";
+                                                                }
+                                                                else
+                                                                {
+                                                                    echo "<option value='".$category->advertsings_categories_id."' selected='selected'>".$category->name."</option>";
+                                                                }
                                                             }
                                                             else
                                                             {
-                                                                echo "<option value='".$category->advertsings_categories_id."'>".$category->name."</option>";
+                                                                if(strpos($category->permission, 1) !== false  || strpos($category->permission, 2) !== false )
+                                                                {
+                                                                    echo "<option value='".$category->advertsings_categories_id."'>".$category->name."  (Admin)</option>";
+                                                                }
+                                                                else
+                                                                {
+                                                                    echo "<option value='".$category->advertsings_categories_id."'>".$category->name."</option>";
+                                                                }
                                                             }
 
                                                         }
@@ -187,7 +212,7 @@ else {
                                     <div class="form-group">
                                         <label> <span>Telefono</span>
                                         </label>
-                                        <input type="number" name="telefono" class="form-control" placeholder="Número de telefono" value="<?php if(isset($adv_data->phone)){echo $adv_data->phone;} ?>" required>
+                                        <input type="number" min="0" name="telefono" class="form-control" placeholder="Número de telefono" value="<?php if(isset($adv_data->phone)){echo $adv_data->phone;} ?>" required>
                                     </div>
                                 </div>
 
@@ -212,7 +237,7 @@ else {
                                             <div class="form-group">
                                                 <label><span>Latitud </span>
                                                 </label>
-                                                <input type="number" name="latitud" class="form-control" placeholder="-54.792645" value="<?php if(isset($adv_data->latitude)){echo $adv_data->latitude;} ?>">
+                                                <input type="text" name="latitud" class="form-control" placeholder="-54.792645" value="<?php if(isset($adv_data->latitude)){echo $adv_data->latitude;} ?>">
                                             </div>
                                         </div>
 
@@ -220,7 +245,7 @@ else {
                                             <div class="form-group">
                                                 <label> <span>Longitud</span>
                                                 </label>
-                                                <input type="number" name="longitud" class="form-control" placeholder="-68.231501" value="<?php if(isset($adv_data->longitude)){echo $adv_data->longitude;} ?>">
+                                                <input type="text" name="longitud" class="form-control" placeholder="-68.231501" value="<?php if(isset($adv_data->longitude)){echo $adv_data->longitude;} ?>">
                                             </div>
                                         </div>
 
@@ -252,13 +277,119 @@ else {
                                     </div>
 
                                 </div>
+
                             </div>
 
+                            <!----Mapa--->
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div id="finddo-wrapper" >
+
+                            <div id="map"></div>
+                                    <div id="floating-panel">
+                                        <input id="address" type="textbox" value="Tierra del Fuego">
+                                        <input id="submit" type="button" value="Buscar">
+                                        <input id="coords" type="text" />
+                                    </div>
+
+                            <script>
+
+                                var geocoder;         //Para geolocalizar
+                                var infowindow;      //Ventana de info
+                                var marker;          //variable del marcador
+                                var coords = {};    //coordenadas obtenidas con la geolocalización
+
+                                //Funcion principal
+                                initMap = function ()
+                                {
+
+                                    //uso la API para geolocalizar
+                                    navigator.geolocation.getCurrentPosition(
+                                        function (position){
+                                            coords =  {
+                                                lng: position.coords.longitude,
+                                                lat: position.coords.latitude
+                                            };
+                                            setMapa(coords);  //paso las coordenadas al metodo para crear el mapa
+
+
+                                        },function(error){console.log(error);});
+
+                                }
+
+                                function setMapa (coords)
+                                {
+                                    //Se crea una nueva instancia del objeto mapa
+                                    var map = new google.maps.Map(document.getElementById('map'),
+                                        {
+                                            zoom: 6,
+                                            center:new google.maps.LatLng(coords.lat,coords.lng),
+
+                                        });
+                                    var geocoder = new google.maps.Geocoder();
+                                    var infowindow = new google.maps.InfoWindow;
+                                    document.getElementById('submit').addEventListener('click', function() {
+                                        geocodeAddress(geocoder,map,infowindow);
+                                    });
+                                    function geocodeAddress(geocoder, map, infowindow) {
+                                        var address = document.getElementById('address').value;
+                                        geocoder.geocode({'address': address}, function(results, status) {
+                                            if (status === 'OK') {
+                                                map.setCenter(results[0].geometry.location);
+                                                var marker = new google.maps.Marker({
+                                                    map: map,
+                                                    position: results[0].geometry.location,
+                                                    title:'Guia23',
+                                                    draggable: true
+
+                                                });
+                                                infowindow.setContent(results[0].formatted_address);
+                                                infowindow.open(new google.maps.LatLng(coords.lat,coords.lng), marker);
+
+                                                marker.addListener('click', toggleBounce);
+                                                marker.addListener('click',)
+                                                map.setZoom(15);
+                                                map.setCenter(marker.getPosition());
+                                                marker.addListener( 'dragend', function (event)
+                                                {
+
+                                                    document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
+
+                                                });
+                                                //animacion
+                                                function toggleBounce() {
+                                                    if (marker.getAnimation() !== null) {
+                                                        marker.setAnimation(null);
+                                                    } else {
+                                                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                                                        document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
+
+                                                    }
+                                                }
+
+                                            } else {
+                                                alert('No se pudo geolocalizar : ' + status);
+                                            }
+                                        });
+                                    }
+                                }
+
+                                // Carga de la libreria de google maps
+
+                            </script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=initMap">
+
+                            </script>
+
+                            <!----Mapa--->
+  
                         </div>
 
                     </div>
                 </div>
             </div>
+
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="add-listing-bg">
@@ -404,12 +535,6 @@ else {
                                                         <input name="file" type="file" multiple>
                                                         <div class="dz-default dz-message"><span>Haga Click para subir las imágenes</span></div>
                                                     </div>
-<!--                                                    <form action="../../app/controller/UploadFile.php" >-->
-<!--                                                        <div class="dz-message needsclick">-->
-<!--                                                            <strong>Drop files here or click to upload.</strong><br />-->
-<!--                                                            <span class="note needsclick">(This is just a demo. The selected files are <strong>not</strong> actually uploaded.)</span>-->
-<!--                                                        </div>-->
-<!--                                                    </form>-->
                                                 </div>
                                                 </div>
 
@@ -426,7 +551,7 @@ else {
                                     <div class="row p_t40">
                                         <div class="col-md-9 col-md-9 col-sm-12">
                                             <div class="form-group">
-                                                <p>Al hacer Click en "Enviar y Pagar" acepta los <a href="#" class="link">Terminos y Condiciones.</a>
+                                                <p>Al hacer Click en "<strong>Enviar y Pagar</strong>" acepta los <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/T&Condiciones.php" class="link"><strong>Terminos y Condiciones</strong>.</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -442,7 +567,7 @@ else {
                                                 {
                                                     unset($_COOKIE['EDIT']);
                                                     echo '<button type="submit" id ="upd_ad" name="upd_ad">Guardar Cambios</button>';
-                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_detail_id.'">';
+                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_detail_id.'"/>';
                                                 }
                                                 else
                                                 {

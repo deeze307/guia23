@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/color-green.css">
     <link rel="shortcut icon" href="../../images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -34,6 +34,7 @@
     <?php
     $plan_features = new Plan();
     $ads = $plan_features->request("all");
+//    unset($_COOKIE["EDIT"]);
     ?>
     <section class="p_t70 p_b70 bg_lightgry">
         <form class="registerd" action="../../app/controller/AdvertsingsController.php" method="post" data-ajax="false">

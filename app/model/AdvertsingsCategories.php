@@ -17,13 +17,29 @@ class AdvertsingsCategories
 
     }
 
-    public function request($adv_cat_id="")
+    public function request($for_widget=false,$adv_cat_id="")
     {
         if($adv_cat_id=="")
         {
-            $result = $this->db->where('enabled','1')
-                            ->objectBuilder()
-                            ->get('advertsings_categories');
+            $this->db->where('enabled','1');
+            if(isset($_SESSION["role_id"]))
+            {
+                if($_SESSION["role_id"] == 3 )
+                {
+                    if(!$for_widget)
+                    {
+                        $this->db->where('permission',NULL,'IS');
+                    }
+                }
+            }
+            else
+            {
+                if(!$for_widget)
+                {
+                    $this->db->where('permission',NULL,'IS');
+                }
+            }
+            $result = $this->db->objectBuilder()->get('advertsings_categories');
         }
         else
         {
@@ -47,7 +63,7 @@ class AdvertsingsCategories
 
     public function countAds()
     {
-        $categories = self::request();
+        $categories = self::request(true,"");
         $adDetails = new AdvertsingDetail();
         $arr = Array();
         foreach($categories as $cat)
@@ -64,5 +80,11 @@ class AdvertsingsCategories
                             ->objectBuilder()
                             ->getOne('advertsings_categories','advertsings_categories_id');
         return $result->advertsings_categories_id;
+    }
+
+    public function countCategories()
+    {
+        $this->db->where('enabled','1')->get('advertsings_categories');
+        return $this->db->count;
     }
 }

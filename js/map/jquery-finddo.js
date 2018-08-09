@@ -459,7 +459,7 @@
                     }
                 });
                 num_places = i;
-                $('#finddo-results-num').html(i+ 'Resultados');
+                $('#finddo-results-num').html(i+ ' Resultados');
             }
 
             if(!Array.isArray(s.places)){

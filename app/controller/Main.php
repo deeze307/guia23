@@ -2,13 +2,20 @@
 
 require_once $_SERVER["DOCUMENT_ROOT"]."/guia23/app/core/Core.php";
 
+if (!isset($_SESSION))
+{ session_start(); }
+
+if(isset($_GET['city_id']))
+{
+    $_SESSION['selected_city_id'] = $_GET['city_id'];
+    $_SESSION['selected_city_name'] = $_GET['city_name'];
+    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+}
+
  class Main
 {
      public function __construct()
      {
-//         $_SESSION["username"] = "dmaidana";
-//         $_SESSION["name"] = "Diego";
-//         $_SESSION["surname"] = "Maidana";
      }
 
      public function getGeneraData()

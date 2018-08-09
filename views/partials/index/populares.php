@@ -1,4 +1,10 @@
-<?php ?>
+<?php
+//require_once('../../../app/core/Core.php');
+
+$ad_counter = new AdvertsingsCounter();
+$populares = $ad_counter->mostVisited();
+//var_dump($populares);
+?>
 <section id="popular-listing" class="p_t70 over-hide-bottom">
     <div class="container">
         <div class="row">
@@ -35,224 +41,276 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="profile">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
+                            <?php
+                            try{
+                                foreach($populares as $popular)
+                                {
+                                    $image = explode(',',$popular->commercial_image);
+                                    if($image[0] != "")
+                                    {
+                                        $image = $image[0];
+                                    }
+                                    else
+                                    {
+                                        $image = '1@-small.png';
+                                    }
+
+                                    // Valoraciones
+                                    switch($popular->valoraciones)
+                                    {
+                                        case '0':
+                                            $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '1':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                        case '2':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '3':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '4':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '5':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                            break;
+                                    }
+
+                                    echo'
+                                
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20151107_131413.jpg" alt="image" width="270" height="142">
+                                    <div class="popular-listing-img_home_profile">
+                                        <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image" width="262" height="142">
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="http://'. $_SERVER['SERVER_NAME'].'/guia23/views/listing/listing.php?cat_id='.$popular->category_id.'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]?>/guia23/views/Restaurantes.php">Restaurantes</a></h3>
-                                        <p>Descripcion</p>
+                                        <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
                                     </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                    <div class="popular-listing-add"> 
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$popular->city_name.'</span>
+                                        <div class="pull-right">
+                                            '.$valoracion.'
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20151107_131405.jpg" alt="image" width="270" height="142">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Turismo.php">Turismo</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20160206_165440.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20171008_173430_001.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Salud-Belleza.php">Peluqueria</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Tolhuin</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20160206_165238.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Otros Servicios.php">Shoping</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/20171017_192758.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Vehiculos.php">Agencias</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
+                                
+                                ';
+                                }
+                            }
+                            catch(Exception $ex){
+                                echo $ex->getMessage();
+                            }
+
+                            ?>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="home">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php
+                            try{
+                                foreach($populares as $popular)
+                                {
+                                    $image = explode(',',$popular->commercial_image);
+                                    if($image[0] != "")
+                                    {
+                                        $image = $image[0];
+                                    }
+                                    else
+                                    {
+                                        $image = '1@.png';
+                                    }
+
+                                    // Valoraciones
+                                    switch($popular->valoraciones)
+                                    {
+                                        case '0':
+                                            $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '1':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                        case '2':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '3':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '4':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '5':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                            break;
+                                    }
+
+                                    echo '
+                                
+                                <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/popular-3-1.jpg" alt="image">
+                                    <div class="popular-listing-img_home_home">
+                                        <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image">
                                             <figcaption>
                                                 <ul>
                                                     <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                    <li><a href="http://'. $_SERVER['SERVER_NAME'].'/guia23/views/listing/listing.php?cat_id='.$popular->category_id.'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                     <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                 </ul>
                                             </figcaption>
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Hoteles.php">Hoteles</a></h3>
-                                        <p>Descripcion.</p>
+                                        <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>                                    </div>
+                                    <div class="popular-listing-add"> 
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$popular->city_name.'</span> 
+                                        <div class="pull-right">
+                                            '.$valoracion.'
+                                        </div>
                                     </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/popular-3-2.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/popular-3-3.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Salud-Belleza.php">Farmacias</a></h3>
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="popular-listing-box">
-                                    <div class="popular-listing-img">
-                                        <figure class="effect-ming"> <img src="images/popular-3-4.jpg" alt="image">
-                                            <figcaption>
-                                                <ul>
-                                                    <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                    <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                </ul>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="popular-listing-detail">
-                                        <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Museos.php"></a></h3>Casa Beban
-                                        <p>Descripcion.</p>
-                                    </div>
-                                    <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                </div>
-                            </div>
+                                
+                                ';
+                                }
+                            }
+                            catch(Exception $ex){
+                                echo $ex->getMessage();
+                            }
+
+                            ?>
                         </div>
                     </div>
+
                     <div role="tabpanel" class="tab-pane fade" id="messages">
-                        <div class="row">
+                        <?php
+                        try{
+                            foreach($populares as $popular)
+                            {
+                                $image = explode(',',$popular->commercial_image);
+                                if($image[0] != "")
+                                {
+                                    $image = $image[0];
+                                }
+                                else
+                                {
+                                    $image = '1@.png';
+                                }
+
+                                // Valoraciones
+                                switch($popular->valoraciones)
+                                {
+                                    case '0':
+                                        $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '1':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                    case '2':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '3':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '4':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '5':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                        break;
+                                }
+
+                                echo'
+                            
+                            <div class="row">
                             <div class="col-md-12">
                                 <div class="popular-listing-box">
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-xs-12">
-                                            <div class="popular-listing-img">
-                                                <figure class="effect-ming"> <img src="images/popular-3-1.jpg" alt="image">
+                                            <div class="popular-listing-img_home_message">
+                                                <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image">
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="http://'. $_SERVER['SERVER_NAME'].'/guia23/views/listing/listing.php?cat_id='.$popular->category_id.'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -260,100 +318,33 @@
                                             </div>
                                         </div>
                                         <div class="col-md-7 col-sm-7 col-xs-12">
+                                       
                                             <div class="popular-listing-detail">
-                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Restaurantes.php">Restaurantes</a></h3>
-                                                <p>Descripcion.</p>
+                                                <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
+                                                <p>'.$popular->description.'</p>
                                             </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Rio Grande</span> <span><img src="images/stars.png" alt="image"></span> </div>
+                                            <div class="popular-listing-add"> 
+                                                <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$popular->city_name.'</span>
+                                                <div class="pull-right">
+                                                    '.$valoracion.'
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="popular-listing-box">
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-5 col-xs-12">
-                                            <div class="popular-listing-img">
-                                                <figure class="effect-ming"> <img src="images/popular-3-2.jpg" alt="image">
-                                                    <figcaption>
-                                                        <ul>
-                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                        </ul>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 col-sm-7 col-xs-12">
-                                            <div class="popular-listing-detail">
-                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Deportes.php">Deportes</a></h3>
-                                                <p>Descripcion.</p>
-                                            </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia </span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="popular-listing-box">
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-5 col-xs-12">
-                                            <div class="popular-listing-img">
-                                                <figure class="effect-ming"> <img src="images/popular-3-3.jpg" alt="image">
-                                                    <figcaption>
-                                                        <ul>
-                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                        </ul>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 col-sm-7 col-xs-12">
-                                            <div class="popular-listing-detail">
-                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Profesionales.php">Profesionales</a></h3>
-                                                <p>Descripcion.</p>
-                                            </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Tolhuin</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="popular-listing-box">
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-5 col-xs-12">
-                                            <div class="popular-listing-img">
-                                                <figure class="effect-ming"> <img src="images/popular-3-4.jpg" alt="image">
-                                                    <figcaption>
-                                                        <ul>
-                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
-                                                        </ul>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 col-sm-7 col-xs-12">
-                                            <div class="popular-listing-detail">
-                                                <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/Museos.php">Museos</a></h3>
-                                                <p>Descripcion.</p>
-                                            </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            
+                            ';
+                            }
+                        }
+                        catch(Exception $ex){
+                            echo $ex->getMessage();
+                        }
+
+                        ?>
+
+
                     </div>
                 </div>
             </div>

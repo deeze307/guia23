@@ -2,7 +2,7 @@
 if (!isset($_SESSION))
 { session_start(); }
 
-if(!isset($_SESSION['role_id']) || $_SESSION["role_id"] != 1)
+if(!isset($_SESSION['role_id']) || ($_SESSION["role_id"] != 1 && $_SESSION["role_id"] != 2))
 {
     header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
 }
@@ -15,7 +15,7 @@ $cities = $profile_controller ->getCities();
 
 require_once("../../app/controller/AdminController.php");
 $admin = new AdminController();
-$pendents = $admin->getPendentReviews();
+$pendentsCounter = $admin->getPendentReviews();
 ?>
 <!DOCTYPE html>
 <html lang="Es">

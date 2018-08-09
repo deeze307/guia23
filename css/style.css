@@ -84,6 +84,12 @@ img {
   height: auto;
   width:100%;
 }
+
+.disabled {
+    pointer-events:none; /*This makes it not clickable*/
+    opacity:0.6;         /*This grays it out to look disabled*/
+}
+
 /*forms*/
 
 ::-webkit-input-placeholder {
@@ -818,6 +824,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .banner-text {
   margin:30% 0;
 }
+
+.banner-text-index {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
 #banner-2 .map-data {
 	position: absolute !important;
 	z-index: 20;
@@ -861,18 +881,42 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.banner-text-index > h2 {
+    color: #1fb7a6;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 .banner-text > p {
   color: #fff;
   font-size: 26px;
   letter-spacing: 1px;
   padding: 20px 40px 30px 0;
 }
+.banner-text-index > p {
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 30px 0 20px 0;
+}
+
 .banner-text > a {
   border: 1px solid #fff;
   color: #fff;
   display: inline-block;
   font-size: 18px;
   padding: 15px 60px;
+}
+
+.banner-text-index > a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    width: 200px;
+    padding: 15px 0;
+    margin:5px;
 }
 /* Select Demo*/
 .animated-bg {
@@ -1274,10 +1318,40 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .best-things-details{
     position: relative;
     overflow:hidden;
-    width: 400px;
-    height: 300px;
+    width: 470px;
+    height: 248px;
 
 }
+
+.popular-listing-img_points_of_interest{
+    position: relative;
+    overflow:hidden;
+    width: 383px;
+    height: 248px;
+
+}
+
+.popular-listing-img_home_profile{
+    position: relative;
+    overflow:hidden;
+    width: 262px;
+    height: 170px;
+}
+
+.popular-listing-img_home_home{
+    position: relative;
+    overflow:hidden;
+    width: 408px;
+    height: 250px;
+}
+
+.popular-listing-img_home_message{
+    position: relative;
+    overflow:hidden;
+    width: 370px;
+    height: 250px;
+}
+
 figure.effect-ming {
 	background: #030c17;
 }
@@ -1353,9 +1427,10 @@ figure.effect-ming ul {
 .popular-listing-detail h3 a {
   color: #3a2f2f;
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+    height: 70px;
 }
 .popular-listing-detail {
   margin: 15px 20px 0;
@@ -2559,6 +2634,15 @@ footer#footer::after {
 .social-register-icon li:nth-child(3) a{
 	background:#24a9e6;
 }
+.social-register-icon li:nth-child(4) a{
+    background:#ff513f;
+}
+.social-register-icon li:nth-child(5) a{
+    background: #10368f;
+}
+.social-register-icon li:nth-child(6) a{
+    background:#fa4033;
+}
 /* ================================= */
 /* ---------- Profile Css ---------- */
 /* ================================= */
@@ -2660,7 +2744,7 @@ footer#footer::after {
   font-size: 13px;
   text-transform:uppercase;
 }
-26.dropzone.profile-picture.dz-started > img {
+.dropzone.profile-picture.dz-started > img {
   display: none;
 }
 .dropzone.profile-picture .dz-image-preview {
@@ -3111,6 +3195,11 @@ ul.day-open li:nth-child(3){
 	cursor: pointer;
 	margin-bottom:10px;
 }
+
+.rating .stars .checked {
+    color: #1fb7a6;
+}
+
 .add-listing-bg.heading p {
 	padding: 20px 0 0 0;
 }

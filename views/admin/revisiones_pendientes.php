@@ -2,14 +2,15 @@
 if (!isset($_SESSION))
 { session_start(); }
 
-if(!isset($_SESSION['role_id']) || $_SESSION["role_id"] != 1)
+if(!isset($_SESSION['role_id']) || ($_SESSION["role_id"] != 1 && $_SESSION["role_id"] != 2))
 {
     header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
 }
 
 require_once("../../app/controller/AdminController.php");
 $admin = new AdminController();
-$pendents = $admin->getPendentReviews();
+$pendentsCounter = $admin->getPendentReviews();
+$pendents = $admin->getAllReviews();
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -30,19 +31,6 @@ $pendents = $admin->getPendentReviews();
 </head>
 
 <body>
-
-<?php
-if(isset($_SESSION["message"]))
-{
-    echo "<div class='label-success text-center' style='color:white;'>". $_SESSION['message']."</div>";
-    unset($_SESSION["message"]);
-}
-elseif(isset($_SESSION["error"]))
-{
-    echo "<div class='label-danger text-center' style='color:white;'>". $_SESSION['error']."</div>";
-    unset($_SESSION["error"]);
-}
-?>
 
 <!-- LOADER -->
 <div class="loader">
@@ -72,6 +60,18 @@ elseif(isset($_SESSION["error"]))
     </div>
 </section>
 <!-- Inner Banner -->
+<?php
+if(isset($_SESSION["message"]))
+{
+    echo "<div class='label-success text-center' style='color:white;'>". $_SESSION['message']."</div>";
+    unset($_SESSION["message"]);
+}
+elseif(isset($_SESSION["error"]))
+{
+    echo "<div class='label-danger text-center' style='color:white;'>". $_SESSION['error']."</div>";
+    unset($_SESSION["error"]);
+}
+?>
 <!-- Profile -->
 <section id="profile" class="p_b70 p_t70 bg_lightgry">
 
@@ -85,22 +85,22 @@ elseif(isset($_SESSION["error"]))
 
             ?>
 
-            <form class="registerd" action="../../app/controller/AdminController.php" method="post" data-ajax="false">
-
                 <div class="col-md-9 col-sm-9 col-xs-12">
 
                     <div class="profile-login-bg">
-                        <h2><span><i class="fa fa-eye"></i></span> <span>Revisiones Pendientes (<?php echo count($pendents)?>) </span></h2>
+                        <h2><span><i class="fa fa-eye"></i></span> <span>Revisiones Pendientes (<?php echo count($pendentsCounter)?>) </span></h2>
 
                             <div class="box-body table-responsive no-padding">
                                 <?php
                                 if(count($pendents) > 0)
                                 {
+//                                    var_dump($pendents);
                                     echo '<table class="table table-hover">';
                                     echo '<tr>';
                                     echo '<th>#ID</th>';
                                     echo '<th>Titulo</th>';
                                     echo '<th>Usuario</th>';
+                                    echo '<th>Categoría</th>';
                                     echo '</tr>';
 
                                     foreach($pendents as $adv)
@@ -109,7 +109,17 @@ elseif(isset($_SESSION["error"]))
                                         echo "<td>$adv->advertsing_id</td>";
                                         echo "<td>$adv->title</td>";
                                         echo "<td>$adv->username</td>";
-                                        echo "<td><button class='btn btn-xs btn-success' onclick='enable_advertsing(" . $adv->advertsing_id . ",". $adv->plan_id .")'>Habilitar</button></td>";
+                                        echo "<td>$adv->cat_name</td>";
+                                        if($adv->enabled == "T")
+                                        {
+                                            echo "<td><button class='btn btn-xs btn-warning' onclick='handle_advertsing(" . $adv->advertsing_id . ",`F`)'>Deshabilitar</button></td>";
+                                        }
+                                        else
+                                        {
+                                            echo "<td><button class='btn btn-xs btn-success' id='toggle' onclick='handle_advertsing(" . $adv->advertsing_id . ",`T`)'>Habilitar</button></td>";
+                                        }
+                                        echo "<td><button class='btn btn-xs btn-info' onclick='view_advertsing(" . $adv->advertsing_id . ",`" . $adv->cat_name . "`)'><span><i class='fa fa-eye'></i></span></button></td>";
+                                        echo "<td><button class='btn btn-xs btn-default' onclick='edit_advertsing(" . $adv->advertsing_id . "," . $adv->plan_id . ")'><span><i class='fa fa-pencil'></button></td>";
                                         echo "<td><button class='btn btn-xs btn-danger' onclick='delete_advertsing(" . $adv->advertsing_id . ")'>Eliminar</button></td>";
                                         echo "</tr>";
                                     }
@@ -137,6 +147,8 @@ elseif(isset($_SESSION["error"]))
 <script src="../../js/jquery.appear.js"></script>
 <script src="../../js/zelect.js"></script>
 <script src="../../js/functions.js"></script>
+<script src="js/admin.js"></script>
+
 </body>
 
 </html>

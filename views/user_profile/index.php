@@ -1,7 +1,9 @@
 <?php
 if (!isset($_SESSION))
 { session_start(); }
+
 require_once("../../app/controller/ProfileController.php");
+
 $profile_controller = new ProfileController();
 $profile = $profile_controller->getFullProfile($_SESSION["user_id"]);
 
