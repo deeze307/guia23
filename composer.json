@@ -1,0 +1,11 @@
+{
+    "name": "Guia23",
+    "description": "Guia23",
+    "keywords": ["framework", "php"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "hybridauth/hybridauth" : "~3.0",
+        "phpmailer/phpmailer": "~6.0"
+    }
+}

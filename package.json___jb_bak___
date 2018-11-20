@@ -1,0 +1,9 @@
+{
+  "name": "Guia23",
+  "version": "1.0.0",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "hybridauth/hybridauth" : "~3.0"
+  }
+}

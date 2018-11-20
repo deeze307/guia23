@@ -1,0 +1,123 @@
+[{
+	"id"    :  1,
+	"title" : "Escuela Provincial N1 Domingo F. Sarmiento",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2 , "bedRoom":2, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/Escuela1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "../listing-details-1.php ",
+	"lon"   : -68.3070901,
+	"lat"   : -54.80786734
+},{
+        "id"    :  2,
+	"title" : "Museo del Fin del Mundo",
+	"description" : "texto : 960-DB4436",
+	"info"  : {"price": "00", "bathRoom":2 , "bedRoom": 2 , "perimeter": 130, "room": 4},
+	"img"   : "images/Museos/museo1.jpg",
+	"propertyType" : "museo",
+	"url"   : "../listing-details.php ",
+	"lon"   : -68.30001695,
+	"lat"   : -54.80607416
+},{
+	"id"    :  3,
+	"title" : "Museo de la Legislatura Fueguina",
+	"description" : " texto : 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 2 , "perimeter":130 , "room": 4},
+	"img"   : "images/Museos/museo2.jpg",
+	"propertyType" : "museo",
+	"url"   : " ../listing-details.php",
+	"lon"   : -68.30406189,
+	"lat"   : -54.80712612
+},{
+	"id"    :  4,
+	"title" : "Museo Maritimo y del Presidio",
+	"description" : "Texto : 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/Museos/museo3.jpg",
+	"propertyType" : "museo",
+	"url"   : "../listing-details.php  ",
+	"lon"   : -68.29790689,
+	"lat"   : -54.80347777
+},{
+	
+	"id"    :  5,
+	"title" : "IPES Florentino Ameguino",
+	"description" : " Descripcion Texto: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/IPES1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "../listing-details.php ",
+	"lon"   : -68.30184639,
+	"lat"   : -54.80467744
+},{
+	"id"    :  6,
+	"title" : "Escuela N15",
+	"description": "Descripcion Texto: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "../../images/Escuelas/escuela15.jpg",
+	"propertyType" : "escuela",
+	"url"   : "../listing-details.php ",
+	"lon"   : -68.26845946,
+	"lat"   : -54.7913639
+},{
+	"id"    :  7,
+	"title" : "Museo Fueguino de Arte",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "../../images/Museos/museorg1.jpg",
+	"propertyType" : "museo",
+	"url"   : "#",
+	"lon"   : -67.6973441,
+	"lat"   : -53.7825191
+},{
+	"id"    :  8,
+	"title" : "Colegio T�cnico Olga Bronzovich de Arko",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "../../images/Escuelas/epet1.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.324435,
+	"lat"   : -54.8092205
+},{
+	 "id"    :  9,
+	"title" : "Escuela 13 Almirante Guillermo Brown",
+	"description" : "Texto: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/escuela13.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -68.3263919,
+	"lat"   : -54.8103811
+},{
+	"id"    :  10,
+	"title" : "UCES-UTN Rio Grande",
+	"description" : "Uces Sucursal Rio Grande convenio UTN-UCES: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "../../images/Escuelas/utn-uces-rg.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -67.72778392,
+	"lat"   : -53.78592242
+},{
+	"id"    :  11,
+	"title" : "Escuela N10 Gral. Manuel Belgrano",
+	"description" : "Escuela N10 Gral. Manuel Belgrano - Antartida Argentina 950 Rio Grande Tierra del Fuego: 960-DB4436",
+	"info"  : {"price": "00", "bathRoom": 12, "bedRoom": 460, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/escuela10-rg.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -67.69497514,
+	"lat"   : -53.79313517
+},{
+	"id"    :  12,
+	"title" : "Escuela 42 Grabriela Mistral",
+	"description": "Descripcion: 503-DB4436",
+	"info"  : {"price": "00", "bathRoom": 2, "bedRoom": 3, "perimeter": 130, "room": 4},
+	"img"   : "images/Escuelas/escuela42-rg.jpg",
+	"propertyType" : "escuela",
+	"url"   : "#",
+	"lon"   : -67.75972366,
+	"lat"   : -53.80406601
+
+}]
