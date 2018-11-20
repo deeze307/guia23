@@ -9,10 +9,9 @@ jQuery(document).ready(function() {
 
 
         $("#fileSubmit").dropzone({
-            //paramName: "file",
-            //url: "../../media",
             url:"../../app/controller/AdvertsingsController.php",
             addRemoveLinks: true,
+            maxFilesize:3, //Mb
             parallelUploads:100,
             maxFiles: 6,
             acceptedFiles:".jpeg,.jpg,.png",
@@ -40,6 +39,11 @@ jQuery(document).ready(function() {
 
                 });
 
+                // Cuando se supera el tamaño máximo del archivo.
+                this.on("maxThumbnailFilesize", function(file){
+                   file.rejectDimensions("Imagen demasiado pesada");
+                });
+
                 this.on("addedfile", function(file) {
                     var expires = new Date();
                     expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
@@ -54,6 +58,20 @@ jQuery(document).ready(function() {
                         }
                     }
                 });
+
+                this.on("thumbnail", function(file) {
+                    console.log(file);
+                    if (file.width >= 1024 || file.height >= 1024) {
+                        file.rejectDimensions()
+                    }
+                    else {
+                        file.acceptDimensions();
+                    }
+                });
+            },
+            accept: function(file, done) {
+                file.acceptDimensions = done;
+                file.rejectDimensions = function() { done("Las Dimensiones de la imagen no cumplen los requisitos"); };
             }
         });
     }

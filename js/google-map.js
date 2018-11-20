@@ -4,9 +4,11 @@
 		longitude = -68.3242061,
 		map_zoom = 15;
 
+
+
 	//google Marcadores- .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-	var marker_url = ( is_internetExplorer11 ) ? '../images/icons/marker-rest.png' : '../images/icons/marker-rest.png';
+	var marker_url = ( is_internetExplorer11 ) ? '../images/icons/marker.png' : '../images/icons/marker.png';
 		
 	//define color del mapa/ tambien brillo
 	var	main_color = '#2d313f',
@@ -183,6 +185,19 @@
 			]
 		}
 	];
+
+        //inizialize the mapa
+        //Si está definida una Cookie con el valor del detalle de una publicación, reemplazo los valores de
+        // latitud y longitud del mapa
+
+        if($.cookie('latitud') !== undefined && $.cookie('longitud') !== undefined){
+            latitude = $.cookie('latitud');
+            longitude = $.cookie('longitud');
+            console.log(latitude,longitude);
+        }
+        else{
+            console.log("Sin coordenadas");
+        }
 		
 	//set google map opcion
 	var map_options = {
@@ -196,7 +211,8 @@
       	scrollwheel: false,
       	styles: style,
     };
-    //inizialize the mapa
+
+
 	var map = new google.maps.Map(document.getElementById('google-container'), map_options);
 	//add a custom marcadores en el mapa				
 	var marker = new google.maps.Marker({
@@ -221,6 +237,12 @@
 		google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
 		    map.setZoom(map.getZoom()-1);
 		});
+
+		// function ..click en el marcador
+		google.maps.event.addDomListener(marker,'click', function(){
+			console.log("marcador");
+            window.location.href = "../views/listing/listing.php?cat_id="+$.cookie('cat_id');
+		})
 	}
 
 	var zoomControlDiv = document.createElement('div');

@@ -53,7 +53,7 @@ class Advertsings
 //            $this->db->join("profile pr","a.user_id = pr.user_id");
             $adv = $this->db->where("a.advertsing_id",$advertsing_id)
                 ->objectBuilder()
-                ->getOne('advertsings a','a.*,ad.*,ac.name as category_name,c.name as city_name, p.name as province_name'/*,pr.name as first_name'*/);
+                ->getOne('advertsings a','a.*,ad.*,ac.name as category_name,c.name as city_name, p.name as province_name,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
             return $adv;
         }catch(Exception $ex){
             return $ex->getMessage();
@@ -62,12 +62,22 @@ class Advertsings
 
     public function requestAllForUser($user_id)
     {
-        $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
-        $this->db->join("plan p","ad.plan_id = p.plan_id");
-        $result = $this->db->where("a.user_id",$user_id)
-                        ->objectBuilder()
-                        ->get('advertsings a',null,'a.*,ad.title,ad.plan_id,p.duration');
-        return $result;
+        try{
+            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
+            $this->db->where('a.enabled','T')->where('a.user_id',$user_id);
+            $points = $this->db->objectBuilder()
+                ->get('advertsings a',null,'a.advertsing_id,
+                                                                        a.advertsing_detail_id,
+                                                                        a.enabled,ad.*,
+                                                                        ac.name as category_name,
+                                                                        (SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas,
+                                                                        (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
+            return $points;
+        }
+        catch(Exception $ex){
+            return $ex->getMessage();
+        }
     }
 
     public function requestAllForCategory($category_id)
@@ -75,9 +85,10 @@ class Advertsings
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
         $this->db->join("cities c","ad.city_id = c.city_id");
         $this->db->join("provinces p","ad.province_id = p.province_id");
-        $result = $this->db->where("ad.category_id",$category_id)
+        $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id");
+        $result = $this->db->where("ad.category_id",$category_id)->where('ad.city_id',$_SESSION['selected_city_id'])
             ->objectBuilder()
-            ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,ad.category_id,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image');
+            ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,ad.category_id,ac.name as cat_name,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
         return $result;
     }
 
@@ -175,8 +186,9 @@ class Advertsings
         try{
             $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
             $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
-            $this->db->where("a.enabled","T");
-            $adv = $this->db->objectBuilder()->get('advertsings a',5,'a.*,ad.*,ac.*');
+            $this->db->where("a.enabled","T")->where('ad.city_id',$_SESSION['selected_city_id']) ;
+            $this->db->orderBy('a.advertsing_id','desc');
+            $adv = $this->db->objectBuilder()->get('advertsings a',6,'a.*,ad.*,ac.*,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
             return $adv;
         }catch(Exception $ex){
             return $ex->getMessage();
@@ -185,7 +197,8 @@ class Advertsings
 
     public function countAllEnabled()
     {
-        $this->db->where('enabled','T')->get('advertsings');
+        $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
+        $this->db->where('a.enabled','T')->where('ad.city_id',$_SESSION['selected_city_id'])->get('advertsings a',null,'a.*');
         return $this->db->count;
     }
 
@@ -194,8 +207,14 @@ class Advertsings
         try{
             $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
             $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
-            $this->db->where('a.enabled','T')->where('ac.permission','1');
-            $points = $this->db->objectBuilder()->get('advertsings a',null,'a.advertsing_id,a.advertsing_detail_id,a.enabled,ad.*,(SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas');
+            $this->db->where('a.enabled','T')->where('ac.permission','1')->where('ad.city_id',$_SESSION['selected_city_id']);
+            $points = $this->db->objectBuilder()
+                ->get('advertsings a',null,'a.advertsing_id,
+                                                                        a.advertsing_detail_id,
+                                                                        a.enabled,ad.*,
+                                                                        ac.name as category_name,
+                                                                        (SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas,
+                                                                        (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
             return $points;
         }
         catch(Exception $ex){

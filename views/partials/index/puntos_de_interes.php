@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12 heading text-center">
                 <h2><span>Puntos de Interés</span></h2>
-                <p>Puntos de Interés clave que no pueden dejar de Visitar</p>
+                <p>Clave que no pueden dejar de Visitar</p>
             </div>
         </div>
 
@@ -21,10 +21,7 @@
                     $image = explode(',',$point->commercial_image);
                     if($image[0] != "")
                     {
-//                                        $image = '1@.png';
-//                                        $image = $_COOKIE['CAT_NAME'].'/'.$image[0];
                         $image = $image[0];
-
                     }
                     else
                     {
@@ -36,14 +33,60 @@
                         $point->visitas = 0;
                     }
 
+                    // Valoraciones
+                    switch($point->valoraciones)
+                    {
+                        case '0':
+                            $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                            break;
+                        case '1':
+                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                        case '2':
+                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                            break;
+                        case '3':
+                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                            break;
+                        case '4':
+                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                            break;
+                        case '5':
+                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                            break;
+                    }
+
                     echo '
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
                                 <figcaption>
                                     <ul>
-                                        <li><a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                        <li><a href="http://'. $_SERVER['SERVER_NAME'].'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
                                 </figcaption>
@@ -51,15 +94,15 @@
                         </div>
 
                         <div class="popular-listing-detail">
-                            <h3><a href="'. $_SERVER["DOCUMENT_ROOT"].'/guia23/views/listing/listing.php">'.$point->title.'</a></h3>
-                            <span>Categoria: <a href="#">Puntos de Interes</a></span>
+                            <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
+                            <span>Categoría: <a href="#">Puntos de Interés</a></span>
                             <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
                         </div>
 
                         <ul class="place-listing-add">
                         
                             <li>('.$point->visitas.' Visitas) </li>
-                            <li><img src="images/stars.png" alt="image">
+                            <li>'.$valoracion.'
                             </li>
                             <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             </li>
@@ -73,179 +116,18 @@
                 }
                 ?>
 
-
-<!--                <div class="item">-->
-<!--                    <div class="popular-listing-box">-->
-<!--                        <div class="popular-listing-img">-->
-<!--                            <figure class="effect-ming"> <img src="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/images/Museos/museo-003.jpg" alt="image">-->
-<!--                                <figcaption>-->
-<!--                                    <ul>-->
-<!--                                        <li><a data-toggle="modal"  href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="popular-listing-detail">-->
-<!--                            <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php">Museo del Presidio</a></h3>-->
-<!--                            <span>Categoria: <a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php">Museo</a></span>-->
-<!--                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Yaganes 75, Ushuaia</p>-->
-<!--                        </div>-->
-<!---->
-<!--                        <ul class="place-listing-add">-->
-<!--                            <li>(145 Vistas) </li>-->
-<!--                            <li><img src="images/stars.png" alt="image">-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item">-->
-<!--                    <div class="popular-listing-box">-->
-<!--                        <div class="popular-listing-img">-->
-<!--                            <figure class="effect-ming"> <img src="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/images/Museos/museo1.jpg" alt="image">-->
-<!--                                <figcaption>-->
-<!--                                    <ul>-->
-<!--                                        <li><a data-toggle="modal"  href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="popular-listing-detail">-->
-<!--                            <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php">Museo del Fin del Mundo</a></h3>-->
-<!--                            <span>Categoria: <a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php">Museos</a></span>-->
-<!--                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Av. Maipu   Ushuaia</p>-->
-<!--                        </div>-->
-<!---->
-<!--                        <ul class="place-listing-add">-->
-<!--                            <li>(75 Vistas) </li>-->
-<!--                            <li><img src="images/stars.png" alt="image">-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item">-->
-<!--                    <div class="popular-listing-box">-->
-<!--                        <div class="popular-listing-img">-->
-<!--                            <figure class="effect-ming"> <img src="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/images/Museos/casa-beban.jpg" alt="image">-->
-<!--                                <figcaption>-->
-<!--                                    <ul>-->
-<!--                                        <li><a data-toggle="modal"  href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="popular-listing-detail">-->
-<!--                            <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php">Casa Beban</a></h3>-->
-<!--                            <span>Categoria: <a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php">Museos</a></span>-->
-<!--                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Maipu 1100 Ushuaia</p>-->
-<!--                        </div>-->
-<!---->
-<!--                        <ul class="place-listing-add">-->
-<!--                            <li>(131 Visitas) </li>-->
-<!--                            <li><img src="images/stars.png" alt="image">-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item">-->
-<!--                    <div class="popular-listing-box">-->
-<!--                        <div class="popular-listing-img">-->
-<!--                            <figure class="effect-ming"> <img src="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/images/Museos/Museo2.jpg" alt="image">-->
-<!--                                <figcaption>-->
-<!--                                    <ul>-->
-<!--                                        <li><a data-toggle="modal"  href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="popular-listing-detail">-->
-<!--                            <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php">Museo de la Legislatura</a></h3>-->
-<!--                            <span>Categoria: <a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php">Museos</a></span>-->
-<!--                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Av. Maipu - Ushuaia</p>-->
-<!--                        </div>-->
-<!---->
-<!--                        <ul class="place-listing-add">-->
-<!--                            <li>(145 Vistas) </li>-->
-<!--                            <li><img src="../images/stars.png" alt="image">-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="item">-->
-<!--                    <div class="popular-listing-box">-->
-<!--                        <div class="popular-listing-img">-->
-<!--                            <figure class="effect-ming"> <img src="#" alt="image">-->
-<!--                                <figcaption>-->
-<!--                                    <ul>-->
-<!--                                        <li><a data-toggle="modal"  href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="popular-listing-detail">-->
-<!--                            <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php">Laguna Esmeralda</a></h3>-->
-<!--                            <span>Category: <a href="#">Parque Nacional </a></span>-->
-<!--                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Parque Nacional Tierra del Fuego</p>-->
-<!--                        </div>-->
-<!---->
-<!--                        <ul class="place-listing-add">-->
-<!--                            <li>(75 Visitas) </li>-->
-<!--                            <li><img src="../images/stars.png" alt="image">-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!---->
-<!--                    </div>-->
-<!--                </div>-->
-
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center discover">
-                <h2>Descubra las Empresas Provinciales</h2>
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php">Ir</a>
-            </div>
-        </div>
-
-    </div>
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 text-center discover">-->
+<!--                <h2>Descubra las Empresas Provinciales</h2>-->
+<!--                <a href="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/views/Index-tdf.php">Ir</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
 
 </section>

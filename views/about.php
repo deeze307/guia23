@@ -37,7 +37,7 @@
                 <div class="col-md-12 text-center">
                     <div class="inner_banner_2_detail">
                         <h2>Nosotros</h2>
-                        <p><a href="Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                        <!--<p><a href="Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>-->
                     </div>
                 </div>
             </div>
@@ -49,13 +49,18 @@
     <section id="about-us" class="p_b70 p_t70">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="heading">
+                <div class="col-md-12 ">
+                    <div class="heading" align="center">
                         <h2><span>Bienvenidos</span></h2>
                     </div>
-                    <div class="about-us-detail">
-                        <p>Nuestro emprendimiento nace por.....</p>
-                        <p>Aca tambien.</p>
+                    <div class="about-us-detail text-alingt">
+                        <p>
+                            <strong>Misión:</strong> Lograr que los usuarios tengan la posibilidad de publicitar su empresa al costo más bajo del mercado.<br>
+                            <strong>Compromiso:</strong> Hacer nuestro el objetivo de los usuarios y dar todo lo que esté a nuestro alcance para conseguirlo.<br>
+                            <strong>Eficiencia:</strong> Cumplir en el menor tiempo posible con las exigencias que nos proponen nuestros usuarios.<br>
+                            <strong>Excelencia:</strong> Buscar la perfeción en el desarrollo web para tener un mejor producto y brindar un mejor servicio.<br>
+                            Guía23 introduce la publicidad de los anunciantes de forma interesante de manera tal que parece una recomendación, incluye información turistica  del entorno, geolocalización, atrayendo al usuario a consultar el contenido, tus publicidades, ofertas, llegaran directamente al punto de demanda, sin invertir en formatos complementarios, sin que el cliente tenga que desplazarse a un lugar concreto para acceder a ellas, tu producto o servicio al alcance de todos, queremos que ofrezcas lo mejor a tus clientes dentro y fuera de tu negocio, a través de Guía23 proyectaras una imagen moderna y colaboraras con la eliminación de miles de folletos impresos en papel, creemos haber hecho este desarollo web para transformarnos en la opción mas completa para la promoción comercial de tu empresa.</p>
+                        <p>Si en algún momento crees que no te brindamos el trato que mereces, estaremos encantados de que nos lo hagas saber para evaluar por que razón no te hemos atendido mejor.<br> Tus comentarios nos ayudaran a mejorar como empresa, como profesionales y como personas.<br> Si considerás que podemos hacer algo más para poder cumplir con tus expectativas por favor contactanos.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +72,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="about-us-detail-img">
-                        <h2>Cada marca tiene su historia, nosotros la construimos para vos!</h2>
+                        <h2>La información de su empresa al alcance de todos.</h2>
                     </div>
                 </div>
             </div>
@@ -80,8 +85,8 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="service-two-detail">
                         <h3><i class="fa fa-tablet"></i> Responsive</h3>
-                        <p>Visualice la pagina desde su smatphone o tablet</p>
-                        <p><a href="#">Enlace</a>
+                        <p>Visualice el contenido de la página desde su smartphone, tablet o PC.</p>
+                        <p><a href="#"></a>
                         </p>
                     </div>
                 </div>
@@ -89,45 +94,20 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="service-two-detail">
                         <h3><i class="fa fa-desktop"></i>Diseño</h3>
-                        <p>algo aca</p>
-                        <p><a href="listing-details.html">Enlace</a>
+                        <p>Diseño moderno, un software de fácil acceso que se convierte en una guía personal.</p>
+                        <p><a href="listing-details.html"></a>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="service-two-detail">
                         <h3><i class="fa fa-picture-o"></i>Imagenes</h3>
-                        <p>algo aca </p>
-                        <p><a href="listing-details.html">enlace</a>
+                        <p>Galeria de Imagenes</p>
+                        <p><a href="listing-details.html"></a>
                         </p>
                     </div>
                 </div>
-                <!--
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-two-detail">
-                        <h3><i class="fa fa-share-alt-square"></i> WordPress</h3>
-                        <p>Our Team consists of talented designers and developers who create stylish WordPress website and blogs for businesses</p>
-                        <p><a href="listing-details.html">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-two-detail">
-                        <h3><i class="fa fa-laptop"></i> E commerce</h3>
-                        <p>Everything is going on Web these Days. If you want to give your business a boost by considerable percentage,</p>
-                        <p><a href="listing-details.html">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="service-two-detail">
-                        <h3><i class="fa fa-cogs"></i>Online Marketing</h3>
-                        <p>We partner with brands to grow visibility, website traffic, and achieve higher search engine rankings through our mix internet</p>
-                        <p><a href="listing-details.html">Read More</a>
-                        </p>
-                  </div>
-               </div>
-           --> </div>
+             </div>
         </div>
     </div>
 
@@ -136,7 +116,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="about-us-detail-img">
-                        <h2>Este proyecto nace en Ushuaia Tierra del Fuego.... </h2>
+                        <h2>Convierta su publicidad en una de las mas efectivas del mercado aumentando las probabilidades de exito.</h2>
                         <p></p>
                         <a href="contact.php">Contactenos</a>
 
@@ -152,7 +132,7 @@
     <!-- Footer -->
 
     <!-- Popups -->
-    <section id="best-thing-model">
+    <!--<section id="best-thing-model">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -226,7 +206,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- Popups -->
 
     <script src="../js/jquery.2.2.3.min.js"></script>

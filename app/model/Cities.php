@@ -29,11 +29,19 @@ class Cities
         }
     }
 
-    public function request($province_id="")
+    public function request($province_id="",$showAll=true)
     {
         if($province_id == "")
         {
-            $result = $this->db->objectBuilder()->get('cities');
+            if($showAll)
+            {
+                $result = $this->db->objectBuilder()->get('cities');
+            }
+            else
+            {
+                $result = $this->db->where('enabled',1)->objectBuilder()->get('cities');
+            }
+
         }
         else
         {

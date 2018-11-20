@@ -1,13 +1,14 @@
 <?php
 
 require_once "Core.php";
+require_once(dirname(dirname(dirname(__FILE__)))."/resources/hybridauth/hybridauth/Hybrid/Auth.php");
 
 if(isset($_POST["login"]))
 {
     //para login con redes sociales
     if(strpos($_POST["login"],'with_social_') !== false)
     {
-        if (!isset($_SESSION) || $_SESSION ='')
+        if (!isset($_SESSION) || $_SESSION =='')
         { session_start(); }
         $origin = $_POST["login"];
         $login_social = new LoginSocial($origin);
@@ -23,12 +24,12 @@ if(isset($_POST["login"]))
         if($users->error == "")
         {
 
-            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+            header("Location: https://".$_SERVER['SERVER_NAME']."/home.php");
         }
         else
         {
             $_SESSION["error"] = $users->error;
-            header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/login/login-registerd.php");
+            header("Location: http://".$_SERVER['SERVER_NAME']."/views/login/login-registerd.php");
         }
     }
 
@@ -58,7 +59,7 @@ else
 
         $login_social = new LoginSocial($origin);
         $login_social->login();
-        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+        header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
     }
 
 }
@@ -83,9 +84,8 @@ class LoginSocial
     {
         try {
             //Se carga el archivo de configuración. No es más que un array con datos de conexión.
-            $config_file_path = "../../resources/hybridauth/hybridauth/config.php";
+            $config_file_path = dirname(dirname(dirname(__FILE__)))."/resources/hybridauth/hybridauth/config.php";
             //Se incluye la librería principal de HybridAuth
-            require_once("../../resources/hybridauth/hybridauth/Hybrid/Auth.php");
 
             $hybridauth = new Hybrid_Auth($config_file_path);
 
@@ -131,7 +131,7 @@ class LoginSocial
         session_destroy();
         $_SESSION = array();
 
-        header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+        header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
     }
 
 

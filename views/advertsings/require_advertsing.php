@@ -11,7 +11,7 @@ if(isset($_COOKIE["PLAN"]))
     $plan = $adv->getOnePlan($plan_id);
     $adv_categories = $adv->getCategories();
     $provinces = $adv->getProvinces();
-    $cities = $adv->getCities();
+    $cities = $adv->getCities(true);
     if(isset($_COOKIE["EDIT"]))
     {
         $adv_data = $adv->editAdvertsing($_COOKIE["ADV_ID"]);
@@ -19,7 +19,7 @@ if(isset($_COOKIE["PLAN"]))
     }
 }
 else {
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+    header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
 }
 ?>
 
@@ -219,9 +219,9 @@ else {
                                 <div class="listing-title-area">
 
                                     <div class="form-group">
-                                        <label> <span>Sitio Web</span>
+                                        <label> <span>Precio</span>
                                         </label>
-                                        <input type="text" name="web" class="form-control" placeholder="http://" value="<?php if(isset($adv_data->website)){echo $adv_data->website;} ?>">
+                                        <input type="number" min="0" name="precio" class="form-control" placeholder="Ponga su Precio" value="<?php if(isset($adv_data->price)){echo $adv_data->price;} ?>">
                                     </div>
 
                                 </div>
@@ -230,14 +230,14 @@ else {
                                     <div class="form-group">
                                         <label><span>Direccion Comercial</span>
                                         </label>
-                                        <input type="text" name="direccion" class="form-control" placeholder="Escriba su direccion Comercial..." value="<?php if(isset($adv_data->geolocation)){echo $adv_data->geolocation;} ?>">
+                                        <input type="text" name="direccion" class="form-control" placeholder="Escriba su direccion Comercial..." value="<?php if(isset($adv_data->address)){echo $adv_data->address;} ?>">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
                                                 <label><span>Latitud </span>
                                                 </label>
-                                                <input type="text" name="latitud" class="form-control" placeholder="-54.792645" value="<?php if(isset($adv_data->latitude)){echo $adv_data->latitude;} ?>">
+                                                <input type="text" name="latitud" id="latitud" class="form-control" placeholder="-54.792645" value="<?php if(isset($adv_data->latitude)){echo $adv_data->latitude;} ?>">
                                             </div>
                                         </div>
 
@@ -245,7 +245,7 @@ else {
                                             <div class="form-group">
                                                 <label> <span>Longitud</span>
                                                 </label>
-                                                <input type="text" name="longitud" class="form-control" placeholder="-68.231501" value="<?php if(isset($adv_data->longitude)){echo $adv_data->longitude;} ?>">
+                                                <input type="text" name="longitud" id="longitud" class="form-control" placeholder="-68.231501" value="<?php if(isset($adv_data->longitude)){echo $adv_data->longitude;} ?>">
                                             </div>
                                         </div>
 
@@ -285,103 +285,107 @@ else {
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <div id="finddo-wrapper" >
 
-                            <div id="map"></div>
+                                    <div id="map"></div>
                                     <div id="floating-panel">
-                                        <input id="address" type="textbox" value="Tierra del Fuego">
+                                        <input id="address" type="textbox" value="Tierra del Fuego" align="left">
                                         <input id="submit" type="button" value="Buscar">
-                                        <input id="coords" type="text" />
+                                        <input id="coords" type="text" value="1) Escriba la dirección y presione [Buscar]." readonly="readonly">
+                                        <input id="coords" type="text" value="2) Para colocar latitud y longitud " readonly="readonly">
+                                        <input id="coords" type="text" value="    haga doble click en el marcador."readonly="readonly">
+
                                     </div>
 
-                            <script>
+                                    <script>
 
-                                var geocoder;         //Para geolocalizar
-                                var infowindow;      //Ventana de info
-                                var marker;          //variable del marcador
-                                var coords = {};    //coordenadas obtenidas con la geolocalización
+                                        var geocoder;         //Para geolocalizar
+                                        var infowindow;      //Ventana de info
+                                        var marker;          //variable del marcador
+                                        var coords = {};    //coordenadas obtenidas con la geolocalización
 
-                                //Funcion principal
-                                initMap = function ()
-                                {
-
-                                    //uso la API para geolocalizar
-                                    navigator.geolocation.getCurrentPosition(
-                                        function (position){
-                                            coords =  {
-                                                lng: position.coords.longitude,
-                                                lat: position.coords.latitude
-                                            };
-                                            setMapa(coords);  //paso las coordenadas al metodo para crear el mapa
-
-
-                                        },function(error){console.log(error);});
-
-                                }
-
-                                function setMapa (coords)
-                                {
-                                    //Se crea una nueva instancia del objeto mapa
-                                    var map = new google.maps.Map(document.getElementById('map'),
+                                        //Funcion principal
+                                        initMap = function ()
                                         {
-                                            zoom: 6,
-                                            center:new google.maps.LatLng(coords.lat,coords.lng),
 
-                                        });
-                                    var geocoder = new google.maps.Geocoder();
-                                    var infowindow = new google.maps.InfoWindow;
-                                    document.getElementById('submit').addEventListener('click', function() {
-                                        geocodeAddress(geocoder,map,infowindow);
-                                    });
-                                    function geocodeAddress(geocoder, map, infowindow) {
-                                        var address = document.getElementById('address').value;
-                                        geocoder.geocode({'address': address}, function(results, status) {
-                                            if (status === 'OK') {
-                                                map.setCenter(results[0].geometry.location);
-                                                var marker = new google.maps.Marker({
-                                                    map: map,
-                                                    position: results[0].geometry.location,
-                                                    title:'Guia23',
-                                                    draggable: true
+                                            //uso la API para geolocalizar
+                                            navigator.geolocation.getCurrentPosition(
+                                                function (position){
+                                                    coords =  {
+                                                        lng: position.coords.longitude,
+                                                        lat: position.coords.latitude
+                                                    };
+                                                    setMapa(coords);  //paso las coordenadas al metodo para crear el mapa
 
-                                                });
-                                                infowindow.setContent(results[0].formatted_address);
-                                                infowindow.open(new google.maps.LatLng(coords.lat,coords.lng), marker);
 
-                                                marker.addListener('click', toggleBounce);
-                                                marker.addListener('click',)
-                                                map.setZoom(15);
-                                                map.setCenter(marker.getPosition());
-                                                marker.addListener( 'dragend', function (event)
+                                                },function(error){console.log(error);});
+
+                                        }
+
+                                        function setMapa (coords)
+                                        {
+                                            //Se crea una nueva instancia del objeto mapa
+                                            var map = new google.maps.Map(document.getElementById('map'),
                                                 {
-
-                                                    document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
+                                                    zoom: 6,
+                                                    center:new google.maps.LatLng(coords.lat,coords.lng),
 
                                                 });
-                                                //animacion
-                                                function toggleBounce() {
-                                                    if (marker.getAnimation() !== null) {
-                                                        marker.setAnimation(null);
+                                            var geocoder = new google.maps.Geocoder();
+                                            var infowindow = new google.maps.InfoWindow;
+                                            document.getElementById('submit').addEventListener('click', function() {
+                                                geocodeAddress(geocoder,map,infowindow);
+                                            });
+                                            function geocodeAddress(geocoder, map, infowindow) {
+                                                var address = document.getElementById('address').value;
+                                                geocoder.geocode({'address': address}, function(results, status) {
+                                                    if (status === 'OK') {
+                                                        map.setCenter(results[0].geometry.location);
+                                                        var marker = new google.maps.Marker({
+                                                            map: map,
+                                                            position: results[0].geometry.location,
+                                                            title:'Guia23',
+                                                            draggable: true
+
+                                                        });
+                                                        infowindow.setContent(results[0].formatted_address);
+                                                        infowindow.open(new google.maps.LatLng(coords.lat,coords.lng), marker);
+
+                                                        marker.addListener('click', toggleBounce);
+                                                        marker.addListener('click',)
+                                                        map.setZoom(15);
+                                                        map.setCenter(marker.getPosition());
+                                                        marker.addListener( 'dragend', function (event)
+                                                        {
+
+                                                            document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
+
+                                                        });
+                                                        //animacion
+                                                        function toggleBounce() {
+                                                            if (marker.getAnimation() !== null) {
+                                                                marker.setAnimation(null);
+                                                            } else {
+                                                                marker.setAnimation(google.maps.Animation.BOUNCE);
+                                                                document.getElementById("latitud").value = this.getPosition().lat();
+                                                                document.getElementById("longitud").value = this.getPosition().lng();
+
+                                                            }
+                                                        }
+
                                                     } else {
-                                                        marker.setAnimation(google.maps.Animation.BOUNCE);
-                                                        document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
-
+                                                        alert('No se pudo geolocalizar : ' + status);
                                                     }
-                                                }
-
-                                            } else {
-                                                alert('No se pudo geolocalizar : ' + status);
+                                                });
                                             }
-                                        });
-                                    }
-                                }
+                                        }
 
-                                // Carga de la libreria de google maps
+                                        // Carga de la libreria de google maps
 
-                            </script>
-                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=initMap">
+                                    </script>
+                                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=initMap">
 
-                            </script>
+                                    </script>
 
-                            <!----Mapa--->
+                                    <!----Mapa--->
   
                         </div>
 
@@ -528,7 +532,9 @@ else {
                                     <div class="row">
                                         <div class="col-md-12 <?php if(isset($_COOKIE['EDIT'])) { echo 'hidden';} ?>" >
                                             <div class="form-group">
-                                                <label> <span>imagenes de su comercio</span>
+                                                <label> <span>Imagenes de su comercio</span>
+                                                </label><br>
+                                                <label> <span><small>- Las imagenes no pueden superar la resolución de 500px x 500px. <br> - Puede subir como máximo 6 imagenes.<br>- Cada imagen no debe ser mayor a 3mb (3072kb).</small></span>
                                                 </label>
                                                 <div class="file-upload">
                                                     <div id="fileSubmit"  class="dropzone dropzone-previews">
@@ -551,7 +557,7 @@ else {
                                     <div class="row p_t40">
                                         <div class="col-md-9 col-md-9 col-sm-12">
                                             <div class="form-group">
-                                                <p>Al hacer Click en "<strong>Enviar y Pagar</strong>" acepta los <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/guia23/views/T&Condiciones.php" class="link"><strong>Terminos y Condiciones</strong>.</a>
+                                                <p>Al hacer Click en "<strong>Enviar y Pagar</strong>" acepta los <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/T&Condiciones.php" class="link"><strong>Terminos y Condiciones</strong>.</a>
                                                 </p>
                                             </div>
                                         </div>

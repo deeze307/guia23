@@ -17,12 +17,11 @@ class AdvertsingsCounter
         $ad = self::request($advertsing_id);
         if(count($ad) == 0){
             $id = self::create($advertsing_id);
-            var_dump('('.$advertsing_id.') creando...id: '.$id);
+//            var_dump('('.$advertsing_id.') creando...id: '.$id);
         }
         else
         {
             self::update($ad->advertsings_id,$ad->counter);
-//            var_dump('('.$advertsing_id.') actualizando...id: '.$ad->advertsings_id);
         }
     }
 
@@ -84,7 +83,9 @@ class AdvertsingsCounter
             $valuations = $this->db->subQuery();
             $valuations->where('advertsing_id','a.advertsing_id');
             $valuations->getOne('valuations','quantity');
-            $this->db->where('a.enabled', 'T')->where('aco.counter', 'null', '!=');
+            $this->db->where('a.enabled', 'T')
+                    ->where('aco.counter', 'null', '!=')
+                    ->where('ad.city_id',$_SESSION['selected_city_id']);
             $this->db->orderBy('aco.counter','DESC');
             $most_visited = $this->db->objectBuilder()->get('advertsings a', 9, 'a.advertsing_id,a.enabled,ac.name as category_name,c.name as city_name,p.name as province_name,ad.*,aco.counter,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
             return $most_visited;

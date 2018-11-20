@@ -110,10 +110,10 @@
             	<div class="popular-listing-box" data-type="apartement">
                 
                   <div class="popular-listing-img">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Museos/museorg1.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Museos/museorg1.jpg" alt="image">
                       <figcaption>
                         <ul>
-                          <li><a data-toggle="#"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/listing-details-1.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                          <li><a data-toggle="#"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/views/listing-details-1.php"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                         </ul>
                       </figcaption>
                     </figure>

@@ -10,70 +10,70 @@
 
                 <div class="row">
                     <div class="col-md-12 heading">
-                        <h2><span>Lo Ultimo</span></h2>
+                        <h2><span>Proximamente</span></h2>
                     </div>
                 </div>
 
                 <div id="latest_news-slider" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>Proximamenete se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
                             <span>Por NJM</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>10 Dic 2017</span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>PRoximamente se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion..</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
                             <span>Por Usuario</span>
-                            <span><i class="fa fa-calculator" aria-hidden="true"></i>01 Dic 2017</span>
+                            <span><i class="fa fa-calculator" aria-hidden="true"></i>14 Abr 2018</span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>PRoximamenete se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion...</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
-                            <span>por Usuario xx</span>
-                            <span><i class="fa fa-calculator" aria-hidden="true"></i>01 Dic 2017</span>
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <span>por Usuario x</span>
+                            <span><i class="fa fa-calculator" aria-hidden="true"></i>04 Mar 2018</span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>Proximamenete se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion...</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" height="30px" width="30px" alt="image">
                             <span>Por:Usuario 2</span>
-                            <span><i class="fa fa-calculator" aria-hidden="true"></i>11 Dic 2017</span>
+                            <span><i class="fa fa-calculator" aria-hidden="true"></i> 02 Feb 2018</span>
                         </div>
                     </div>
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>Proximamenete se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion...</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
-                            <span>Por:Usuario 2</span>
-                            <span><i class="fa fa-calculator" aria-hidden="true"></i>11 Dic 2017</span>
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <span>Por:Usuario 3</span>
+                            <span><i class="fa fa-calculator" aria-hidden="true"></i>11 Ene 2018</span>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="latest_box">
-                            <h3>Cuente algo de Tierra del Fuego</h3>
-                            <p>Proximamenete se habillitara esta seccion para que los ususarios de Guia23 pudan contarnos sus experiencias de navegacion...</p>
+                            <h3>Describa su experiencia en Tierra del Fuego</h3>
+                            <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="images/latest_news.png" alt="image">
-                            <span>Por:Usuario 2</span>
-                            <span><i class="fa fa-calculator" aria-hidden="true"></i>11 Dic 2017</span>
+                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <span>Por:NJM</span>
+                            <span><i class="fa fa-calculator" aria-hidden="true"></i>22 Feb 2018</span>
                         </div>
                     </div>
                 </div>

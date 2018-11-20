@@ -7,6 +7,8 @@ $categories_counter = $advertsingsController->countAllCategories();
 $users_counter = $advertsingsController->countAllUsers();
 $cities_counter = $advertsingsController->countAllCities();
 $points_of_interest = $advertsingsController->requestAllPointsOfInterest();
+$new_added = $advertsingsController->getLastAdded();
+//var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -42,20 +44,7 @@ $points_of_interest = $advertsingsController->requestAllPointsOfInterest();
     <!-- HEADER  -->
 
     <!-- BANNER -->
-    <?php
-    if($_SESSION['selected_city_name'] == "Ushuaia")
-    {
-        require "views/partials/banner-ushu.php";
-    }
-    elseif($_SESSION['selected_city_name'] == "Tolhuin")
-    {
-        require "views/partials/banner-tolhuin.php";
-    }
-    elseif($_SESSION['selected_city_name'] == "Rio Grande")
-    {
-        require "views/partials/banner-rg.php";
-    }
-    ?>
+    <?php require "views/partials/banner-ciudades.php" ?>
     <!-- BANNER -->
 
     <!-- Directorio Categorias -->

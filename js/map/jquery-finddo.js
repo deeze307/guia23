@@ -15,7 +15,7 @@
             mapType: 'roadmap',    //map type : "roadmap", "satellite", "perspective"
             posPanel: 'left',      //position of the removable panel : "left" or "right"
             showPanel: true,       //shows / hides the removable panel
-            radius: 15,             //max radius in kilometers
+            radius: 0,             //max radius in kilometers
             country: null,         //country limit for location input (ex. "ca": Canada, "us": United States, "fr": France...)
             autogeolocate: true,  //auto geolocation to set the center of the map
             icon: '../../images/map/icons/marker.png',
@@ -126,11 +126,13 @@
                     });
                     //Info window content building
                     var mycontent;
+                    console.log(place);
                     if(place.img != undefined && place.img != '') mycontent = '<div class="finddo-brand"><img src="'+place.img+'"></div><div class="map-popup"><h4 class="finddo-title">'+place.title+'</h4>';
                     else mycontent = '<h4 class="finddo-title">'+place.title+'</h4>';
                     if(place.address != undefined && place.address != '') mycontent += place.address+'<br>';
                     if(place.phone != undefined && place.phone != '') mycontent += place.phone+'<br>';
-                    if(place.url != undefined && place.url != '') mycontent += '<a  href="../listing-details.php" href="\'+place.url+\'" target="_blank">'+place.url+'</a><br></div>';
+                    console.log(place);
+                    mycontent += '<a  href="../../app/controller/AdvertsingsController.php?listing_detail_adv_id='+place.adv_cat_id+'&cat_name='+place.category_name+'" target="_blank">Mas Detalles</a><br></div>';
 
                     //Info window init'
                     infoWindow[i] = new google.maps.InfoWindow({

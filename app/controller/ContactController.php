@@ -9,7 +9,7 @@ if(isset($_POST["submit"]))
     $contact = new Contact();
     $contact->sendContactEmail($_POST["name"],$_POST["lastname"],$_POST["email"],$_POST["content"]);
 
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/views/contact.php");
+    header("Location: http://".$_SERVER['SERVER_NAME']."/views/contact.php");
 }
 
 

@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                     <div class="inner_banner_detail">
-                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php">Inicio</a>  <i class="fa fa-angle-double-right" aria-hidden="true"></i> </p>
+                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/views/Index-tdf.php">Inicio</a>  <i class="fa fa-angle-double-right" aria-hidden="true"></i> </p>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                             La Autoridad de Aplicación es la Dirección Nacional de Protección de Datos Personales, dependiente del Ministerio de Justicia y Derecho Humanos de la Nación.
                             En caso de surgir cualquier controversia respecto de la interpretación o cumplimiento de la presente, la misma será dirimida por los Tribunales en lo Contencioso Administrativo Federal de Tierra del Fuego.</p><br>
                         <div class="blog-detail">
-                            <a  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/advertsings/require_advertsing.php" class="blog-btn">Acepto</a>
+                            <a id="accept" name="accept" class="blog-btn" onclick="goBack()">Acepto</a>
                         </div>
                     </div>
 
@@ -223,18 +223,14 @@
         </div>
     </section>
     <!-- Popups -->
+    <script type="application/javascript">
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <script src="../js/jquery.2.2.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.appear.js"></script>
-    <script src="../js/jquery-countTo.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.fancybox.min.js"></script>
-    <script src="../js/bootsnav.js"></script>
-    <script src="../js/zelect.js"></script>
-    <script src="../js/parallax.min.js"></script>
-    <script src="../js/modernizr.custom.26633.js"></script>
-    <script src="../js/jquery.gridrotator.js"></script>
     <script src="../js/functions.js"></script>
 </body>
 

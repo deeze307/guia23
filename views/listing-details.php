@@ -1,6 +1,9 @@
 <?php
 require_once("../app/controller/ValuationsController.php");
 require_once("../app/controller/ProfileController.php");
+require_once("../app/controller/AdvertsingsController.php");
+
+
 if (!isset($_SESSION))
 { session_start(); }
 if(isset($_SESSION['adv_detail']->user_id))
@@ -14,8 +17,15 @@ if(isset($_SESSION['adv_detail']->user_id))
 }
 
 $adv_detail = $_SESSION['adv_detail'];
+$advertsings = new Advertsings();
+$adv_from_user = $advertsings->requestAllForUser($adv_detail->user_id);
+$advertsingsController = new AdvertsingsController();
+$new_added = $advertsingsController->getLastAdded();
+setcookie("latitud",$adv_detail->latitude,time() + 3600,"/");
+setcookie("longitud",$adv_detail->longitude,time() + 3600,"/");
+setcookie("cat_id",$adv_detail->category_id,time() + 3600,"/");
 
-if(isset($adv_detail->address))
+if(isset($adv_detail->address) && ($adv_detail->address != '' || $adv_detail->address != null))
 {
     $adv_detail->address = $adv_detail->address.', ';
 }
@@ -26,6 +36,54 @@ $valuations = $val->getValuationsForAdvId($_SESSION['adv_detail']->advertsing_id
 // Iniciamos contador de visitas
 $ad_counter = new AdvertsingsCounter();
 $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
+
+
+// Valoraciones
+switch($adv_detail->valoraciones)
+{
+    case '0':
+        $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+        break;
+    case '1':
+        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+    case '2':
+        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+        break;
+    case '3':
+        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+        break;
+    case '4':
+        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+        break;
+    case '5':
+        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+        break;
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -69,6 +127,7 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
     </div>
     <!--LOADER-->
 
+
     <!-- HEADER -->
     <?php require "../app/controller/Main.php"; ?>
     <?php require "partials/header.php"; ?>
@@ -82,7 +141,8 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                 <div class="col-md-12 text-center">
                     <div class="inner_banner_2_detail">
                         <h2> Detalles </h2>
-                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                        <!--<p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/views/Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>-->
+
                     </div>
                 </div>
 
@@ -91,8 +151,140 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
     </section>
     <!-- Inner Banner -->
 
+    <!--- Puntos de Iterea-->
+
+    <section class="details-heading heading" id="#">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 heading text-center">
+                    <h2><span>Ofertas Exclusivas</span></h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="places-slider" class="owl-carousel owl-theme">
+
+                    <?php
+
+                    foreach ($adv_from_user as $point)
+                    {
+                        $image = explode(',',$point->commercial_image);
+                        if($image[0] != "")
+                        {
+                            $image = $image[0];
+                        }
+                        else
+                        {
+                            $image = '1@.png';
+                        }
+
+                        if($point->visitas <= 0)
+                        {
+                            $point->visitas = 0;
+                        }
+
+                        // Valoraciones
+                        switch($point->valoraciones)
+                        {
+                            case '0':
+                                $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                break;
+                            case '1':
+                                $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                            case '2':
+                                $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                break;
+                            case '3':
+                                $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                break;
+                            case '4':
+                                $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                break;
+                            case '5':
+                                $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                break;
+                        }
+
+                        echo '
+                    <div class="item">
+                    <div class="popular-listing-box">
+                        <div class="popular-listing-img_points_of_interest">
+                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
+                                <figcaption>
+                                    <ul>
+                                        <li><a href="http://'. $_SERVER['SERVER_NAME'].'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="popular-listing-detail">
+                            <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
+                            <span>Categoria: <a href="#">'.$point->category_name.'</a></span>
+                           <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
+                        </div>
+
+                        <ul class="place-listing-add">
+                        
+                            <li>('.$point->visitas.' Visitas) </li>
+                            <li>'.$valoracion.'
+                            </li>
+                            <!--<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </li>-->
+                            <div class="form-group">
+                           <button>Ver Oferta</button>
+
+                           </div>
+
+                        </ul>
+
+                    </div>
+                </div>
+';
+                    }
+                    ?>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--- Fin Puntos de Iteres -->
+
     <!-- Listing Details Heading -->
     <section id="listing-details" class="p_b70 p_t70">
+
+
         <div class="container">
 
             <div class="row">
@@ -101,7 +293,7 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
 
                     <div class="details-heading heading">
                         <h2><a href="#"> <span><?php echo $adv_detail->title ?></span></a></h2>
-                        <span>5.0 <img src="../images/stars.png" alt="image"></span>
+                        <div> <?php echo $adv_detail->valoraciones. ".0   " .$valoracion; ?></div>
                         <div class="details-heading-address">
                             <p><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $adv_detail->address.$adv_detail->city_name .'('.$adv_detail->province_name.')' ?></p>
                             <ul>
@@ -125,8 +317,6 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                         <div class="details-heading-address2">
                             <ul>
                                 <li><a href="#pre_nuevo_comentario"><i class="fa fa-star-o" aria-hidden="true"></i>Deje un Comentario</a> </li>
-<!--                                <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Envie un Mensaje</a> </li>-->
-<!--                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Llamenos</a> </li>-->
                             </ul>
                         </div>
 
@@ -135,6 +325,10 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                 </div>
 
             </div>
+
+
+
+
 
             <div class="row m_t40">
 
@@ -214,8 +408,8 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                                     $images = explode(',',$adv_detail->commercial_image);
                                     foreach($images as $image)
                                     {
-                                        $image_name= explode('/',$image);
-                                        if(count($image_name)>0)
+                                        $image_name = explode('/',$image);
+                                        if(count($image_name) > 1)
                                         {
                                             $image_name_without_dir = explode('.',$image_name[1]);
                                         }
@@ -223,14 +417,16 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                                         $image_name_without_ext = $image_name_without_dir[0];
                                         echo $image_name_without_ext;
                                         echo '<li>
-                                            <a href="http://'.$_SERVER['SERVER_NAME'].'/guia23/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href=´isting/listing.php´ target=´_blank´><span>  Mas Detalles</span></a>">
-                                            <img src="http://'.$_SERVER['SERVER_NAME'].'/guia23/images/'.$image.'" alt="Alt Image Text" /></a>
+                                            <a href="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
+                                            <img src="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" alt="Alt Image Text" /></a>
                                         </li>';
                                     }
                                 }
                                 ?>
                             </ul>
                     </section>
+
+
 
                     <div class="details-heading heading">
 
@@ -239,6 +435,52 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                         <?php
                         foreach($valuations as $valuation)
                         {
+                            // Valoraciones
+                            switch($valuation->quantity)
+                            {
+                                case '0':
+                                    $valoracion_mensaje = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                    break;
+                                case '1':
+                                    $valoracion_mensaje = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                case '2':
+                                    $valoracion_mensaje = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                    break;
+                                case '3':
+                                    $valoracion_mensaje = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                    break;
+                                case '4':
+                                    $valoracion_mensaje = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                    break;
+                                case '5':
+                                    $valoracion_mensaje = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                    break;
+                            }
+
                             echo '
                             <div class="details-heading-review m_t30">
                                 <div class="media">
@@ -247,7 +489,7 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                                     </div>
                                     <div class="media-body">
                                         <div class="review-detail">
-                                            <h3>'.$valuation->name.' <span>'.$valuation->quantity.' <img src="../images/stars-2.png" alt="image"></span></h3>
+                                            <h3>'.$valuation->name.' </h3><div class="pull-right">'.$valuation->quantity.'  '.$valoracion_mensaje.'</div>
                                             <span>'.$valuation->created_at.'</span>
                                             <p>'.$valuation->message.'</p>
                                             <ul class="listing-amenities">
@@ -376,7 +618,7 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                             <div id="google-container"></div>
                             <div id="cd-zoom-in"></div>
                             <div id="cd-zoom-out"></div>
-                            <p><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $adv_detail->geolocation.$adv_detail->city_name .'('.$adv_detail->province_name.')' ?></p>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $adv_detail->address.$adv_detail->city_name .'('.$adv_detail->province_name.')' ?></p>
                             <?php
                             if(isset($adv_detail->phone))
                             {
@@ -426,12 +668,6 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                             echo '</li>';
 
                             ?>
-<!--                            <li><a href="#">Experiencias  <span>(12)</span></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#">Estacionamiento  <span>(Si)</span></a>-->
-<!--                            </li>-->
-<!--                            <li><a href="#">Tarjetas de credito  <span>(Si)</span></a>-->
-<!--                            </li>-->
                             <li><a href="#">Horario de atencion <span>(<?php echo $adv_detail->first_schedule_attention_from ?>)</span></a>
                             </li>
                             <li><a href="#">Horario de Cierre <span>(<?php echo $adv_detail->first_schedule_attention_to ?>)</span></a>
@@ -439,59 +675,7 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
                         </ul>
                     </div>
 
-                    <div class="right-bar bg_white">
-                        <h4><span>Nuevo</span></h4>
-                        <div id="recent-listing" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-1.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Turismo</a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Hoteles</a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/20160207_053613.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Turismo</a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Deportes</a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-1.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Hogar </a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Vehiculos</a>
-                                        <a href="listing/listing.html" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php require_once "partials/new-added-widget.php"; ?>
 
                 </div>
 
@@ -501,86 +685,12 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
     </section>
     <!-- Listing Details Heading -->
 
+
+
     <!-- Footer -->
     <?php require "partials/footer.php";?>
     <!-- Footer -->
 
-    <!-- Popups -->
-    <section id="best-thing-model">
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Tierra del -fuego</h4>
-                        <ul class="best-things-listing">
-                            <li><a href="#">3 Ciudades,</a>
-                            </li>
-                            <li><a href="#">130 Publicidades,</a>
-                            </li>
-                            <li><a href="#">Vistas 6753</a>
-                            </li>
-                        </ul>
-                        <img src="../images/stars-2.png" alt="image">
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="best-thing-slider" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="images/best-thing-slider-1.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/best-thing-slider-1.jpg" alt="image">
-                            </div>
-                            <div class="item">
-                                <img src="images/best-thing-slider-1.jpg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-description">
-                                    <h4>Descripcion</h4>
-                                    <p>algunas Palabras  </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="best-thing-model-feature">
-                                    <h4>Novedades</h4>
-                                    <ul>
-                                        <li>Restaurantes (152,546)</li>
-                                        <li>Hoteles (35,366)</li>
-                                        <li>Turismo(2,546)</li>
-                                        <li>Deportes& Spa (1,546)</li>
-                                        <li>Profesionales (2, 34, 546)</li>
-                                        <li>Hogar (2,546)</li>
-                                        <li>Salud - Belleza (3,506)</li>
-                                        <li>Enseñanza (12,546)</li>
-                                        <li>Vehixulos (22,546)</li>
-                                        <li>Otros Servicios (24,567)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="best-thing-model-description">
-                            <h4>Mensajes Antiguos</h4>
-                            <img src="../images/stars-2.png" alt="image">
-                             <p> Algiunas Palabras</p>
-
-                            <div class="best-thing-model-btn">
-                                <a href="../listing-details.html">Mas Detalles</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Popups -->
 
     <script src="../js/jquery.2.2.3.min.js"></script>
@@ -596,7 +706,8 @@ $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
     <script src="../js/modernizr.custom.26633.js"></script>
     <script src="../js/jquery.gridrotator.js"></script>
     <script src="../js/richmarker-compiled.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY"></script>
+    <script src="../js/jquery.cookie.js"></script>
     <script src="../js/google-map.js"></script>
     <script src="../js/functions.js"></script>
     <script src="../js/least.js"></script>

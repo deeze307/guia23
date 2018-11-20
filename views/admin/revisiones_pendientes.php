@@ -4,7 +4,7 @@ if (!isset($_SESSION))
 
 if(!isset($_SESSION['role_id']) || ($_SESSION["role_id"] != 1 && $_SESSION["role_id"] != 2))
 {
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23");
+    header("Location: https://".$_SERVER['SERVER_NAME']."");
 }
 
 require_once("../../app/controller/AdminController.php");

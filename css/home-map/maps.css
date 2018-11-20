@@ -1,11 +1,11 @@
 /* 2 MAPS
 ================================== */
 #page-container {
-	overflow: hidden;
+  overflow: hidden;
 }
 #main_header_2 {
-	position: relative;
-	z-index: 99;
+  position: relative;
+  z-index: 99;
 }
 #maps {
   position: relative;

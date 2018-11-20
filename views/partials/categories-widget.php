@@ -5,7 +5,7 @@
         foreach($cat_counter as $cat)
         {
             echo '<li>';
-            echo '<a href="http://'.$_SERVER['SERVER_NAME'].'/guia23/app/controller/AdvertsingsController.php?cat='.$cat->name.'"><i class="'.$cat->icon.'" aria-hidden="true"></i> '.$cat->name.' <span>('.$cat->count.')</span></a>';
+            echo '<a href="http://'.$_SERVER['SERVER_NAME'].'/app/controller/AdvertsingsController.php?cat='.$cat->name.'"><i class="'.$cat->icon.'" aria-hidden="true"></i> '.$cat->name.' <span>('.$cat->count.')</span></a>';
             echo '<li>';
         }
         ?>

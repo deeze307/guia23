@@ -43,7 +43,7 @@ class Core
 
     public function __construct()
     {
-//        $this->env_path = $_SERVER['DOCUMENT_ROOT']."/guia23/";
+//        $this->env_path = $_SERVER['DOCUMENT_ROOT']."/";
         $this->db = new MysqliDb(Config::$mysql_host,Config::$mysql_user,Config::$mysql_pass,Config::$mysql_database,Config::$mysql_port,Config::$mysql_charset);
     }
 

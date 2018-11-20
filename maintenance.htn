@@ -1,0 +1,30 @@
+<!doctype html>
+<title>Sitio en Mantenimiento</title>
+<style>
+    body {
+        text-align: center;
+        padding: 15px;
+    }
+    @media(max-width: 426px){ body{ padding: 20px; } }
+    h1 { font-size: 50px; }
+    body { font: 20px Helvetica, sans-serif; color: #333; }
+    article { display: block; text-align: left; width: 800px; margin: 0 auto; }
+    a { color: #dc8100; text-decoration: none; }
+    a:hover { color: #333; text-decoration: none; }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<article>
+
+    <h1>Pronto estaremos de vuelta...</h1>
+    <div>
+        <p>Disculpe los inconvenientes, estamos trabajando en mejoras para el sitio. Si lo necesita puede <a href="mailto:#">contactarnos</a>. Si prefiere esperar, estaremos de vuelta pronto!</p>
+        <p>&mdash; Equipo de Guia23</p>
+    </div>
+    <img class="center" src="images/website-maintenance.jpg">
+</article>

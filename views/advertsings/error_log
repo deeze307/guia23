@@ -1,0 +1,40 @@
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 127
+[24-Oct-2018 18:48:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 127
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 168
+[24-Oct-2018 18:48:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 168
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 194
+[24-Oct-2018 18:48:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 194
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 261
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 261
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[24-Oct-2018 18:48:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 567
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 568
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 568
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569
+[24-Oct-2018 18:48:34 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 127
+[07-Nov-2018 03:06:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 127
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 168
+[07-Nov-2018 03:06:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 168
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 194
+[07-Nov-2018 03:06:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 194
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 261
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 261
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 269
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[07-Nov-2018 03:06:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 270
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 567
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 568
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 568
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569
+[07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569

@@ -5,7 +5,7 @@
 
         <div class="row">
             <div class="col-md-12 heading">
-                <h2><span>Explore estas ubicaciones</span></h2>
+                <h2 align="center"><span>Explore estas ubicaciones</span></h2>
             </div>
         </div>
 
@@ -13,11 +13,11 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20160206_165238.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/RioGrande.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Rio Grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=3&city_name=Rio Grande&city_class=rio_grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -27,9 +27,9 @@
                         <div class="best-things-address">
                             <h3><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Rio Grande</h3>
                             <ul class="best-things-listing">
-                                <li><a href="#">3 Ciudades,</a>
+                                <!--<li><a href="#">3 Ciudades,</a>-->
                                 </li>
-                                <li><a href="#">130 Publicidades,</a>
+                                <li><a href="#"><?php echo $ads_counter; ?> Publicidades</a>
                                 </li>
                                 <li><a href="#">6753 Vistas </a>
                                 </li>
@@ -44,11 +44,11 @@
 
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171008_173443.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Tolhuin.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal" href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=2&city_name=Tolhuin&city_class=tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -58,9 +58,9 @@
                         <div class="best-things-address">
                             <h3><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Tolhuin</h3>
                             <ul class="best-things-listing">
-                                <li><a href="#">3 Ciudades,</a>
+                               <!-- <li><a href="#">3 Ciudades,</a>-->
                                 </li>
-                                <li><a href="#">110 Publicidades,</a>
+                                <li><a href="#"><?php echo $ads_counter; ?> Publicidades</a>
                                 </li>
                                 <li><a href="#">Vistas 6753</a>
                                 </li>
@@ -75,15 +75,15 @@
 
         </div>
 
-        <div class="row">
+        <!--<div class="row">
 
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20160206_165238.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20160206_165238.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/AdvertsingsController.php?cat=Ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -106,15 +106,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171017_192758.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20160206_165238.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/app/controller/AdvertsingsController.php?cat=Tierra del Fuego"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=1&city_name=Ushuaia&city_class=ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -122,11 +122,11 @@
 
                     <div class="best-things-rating">
                         <div class="best-things-address">
-                            <h3><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Tierra del Fuego</h3>
+                            <h3><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Ushuaia</h3>
                             <ul class="best-things-listing">
-                                <li><a href="#">3 Ciudades,</a>
+                                <!--<li><a href="#">3 Ciudades,</a>-->
                                 </li>
-                                <li><a href="#">130 Publicidades,</a>
+                                <li><a href="#"><?php echo $ads_counter; ?> Publicidades</a>
                                 </li>
                                 <li><a href="#">Vistas 6753</a>
                                 </li>
@@ -140,6 +140,4 @@
             </div>
 
         </div>
-
-    </div>
 </section>

@@ -1,7 +1,7 @@
 <?php
 require_once("app/controller/AdvertsingsController.php");
 $advertsingsController = new AdvertsingsController();
-$cities = $advertsingsController->getCities();
+$cities = $advertsingsController->getCities(false);
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -20,7 +20,7 @@ $cities = $advertsingsController->getCities();
     <![endif]-->
 <style>
     body{
-        background-image: url("images/bg-argentina-index.jpg");
+        background-image: url("images/BG.png");
     }
 </style>
 
@@ -41,12 +41,12 @@ $cities = $advertsingsController->getCities();
 
     <!-- BANNER -->
     <div class="banner-text-index center-screen">
-        <h2><span>Bienvenido a Guia23</span></h2>
+        <h2><span>Bienvenido a Guía23</span></h2>
         <p>Seleccione la ciudad que desea visitar</p>
         <?php
         foreach ($cities as $city)
         {
-            echo '<a href="app/controller/Main.php?city_id='.$city->city_id.'&city_name='.$city->name.'">'.$city->name.'</a>';
+            echo '<a href="app/controller/Main.php?city_id='.$city->city_id.'&city_name='.$city->name.'&city_class='.$city->class.'">'.$city->name.'</a>';
         }
         ?>
     </div>
@@ -55,15 +55,6 @@ $cities = $advertsingsController->getCities();
 
     <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery-countTo.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/bootsnav.js"></script>
-    <script src="js/zelect.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/modernizr.custom.26633.js"></script>
-    <script src="js/jquery.gridrotator.js"></script>
     <script src="js/functions.js"></script>
 
   </body>

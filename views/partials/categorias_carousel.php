@@ -23,7 +23,7 @@
                             echo'
                                 <div class="item">
                                 <div class="directory-category-box text-center '.$cat->class_color.'"> <span><i class="'.$cat->icon.'" aria-hidden="true"></i></span>
-                                    <a href="http://'.$_SERVER['SERVER_NAME'].'/guia23/app/controller/AdvertsingsController.php?cat='.$cat->name.'">
+                                    <a href="http://'.$_SERVER['SERVER_NAME'].'/app/controller/AdvertsingsController.php?cat='.$cat->name.'">
                                         <h3>'.$cat->name.'</h3>
                                     </a>
                                     <p>'.$cat->count.'</p>
@@ -32,8 +32,10 @@
                             ';
                         }
                     ?>
+                    
                 </div>
             </div>
         </div>
     </div>
+
 </section>

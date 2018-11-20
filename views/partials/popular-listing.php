@@ -1,4 +1,4 @@
-<?php  ?>
+<?php ?>
 
     <!-- Popular Listing -->
     <section id="popular-listing-categories" class="p_b70 p_t70">
@@ -45,28 +45,79 @@
                                         $image = '1@.png';
                                     }
 
-                                    if (isset($advertsing->address)) {
+                                    if (isset($advertsing->address) && $advertsing->address != '') {
                                         $advertsing->address = $advertsing->address . ', ';
+                                    }
+
+                                    // Valoraciones
+                                    switch($advertsing->valoraciones)
+                                    {
+                                        case '0':
+                                            $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '1':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                        case '2':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '3':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '4':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '5':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                            break;
                                     }
 
                                     echo '
                                     <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="popular-listing-box">
                                             <div class="popular-listing-img_home_profile">
-                                                <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image">
+                                                <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/views/listing/listing.php?cat_id='.$_COOKIE['CAT'].'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/views/listing/listing.php?cat_id='.$_COOKIE['CAT'].'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
                                                 </figure>
                                             </div>
                                             <div class="popular-listing-detail">
-                                                <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE["CAT_NAME"].'">'.$advertsing->title.'</a></h3>
+                                                <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE["CAT_NAME"].'">'.$advertsing->title.'</a></h3>
                                             </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$advertsing->address.$advertsing->city_name.' ('.$advertsing->province_name.')</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
+                                            <div class="popular-listing-add"> 
+                                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$advertsing->address.$advertsing->city_name.' ('.$advertsing->province_name.')</span>
+                                                <div class="pull-right">
+                                                    '.$valoracion.'
+                                                </div>
+                                             </div>
                                         </div>
                                     </div>
                                     ';
@@ -95,26 +146,74 @@
                                         $advertsing->address = $advertsing->address.', ';
                                     }
 
+                                    // Valoraciones
+                                    switch($advertsing->valoraciones)
+                                    {
+                                        case '0':
+                                            $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '1':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                        case '2':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '3':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '4':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                            break;
+                                        case '5':
+                                            $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                            break;
+                                    }
+
                                     echo '<div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="popular-listing-box">
                                                 <div class="popular-listing-img_home_home">
-                                                    <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image" height="300" width="400">
+                                                    <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image" height="300" width="400">
                                                         <figcaption>
                                                             <ul>
                                                                 <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                                <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/views/listing/listing.php?cat_id='.$_COOKIE['CAT'].'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                                <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/views/listing/listing.php?cat_id='.$_COOKIE['CAT'].'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                                 <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                             </ul>
                                                         </figcaption>
                                                     </figure>
                                                 </div>
                                                 <div class="popular-listing-detail">
-                                                    <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE["CAT_NAME"].'">'.$advertsing->title.'</a></h3>
+                                                    <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE["CAT_NAME"].'">'.$advertsing->title.'</a></h3>
                                                     <!-- <p>$advertsing->description</p> -->
                                                 </div>
                                                 <div class="popular-listing-add">
-                                                    <span><img src="../../images/stars.png" alt="image"></span>
                                                     <span><i class="fa fa-map-marker" aria-hidden="true"></i>'.$advertsing->address.$advertsing->city_name.' ('.$advertsing->province_name.')</span>
+                                                    <div class="pull-right">
+                                                        '.$valoracion.'
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>';
@@ -131,10 +230,7 @@
                                 $image = explode(',',$advertsing->commercial_image);
                                 if($image[0] != "")
                                 {
-    //                                        $image = '1@.png';
-    //                                        $image = $_COOKIE['CAT_NAME'].'/'.$image[0];
                                     $image = $image[0];
-
                                 }
                                 else
                                 {
@@ -146,6 +242,52 @@
                                     $advertsing->address = $advertsing->address.', ';
                                 }
 
+                                // Valoraciones
+                                switch($advertsing->valoraciones)
+                                {
+                                    case '0':
+                                        $valoracion = '<span class="fa fa-star-o"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '1':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';                                           break;
+                                    case '2':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '3':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '4':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star-o"/>';
+                                        break;
+                                    case '5':
+                                        $valoracion = '<span class="fa fa-star"/> 
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>
+                                                            <span class="fa fa-star"/>';
+                                        break;
+                                }
+
                                 echo'
 
                             <div class="row">
@@ -154,11 +296,11 @@
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-xs-12">
                                             <div class="popular-listing-img_home_message">
-                                                <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/guia23/images/'.$image.'" alt="image">
+                                                <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
                                                     <figcaption>
                                                         <ul>
                                                             <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
+                                                            <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
                                                             <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
                                                         </ul>
                                                     </figcaption>
@@ -168,9 +310,13 @@
                                         <div class="col-md-7 col-sm-7 col-xs-12">
 
                                             <div class="popular-listing-detail">
-                                                <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/guia23/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE['CAT'].'">'.$advertsing->title.'</a></h3>
+                                                <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$advertsing->advertsing_id.'&cat_name='.$_COOKIE['CAT'].'">'.$advertsing->title.'</a></h3>
                                             </div>
-                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$advertsing->address.$advertsing->city_name.' ('.$advertsing->province_name.')</span> <span><img src="../../images/stars.png" alt="image"></span> </div>
+                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$advertsing->address.$advertsing->city_name.' ('.$advertsing->province_name.')</span> 
+                                                <div class="pull-right">
+                                                    '.$valoracion.'
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -180,62 +326,7 @@
                             ';
                             }
                             ?>
-                            <!--                        <div class="row">-->
-                            <!--                            <div class="col-md-12">-->
-                            <!--                                <div class="popular-listing-box">-->
-                            <!--                                    <div class="row">-->
-                            <!--                                        <div class="col-md-5 col-sm-5 col-xs-12">-->
-                            <!--                                            <div class="popular-listing-img">-->
-                            <!--                                                <figure class="effect-ming"> <img src="images/popular-3-3.jpg" alt="image">-->
-                            <!--                                                    <figcaption>-->
-                            <!--                                                        <ul>-->
-                            <!--                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                            <li><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                        </ul>-->
-                            <!--                                                    </figcaption>-->
-                            <!--                                                </figure>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="col-md-7 col-sm-7 col-xs-12">-->
-                            <!--                                            <div class="popular-listing-detail">-->
-                            <!--                                                <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Profesionales.php">Profesionales</a></h3>-->
-                            <!--                                                <p>Descripcion.</p>-->
-                            <!--                                            </div>-->
-                            <!--                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Tolhuin</span> <span><img src="images/stars.png" alt="image"></span> </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-                            <!--                        </div>-->
-                            <!--                        <div class="row">-->
-                            <!--                            <div class="col-md-12">-->
-                            <!--                                <div class="popular-listing-box">-->
-                            <!--                                    <div class="row">-->
-                            <!--                                        <div class="col-md-5 col-sm-5 col-xs-12">-->
-                            <!--                                            <div class="popular-listing-img">-->
-                            <!--                                                <figure class="effect-ming"> <img src="images/popular-3-4.jpg" alt="image">-->
-                            <!--                                                    <figcaption>-->
-                            <!--                                                        <ul>-->
-                            <!--                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                            <li><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
-                            <!--                                                        </ul>-->
-                            <!--                                                    </figcaption>-->
-                            <!--                                                </figure>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="col-md-7 col-sm-7 col-xs-12">-->
-                            <!--                                            <div class="popular-listing-detail">-->
-                            <!--                                                <h3><a href="--><?php //$_SERVER["DOCUMENT_ROOT"]; ?><!--/guia23/views/Museos.php">Museos</a></h3>-->
-                            <!--                                                <p>Descripcion.</p>-->
-                            <!--                                            </div>-->
-                            <!--                                            <div class="popular-listing-add"> <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ushuaia</span> <span><img src="images/stars.png" alt="image"></span> </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-                            <!--                        </div>-->
+
                         </div>
                     </div>
 
@@ -270,7 +361,7 @@
 
                     <?php require "new-added-widget.php";?>
 
-                    <div class="right-bar">
+                    <!--<div class="right-bar">
                         <h4><span>Recientes</span></h4>
                         <div id="recent-listing" class="owl-carousel owl-theme">
                             <div class="item">
@@ -322,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
 

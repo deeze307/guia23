@@ -21,18 +21,18 @@
     <div class="profile-list">
         <ul>
             <li class="active">
-                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/guia23/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i> Mi Perfil</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i> Mi Perfil</a>
             </li>
             <li>
                 <a href="advertsings.php"><i class="fa fa-sliders" aria-hidden="true"></i> Publicidades</a>
             </li>
             <li>
-                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/guia23/views/advertsings/packages.php"><i class="fa fa-plus-square" aria-hidden="true"></i>Publicar</a>
+                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/advertsings/packages.php"><i class="fa fa-plus-square" aria-hidden="true"></i>Publicar</a>
             </li>
             <li>
-                <a href="../../contact.php"><i class="fa fa-commenting" aria-hidden="true"></i> Mensajes</a>
+                <a href="../../contact.php"><i class="fa fa-server" aria-hidden="true"></i> Mis Negocios</a>
             </li>
-            <li>
+           <!-- <li>
                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> Revision</a>
             </li>
             <li>

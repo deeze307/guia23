@@ -9,7 +9,8 @@ if(isset($_GET['city_id']))
 {
     $_SESSION['selected_city_id'] = $_GET['city_id'];
     $_SESSION['selected_city_name'] = $_GET['city_name'];
-    header("Location: http://".$_SERVER['SERVER_NAME']."/guia23/home.php");
+    $_SESSION['selected_city_class'] = $_GET['city_class'];
+    header("Location: https://".$_SERVER['SERVER_NAME']."/home.php");
 }
 
  class Main

@@ -8,7 +8,7 @@
         <title>Guia23</title>
         <link rel="stylesheet" type="text/css" href="../css/master.css">
         <link rel="stylesheet" type="text/css" href="../css/color-green.css">
-        <link href="../css/guia23.min.css" rel="stylesheet" />
+        <link href="../css.min.css" rel="stylesheet" />
         <link rel="shortcut icon" href="../images/short_icon.png">
          <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -40,8 +40,8 @@
               <ul class="least-gallery">
                 <!-- 1 || data-caption ||-->
                 <li>
-                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171017_192752_001.jpg" title="Ushuaia" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171017_192752_001.jpg" alt="Alt Image Text" /></a>
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171017_192752_001.jpg" title="Ushuaia" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171017_192752_001.jpg" alt="Alt Image Text" /></a>
                 </li>
                        
                 <!-- 2 || data-caption as href-++ ||--> 
@@ -135,7 +135,7 @@
     <script src="../js/jquery.gridrotator.js"></script>
     <script src="../js/functions.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/guia23.min.js"></script>
+    <script src="../js.min.js"></script>
     <script src="../js/least.js"></script>
         <script>
             $(document).ready(function(){

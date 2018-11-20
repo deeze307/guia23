@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/master.css">
     <link rel="stylesheet" type="text/css" href="../css/color-green.css">
     <link rel="shortcut icon" href="../images/short_icon.png">
-    <link href="../css/guia23.min.css" rel="stylesheet" />
+    <link href="../css.min.css" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,7 +40,7 @@
                 <div class="col-md-12 text-center">
                     <div class="inner_banner_2_detail">
                         <h2> Detalles </h2>
-                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/views/Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                        <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/views/Index-tdf.php">Inicio  </a> <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
                     </div>
                 </div>
 
@@ -110,33 +110,33 @@
                             <ul class="least-gallery">
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Habitaciones" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Habitaciones" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Hall" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Hall" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Transportes" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Transportes" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Play room" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Play room" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
-                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
+                                    <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" title="Titulo" data-subtitle="Ver Imagen" data-caption="<strong>Rio Olivia - Ushuaia</strong><a href='listing.html' target='_blank'><span>  Mas Detalles</span></a>">
+                                        <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="Alt Image Text" /></a>
                                 </li>
                             </ul>
                     </section>
@@ -165,7 +165,7 @@
 
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="listing-special">
-                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="image">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="image">
                                                 </div>
                                             </div>
 
@@ -224,7 +224,7 @@
 
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="listing-special">
-                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg"  alt="image">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg"  alt="image">
                                                 </div>
                                             </div>
 
@@ -282,7 +282,7 @@
 
                                             <div class="col-md-4 col-sm-4 col-xs-12">
                                                 <div class="listing-special">
-                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/guia23/images/Paisajes/20171016_161947.jpg" alt="image">
+                                                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20171016_161947.jpg" alt="image">
                                                 </div>
                                             </div>
 
@@ -706,7 +706,7 @@
     <script src="../js/functions.js"></script>
     <script src="../js/least.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/guia23.min.js"></script>
+    <script src="../js.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.least-gallery').least();

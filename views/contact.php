@@ -157,7 +157,7 @@ if (!isset($_SESSION))
                                 <p><i class="fa fa-globe" aria-hidden="true"></i>
                                 </p>
                                 <h4>Sitio Web</h4>
-                                <p><a href="#">www.guia23.com.ar</a>
+                                <p><a href="https://www.guia23.com.ar">www.guia23.com.ar</a>
                                 </p>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ if (!isset($_SESSION))
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>
                                 </p>
                                 <h4>Direccion</h4>
-                                <p>Otero 4623
+                                <p>Patagonia 55 piso 1
                                     <br>Ushuaia - Tierra del Fuego</p>
                             </div>
                         </div>

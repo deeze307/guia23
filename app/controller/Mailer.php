@@ -14,12 +14,12 @@ class Mailer
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
         try {
             //Server settings
-            $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+            $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->Host = 'mx1.hostinger.com.ar';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'deeze.designs@gmail.com';          // SMTP username
-            $mail->Password = 'Bruno.2015';                      // SMTP password
+            $mail->Username = 'info@guia23.com.ar';          // SMTP username
+            $mail->Password = 'Maldo773';                      // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
@@ -67,9 +67,12 @@ class Mailer
         $fecha_limite = date("Y-m-d h:i", $fecha_limite_formato);
         $content = "<h3>Su Publicidad titulada <strong>'".$title."'</strong> ha sido creada exitosamente(#".$ad_id.").</h3>\n\n";
         $content.="<p>Su publicidad permanecerá activa por <strong>".$duration."</strong> una vez que esté activa.</p>";
-        $content.="<p>Para que su publicidad sea visible para todo el publico usted deberá abonar la suma de <strong>$".$amount_to_pay."</strong> antes de la fecha: <strong>".$fecha_limite."</strong>.</p>";
+        $content.="<p>Para que su publicidad sea visible para todo el publico usted deberá abonar la suma de <strong>$".$amount_to_pay."</strong> en la cuenta que se describe más abajo en este correo antes de la fecha: <strong>".$fecha_limite."</strong>.</p>";
         $content.="<p>Pasado el tiempo límite, su publicidad caducará y deberá generar una nuevamente.</p><hr>";
         $content.="<p>Su publicidad será revisada por un moderador y en cuanto se apruebe el contenido y se reciba el pago, usted recibirá un correo informativo y su publicidad estará disponible para todo el mundo</p><hr>";
+        $content.="<p><strong>Banco Francés</strong></p>\n";
+        $content.="<p>Cuenta: <strong>Caja de Ahorros en Pesos 299-331151/8</strong></p>\n";
+        $content.="<p>CBU: <strong>0170299840000033115182</strong></p>\n\n";
         $content.="<p>Gracias por confiar en nosotros.\n</p>";
         $content.="<p><i>Atte. Soporte de Guia23.</i></p>";
 
