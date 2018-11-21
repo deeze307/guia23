@@ -2,7 +2,7 @@
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i>
     </button>
-    <a id="Logo" class="navbar-brand" href="<?php $_SERVER['DOCUMENT_ROOT']?>"><img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/1@.png" class="logo" alt="">
+    <a class="navbar-brand sticky_logo" href="<?php $_SERVER['DOCUMENT_ROOT']?>"><img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/1@.png" class="logo" alt="">
     </a>
 </div>
 <!-- End Header Navigation -->
