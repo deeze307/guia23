@@ -712,7 +712,7 @@ switch($adv_detail->valoraciones)
     <script src="../js/functions.js"></script>
     <script src="../js/least.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/guia23.min.js"></script>
+    <script src="../js.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.least-gallery').least();
