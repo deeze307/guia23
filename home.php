@@ -39,48 +39,48 @@ $new_added = $advertsingsController->getLastAdded();
     <!--LOADER-->
 
     <!-- HEADER -->
-    <?php require "guia23/app/controller/Main.php"; ?>
-    <?php require "guia23/views/partials/header.php"; ?>
+    <?php require "app/controller/Main.php"; ?>
+    <?php require "views/partials/header.php"; ?>
     <!-- HEADER  -->
 
     <!-- BANNER -->
-    <?php require "guia23/views/partials/banner-ciudades.php" ?>
+    <?php require "views/partials/banner-ciudades.php" ?>
     <!-- BANNER -->
 
     <!-- Directorio Categorias -->
-    <?php require "guia23/views/partials/categorias_carousel.php"?>
+    <?php require "views/partials/categorias_carousel.php"?>
     <!-- Directorio Categorias -->
 
     <!-- Populares -->
-    <?php require "guia23/views/partials/index/populares.php" ?>
+    <?php require "views/partials/index/populares.php" ?>
     <!-- Popular  -->
 
     <!-- Most visited places -->
-    <?php require "guia23/views/partials/index/puntos_de_interes.php" ?>
+    <?php require "views/partials/index/puntos_de_interes.php" ?>
     <!-- Most visited places -->
 
     <!-- Counter Section -->
-    <?php require "guia23/views/partials/index/contador.php"?>
+    <?php require "views/partials/index/contador.php"?>
     <!-- Counter Section -->
 
     <!-- Best Things -->
-    <?php require "guia23/views/partials/index/mejores_cosas.php"?>
+    <?php require "views/partials/index/mejores_cosas.php"?>
     <!-- Best Things -->
 
     <!-- Latest News -->
-    <?php require "guia23/views/partials/index/noticias.php"?>
+    <?php require "views/partials/index/noticias.php"?>
     <!-- Latest News -->
 
     <!-- User -->
-    <!--<?php require "guia23/views/partials/index/usuario.php"?>-->
+    <!--<?php require "views/partials/index/usuario.php"?>-->
     <!-- Useer -->
 
     <!-- Footer -->
-    <?php require "guia23/views/partials/footer.php" ?>
+    <?php require "views/partials/footer.php" ?>
     <!-- Footer -->
 
     <!-- Popups -->
-    <!-- <?php require "guia23/views/partials/index/popups.php"?> -->
+    <!-- <?php require "views/partials/index/popups.php"?> -->
     <!--Fin  Popups -->
 
 
