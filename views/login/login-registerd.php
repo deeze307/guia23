@@ -10,9 +10,9 @@ if (!isset($_SESSION))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Guia23</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/master.css">
-    <link rel="stylesheet" type="text/css" href="../css/color-green.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/master.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/color-green.css">
     <link rel="shortcut icon" href="../../images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="../../js/html5shiv.min.js"></script>
