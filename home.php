@@ -17,9 +17,9 @@ $new_added = $advertsingsController->getLastAdded();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Guia23</title>
-    <link rel="stylesheet" type="text/css" href="css/master.css">
-    <link rel="stylesheet" type="text/css" href="css/color-green.css">
-    <link rel="shortcut icon" href="images/short_icon.png">
+    <link rel="stylesheet" type="text/css" href="guia23/css/master.css">
+    <link rel="stylesheet" type="text/css" href="guia23/css/color-green.css">
+    <link rel="shortcut icon" href="guia23/images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="guia23/js/html5shiv.min.js"></script>
     <script src="guia23/js/respond.min.js"></script>
@@ -32,7 +32,7 @@ $new_added = $advertsingsController->getLastAdded();
 
     <!-- LOADER -->
     <div class="loader">
-      <div class="cssload-svg"><img src="images/42-3.gif" alt="image">
+      <div class="cssload-svg"><img src="guia23/images/42-3.gif" alt="image">
       </div>
     </div>
     <!--LOADER-->
