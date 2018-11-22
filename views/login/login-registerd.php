@@ -10,9 +10,9 @@ if (!isset($_SESSION))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Guia23</title>
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/master.css">
-    <link rel="stylesheet" type="text/css" href="../../css/color-green.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+    <link rel="stylesheet" type="text/css" href="../css/color-green.css">
     <link rel="shortcut icon" href="../../images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="../../js/html5shiv.min.js"></script>
@@ -41,7 +41,7 @@ if (!isset($_SESSION))
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Loginnn</a>
+                        <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
                         </li>
                         <li role="presentation"><a href="#registerd" aria-controls="registerd" role="tab" data-toggle="tab">Registro</a>
                         </li>
@@ -279,15 +279,15 @@ if (!isset($_SESSION))
 
     <script src="../../js/jquery.2.2.3.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-<!--    <script src="../../js/jquery.appear.js"></script>-->
-<!--    <script src="../../js/jquery-countTo.js"></script>-->
-<!--    <script src="../../js/owl.carousel.min.js"></script>-->
-<!--    <script src="../../js/jquery.fancybox.min.js"></script>-->
-<!--    <script src="../../js/bootsnav.js"></script>-->
-<!--    <script src="../../js/zelect.js"></script>-->
-<!--    <script src="../../js/parallax.min.js"></script>-->
-<!--    <script src="../../js/modernizr.custom.26633.js"></script>-->
-<!--    <script src="../../js/jquery.gridrotator.js"></script>-->
+    <script src="../../js/jquery.appear.js"></script>
+    <script src="../../js/jquery-countTo.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.fancybox.min.js"></script>
+    <script src="../../js/bootsnav.js"></script>
+    <script src="../../js/zelect.js"></script>
+    <script src="../../js/parallax.min.js"></script>
+    <script src="../../js/modernizr.custom.26633.js"></script>
+    <script src="../../js/jquery.gridrotator.js"></script>
     <script src="../../js/functions.js"></script>
 </body>
 
