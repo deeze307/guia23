@@ -279,15 +279,15 @@ if (!isset($_SESSION))
 
     <script src="../../js/jquery.2.2.3.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/jquery.appear.js"></script>
-    <script src="../../js/jquery-countTo.js"></script>
-    <script src="../../js/owl.carousel.min.js"></script>
-    <script src="../../js/jquery.fancybox.min.js"></script>
-    <script src="../../js/bootsnav.js"></script>
-    <script src="../../js/zelect.js"></script>
-    <script src="../../js/parallax.min.js"></script>
-    <script src="../../js/modernizr.custom.26633.js"></script>
-    <script src="../../js/jquery.gridrotator.js"></script>
+<!--    <script src="../../js/jquery.appear.js"></script>-->
+<!--    <script src="../../js/jquery-countTo.js"></script>-->
+<!--    <script src="../../js/owl.carousel.min.js"></script>-->
+<!--    <script src="../../js/jquery.fancybox.min.js"></script>-->
+<!--    <script src="../../js/bootsnav.js"></script>-->
+<!--    <script src="../../js/zelect.js"></script>-->
+<!--    <script src="../../js/parallax.min.js"></script>-->
+<!--    <script src="../../js/modernizr.custom.26633.js"></script>-->
+<!--    <script src="../../js/jquery.gridrotator.js"></script>-->
     <script src="../../js/functions.js"></script>
 </body>
 
