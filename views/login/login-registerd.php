@@ -41,7 +41,7 @@ if (!isset($_SESSION))
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a>
+                        <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Loginnn</a>
                         </li>
                         <li role="presentation"><a href="#registerd" aria-controls="registerd" role="tab" data-toggle="tab">Registro</a>
                         </li>
