@@ -24,6 +24,7 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="guia23/js/html5shiv.min.js"></script>
     <script src="guia23/js/respond.min.js"></script>
     <![endif]-->
+      
 
 
   </head>
