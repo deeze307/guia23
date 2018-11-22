@@ -8,7 +8,6 @@ $users_counter = $advertsingsController->countAllUsers();
 $cities_counter = $advertsingsController->countAllCities();
 $points_of_interest = $advertsingsController->requestAllPointsOfInterest();
 $new_added = $advertsingsController->getLastAdded();
-//var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -22,8 +21,8 @@ $new_added = $advertsingsController->getLastAdded();
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="guia23/js/html5shiv.min.js"></script>
+    <script src="guia23/js/respond.min.js"></script>
     <![endif]-->
 
 
@@ -85,18 +84,18 @@ $new_added = $advertsingsController->getLastAdded();
 
 
 
-    <script src="js/jquery.2.2.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery-countTo.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/bootsnav.js"></script>
+    <script src="guia23/js/jquery.2.2.3.min.js"></script>
+    <script src="guia23/js/bootstrap.min.js"></script>
+    <script src="guia23/js/jquery.appear.js"></script>
+    <script src="guia23/js/jquery-countTo.js"></script>
+    <script src="guia23/js/owl.carousel.min.js"></script>
+    <script src="guia23/js/jquery.fancybox.min.js"></script>
+    <script src="guia23/js/bootsnav.js"></script>
 <!--    <script src="js/zelect.js"></script>-->
-    <script src="js/parallax.min.js"></script>
-    <script src="js/modernizr.custom.26633.js"></script>
-    <script src="js/jquery.gridrotator.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="guia23/js/parallax.min.js"></script>
+    <script src="guia23/js/modernizr.custom.26633.js"></script>
+    <script src="guia23/js/jquery.gridrotator.js"></script>
+    <script src="guia23/js/functions.js"></script>
 
   </body>
 
