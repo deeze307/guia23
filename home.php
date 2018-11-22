@@ -1,5 +1,5 @@
 <?php
-require_once("app/controller/AdvertsingsController.php");
+require_once("guia23/app/controller/AdvertsingsController.php");
 $advertsingsController = new AdvertsingsController();
 $cat_counter = $advertsingsController->countAdsByCategories();
 $ads_counter = $advertsingsController->countAllAds();
