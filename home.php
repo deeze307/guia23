@@ -21,10 +21,10 @@ $new_added = $advertsingsController->getLastAdded();
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="guia23/js/html5shiv.min.js"></script>
-    <script src="guia23/js/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
-      
+
 
 
   </head>
@@ -39,48 +39,48 @@ $new_added = $advertsingsController->getLastAdded();
     <!--LOADER-->
 
     <!-- HEADER -->
-    <?php require "app/controller/Main.php"; ?>
-    <?php require "views/partials/header.php"; ?>
+    <?php require "guia23/app/controller/Main.php"; ?>
+    <?php require "guia23/views/partials/header.php"; ?>
     <!-- HEADER  -->
 
     <!-- BANNER -->
-    <?php require "views/partials/banner-ciudades.php" ?>
+    <?php require "guia23/views/partials/banner-ciudades.php" ?>
     <!-- BANNER -->
 
     <!-- Directorio Categorias -->
-    <?php require "views/partials/categorias_carousel.php"?>
+    <?php require "guia23/views/partials/categorias_carousel.php"?>
     <!-- Directorio Categorias -->
 
     <!-- Populares -->
-    <?php require "views/partials/index/populares.php" ?>
+    <?php require "guia23/views/partials/index/populares.php" ?>
     <!-- Popular  -->
 
     <!-- Most visited places -->
-    <?php require "views/partials/index/puntos_de_interes.php" ?>
+    <?php require "guia23/views/partials/index/puntos_de_interes.php" ?>
     <!-- Most visited places -->
 
     <!-- Counter Section -->
-    <?php require "views/partials/index/contador.php"?>
+    <?php require "guia23/views/partials/index/contador.php"?>
     <!-- Counter Section -->
 
     <!-- Best Things -->
-    <?php require "views/partials/index/mejores_cosas.php"?>
+    <?php require "guia23/views/partials/index/mejores_cosas.php"?>
     <!-- Best Things -->
 
     <!-- Latest News -->
-    <?php require "views/partials/index/noticias.php"?>
+    <?php require "guia23/views/partials/index/noticias.php"?>
     <!-- Latest News -->
 
     <!-- User -->
-    <!--<?php require "views/partials/index/usuario.php"?>-->
+    <!--<?php require "guia23/views/partials/index/usuario.php"?>-->
     <!-- Useer -->
 
     <!-- Footer -->
-    <?php require "views/partials/footer.php" ?>
+    <?php require "guia23/views/partials/footer.php" ?>
     <!-- Footer -->
 
     <!-- Popups -->
-    <!-- <?php require "views/partials/index/popups.php"?> -->
+    <!-- <?php require "guia23/views/partials/index/popups.php"?> -->
     <!--Fin  Popups -->
 
 
