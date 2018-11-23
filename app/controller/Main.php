@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER["DOCUMENT_ROOT"]."/guia23/app/core/Core.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/core/Core.php";
 
 if (!isset($_SESSION))
 { session_start(); }
