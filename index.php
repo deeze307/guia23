@@ -53,9 +53,9 @@ $cities = $advertsingsController->getCities(false);
     <!-- BANNER -->
 
 
-    <script src="guia23/js/jquery.2.2.3.min.js"></script>
-    <script src="guia23/js/bootstrap.min.js"></script>
-    <script src="guia23/js/functions.js"></script>
+    <script src="js/jquery.2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
 
   </body>
 
