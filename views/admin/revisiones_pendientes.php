@@ -10,6 +10,7 @@ if(!isset($_SESSION['role_id']) || ($_SESSION["role_id"] != 1 && $_SESSION["role
 require_once("../../app/controller/AdminController.php");
 $admin = new AdminController();
 $pendentsCounter = $admin->getPendentReviews();
+$pendentsCommerceCounter = $admin->getPendentCommerces();
 $pendents = $admin->getAllReviews();
 ?>
 <!DOCTYPE html>

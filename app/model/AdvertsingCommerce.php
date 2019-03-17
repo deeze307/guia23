@@ -2,7 +2,7 @@
 
 require_once dirname(dirname(__FILE__))."/core/Core.php" ;
 
-class AdvertsingsCategories
+class AdvertsingCommerce
 {
     private $db;
 
@@ -20,7 +20,7 @@ class AdvertsingsCategories
     public function create($commerce_data)
     {
         try{
-            $result_id = $this->db->insert('advertsings_commerce',$commerce_data);
+            $result_id = $this->db->insert('advertsing_commerce',$commerce_data);
             if($result_id)
             {
                 return $result_id;
@@ -72,31 +72,81 @@ class AdvertsingsCategories
     {
 
     }
+    
+    // Para manejar el estado de un comercio 
+    public function toggleCommerce($commerce_id,$toggle)
+    {
+        try
+        {
+            $this->db->where('id',$commerce_id);
+            $update = $this->db->update('advertsing_commerce',['enabled'=>$toggle]);
+            if($update)
+            {
+                return 'exito';
+            }
+            else
+            {
+                return $this->db->getLastError();
+            }
+        }
+        catch(Exception $ex)
+        {return $ex->getMessage();}
+
+
+    }
 
     public function delete()
     {
 
     }
 
-    public function countAds()
+
+    public function getCommerceFromUserId($user_id)
     {
-        $categories = self::request(true,"");
-        $adDetails = new AdvertsingDetail();
-        $arr = Array();
-        foreach($categories as $cat)
-        {
-            $cat->count = $adDetails->getForCategory($cat->advertsings_categories_id);
-            array_push($arr,$cat);
-        }
-        return $arr;
+        $this->db->join("advertsing_commerce_detail acd","ac.advertsing_commerce_detail_id = acd.advertsing_commerce_detail_id");
+        $result = $this->db->where('ac.user_id',$user_id)
+                            ->objectBuilder()
+                            ->get('advertsing_commerce ac',null,'ac.*, acd.commerce_name');
+        return $result;
     }
 
-    public function getAdvCatId($adv_cat)
+    public function getCommerceFromUserIdWithDetail($user_id)
     {
-        $result = $this->db->where('name',$adv_cat)
-                            ->objectBuilder()
-                            ->getOne('advertsings_categories','advertsings_categories_id');
-        return $result->advertsings_categories_id;
+
+        $commerce_detail = new AdvertsingCommerceDetail();
+        $result = $commerce_detail->getCommercesWithDetail($user_id);
+        return $result;
+    }
+
+    public function getCommerceWithDetail($commerce_id)
+    {
+        $commerce_detail = new AdvertsingCommerceDetail();
+        $result = $commerce_detail->getCommerceDetail($commerce_id);
+        return $result;
+    }
+
+    public function requestAllForAdmin($allCommerces = false)
+    {
+        $this->db->join("advertsing_commerce_detail ad","a.advertsing_commerce_detail_id = ad.advertsing_commerce_detail_id","LEFT");
+        $this->db->join("plan p","ad.plan_id = p.plan_id");
+        $this->db->join("users u","a.user_id = u.user_id");
+        $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id");
+        if(!$allCommerces)
+        {
+            $result = $this->db->where("a.enabled",0)
+                ->orderBy('a.id','DESC')
+                ->objectBuilder()
+                ->get('advertsing_commerce a',null,'a.*,u.username,ad.commerce_name,ad.plan_id,ac.name as cat_name,p.duration');
+        }
+        else
+        {
+            $result = $this->db
+                ->orderBy('a.id','DESC')
+                ->objectBuilder()
+                ->get('advertsing_commerce a',null,'a.*,u.username,ad.commerce_name,ad.plan_id,ac.name as cat_name,p.duration');
+        }
+
+        return $result;
     }
 
     public function countCategories()

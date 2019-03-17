@@ -36,7 +36,7 @@
                             </li>
                             <li><a href="https://www.instagram.com/guia23.com.ar/"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
                             </li>
-                           <!-- <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
                             </li>-->

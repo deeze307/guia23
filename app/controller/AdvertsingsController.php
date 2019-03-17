@@ -16,15 +16,48 @@ if(isset($_GET['listing_detail_adv_id']) || isset($_POST['listing_detail_adv_id'
         $listing_detail_id = $_POST['listing_detail_adv_id'];
         $cat_name = $_POST['cat_name'];
     }
-    $adv_detail = new Advertsings();
-    $_SESSION['adv_detail'] = $adv_detail->requestWithDetail($listing_detail_id);
-    if($cat_name != 'Hoteles')
+    $adv = new Advertsings();
+    $adv_detail = $adv->requestWithDetail($listing_detail_id);
+    require_once(dirname(dirname(__FILE__)).'/controller/AdvertsingsCommerceController.php');
+    $commerce = new AdvertsingsCommerceController();
+    $commerce_data = $commerce->getCommerceDetail($adv_detail->commerce_id);
+
+    if($adv_detail->category_permission != 1)
     {
-        header("Location: http://".$_SERVER['SERVER_NAME']."/views/listing-details.php");
+        $adv_detail->category_id = $commerce_data->category_id;
+        $adv_detail->province_id = $commerce_data->province_id;
+        $adv_detail->city_id = $commerce_data->city_id;
+        $adv_detail->phone = $commerce_data->phone;
+        $adv_detail->website = $commerce_data->website;
+        $adv_detail->address = $commerce_data->address;
+        $adv_detail->latitude= $commerce_data->latitude;
+        $adv_detail->longitude = $commerce_data->longitude;
+        $adv_detail->first_schedule_attention = $commerce_data->first_schedule_attention;
+        $adv_detail->first_schedule_attention_from = $commerce_data->first_schedule_attention_from;
+        $adv_detail->first_schedule_attention_to = $commerce_data->first_schedule_attention_to;
+        $adv_detail->second_schedule_attention = $commerce_data->second_schedule_attention;
+        $adv_detail->second_schedule_attention_from = $commerce_data->second_schedule_attention->from;
+        $adv_detail->second_schedule_attention_to = $commerce_data->second_schedule_attention->to;
+        $adv_detail->description= $commerce_data->description;
+        $adv_detail->plan_id = $commerce_data->plan_id;
+        $adv_detail->social_networks = $commerce_data->social_networks;
+        $adv_detail->email_notify = $commerce_data->email_notify;
     }
     else
     {
-        header("Location: http://".$_SERVER['SERVER_NAME']."/views/listing-details-1.php");
+        $adv_detail->category_id = $commerce_data->category_id;
+        $adv_detail->province_id = $commerce_data->province_id;
+        $adv_detail->city_id = $commerce_data->city_id;
+        $adv_detail->plan_id = $commerce_data->plan_id;
+    }
+    $_SESSION["adv_detail"] = $adv_detail;
+    if($cat_name != 'Hoteles')
+    {
+        header("Location: https://".$_SERVER['SERVER_NAME']."/views/listing-details.php");
+    }
+    else
+    {
+        header("Location: https://".$_SERVER['SERVER_NAME']."/views/listing-details-1.php");
     }
 }
 
@@ -49,9 +82,9 @@ if(isset($_GET['cat']))
 
     if(!isset($_GET['only_data']))
     {
-        $adv_cat_id = $adv->getAdvCatId($_GET['cat']);
-        $advertsings = $adv->getAdvsForCatId($adv_cat_id);
-        setcookie("CAT",$adv_cat_id,time() + 3600,"/");
+        $adv_cat = $adv->getAdvCat($_GET['cat']);
+        $advertsings = $adv->getAdvsForCatId($adv_cat->advertsings_categories_id,$adv_cat->permission);
+        setcookie("CAT",$adv_cat->advertsings_categories_id,time() + 3600,"/");
         setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
     //    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
         $_SESSION['ADVS_FOR_CAT'] = $advertsings;
@@ -59,7 +92,8 @@ if(isset($_GET['cat']))
     }
     else
     {
-        $advertsings = $adv->getAdvsForCatId($_GET['cat']);
+        $adv_cat = $adv->getAdvCatWithId($_GET['cat']);
+        $advertsings = $adv->getAdvsForCatId($adv_cat->advertsings_categories_id,$adv_cat->permission);
         Logger::write("debug_custom_map","[".date('d-m-Y h:i:s')."] ");
         echo json_encode($advertsings);
     }
@@ -128,10 +162,24 @@ class AdvertsingsController
         return $result;
     }
 
-    public function getAdvsForCatId($category_id)
+    public function getAdvCat($adv_cat_name)
+    {
+        $adv_cat = new AdvertsingsCategories();
+        $result = $adv_cat->getAdvCat($adv_cat_name);
+        return $result;
+    }
+
+    public function getAdvCatWithId($adv_cat_id)
+    {
+        $adv_cat = new AdvertsingsCategories();
+        $result = $adv_cat->getAdvCatWithId($adv_cat_id);
+        return $result;
+    }
+
+    public function getAdvsForCatId($category_id,$category_permisson)
     {
         $ads = new Advertsings();
-        return $ads->requestAllForCategory($category_id);
+        return $ads->requestAllForCategory($category_id,$category_permisson);
     }
 
     public function getOnePlan($plan_id)
@@ -140,10 +188,10 @@ class AdvertsingsController
         return $plan->request("",$plan_id);
     }
 
-    public function getCategories($adv_cat_id="")
+    public function getCategories($adv_cat_id="",$forWidget=false)
     {
         $adv_categories = new AdvertsingsCategories();
-        return $adv_categories->request(false,$adv_cat_id="");
+        return $adv_categories->request($forWidget,$adv_cat_id="");
     }
 
     public function getCategoryName($cat_id)
@@ -195,26 +243,48 @@ class AdvertsingsController
         $data_for_ads_detail = Array(
             "title"=>$post["titulo"],
             "subtitle"=>$post["subtitulo"],
-            "category_id"=>$post["categoria"],
-            "province_id"=>$post["provincia"],
-            "city_id"=>$post["ciudad"],
-            "phone"=>$post["telefono"],
+            "commerce_id"=>$post["comercio"],
+            "province_id"=>(isset($post["provincia"])? $post["provincia"] : null),
+            "city_id"=>(isset($post["ciudad"])? $post["ciudad"] : null),
+            "phone"=>(isset($post["telefono"])? $post["telefono"] : null),
             "price"=>$post["precio"],
-            "address"=>$post["direccion"],
-            "latitude"=>$post["latitud"],
-            "longitude"=>$post["longitud"],
-            "first_schedule_attention"=>$post["dia1"],
-            "second_schedule_attention"=>$post["dia2"],
-            "first_schedule_attention_from"=>$post["hora1_desde"],
-            "first_schedule_attention_to"=>$post["hora1_hasta"],
-            "second_schedule_attention_from"=>$post["hora2_desde"],
-            "second_schedule_attention_to"=>$post["hora2_hasta"],
-            "description"=>$post["description"],
-            "plan_id"=>$post["_plan"],
-            "social_networks"=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"],
-            "keywords"=>$post["keywords"],
+            "address"=>(isset($post["direccion"])? $post["direccion"] : null),
+            "latitude"=>(isset($post["latitud"])? $post["latitud"] : null),
+            "longitude"=>(isset($post["longitud"])? $post["longitud"] : null),
+            "first_schedule_attention"=>(isset($post["dia1"])? $post["dia1"] : null),
+            "second_schedule_attention"=>(isset($post["dia2"])? $post["dia2"] : null),
+            "first_schedule_attention_from"=>(isset($post["hora1_desde"])? $post["hora1_desde"] : null),
+            "first_schedule_attention_to"=>(isset($post["hora1_hasta"])? $post["hora1_hasta"] : null),
+            "second_schedule_attention_from"=>(isset($post["hora2_desde"])? $post["hora2_desde"] : null),
+            "second_schedule_attention_to"=>(isset($post["hora2_hasta"])? $post["hora2_hasta"] : null),
+            "description"=>(isset($post["description"])? $post["description"] : null),
+            "social_networks"=>'facebook_url='.(isset($post["facebook_url"])? $post["facebook_url"] : null).',google+_url='.(isset($post["google_url"])? $post["google_url"] : null).',instagram_url='.(isset($post["instagram_url"])? $post["instagram_url"] : null).',twitter_url='.(isset($post["twitter_url"])? $post["twitter_url"] : null).',linkedin_url='.(isset($post["linkedin_url"])? $post["linkedin_url"] : null).',youtube_url='.(isset($post["youtube_url"])? $post["youtube_url"] : null),
+            "keywords"=>(isset($post["keywords"])? $post["keywords"] : null),
             "commercial_image"=>$files,
         );
+
+//        $data_for_ads_detail = Array(
+//            "title"=>$post["titulo"],
+//            "subtitle"=>$post["subtitulo"],
+//            "commerce_id"=>$post["comercio"],
+//            "province_id"=>$post["provincia"],
+//            "city_id"=>$post["ciudad"],
+//            "phone"=>$post["telefono"],
+//            "price"=>$post["precio"],
+//            "address"=>$post["direccion"],
+//            "latitude"=>$post["latitud"],
+//            "longitude"=>$post["longitud"],
+//            "first_schedule_attention"=>$post["dia1"],
+//            "second_schedule_attention"=>$post["dia2"],
+//            "first_schedule_attention_from"=>$post["hora1_desde"],
+//            "first_schedule_attention_to"=>$post["hora1_hasta"],
+//            "second_schedule_attention_from"=>$post["hora2_desde"],
+//            "second_schedule_attention_to"=>$post["hora2_hasta"],
+//            "description"=>$post["description"],
+//            "social_networks"=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"],
+//            "keywords"=>$post["keywords"],
+//            "commercial_image"=>$files,
+//        );
         // inserto en tabla de detalle de publicación y recupero id de inserción
         $ads_detail_id = $advertsing_detail->create($data_for_ads_detail);
         if($ads_detail_id > 0)
@@ -239,10 +309,8 @@ class AdvertsingsController
                 $mail_obj->to_address = $post["email_notify"];
                 $mail_obj->from_address = "info@guia23.com.ar";
                 $mail_obj->subject = "Publicidad Creada Exitosamente (#".$ads_id.")";
-                $mail_obj->ammount_to_pay = $post["_plan_price"];
                 $mail_obj->ads_id = $ads_id;
                 $mail_obj->titulo = $post["titulo"];
-                $mail_obj->duration = $post["_plan_duration"];
                 $mail_obj->mail_type = "moderador";
                 $sended = $mail->send($mail_obj);
                 if($sended != 'exito')
@@ -321,27 +389,25 @@ class AdvertsingsController
     {
         try{
             $data = Array(
-                'title'=>$post['titulo'],
-                'subtitle'=>$post['subtitulo'],
-                'category_id'=>$post['categoria'],
-                'province_id'=>$post['provincia'],
-                'city_id'=>$post['ciudad'],
-                'phone'=>$post['telefono'],
-                'price'=>$post['precio'],
-                'address'=>$post['direccion'],
-                'latitude'=>$post['latitud'],
-                'longitude'=>$post['longitud'],
-                'first_schedule_attention'=>$post['dia1'],
-                'second_schedule_attention'=>$post['dia2'],
-                'first_schedule_attention_from'=>$post['hora1_desde'],
-                'first_schedule_attention_to'=>$post['hora1_hasta'],
-                'second_schedule_attention_from'=> $post['hora2_desde'],
-                'second_schedule_attention_to'=> $post['hora2_hasta'],
-                'description'=> $post['description'],
-                'keywords'=>$post['keywords'],
-                'plan_id'=>$post['_plan'],
-                'email_notify'=>$post['email_notify'],
-                'social_networks'=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"]
+            "title"=>$post["titulo"],
+            "subtitle"=>$post["subtitulo"],
+            "commerce_id"=>$post["comercio"],
+            "province_id"=>(isset($post["provincia"])? $post["provincia"] : null),
+            "city_id"=>(isset($post["ciudad"])? $post["ciudad"] : null),
+            "phone"=>(isset($post["telefono"])? $post["telefono"] : null),
+            "price"=>$post["precio"],
+            "address"=>(isset($post["direccion"])? $post["direccion"] : null),
+            "latitude"=>(isset($post["latitud"])? $post["latitud"] : null),
+            "longitude"=>(isset($post["longitud"])? $post["longitud"] : null),
+            "first_schedule_attention"=>(isset($post["dia1"])? $post["dia1"] : null),
+            "second_schedule_attention"=>(isset($post["dia2"])? $post["dia2"] : null),
+            "first_schedule_attention_from"=>(isset($post["hora1_desde"])? $post["hora1_desde"] : null),
+            "first_schedule_attention_to"=>(isset($post["hora1_hasta"])? $post["hora1_hasta"] : null),
+            "second_schedule_attention_from"=>(isset($post["hora2_desde"])? $post["hora2_desde"] : null),
+            "second_schedule_attention_to"=>(isset($post["hora2_hasta"])? $post["hora2_hasta"] : null),
+            "description"=>(isset($post["description"])? $post["description"] : null),
+            "social_networks"=>'facebook_url='.(isset($post["facebook_url"])? $post["facebook_url"] : null).',google+_url='.(isset($post["google_url"])? $post["google_url"] : null).',instagram_url='.(isset($post["instagram_url"])? $post["instagram_url"] : null).',twitter_url='.(isset($post["twitter_url"])? $post["twitter_url"] : null).',linkedin_url='.(isset($post["linkedin_url"])? $post["linkedin_url"] : null).',youtube_url='.(isset($post["youtube_url"])? $post["youtube_url"] : null),
+            "keywords"=>(isset($post["keywords"])? $post["keywords"] : null)
             );
             $ad = new AdvertsingDetail();
             $upd = $ad->update($data,$post['_adv_detail_id']);

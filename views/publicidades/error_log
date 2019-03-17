@@ -417,3 +417,350 @@
 [18-Nov-2018 12:22:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
 [18-Nov-2018 12:22:37 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
 [18-Nov-2018 12:22:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[13-Dec-2018 18:02:21 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 191
+[13-Dec-2018 18:02:22 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[13-Dec-2018 18:02:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[13-Dec-2018 18:02:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[13-Dec-2018 18:02:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[13-Dec-2018 18:02:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[13-Dec-2018 18:02:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[13-Dec-2018 18:02:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Dec-2018 19:35:03 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[20-Dec-2018 04:11:50 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[20-Dec-2018 04:15:41 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[20-Dec-2018 04:16:02 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[20-Dec-2018 04:18:03 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[20-Dec-2018 04:19:59 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[01-Jan-2019 21:07:13 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[01-Jan-2019 21:08:52 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[02-Jan-2019 02:41:35 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[02-Jan-2019 02:41:35 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[02-Jan-2019 02:41:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[02-Jan-2019 02:41:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[02-Jan-2019 02:41:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[02-Jan-2019 02:41:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[02-Jan-2019 02:41:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[02-Jan-2019 02:41:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[04-Jan-2019 12:11:09 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[04-Jan-2019 12:11:09 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[04-Jan-2019 12:11:09 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[04-Jan-2019 12:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[04-Jan-2019 12:11:09 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[04-Jan-2019 12:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[04-Jan-2019 12:11:09 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[04-Jan-2019 12:11:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 01:48:06 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[09-Jan-2019 01:48:06 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[09-Jan-2019 01:48:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 01:48:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 01:48:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 01:48:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 01:48:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 01:48:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 01:48:11 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[09-Jan-2019 01:48:11 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[09-Jan-2019 01:48:11 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 01:48:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 01:48:11 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 01:48:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 01:48:11 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 01:48:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 14:28:11 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 211
+[09-Jan-2019 14:28:12 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[09-Jan-2019 14:28:12 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 14:28:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[09-Jan-2019 14:28:12 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 14:28:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[09-Jan-2019 14:28:12 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[09-Jan-2019 14:28:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[11-Jan-2019 13:34:34 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[11-Jan-2019 13:34:35 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[11-Jan-2019 13:34:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[11-Jan-2019 13:34:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[11-Jan-2019 13:34:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[11-Jan-2019 13:34:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[11-Jan-2019 13:34:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[11-Jan-2019 13:34:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[11-Jan-2019 19:51:06 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[11-Jan-2019 19:51:06 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[11-Jan-2019 19:51:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[11-Jan-2019 19:51:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[11-Jan-2019 19:51:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[11-Jan-2019 19:51:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[11-Jan-2019 19:51:06 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[11-Jan-2019 19:51:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Jan-2019 05:45:44 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[16-Jan-2019 05:45:44 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[16-Jan-2019 05:45:44 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Jan-2019 05:45:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Jan-2019 05:45:44 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Jan-2019 05:45:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Jan-2019 05:45:44 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Jan-2019 05:45:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Jan-2019 07:56:21 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[16-Jan-2019 11:16:48 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[16-Jan-2019 15:20:16 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[16-Jan-2019 15:20:16 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[16-Jan-2019 15:20:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Jan-2019 15:20:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Jan-2019 15:20:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Jan-2019 15:20:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Jan-2019 15:20:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Jan-2019 15:20:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[19-Jan-2019 07:16:30 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:32:34 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:48:42 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:50:15 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:51:01 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:53:29 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 12:54:46 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 13:00:39 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 13:00:57 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 13:01:01 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 13:03:14 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[19-Jan-2019 13:04:53 UTC] PHP Notice:  Undefined index: selected_city_id in /home/u446498375/public_html/app/model/Advertsings.php on line 259
+[28-Jan-2019 18:00:59 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[28-Jan-2019 18:00:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[28-Jan-2019 18:00:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[28-Jan-2019 18:00:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[28-Jan-2019 18:00:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[28-Jan-2019 18:00:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[28-Jan-2019 18:00:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[28-Jan-2019 22:21:36 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[28-Jan-2019 22:21:36 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[28-Jan-2019 22:21:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[28-Jan-2019 22:21:36 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[28-Jan-2019 22:21:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[28-Jan-2019 22:21:36 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[28-Jan-2019 22:21:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[29-Jan-2019 10:03:34 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[29-Jan-2019 10:03:34 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[29-Jan-2019 10:03:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[29-Jan-2019 10:03:34 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[29-Jan-2019 10:03:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[29-Jan-2019 10:03:34 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[29-Jan-2019 10:03:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[29-Jan-2019 10:03:35 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[29-Jan-2019 10:03:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[29-Jan-2019 10:03:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[29-Jan-2019 10:03:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[29-Jan-2019 10:03:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[29-Jan-2019 10:03:35 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[29-Jan-2019 10:03:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:13 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:15 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:16 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 05:31:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 05:31:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 05:31:16 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 05:31:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:19 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:21 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:22 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:23 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:23 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:23 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:23 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[05-Feb-2019 17:09:38 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[05-Feb-2019 17:09:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Feb-2019 20:32:59 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[16-Feb-2019 20:32:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Feb-2019 20:32:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[16-Feb-2019 20:32:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Feb-2019 20:32:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[16-Feb-2019 20:32:59 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[16-Feb-2019 20:32:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[26-Feb-2019 09:40:03 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[26-Feb-2019 09:40:03 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[26-Feb-2019 09:40:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[26-Feb-2019 09:40:03 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[26-Feb-2019 09:40:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[26-Feb-2019 09:40:03 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[26-Feb-2019 09:40:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[01-Mar-2019 07:44:52 UTC] PHP Notice:  Undefined index: CAT_NAME in /home/u446498375/public_html/views/publicidades/publicidades.php on line 73
+[01-Mar-2019 07:44:52 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[01-Mar-2019 07:44:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 40
+[01-Mar-2019 07:44:52 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[01-Mar-2019 07:44:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 132
+[01-Mar-2019 07:44:52 UTC] PHP Notice:  Undefined index: ADVS_FOR_CAT in /home/u446498375/public_html/views/partials/popular-listing.php on line 228
+[01-Mar-2019 07:44:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/partials/popular-listing.php on line 228

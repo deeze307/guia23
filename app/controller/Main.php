@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER["DOCUMENT_ROOT"]."/guia23/app/core/Core.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/app/core/Core.php";
 
 if (!isset($_SESSION))
 { session_start(); }
@@ -10,7 +10,7 @@ if(isset($_GET['city_id']))
     $_SESSION['selected_city_id'] = $_GET['city_id'];
     $_SESSION['selected_city_name'] = $_GET['city_name'];
     $_SESSION['selected_city_class'] = $_GET['city_class'];
-    header("Location: https://".$_SERVER['SERVER_NAME']."/home.php");
+    header("Location: ".__URL__."/home.php");
 }
 
  class Main

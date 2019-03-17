@@ -30,7 +30,7 @@
                 <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/advertsings/packages.php"><i class="fa fa-plus-square" aria-hidden="true"></i>Publicar</a>
             </li>
             <li>
-                <a href="../../contact.php"><i class="fa fa-server" aria-hidden="true"></i> Mis Negocios</a>
+                <a href="commerces.php"><i class="fa fa-suitcase" aria-hidden="true"></i> Mis Comercios</a>
             </li>
            <!-- <li>
                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> Revision</a>
@@ -41,7 +41,7 @@
             <li>
                 <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Setting</a>
             </li>
-    <!--    <li>-->
+            <li>-->
     <!--        <a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Salir</a>-->
     <!--    </li>-->
         </ul>

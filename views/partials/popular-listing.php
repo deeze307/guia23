@@ -1,4 +1,4 @@
-<?php ?>
+<?php  ?>
 
     <!-- Popular Listing -->
     <section id="popular-listing-categories" class="p_b70 p_t70">
@@ -20,9 +20,9 @@
                                 </div>
                             </div>
                             <ul class="nav nav-tabs sort-listing" role="tablist">
-                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-th" aria-hidden="true"></i></a>
+                                <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-th" aria-hidden="true"></i></a>
                                 </li>
-                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                                <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a>
                                 </li>
                                 <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-th-list" aria-hidden="true"></i></a>
                                 </li>
@@ -33,13 +33,13 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                        <div role="tabpanel" class="tab-pane fade in active" id="profile">
                             <div class="row">
                                 <?php
 
                                 foreach($_SESSION['ADVS_FOR_CAT'] as $advertsing) {
                                     $image = explode(',', $advertsing->commercial_image);
-                                    if ($image[0] != "") {
+                                    if ($image[0] != "" && $image[0] != "vacio") {
                                         $image = $image[0];
                                     } else {
                                         $image = '1@.png';
@@ -102,9 +102,9 @@
                                                 <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
                                                     <figcaption>
                                                         <ul>
-                                                            <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                           <!--<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
                                                             <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/views/listing/listing.php?cat_id='.$_COOKIE['CAT'].'"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            <!--<li><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
                                                         </ul>
                                                     </figcaption>
                                                 </figure>
@@ -126,13 +126,13 @@
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane fade  in active" id="home">
+                        <div role="tabpanel" class="tab-pane fade in " id="home">
                             <div class="row">
                                 <?php
                                 foreach($_SESSION['ADVS_FOR_CAT'] as $advertsing)
                                 {
                                     $image = explode(',',$advertsing->commercial_image);
-                                    if($image[0] != "")
+                                    if($image[0] != "" && $image[0] != "vacio")
                                     {
                                         $image = $image[0];
                                     }
@@ -299,9 +299,9 @@
                                                 <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
                                                     <figcaption>
                                                         <ul>
-                                                            <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
+                                                           <!-- <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
                                                             <li><a href="http://'. $_SERVER['SERVER_NAME'] .'/views/listing/listing.php"><i class="fa fa-map-marker" aria-hidden="true"></i></a> </li>
-                                                            <li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>
+                                                            <!--<li><a href="#!"><i class="fa fa-reply" aria-hidden="true"></i></a> </li>-->
                                                         </ul>
                                                     </figcaption>
                                                 </figure>

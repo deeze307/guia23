@@ -22,6 +22,17 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/app/core/Core.php";
          return $adv->requestAllForAdmin(true);
      }
 
+     public function getPendentCommerces()
+     {
+         $adv = new AdvertsingCommerce();
+         return $adv->requestAllForAdmin(false);
+     }
+     public function getAllCommerces()
+     {
+         $adv = new AdvertsingCommerce();
+         return $adv->requestAllForAdmin(true);
+     }
+
      public function getUsers()
      {
          $users = new Users();

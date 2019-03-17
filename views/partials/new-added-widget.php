@@ -60,16 +60,16 @@
         }
 
         echo '<div class="places-list">';
-            echo '<h5><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->name.'">'.$new->title.'</a></h5>';
+            echo '<h5><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">'.$new->title.'</a></h5>';
             echo '<p>'.$new->address.'</p>';
             echo '<div class="media">';
                 echo '<div class="media-left">';
-                    echo '<a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->name.'">';
+                    echo '<a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">';
                         echo '<img class="media-object" width="50" height="50" src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'">';
                     echo '</a>';
                 echo '</div>';
                 echo '<div class="media-body">';
-                    echo '<h6 class="media-heading"><i class="'.$new->icon.'" aria-hidden="true"></i>'.$new->name.'</h6>';
+                    echo '<h6 class="media-heading"><i class="'.$new->icon.'" aria-hidden="true"></i> '.$new->cat_name.'</h6>';
                     echo '<div class="pull-right">'.$valoracion.'</div>';
                 echo '</div>';
             echo '</div>';

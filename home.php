@@ -1,5 +1,5 @@
 <?php
-require_once("guia23/app/controller/AdvertsingsController.php");
+require_once("app/controller/AdvertsingsController.php");
 $advertsingsController = new AdvertsingsController();
 $cat_counter = $advertsingsController->countAdsByCategories();
 $ads_counter = $advertsingsController->countAllAds();
@@ -17,12 +17,12 @@ $new_added = $advertsingsController->getLastAdded();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Guia23</title>
-    <link rel="stylesheet" type="text/css" href="guia23/css/master.css">
-    <link rel="stylesheet" type="text/css" href="guia23/css/color-green.css">
-    <link rel="shortcut icon" href="guia23/images/short_icon.png">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/color-green.css">
+    <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="guia23/js/html5shiv.min.js"></script>
-    <script src="guia23/js/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 
 
@@ -32,7 +32,7 @@ $new_added = $advertsingsController->getLastAdded();
 
     <!-- LOADER -->
     <div class="loader">
-      <div class="cssload-svg"><img src="guia23/images/42-3.gif" alt="image">
+      <div class="cssload-svg"><img src="images/42-3.gif" alt="image">
       </div>
     </div>
     <!--LOADER-->
@@ -84,18 +84,18 @@ $new_added = $advertsingsController->getLastAdded();
 
 
 
-    <script src="guia23/js/jquery.2.2.3.min.js"></script>
-    <script src="guia23/js/bootstrap.min.js"></script>
-    <script src="guia23/js/jquery.appear.js"></script>
-    <script src="guia23/js/jquery-countTo.js"></script>
-    <script src="guia23/js/owl.carousel.min.js"></script>
-    <script src="guia23/js/jquery.fancybox.min.js"></script>
-    <script src="guia23/js/bootsnav.js"></script>
-<!--    <script src="js/zelect.js"></script>-->
-    <script src="guia23/js/parallax.min.js"></script>
-    <script src="guia23/js/modernizr.custom.26633.js"></script>
-    <script src="guia23/js/jquery.gridrotator.js"></script>
-    <script src="guia23/js/functions.js"></script>
+    <script src="js/jquery.2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery-countTo.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <script src="js/zelect.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/modernizr.custom.26633.js"></script>
+    <script src="js/jquery.gridrotator.js"></script>
+    <script src="js/functions.js"></script>
 
   </body>
 

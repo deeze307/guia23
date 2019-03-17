@@ -83,7 +83,7 @@
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'].'/images/'.$image.'" alt="image">
                                 <figcaption>
                                     <ul>
                                         <li><a href="http://'. $_SERVER['SERVER_NAME'].'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>

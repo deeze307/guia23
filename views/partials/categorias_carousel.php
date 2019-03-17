@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: dmaidana
- * Date: 16/03/2018
- * Time: 06:12 PM
- */
-?>
 <section id="directory-category" class="p_b70 p_t70">
     <div class="container">
         <div class="row">

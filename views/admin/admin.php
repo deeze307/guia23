@@ -16,6 +16,7 @@ $cities = $profile_controller ->getCities();
 require_once("../../app/controller/AdminController.php");
 $admin = new AdminController();
 $pendentsCounter = $admin->getPendentReviews();
+$pendentsCommerceCounter = $admin->getPendentCommerces();
 ?>
 <!DOCTYPE html>
 <html lang="Es">

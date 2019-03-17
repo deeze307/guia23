@@ -35,9 +35,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -66,9 +66,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -132,9 +132,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

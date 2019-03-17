@@ -370,8 +370,6 @@ h5 {
     padding: 0 44px;
     width: 100%;
 }
-
-
 #main_header .navbar-brand {
   padding: 19px 15px;
 }
@@ -462,7 +460,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 #main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand {
   padding:15px 15px;
   transition: all 0.3s ease 0s;
-
 }
 #main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{
 	padding: 27px 10px 27px;
@@ -2547,8 +2544,8 @@ footer#footer::after {
 }
 
 .places-list img{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
 
 #popular-listing .pagination > li > a, .pagination > li > span {
@@ -2654,9 +2651,9 @@ footer#footer::after {
 .social-register-icon li a{
 	display:block;
 	height:18px;
-	width:50%;
+	width:90px;
 	line-height:18px;
-	text-align:center;
+	text-align:left;
 	color:#fff;
 }
 .social-register-icon li:nth-child(1) a{
@@ -3593,25 +3590,6 @@ ul.day-open li:nth-child(3){
 	height: 400px;
 	background-color: #e7eaf0;
 }
-
-/** Para achicar y agrandar el logo **/
-
-.largeLogo{
-    width: 150px;
-    height: 148px;
-    padding: 27px 15px;
-    transition: all 0.3s ease 0s;
-}
-.smallLogo{
-    width: 110px;
-    height: 108px;
-    padding: 27px 15px;
-    transition: all 0.3s ease 0s;
-}
-
-/*************************************/
-
-
 /* ================================= */
 /* --------- Reponsive Css --------- */
 /* ================================= */
@@ -3965,7 +3943,7 @@ ul.day-open li:nth-child(3){
 	  float:none;
 	}
 	.best-thing-model-feature li {
-	  width: 100%;
+	  width: 50%;
 	}
 	.best-thing-model-feature {
 	  height: 100%;

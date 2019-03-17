@@ -1,10 +1,9 @@
-﻿ $(function(){
+ $(function(){
 
      // Obtengo las publicaciones por cat_id
      $.get("../../app/controller/AdvertsingsController.php",{cat : $.urlParam('cat_id'),only_data : true})
          .done(function(response){
              var resultado = $.parseJSON(response);
-
              var db_places = [];
 
              $.each(resultado, function(index,advertsing){

@@ -127,9 +127,19 @@ class LoginSocial
         if (!isset($_SESSION))
         { session_start(); }
         setcookie(session_name(), '', 100);
-        session_unset();
-        session_destroy();
-        $_SESSION = array();
+        if(isset($_SESSION['user_id']))
+            unset($_SESSION['user_id']);
+
+        if(isset($_SESSION['username']))
+            unset($_SESSION['username']);
+
+        if(isset($_SESSION['user_id']))
+            unset($_SESSION['user_id']);
+
+        if(isset($_SESSION['role_id']))
+            unset($_SESSION['role_id']);
+//        session_unset();
+//        session_destroy();
 
         header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
     }

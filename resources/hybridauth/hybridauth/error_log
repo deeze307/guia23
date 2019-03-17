@@ -455,3 +455,77 @@ Stack trace:
 Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/guia23/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
 Stack trace:
 #0 /home/u446498375/public_html/guia23/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authI in /home/u446498375/public_html/guia23/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[29-Dec-2018 21:44:08 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[01-Jan-2019 05:15:42 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[05-Jan-2019 11:09:39 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[05-Jan-2019 21:30:07 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[05-Jan-2019 21:30:54 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[07-Jan-2019 14:24:00 UTC] PHP Fatal error:  Uncaught Hybrid_Exception: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(Array)
+#3 /home/u446498375/public_html/resources/hybridauth/hybridauth/index.php(15): Hybrid_Endpoint::process()
+#4 {main}
+
+Next Hybrid_Exception: Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly. in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php:217
+Stack trace:
+#0 /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/u446498375/public_html/resources/h in /home/u446498375/public_html/resources/hybridauth/hybridauth/Hybrid/Endpoint.php on line 217
+[18-Jan-2019 14:10:40 UTC] PHP Notice:  Undefined offset: 1 in /home/u446498375/public_html/resources/hybridauth/vendor/facebook/graph-sdk/src/Facebook/Http/GraphRawResponse.php on line 108
+[18-Jan-2019 14:10:40 UTC] PHP Notice:  Undefined offset: 1 in /home/u446498375/public_html/resources/hybridauth/vendor/facebook/graph-sdk/src/Facebook/Http/GraphRawResponse.php on line 108

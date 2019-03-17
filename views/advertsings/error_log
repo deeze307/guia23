@@ -38,3 +38,976 @@
 [07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 568
 [07-Nov-2018 03:06:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569
 [07-Nov-2018 03:06:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 569
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 126
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 13:48:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 13:48:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 13:48:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:48:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 601
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 602
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 602
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 603
+[13-Dec-2018 13:48:48 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 603
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 126
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 13:53:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 13:53:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 13:53:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:53:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 601
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 602
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 602
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 603
+[13-Dec-2018 13:53:37 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 603
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 126
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 14:57:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 14:57:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 14:57:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 14:57:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 519
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 519
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 520
+[13-Dec-2018 14:57:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 520
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 126
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 15:04:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 168
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 15:04:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 209
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 15:04:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 235
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 292
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 300
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 15:04:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 301
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 519
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 519
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 520
+[13-Dec-2018 15:04:26 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 520
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:15:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:15:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:15:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:15:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:15:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:24:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:24:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:24:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:24:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:24:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:26:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:26:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:26:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:26:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:26:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:46:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:46:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:46:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:46:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 15:46:40 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 16:01:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 16:01:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 16:01:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 16:01:41 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 16:01:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 16:01:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 16:01:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 16:01:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[13-Dec-2018 22:59:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[13-Dec-2018 22:59:12 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 505
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: counterCommerces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 124
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: adv_categories in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 23:32:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 166
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: provinces in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 23:32:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 207
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: cities in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 23:32:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 233
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 23:32:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan_id in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 516
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Undefined variable: adv_data in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[13-Dec-2018 23:32:44 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[14-Dec-2018 03:35:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[14-Dec-2018 03:35:18 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[17-Dec-2018 23:34:54 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:237
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('15')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 237
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[18-Dec-2018 01:10:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[18-Dec-2018 01:10:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[18-Dec-2018 01:10:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[20-Dec-2018 07:11:40 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[20-Dec-2018 07:11:40 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[20-Dec-2018 21:21:35 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[20-Dec-2018 21:21:35 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[21-Dec-2018 06:31:42 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[21-Dec-2018 06:31:42 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[21-Dec-2018 17:35:25 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[21-Dec-2018 17:35:25 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[22-Dec-2018 02:58:50 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[22-Dec-2018 02:58:50 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[22-Dec-2018 11:51:04 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[22-Dec-2018 11:51:04 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[22-Dec-2018 11:51:04 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[22-Dec-2018 11:51:04 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[25-Dec-2018 14:32:41 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[25-Dec-2018 14:32:41 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[25-Dec-2018 23:26:10 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:237
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('18')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 237
+[31-Dec-2018 15:53:27 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[31-Dec-2018 15:53:27 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[01-Jan-2019 22:46:13 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:237
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('18')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 237
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:21:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:21:14 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:21:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:21:29 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:24:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:24:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:24:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:25:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:25:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[02-Jan-2019 14:25:16 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[03-Jan-2019 02:40:57 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:237
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('18')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 237
+[03-Jan-2019 02:42:29 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[03-Jan-2019 02:42:29 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:237
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce(NULL)
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 237
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:27:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 12:27:15 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:27:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 12:27:47 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:29:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:29:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 12:29:35 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[04-Jan-2019 20:44:36 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[04-Jan-2019 20:44:36 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce(NULL)
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[05-Jan-2019 17:29:37 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[05-Jan-2019 17:29:37 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce(NULL)
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[05-Jan-2019 17:31:25 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('18')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[06-Jan-2019 16:49:05 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[06-Jan-2019 16:49:05 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce(NULL)
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 16:50:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 16:50:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 16:50:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 19:53:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 19:53:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 19:53:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:30:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:30:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 20:30:55 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 20:36:09 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[06-Jan-2019 20:36:09 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce(NULL)
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:36:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 227
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 266
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 274
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:36:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 275
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 291
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 20:36:28 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 337
+[06-Jan-2019 20:41:23 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:41:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:41:23 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 350
+[06-Jan-2019 20:41:23 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 350
+[06-Jan-2019 20:41:51 UTC] PHP Notice:  Undefined variable: commerces in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:41:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 148
+[06-Jan-2019 20:41:51 UTC] PHP Notice:  Undefined variable: plan in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 350
+[06-Jan-2019 20:41:51 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/require_advertsing.php on line 350
+[06-Jan-2019 20:49:03 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertsingsCommerce' not found in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php:243
+Stack trace:
+#0 /home/u446498375/public_html/views/advertsings/advertsing_commerce.php(20): AdvertsingsCommerceController->editCommerce('3')
+#1 {main}
+  thrown in /home/u446498375/public_html/app/controller/AdvertsingsCommerceController.php on line 243
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 290
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 298
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[06-Jan-2019 20:57:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 299
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 517
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 518
+[06-Jan-2019 20:57:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 20:57:31 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[06-Jan-2019 21:35:17 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[06-Jan-2019 23:45:38 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[06-Jan-2019 23:45:38 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[07-Jan-2019 17:03:38 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 14:57:52 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[08-Jan-2019 20:21:37 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[08-Jan-2019 20:21:37 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[08-Jan-2019 20:59:55 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[08-Jan-2019 20:59:55 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[08-Jan-2019 21:55:08 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[08-Jan-2019 21:55:08 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[08-Jan-2019 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[09-Jan-2019 17:34:56 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[09-Jan-2019 22:28:50 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[09-Jan-2019 22:28:50 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[10-Jan-2019 10:13:15 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[10-Jan-2019 10:13:15 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[10-Jan-2019 10:13:16 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[10-Jan-2019 10:13:16 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[10-Jan-2019 14:25:42 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[10-Jan-2019 14:25:42 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[10-Jan-2019 21:53:38 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[10-Jan-2019 21:53:38 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[11-Jan-2019 00:54:15 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[11-Jan-2019 00:54:15 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[11-Jan-2019 02:35:34 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[11-Jan-2019 02:35:34 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[11-Jan-2019 06:27:24 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[11-Jan-2019 06:27:24 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Undefined index: COMMERCE_ID in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 20
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[11-Jan-2019 15:18:02 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[11-Jan-2019 19:21:02 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[11-Jan-2019 19:21:02 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[14-Jan-2019 00:57:56 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[14-Jan-2019 00:57:56 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[16-Jan-2019 03:44:13 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[16-Jan-2019 03:44:13 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 167
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 208
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 234
+[18-Jan-2019 22:06:54 UTC] PHP Notice:  Trying to get property of non-object in /home/u446498375/public_html/views/advertsings/advertsing_commerce.php on line 524
+[19-Jan-2019 10:36:07 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[19-Jan-2019 10:36:07 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[27-Jan-2019 12:24:54 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[27-Jan-2019 12:24:54 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[05-Feb-2019 05:31:14 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[05-Feb-2019 17:09:20 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[08-Feb-2019 06:06:12 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[08-Feb-2019 06:06:12 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[08-Feb-2019 12:26:11 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[08-Feb-2019 12:26:11 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[16-Feb-2019 20:32:23 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[16-Feb-2019 20:32:23 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105
+[01-Mar-2019 07:44:12 UTC] PHP Notice:  Undefined index: user_id in /home/u446498375/public_html/views/advertsings/packages.php on line 9
+[01-Mar-2019 07:44:12 UTC] PHP Notice:  Undefined property: stdClass::$role_id in /home/u446498375/public_html/views/advertsings/packages.php on line 105

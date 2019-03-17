@@ -17,20 +17,20 @@ $head = $main->getGeneraData();
                     </div>
                 </div>
 
-                <form class="registerd" action="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/app/core/login.php" method="post" data-ajax="false">
+                <form class="registerd" action="<?php __URL__ ?>/app/core/login.php" method="post" data-ajax="false">
                     <div class="col-md-6 col-sm-8 col-xs-12">
                         <div class="top_right_links2">
                             <ul class="top_links">
                                 <?php if(isset($_SESSION['username']) && ($_SESSION["username"]!="")){?>
-                                        <li><a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $_SESSION["name"]." ".$_SESSION["lastname"];?></a> </li>
+                                        <li><a href="<?php echo __URL__ ?>/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $_SESSION["name"]." ".$_SESSION["lastname"];?></a> </li>
                                         <div class="add-listing"><button type="submit" name="logout" value="logout"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</button></div>
-                                        <div class="add-listing"> <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/advertsings/packages.php"><i class="fa fa-plus" aria-hidden="true"></i> Publicar</a> </div>
+                                        <div class="add-listing"> <a href="<?php echo __URL__ ?>/views/advertsings/advertsing_question.php"><i class="fa fa-plus" aria-hidden="true"></i> Publicar</a> </div>
                                 <?php
                                 }
                                 else
                                 {
                                  ?>
-                                    <div class="add-listing"> <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/login/login-registerd.php"><i class="fa fa-lock" aria-hidden="true"></i> Iniciar Sesion</a> </div>
+                                    <div class="add-listing"> <a href="<?php echo __URL__ ?>/views/login/login-registerd.php"><i class="fa fa-lock" aria-hidden="true"></i> Iniciar Sesion</a> </div>
                                 <?php } ?>
                             </ul>
                         </div>
