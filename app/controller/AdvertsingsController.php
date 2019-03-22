@@ -53,11 +53,11 @@ if(isset($_GET['listing_detail_adv_id']) || isset($_POST['listing_detail_adv_id'
     $_SESSION["adv_detail"] = $adv_detail;
     if($cat_name != 'Hoteles')
     {
-        header("Location: https://".$_SERVER['SERVER_NAME']."/views/listing-details.php");
+        header("Location: ".__URL__."/views/listing-details.php");
     }
     else
     {
-        header("Location: https://".$_SERVER['SERVER_NAME']."/views/listing-details-1.php");
+        header("Location: ".__URL__."/views/listing-details-1.php");
     }
 }
 
@@ -88,7 +88,7 @@ if(isset($_GET['cat']))
         setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
     //    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
         $_SESSION['ADVS_FOR_CAT'] = $advertsings;
-        header("Location: https://".$_SERVER['SERVER_NAME']."/views/publicidades/publicidades.php");
+        header("Location: ".__URL__."/views/publicidades/publicidades.php");
     }
     else
     {
@@ -101,7 +101,7 @@ if(isset($_GET['cat']))
 if(isset($_POST['plan']))
 {
     setcookie("PLAN",$_POST['plan'],time() + 3600,"/");
-    header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/require_advertsing.php");
+    header("Location: ".__URL__."/views/advertsings/require_advertsing.php");
 }
 elseif(isset($_POST['_submitted']))
 {
@@ -332,7 +332,7 @@ class AdvertsingsController
         // Redirecciono a pagina de publicaciones con mensaje exitoso o de error
         Logger::write("debug","[".date('d-m-Y h:i:s')."] ".$_SESSION['images']);
         unset($_SESSION['images']);
-        header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/require_advertsing_response.php");
+        header("Location: ".__URL__."/views/advertsings/require_advertsing_response.php");
 
     }
 
@@ -420,7 +420,7 @@ class AdvertsingsController
                 $_SESSION['error'] = "Ocurrió un error al intentar editar la publicidad. (".$upd.")";
                 Logger::write('advertsings_'.date('d-m-Y'),"Publicidad ".$post['titulo']." No se pudo editar || ".date('d-m-Y H:i:s'));
             }
-            header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/require_advertsing_response.php");
+            header("Location: ".__URL__."/views/advertsings/require_advertsing_response.php");
         }
         catch(Exception $ex)
         {

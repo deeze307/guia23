@@ -17,7 +17,7 @@
                 <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img">
-                            <figure class="effect-ming"> <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/Museos/20151107_131413.jpg" alt="image">
+                            <figure class="effect-ming"> <img src="<?php __URL__ ?>/images/Museos/20151107_131413.jpg" alt="image">
                                 <figcaption>
                                     <ul>
                                         <li><a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="popular-listing-detail">
-                            <h3><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/listing/listing.php">Lago Fagnano</a></h3>
+                            <h3><a href="<?php __URL__ ?>/views/listing/listing.php">Lago Fagnano</a></h3>
                             <span>Categoria: <a href="#">Puntos de Interes</a></span>
                             <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ruta 3 km 45</p>
                         </div>

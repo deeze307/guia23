@@ -7,21 +7,21 @@
 
             <div class="col-md-3 col-sm-3 col-xs-12">
                 <div class="footer_logo">
-                    <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/1@.png" alt="image" />
+                    <img src="<?php __URL__ ?>/images/1@.png" alt="image" />
                 </div>
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                 <ul class="footer_link">
-                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>">Inicio</a>
+                    <li><a href="<?php __URL__ ?>/home.php">Inicio</a>
                     </li>
-                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/login/login-registerd.php">Registro</a>
+                    <li><a href="<?php __URL__ ?>/views/login/login-registerd.php">Registro</a>
                     </li>
-                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/about.php">Nosotros</a>
+                    <li><a href="<?php __URL__ ?>/views/about.php">Nosotros</a>
                     </li>
-                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/contact.php">Contacto</a>
+                    <li><a href="<?php __URL__ ?>/views/contact.php">Contacto</a>
                     </li>
-                    <li><a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/advertsings/packages.php">Publicar</a>
+                    <li><a href="<?php __URL__ ?>/views/advertsings/packages.php">Publicar</a>
                     </li>
                 </ul>
             </div>
