@@ -59,11 +59,13 @@
                        <!-- <h2></h2>-->
                         <p>Bienvenidos a la página de ayuda de Guía23, en esta página encontrará toda la información necesaria para: Regístrarse, Ingresar como usuario, publicar en la página, ver detalle de la publicación, ver publicación en el mapa.<br>
                         Hicimos esta página para que UD. como cliente pueda crear su negocio dentro de Guía23 y publicar ofertas, al ingresar a su perfil de usuario puede, modificarlas, borrarlas, actualizarlas,tantas veces como necesite, previo a abonar el plan que haya elegido.</p><br>
-                        <p><strong>Planes Publicitarios:</strong><br><br>
+
+                        <p><strong>Promoción gratuita por (3) tres meses : Queremos que Ud. pueda hacer conocer su negocio a traves de Guía23 de forma gratuita, publique las ofertas de su comercio o empresa.</strong><br><br>
+                        <!--<p><strong>Planes Publicitarios:</strong><br><br>
                             <strong>Plan Básico</strong>; $200 al mes.<br>
                             <strong>Plan Premium</strong>: $ 500 por tres meses.<br>
                             <strong>Plan Gold</strong>: $1100 por 6 meses.<br>
-                            <strong>Plan Platinum</strong>: $ 2000 por doce meses.<br><br>
+                            <strong>Plan Platinum</strong>: $ 2000 por doce meses.<br><br>-->
                         <p><strong>Para Registrarse:</strong><br> 
                             Para registrarse en guía23 UD. debe ingresar al sector de registro, el cual se encuentra en la parte superior derecha (Paginas - Login/Registro), tambien puede acceder con el boton (Regístrese Ahora) hubicado en el Banner principal, y en la parte inferior de la página (footer) con el link (Registro).<br><br>
                         <strong>Para Ingresar:</strong><br>
