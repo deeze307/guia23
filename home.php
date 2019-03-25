@@ -19,6 +19,8 @@ $new_added = $advertsingsController->getLastAdded();
     <title>Guia23</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/swipper-style.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -29,6 +31,7 @@ $new_added = $advertsingsController->getLastAdded();
   </head>
 
   <body>
+
 
     <!-- LOADER -->
     <div class="loader">
@@ -84,6 +87,7 @@ $new_added = $advertsingsController->getLastAdded();
 
 
 
+    
     <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.appear.js"></script>
