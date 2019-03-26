@@ -39,7 +39,7 @@ $bannerClass = $_SESSION['selected_city_class'];
     <div class="swiper-button-prev"></div>
   </div>
 
-  <div class="banner-text text-center">
+  <div class="banner-text-mini text-center">
     <h2><span>Bienvenidos a Guía23</span>  <span>(<?php echo $city_name ?>)</span></h2>
     <p>Explore las mejores atracciones turisticas, actividades, comercios y mas..!</p>
     <?php if(!isset($_SESSION['user_id'])){ echo '<a href="views/login/login-registerd.php">REGÍSTRESE AHORA</a>';} ?>
