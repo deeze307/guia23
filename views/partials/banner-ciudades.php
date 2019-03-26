@@ -10,12 +10,6 @@ $bannerClass = $_SESSION['selected_city_class'];
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;">
-        <div class="banner-text text-center">
-          <h2><span>Bienvenidos a Guía23</span>  <span>(<?php echo $city_name ?>)</span></h2>
-          <p>Explore las mejores atracciones turisticas, actividades, comercios y mas..!</p>
-          <?php if(!isset($_SESSION['user_id'])){ echo '<a href="views/login/login-registerd.php">REGÍSTRESE AHORA</a>';} ?>
-          <a href=views/Ayuda.php>¿COMO PUBLICAR?</a>
-        </div>
       </div>
       <div class="swiper-slide" style="
         background-image: url(../../images/carousel-images/2.jpg);
@@ -43,6 +37,13 @@ $bannerClass = $_SESSION['selected_city_class'];
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="banner-text text-center">
+    <h2><span>Bienvenidos a Guía23</span>  <span>(<?php echo $city_name ?>)</span></h2>
+    <p>Explore las mejores atracciones turisticas, actividades, comercios y mas..!</p>
+    <?php if(!isset($_SESSION['user_id'])){ echo '<a href="views/login/login-registerd.php">REGÍSTRESE AHORA</a>';} ?>
+    <a href=views/Ayuda.php>¿COMO PUBLICAR?</a>
   </div>
 
   <!-- Swiper JS -->

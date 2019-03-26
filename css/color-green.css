@@ -479,7 +479,8 @@ footer#footer::after {
 .best-thing-model-btn a:hover{
   background: #00463e;
 }
-.banner-text > a:hover{
+.banner-text a:hover{
+  color: #fff;
 	background:#1fb7a6;
 	border: 1px solid #1fb7a6;
 }

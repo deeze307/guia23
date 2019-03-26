@@ -847,7 +847,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 /*****************************/
 
 .banner-text {
-  margin:30% 0;
+  margin: 30px 0;
 }
 
 .banner-text-index {
@@ -900,7 +900,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-top: 51px;
 }
 .banner-text > h2 {
-  color: #fff;
+  color: #333;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -914,29 +914,29 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
     text-transform: uppercase;
 }
 .banner-text > p {
-  color: #fff;
+  color: #333;
   font-size: 26px;
   letter-spacing: 1px;
   padding: 20px 40px 30px 0;
 }
 .banner-text-index > p {
-    color: #fff;
+    color: #333;
     font-size: 26px;
     letter-spacing: 1px;
     padding: 30px 0 20px 0;
 }
 
 .banner-text > a {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #333;
+  color: #333;
   display: inline-block;
   font-size: 18px;
   padding: 15px 60px;
 }
 
 .banner-text-index > a {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #333;
+    color: #333;
     display: inline-block;
     font-size: 18px;
     width: 200px;
