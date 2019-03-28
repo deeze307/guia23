@@ -39,6 +39,8 @@ require_once __GUIA23__."/model/AdvertsingCommerceDetail.php";
 require_once __GUIA23__."/model/AdvertsingDetail.php";
 require_once __GUIA23__."/model/AdvertsingsCounter.php";
 
+require_once __GUIA23__."/model/Carousel.php";
+
 require_once __GUIA23__."/model/Valuations.php";
 
 class Core

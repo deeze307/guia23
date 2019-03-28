@@ -5,32 +5,24 @@ $bannerClass = $_SESSION['selected_city_class'];
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="
-        background-image: url(../../images/carousel-images/1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;">
-      </div>
-      <div class="swiper-slide" style="
-        background-image: url(../../images/carousel-images/2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;"></div>
-      <div class="swiper-slide" style="
-        background-image: url(../../images/carousel-images/3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;"></div>
-      <div class="swiper-slide" style="
-        background-image: url(../../images/carousel-images/4.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;"></div>
-      <div class="swiper-slide" style="
-        background-image: url(../../images/carousel-images/5.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;"></div>
+      <?php
+        foreach($carousel as $car)
+        {
+          echo'
+            <div class="swiper-slide" style="
+              background-image: url(../../images/carousel-images/'.$car->filename.');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;">';
+              if(isset($car->link)){
+                echo'<div class="banner-text text-right"><a href="'.$car->link.'">Visite esta Publicidad</a></div>';
+              }
+          echo  '</div>';
+        }
+        
+      ?>
+      
+      
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>

@@ -1,6 +1,9 @@
 <?php
 require_once("app/controller/AdvertsingsController.php");
+require_once("app/controller/CarouselController.php");
 $advertsingsController = new AdvertsingsController();
+$carouselController = new CarouselController();
+$carousel = $carouselController->getCarouselImages(false);
 $cat_counter = $advertsingsController->countAdsByCategories();
 $ads_counter = $advertsingsController->countAllAds();
 $categories_counter = $advertsingsController->countAllCategories();
