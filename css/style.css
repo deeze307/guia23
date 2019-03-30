@@ -769,7 +769,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 
 .banner-icons {
-  left: 0;
+  left: 0,1;
   position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
@@ -778,11 +778,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   border: 0 solid #828284;
   color: #fff;
   font-size: 16px;
-  height:52px;
+  height:40px;
   text-align: center;
-  width:52px;
+  width:50px;
   display:inline-block;
-  line-height:52px;
+  line-height:42px;
   text-align:center;
   transition: all .3s ease;
 }
@@ -1412,7 +1412,7 @@ figure.effect-ming img {
 	transition: opacity 0.35s;
 }
 figure.effect-ming figcaption::before {
-	position: absolute;
+	position: sticky;
 	top:10px;
 	right:10px;
 	bottom:10px;
@@ -1423,7 +1423,7 @@ figure.effect-ming figcaption::before {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.4,1.4,1);
-	transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.5,1.5,1);
 }
 .popular-listing-box:hover figure.effect-ming figcaption::before,
 .best-things-details:hover figure.effect-ming figcaption::before {
@@ -3628,6 +3628,50 @@ ul.day-open li:nth-child(3){
 	  line-height:0;
 	  font-size:14px;
 	}
+
+  .banner-text-mini > h2 {
+  color: #1fb7a6;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.banner-text-mini > p {
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 30px 0 20px 0;
+}
+.banner-text-mini > a {
+    border: 1px solid #333;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    width: 130px;
+    padding: 15px 0;
+    margin: 5px;
+}
+  img {
+  border: 0 none;
+  height: auto;
+  width: 100%;
+}
+img.logo {
+  border: 0 none;
+  height: auto;
+  width: 40%;
+}
+img.footer_logo > img {
+  width: 40%;
+}
+
+.popular-listing-img, .best-things-details {
+    position: relative;
+    overflow: hidden;
+    width: 330px;
+    height: 248px;
+}
+
 	.add-listing > a:hover{
 	  background: transparent;
 	  padding: 0;
@@ -3678,7 +3722,7 @@ ul.day-open li:nth-child(3){
 	  padding: 10px;
 	}
 	.banner-icons {
-	  top: 0;
+	  top: 310px;
 	  transform: translate(0px, 0px);
 	  left:0;
 	  right:0;
@@ -3887,7 +3931,7 @@ ul.day-open li:nth-child(3){
 	}
 	.social-icons.text-right,
 	.footer_logo {
-	  text-align: center;
+	  text-align: left;
 	}
 	.footer_link {
 	  margin: 30px 0;
