@@ -3651,19 +3651,6 @@ ul.day-open li:nth-child(3){
     padding: 15px 0;
     margin: 5px;
 }
-  img {
-  border: 0 none;
-  height: auto;
-  width: 100%;
-}
-img.logo {
-  border: 0 none;
-  height: auto;
-  width: 40%;
-}
-img.footer_logo > img {
-  width: 40%;
-}
 
 .popular-listing-img, .best-things-details {
     position: relative;
@@ -3706,6 +3693,13 @@ img.footer_logo > img {
 	  margin: 0 9px 50px;
 	}
 }
+img.logo {
+  border: 0 none;
+  height: auto;
+  width: 35%;
+}
+
+
 @media (max-width: 992px) {
 	#main_header .navbar-brand {
 	  padding: 4px 15px;
@@ -3929,13 +3923,22 @@ img.footer_logo > img {
 	.ri-grid {
 	  height: 100%;
 	}
-	.social-icons.text-right,
+	.social-icons.text-right {
+    text-align: center;
+  }
 	.footer_logo {
-	  text-align: left;
+	  text-align: center;
 	}
+   .footer_logo > img {
+  width: 18%;
+  }
 	.footer_link {
 	  margin: 30px 0;
 	}
+  .footer_link > li > a {
+    color: #fff;
+    padding: 5px;
+}
 	.footer_botom p {
 	  text-align: center;
 	  margin-bottom:15px;
@@ -3987,6 +3990,7 @@ img.footer_logo > img {
 	}
 	
 }
+
 @media (max-width: 480px) {
 	.directory-category-box {
 	  width: 100%;
