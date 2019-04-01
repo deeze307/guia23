@@ -3628,6 +3628,11 @@ ul.day-open li:nth-child(3){
 	  line-height:0;
 	  font-size:14px;
 	}
+  img.logo  {
+  border: 0 none;
+  height: auto;
+  width: 35%;
+ }
 
   .banner-text-mini > h2 {
   color: #1fb7a6;
@@ -3692,12 +3697,9 @@ ul.day-open li:nth-child(3){
 	.directory-category-box3 {
 	  margin: 0 9px 50px;
 	}
+  
 }
-img.logo {
-  border: 0 none;
-  height: auto;
-  width: 35%;
-}
+
 
 
 @media (max-width: 992px) {
