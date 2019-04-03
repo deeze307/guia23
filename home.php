@@ -31,6 +31,7 @@ $new_added = $advertsingsController->getLastAdded();
     <![endif]-->
 
 
+
   </head>
 
   <body>

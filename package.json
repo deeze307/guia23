@@ -4,6 +4,5 @@
   "private": true,
   "license": "ISC",
   "dependencies": {
-    "hybridauth/hybridauth" : "~3.0"
   }
 }
