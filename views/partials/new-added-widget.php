@@ -17,59 +17,60 @@
         {
             case '0':
                 $valoracion = '<span class="fa fa-star-o"/> 
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>';
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>';
                 break;
             case '1':
                 $valoracion = '<span class="fa fa-star"/> 
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>';                                           break;
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>';
+                break;
             case '2':
                 $valoracion = '<span class="fa fa-star"/> 
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>';
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>';
                 break;
             case '3':
                 $valoracion = '<span class="fa fa-star"/> 
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star-o"/>
-                                                            <span class="fa fa-star-o"/>';
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star-o"/>
+                                <span class="fa fa-star-o"/>';
                 break;
             case '4':
                 $valoracion = '<span class="fa fa-star"/> 
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star-o"/>';
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star-o"/>';
                 break;
             case '5':
                 $valoracion = '<span class="fa fa-star"/> 
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>
-                                                            <span class="fa fa-star"/>';
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>
+                                <span class="fa fa-star"/>';
                 break;
           
         }
 
         echo '<div class="places-list">';
-            echo '<h5><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->name.'">'.$new->title.'</a></h5>';
+            echo '<h5><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">'.$new->title.'</a></h5>';
             echo '<p>'.$new->address.'</p>';
             echo '<div class="media">';
                 echo '<div class="media-left">';
-                    echo '<a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->name.'">';
-                        echo '<img class="media-object" width="50" height="50" src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'">';
+                    echo '<a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">';
+                        echo '<img class="media-object" width="50" height="50" src="'. __URL__ .'/images/'.$image.'">';
                     echo '</a>';
                 echo '</div>';
                 echo '<div class="media-body">';
-                    echo '<h6 class="media-heading"><i class="'.$new->icon.'" aria-hidden="true"></i>'.$new->name.'</h6>';
+                    echo '<h6 class="media-heading"><i class="'.$new->icon.'" aria-hidden="true"></i> '.$new->cat_name.'</h6>';
                     echo '<div class="pull-right">'.$valoracion.'</div>';
                 echo '</div>';
             echo '</div>';

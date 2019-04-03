@@ -1,5 +1,8 @@
 <?php
 
+// Las variables globales del entorno deberán ir en el archivo server.php
+require_once "server.php";
+
 define('__GUIA23__', dirname(dirname(__FILE__)));
 
 
@@ -31,8 +34,12 @@ require_once __GUIA23__."/model/Cities.php";
 
 require_once __GUIA23__."/model/Advertsings.php";
 require_once __GUIA23__."/model/AdvertsingsCategories.php";
+require_once __GUIA23__."/model/AdvertsingCommerce.php";
+require_once __GUIA23__."/model/AdvertsingCommerceDetail.php";
 require_once __GUIA23__."/model/AdvertsingDetail.php";
 require_once __GUIA23__."/model/AdvertsingsCounter.php";
+
+require_once __GUIA23__."/model/Carousel.php";
 
 require_once __GUIA23__."/model/Valuations.php";
 

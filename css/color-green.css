@@ -144,6 +144,9 @@ footer#footer {
 .banner-text-3 > h2 > span{
   color: #1fb7a6;
 }
+.banner-text-3-mini > h2 > span{
+  color: #1fb7a6;
+}
 .directory-category-box3 span .fa {
   font-size: 40px;
   color:#1fb7a6;
@@ -165,6 +168,9 @@ nav.navbar.bootsnav ul.nav li.active > a,
   color: #1fb7a6;
 }
 .banner-text h2 span {
+  color: #1fb7a6;
+}
+.banner-text-mini h2 span {
   color: #1fb7a6;
 }
 .right-bar-listing li a:hover{
@@ -487,6 +493,13 @@ footer#footer::after {
     background:#1fb7a6;
     border: 1px solid #1fb7a6;
 }
+
+.banner-text-mini > a:hover{
+  color:#fff;
+	background:#1fb7a6;
+	border: 1px solid #1fb7a6;
+}
+
 #directory-category-slider .owl-prev:hover,
 #directory-category-slider .owl-next:hover{
 	background:#1fb7a6;

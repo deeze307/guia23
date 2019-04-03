@@ -3,6 +3,16 @@ if (!isset($_SESSION))
 { session_start(); }
 $session = (object) $_SESSION;
 
+require_once("../../app/controller/AdvertsingsCommerceController.php");
+
+$commerce = new AdvertsingsCommerceController();
+$comercios = $commerce->getCommercesForUserId($_SESSION["user_id"]);
+//$_SESSION["add_commerce"] = true;
+//if(count($comercios) == 0){
+//    header("Location: http://".$_SERVER['SERVER_NAME']."/views/advertsings/advertsing_commerce.php");
+//}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -38,12 +48,30 @@ $session = (object) $_SESSION;
 
     <!-- Packages -->
     <?php
+    unset($_SESSION["ADVS_FOR_CAT"]);
     $plan_features = new Plan();
     $ads = $plan_features->request("all");
 //    unset($_COOKIE["EDIT"]);
     ?>
     <section class="p_t70 p_b70 bg_lightgry">
-        <form class="registerd" action="../../app/controller/AdvertsingsController.php" method="post" data-ajax="false">
+        <div class="col-md-12 col-sm-23 col-xs-12">
+            <?php
+            if(count($comercios) == 0)
+            {
+                echo '
+                    <h3 class="text-center">
+                        Oh...parece que no tiene ningún comercio registrado a su nombre...
+                    </h3>
+                    <h4 class="text-center">
+                        ¿Qué le parece si selecciona un Plan para poder crear un Comercio?
+                    </h4>
+                    ';
+            }
+            ?>
+            <hr>
+
+        </div>
+        <form class="registerd" action="../../app/controller/AdvertsingsCommerceController.php" method="post" data-ajax="false">
             <div id="pricePlans">
                 <ul id="plans">
                     <?php foreach($ads as $a){ ?>

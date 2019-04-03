@@ -65,7 +65,7 @@ if (!isset($_SESSION))
                     <div class="details-heading-address2">
                         <ul class="text-center">
                             <li><a href="../../home.php"><i class="fa fa-home" aria-hidden="true"> </i>Volver al Inicio</a> </li>
-                            <li><a href="../advertsings/packages.php"><i class="fa fa-desktop" aria-hidden="true"></i> Seguir Publicando</a> </li>
+                            <li><a href="../advertsings/advertsing_question.php"><i class="fa fa-desktop" aria-hidden="true"></i> Seguir Publicando</a> </li>
                         </ul>
                     </div>
                 </div>

@@ -1,6 +1,9 @@
 <?php
 require_once("app/controller/AdvertsingsController.php");
+require_once("app/controller/CarouselController.php");
 $advertsingsController = new AdvertsingsController();
+$carouselController = new CarouselController();
+$carousel = $carouselController->getCarouselImages(false);
 $cat_counter = $advertsingsController->countAdsByCategories();
 $ads_counter = $advertsingsController->countAllAds();
 $categories_counter = $advertsingsController->countAllCategories();
@@ -19,6 +22,8 @@ $new_added = $advertsingsController->getLastAdded();
     <title>Guia23</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/swipper-style.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -30,6 +35,7 @@ $new_added = $advertsingsController->getLastAdded();
   </head>
 
   <body>
+
 
     <!-- LOADER -->
     <div class="loader">
@@ -85,6 +91,7 @@ $new_added = $advertsingsController->getLastAdded();
 
 
 
+    
     <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.appear.js"></script>
@@ -92,7 +99,7 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootsnav.js"></script>
-<!--    <script src="js/zelect.js"></script>-->
+    <script src="js/zelect.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.gridrotator.js"></script>

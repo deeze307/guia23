@@ -32,11 +32,15 @@ class Mailer
             $mail->Subject = $mail_obj->subject;
             if($mail_obj->mail_type == "moderador")
             {
-                $mail->Body = $this->mailForSuccessAdvertsingCreation($mail_obj->ads_id,$mail_obj->ammount_to_pay,$mail_obj->titulo,$mail_obj->duration);
+                $mail->Body = $this->mailForSuccessAdvertsingCreation($mail_obj->ads_id,$mail_obj->titulo);
             }
-            else
+            else if($mail_obj->mail_type == "contacto")
             {
                 $mail->Body = $this->mailForAdminContact($mail_obj->name,$mail_obj->lastname,$mail_obj->from_address,$mail_obj->content);
+            }
+            else if($mail_obj->mail_type == "comercio")
+            {
+                $mail->Body = $this->mailForSuccessCommerceCreation($mail_obj->ads_id,$mail_obj->ammount_to_pay,$mail_obj->titulo,$mail_obj->duration);
             }
 
             $mail->send();
@@ -53,8 +57,21 @@ class Mailer
      * @param $amount_to_pay
      * @return string
      */
-    public function mailForSuccessAdvertsingCreation($ad_id,$amount_to_pay,$title,$duration)
+    public function mailForSuccessAdvertsingCreation($ad_id,$title)
     {
+
+        $content = "<h3>Su Publicidad titulada <strong>'".$title."'</strong> ha sido creada exitosamente(#".$ad_id.").</h3>\n\n";
+        $content.="<p>Su publicidad será revisada por un moderador y en cuanto se apruebe el contenido usted recibirá un correo informativo y su publicidad estará disponible para todo el mundo</p><hr>";
+        $content.="<p>Gracias por confiar en nosotros.\n</p>";
+        $content.="<p><i>Atte. Soporte de Guia23.</i></p>";
+        $content.="<div><img src='". $_SERVER["DOCUMENT_ROOT"] ."/images/1@.png' /></div>";
+
+        return $content;
+    }
+
+    public function mailForSuccessCommerceCreation($ad_id,$amount_to_pay,$title,$duration)
+    {
+
         if($duration < 2)
         {
             $duration .= " Mes";
@@ -65,16 +82,18 @@ class Mailer
         }
         $fecha_limite_formato = strtotime("+2 Days");
         $fecha_limite = date("Y-m-d h:i", $fecha_limite_formato);
-        $content = "<h3>Su Publicidad titulada <strong>'".$title."'</strong> ha sido creada exitosamente(#".$ad_id.").</h3>\n\n";
-        $content.="<p>Su publicidad permanecerá activa por <strong>".$duration."</strong> una vez que esté activa.</p>";
-        $content.="<p>Para que su publicidad sea visible para todo el publico usted deberá abonar la suma de <strong>$".$amount_to_pay."</strong> en la cuenta que se describe más abajo en este correo antes de la fecha: <strong>".$fecha_limite."</strong>.</p>";
+
+        $content = "<h3>Su Comercio titulado <strong>'".$title."'</strong> ha sido creado exitosamente(#".$ad_id.").</h3>\n\n";
+        $content.="<p>Su comercio permanecerá activo por <strong>".$duration."</strong> una vez que esté habilitado.</p>";
+        $content.="<p>Para que su comercio sea habilitado usted deberá abonar la suma de <strong>$".$amount_to_pay."</strong> en la cuenta que se describe más abajo en este correo antes de la fecha: <strong>".$fecha_limite."</strong>.</p>";
         $content.="<p>Pasado el tiempo límite, su publicidad caducará y deberá generar una nuevamente.</p><hr>";
-        $content.="<p>Su publicidad será revisada por un moderador y en cuanto se apruebe el contenido y se reciba el pago, usted recibirá un correo informativo y su publicidad estará disponible para todo el mundo</p><hr>";
+        $content.="<p>Su publicidad será revisada por un moderador y en cuanto se apruebe el contenido y se reciba el pago, usted recibirá un correo informativo indicando que puede utilizar su Comercio para vincular sus publicidades.</p><hr>";
         $content.="<p><strong>Banco Francés</strong></p>\n";
         $content.="<p>Cuenta: <strong>Caja de Ahorros en Pesos 299-331151/8</strong></p>\n";
         $content.="<p>CBU: <strong>0170299840000033115182</strong></p>\n\n";
         $content.="<p>Gracias por confiar en nosotros.\n</p>";
         $content.="<p><i>Atte. Soporte de Guia23.</i></p>";
+        $content.="<div><img src='". $_SERVER["DOCUMENT_ROOT"] ."/images/1@.png' /></div>";
 
         return $content;
     }

@@ -1,22 +1,27 @@
 <?php
-require_once("../../app/controller/AdvertsingsController.php");
+
+require_once("../../app/controller/AdvertsingsCommerceController.php");
 
 if (!isset($_SESSION))
 { session_start(); }
 
-if(isset($_COOKIE["PLAN"]))
+if(isset($_SESSION["add_commerce"]) || isset($_COOKIE['add_commerce']) || isset($_COOKIE["PLAN"]))
 {
+    unset($_SESSION["add_commerce"]);
     $plan_id = $_COOKIE["PLAN"];
-    $adv = new AdvertsingsController();
-    $plan = $adv->getOnePlan($plan_id);
-    $adv_categories = $adv->getCategories();
-    $provinces = $adv->getProvinces();
-    $cities = $adv->getCities();
+    $commerce = new AdvertsingsCommerceController();
+    $counterCommerces = $commerce->getCommercesForUserId($_SESSION['user_id']);
+    $plan = $commerce->getOnePlan($plan_id);
+    $adv_categories = $commerce->getCategories();
+    $provinces = $commerce->getProvinces();
+    $cities = $commerce->getCities();
     if(isset($_COOKIE["EDIT"]))
     {
-        $adv_data = $adv->editAdvertsing($_COOKIE["ADV_ID"]);
+        $adv_data = $commerce->editCommerce($_COOKIE["COMMERCE_ID"]);
         setcookie("EDIT","true",time()-3600,"/");
     }
+
+
 }
 else {
     header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
@@ -45,7 +50,7 @@ else {
     <style>
 
         #map {width: 350px;height: 450px;}
-        #floating-panel { position: absolute;bottom: 310px;left: 0%;z-index: 0;background-color: #fff;padding: 0px;border: 1px solid #999;text-align: left;font-family: 'Roboto','sans-serif';line-height: 30px;padding-left: 0px;}
+        #floating-panel { position: absolute;bottom: 50px;left: 0%;z-index: 0;background-color: #fff;padding: 0px;border: 1px solid #999;text-align: left;font-family: 'Roboto','sans-serif';line-height: 30px;padding-left: 0px;}
         #coords{ width: 345px;} #address { width: 275px;}
     </style>
 
@@ -85,11 +90,28 @@ else {
     <?php include("../../app/controller/Main.php"); ?>
     <?php require "../partials/header.php"; ?>
     <!-- HEADER  -->
-
+    <!-- Baner-->
+    <section id="inner-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12" >
+                <div class="inner_banner_detail">
+                    <h2 align="left"></h2>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                <div class="inner_banner_detail">
+                    <p><a href="<?php $_SERVER['DOCUMENT_ROOT']?>/views/Ayuda.php">Página de Ayuda</a>  <i class="fa fa-angle-double-right" aria-hidden="true"></i> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>-
+    <!-- Banner -->
 
     <!-- Add New Listings -->
     <section id="add-listing" class="p_b70 p_t70 bg_lightgry">
-      <form class="registerd" id="formAdvertsing" action="../../app/controller/AdvertsingsController.php" method="post" enctype="multipart/form-data">
+      <form class="registerd" id="formAdvertsing" action="../../app/controller/AdvertsingsCommerceController.php" method="post" enctype="multipart/form-data">
         <div class="container">
 
             <div class="row">
@@ -97,15 +119,32 @@ else {
                     <div class="add-listing-bg">
 
                         <div class="row">
+                            <div class="col-md-12 col-sm-23 col-xs-12">
+                                <?php
+                                if(count($counterCommerces) > 0)
+                                {
+                                    echo '
+                                    <h3 class="p_b40">
+                                        Veamos, usted ya posée '.((count($counterCommerces) > 1)?" Comercio" : " Comercios") .' 
+                                    </h3>
+                                    <h4>
+                                        Pero si lo desea, a continuación podremos crear otro.
+                                    </h4>
+                                    ';
+                                }
+                                ?>
+
+                                <hr>
+                            </div>
 
                             <div class="col-md-8 col-sm-8 col-xs-12">
 
                                 <div class="listing-title-area">
 
                                     <div class="form-group">
-                                        <label><span>Titulo de la Publicidad </span>
+                                        <label><span>Titulo del Comercio </span>
                                         </label>
-                                        <input type="text" name="titulo" class="form-control" placeholder="Ingrse el Titulo de su publicidad para que se vea en todo el mundo." value="<?php if(isset($adv_data->title)){echo $adv_data->title;} ?>" required>
+                                        <input type="text" name="titulo" class="form-control" placeholder="Ingrse el Titulo de su Comercio." value="<?php if(isset($adv_data->title)){echo $adv_data->title;} ?>" required>
                                     </div>
 
                                     <div class="form-group">
@@ -217,16 +256,6 @@ else {
                                 </div>
 
                                 <div class="listing-title-area">
-
-                                    <div class="form-group">
-                                        <label> <span>Precio</span>
-                                        </label>
-                                        <input type="number" min="0" name="precio" class="form-control" placeholder="Ponga su Precio" value="<?php if(isset($adv_data->price)){echo $adv_data->price;} ?>">
-                                    </div>
-
-                                </div>
-
-                                <div class="listing-title-area">
                                     <div class="form-group">
                                         <label><span>Direccion Comercial</span>
                                         </label>
@@ -269,7 +298,7 @@ else {
                                                 <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Duración: <?php echo $plan->duration; if($plan->duration >2){echo " Meses";}else{echo " Mes";} ?></li>
                                                 <?php foreach($plan->features as $feature){
                                                     echo "<li><i class='fa fa-check-square-o' aria-hidden='true'></i> ".$feature->key."</li>";
-                                                 }
+                                                }
                                                 ?>
                                             </ul>
                                         </div>
@@ -279,7 +308,8 @@ else {
                                 </div>
 
                             </div>
-
+                            
+                           
                             <!----Mapa--->
 
                             <div class="col-md-4 col-sm-4 col-xs-12">
@@ -295,105 +325,22 @@ else {
 
                                     </div>
 
-                                    <script>
-
-                                        var geocoder;         //Para geolocalizar
-                                        var infowindow;      //Ventana de info
-                                        var marker;          //variable del marcador
-                                        var coords = {};    //coordenadas obtenidas con la geolocalización
-
-                                        //Funcion principal
-                                        initMap = function ()
-                                        {
-
-                                            //uso la API para geolocalizar
-                                            navigator.geolocation.getCurrentPosition(
-                                                function (position){
-                                                    coords =  {
-                                                        lng: position.coords.longitude,
-                                                        lat: position.coords.latitude
-                                                    };
-                                                    setMapa(coords);  //paso las coordenadas al metodo para crear el mapa
-
-
-                                                },function(error){console.log(error);});
-
-                                        }
-
-                                        function setMapa (coords)
-                                        {
-                                            //Se crea una nueva instancia del objeto mapa
-                                            var map = new google.maps.Map(document.getElementById('map'),
-                                                {
-                                                    zoom: 6,
-                                                    center:new google.maps.LatLng(coords.lat,coords.lng),
-
-                                                });
-                                            var geocoder = new google.maps.Geocoder();
-                                            var infowindow = new google.maps.InfoWindow;
-                                            document.getElementById('submit').addEventListener('click', function() {
-                                                geocodeAddress(geocoder,map,infowindow);
-                                            });
-                                            function geocodeAddress(geocoder, map, infowindow) {
-                                                var address = document.getElementById('address').value;
-                                                geocoder.geocode({'address': address}, function(results, status) {
-                                                    if (status === 'OK') {
-                                                        map.setCenter(results[0].geometry.location);
-                                                        var marker = new google.maps.Marker({
-                                                            map: map,
-                                                            position: results[0].geometry.location,
-                                                            title:'Guia23',
-                                                            draggable: true
-
-                                                        });
-                                                        infowindow.setContent(results[0].formatted_address);
-                                                        infowindow.open(new google.maps.LatLng(coords.lat,coords.lng), marker);
-
-                                                        marker.addListener('click', toggleBounce);
-                                                        marker.addListener('click',)
-                                                        map.setZoom(15);
-                                                        map.setCenter(marker.getPosition());
-                                                        marker.addListener( 'dragend', function (event)
-                                                        {
-
-                                                            document.getElementById("coords").value = this.getPosition().lat()+","+ this.getPosition().lng();
-
-                                                        });
-                                                        //animacion
-                                                        function toggleBounce() {
-                                                            if (marker.getAnimation() !== null) {
-                                                                marker.setAnimation(null);
-                                                            } else {
-                                                                marker.setAnimation(google.maps.Animation.BOUNCE);
-                                                                document.getElementById("latitud").value = this.getPosition().lat();
-                                                                document.getElementById("longitud").value = this.getPosition().lng();
-
-                                                            }
-                                                        }
-
-                                                    } else {
-                                                        alert('No se pudo geolocalizar : ' + status);
-                                                    }
-                                                });
-                                            }
-                                        }
-
-                                        // Carga de la libreria de google maps
-
-                                    </script>
-                                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=initMap">
-
+                                    <!---- Mapa ---->
+                                    <script type="application/javascript" src="js/map.js">
                                     </script>
 
-                                    <!----Mapa--->
-  
+
+                                    <!-- Carga de la libreria de google maps -->
+                                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=initMap"></script>
+                                    <!---- /Mapa ---->
+                            
                         </div>
 
                     </div>
                 </div>
             </div>
 
-
+           
             <div class="row">
                 <div class="col-md-12">
                     <div class="add-listing-bg">
@@ -548,7 +495,7 @@ else {
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label><span>Ingrese su email para ser notificado por la aprobación de su publicidad</span>
+                                                <label><span>Ingrese su email para ser notificado por la aprobación de sus publicidades</span>
                                                 </label>
                                                 <input type="email" class="form-control" name="email_notify" placeholder="E-Mail" required value="<?php if(isset($adv_data->email_notify)){echo $adv_data->email_notify;} ?>">
                                             </div>
@@ -557,27 +504,28 @@ else {
                                     <div class="row p_t40">
                                         <div class="col-md-9 col-md-9 col-sm-12">
                                             <div class="form-group">
-                                                <p>Al hacer Click en "<strong>Enviar y Pagar</strong>" acepta los <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/T&Condiciones.php" class="link"><strong>Terminos y Condiciones</strong>.</a>
+                                                <p>Al hacer Click en "<strong>Crear Comercio</strong>" acepta los <a href="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/views/T&Condiciones.php" class="link"><strong>Terminos y Condiciones</strong>.</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-12">
 
                                             <div class="form-group">
+                                                <input type="hidden" name="commerce_submitted" >
+                                                <input type="hidden" name="commerce_images" >
                                                 <input type="hidden" name="_plan" value="<?php echo $plan_id; ?>">
                                                 <input type="hidden" name="_plan_price" value="<?php echo $plan->price; ?>">
                                                 <input type="hidden" name="_plan_duration" value="<?php echo $plan->duration; ?>">
-                                                <input type="hidden" name="_submitted" >
                                                 <?php
                                                 if(isset($_COOKIE['EDIT']))
                                                 {
                                                     unset($_COOKIE['EDIT']);
                                                     echo '<button type="submit" id ="upd_ad" name="upd_ad">Guardar Cambios</button>';
-                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_detail_id.'"/>';
+                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_commerce_detail_id.'"/>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<button type="submit" id ="new_ads" name="new_ads">Enviar y Pagar</button>';
+                                                    echo '<button type="submit" id ="new_commerce" name="new_commerce">Crear Comercio</button>';
                                                 }
                                                 ?>
 
@@ -609,7 +557,7 @@ else {
 <script src="../../js/jquery-countTo.js"></script>
 <script src="../../js/bootsnav.js"></script>
 <script src="../../js/dropzone.js"></script>
-<script src="js/require_advertsing.js"></script>
+<script src="js/commerce_advertsing.js"></script>
 <script src="../../js/functions.js"></script>
 
 </html>

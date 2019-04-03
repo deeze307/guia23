@@ -1,13 +1,32 @@
 <?php
-if(!empty($_FILES)){
-    $adv_controller = new AdvertsingsController();
-    $category = $adv_controller->getCategoryName($_COOKIE["CATEGORIA"]);
+
+if(!empty($_FILES['file']) && $_FILES['file']['size'] > 1){
+
+    if(isset($_COOKIE['COMMERCE_IMAGE']))
+    {
+        require_once("AdvertsingsCommerceController.php");
+        $adv_commerce_controller = new AdvertsingsCommerceController();
+        $category = $adv_commerce_controller->getCategoryName($_COOKIE["CATEGORIA"]);
+        //divido el nombre y agrego el sufijo _comercio
+        $temp = explode('.',$_FILES['file']['name']);
+        $fileName = $temp[0].'_comercio'.'.'.$temp[1];
+    }
+    else
+    {
+        require_once("AdvertsingsController.php");
+        $adv_controller = new AdvertsingsController();
+        $category = $adv_controller->getCategoryName($_COOKIE["CATEGORIA"]);
+        $fileName = $_FILES['file']['name'];
+
+    }
+
+
     $upload_dir = "../../images/".$category->name."/".$_SESSION['user_id']."/";
     if (!file_exists($upload_dir)) {
         mkdir($upload_dir, 0777, true);
     }
 
-    $fileName = $_FILES['file']['name'];
+
 
     $uploaded_file = $upload_dir.$fileName;
     if(move_uploaded_file($_FILES['file']['tmp_name'],$uploaded_file)){

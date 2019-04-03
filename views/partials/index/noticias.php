@@ -20,7 +20,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" alt="image">
                             <span>Por NJM</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>10 Dic 2017</span>
                         </div>
@@ -30,7 +30,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" alt="image">
                             <span>Por Usuario</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>14 Abr 2018</span>
                         </div>
@@ -40,7 +40,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" alt="image">
                             <span>por Usuario x</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>04 Mar 2018</span>
                         </div>
@@ -50,7 +50,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" height="30px" width="30px" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" height="30px" width="30px" alt="image">
                             <span>Por:Usuario 2</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i> 02 Feb 2018</span>
                         </div>
@@ -60,7 +60,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" alt="image">
                             <span>Por:Usuario 3</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>11 Ene 2018</span>
                         </div>
@@ -71,7 +71,7 @@
                             <h3>Describa su experiencia en Tierra del Fuego</h3>
                             <p>Proximamente se habillitará ésta sección para que los usuarios de Guía23 puedan contarnos sus experiencias de navegación.</p>
                             <div class="lates_border m-b-25"></div>
-                            <img src="<?php $_SERVER["DOCUMENT_ROOT"]; ?>/images/icons/marker.png" alt="image">
+                            <img src="<?php __URL__ ?>/images/icons/marker.png" alt="image">
                             <span>Por:NJM</span>
                             <span><i class="fa fa-calculator" aria-hidden="true"></i>22 Feb 2018</span>
                         </div>
@@ -105,15 +105,18 @@
                                 <div class="col-md-2">
                                     <input type="submit" class="submit" value="">
                                     <span><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+                                    
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
 
                 </div>
             </div>
+           
 
         </div>
-
+    
     </div>
 </section>

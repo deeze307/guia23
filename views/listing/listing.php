@@ -1,7 +1,9 @@
 <?php
 require_once("../../app/controller/AdvertsingsController.php");
 $adv = new AdvertsingsController();
-$adv_categories = $adv->getCategories();
+$adv_categories = $adv->getCategories("",true);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="Es">
@@ -17,8 +19,8 @@ $adv_categories = $adv->getCategories();
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>-->
-    <!--<script type="text/javascript" src="../../js/google-map.js"></script>-->
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+ <script type="text/javascript" src="../../js/google-map.js"></script>
 
 </head>
 <body>
@@ -67,7 +69,7 @@ $adv_categories = $adv->getCategories();
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                              <h4 class="panel-title"> <a data-toggle="collapse" href="#collapse-categories"> <em class="fa fa-list" aria-hidden="true"></em> Categorías </a> </h4>
+                              <h4 class="panel-title"> <a data-toggle="collapse" href="#collapse-categories"> <em class="fa fa-list" aria-hidden="true"></em> Categoría Seleccionada </a> </h4>
                             </div>
                             <div id="collapse-categories" class="panel-collapse collapse in">
                                 <div class="panel-body">
@@ -75,8 +77,8 @@ $adv_categories = $adv->getCategories();
                                     <?php
                                         foreach($adv_categories as $category)
                                         {
-                                            
-                                            echo '<input type="checkbox" name="marker_type[]" value="resturent_02_03" checked="checked">'.$category->name.'<br>';
+                                            if($category->advertsings_categories_id == $_GET['cat_id'])
+                                            echo '<input type="checkbox" disabled name="marker_type[]" value="resturent_02_03" checked="checked">'.$category->name.'<br>';
                                         }
                                     ?>
                                 </div>
@@ -120,7 +122,7 @@ $adv_categories = $adv->getCategories();
 <script src="../../js/map/jquery-finddo.js"></script>
 <script src="../../js/map/markercluster.min.js"></script>
 <script src="../../js/map/custom-map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY&callback=myMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCjJIxi33Avc9y0wcvky9HUR8Q6VsT_YlY"></script>
 <script src="../../js/modernizr.custom.26633.js"></script>
 <script src="../../js/jquery.gridrotator.js"></script>
 <script src="../../js/functions.js"></script>

@@ -370,8 +370,6 @@ h5 {
     padding: 0 44px;
     width: 100%;
 }
-
-
 #main_header .navbar-brand {
   padding: 19px 15px;
 }
@@ -462,7 +460,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 #main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand {
   padding:15px 15px;
   transition: all 0.3s ease 0s;
-
 }
 #main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{
 	padding: 27px 10px 27px;
@@ -772,7 +769,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 
 .banner-icons {
-  left: 0;
+  left: 0,1;
   position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
@@ -781,11 +778,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   border: 0 solid #828284;
   color: #fff;
   font-size: 16px;
-  height:52px;
+  height:40px;
   text-align: center;
-  width:52px;
+  width:50px;
   display:inline-block;
-  line-height:52px;
+  line-height:42px;
   text-align:center;
   transition: all .3s ease;
 }
@@ -850,11 +847,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 /*****************************/
 
 .banner-text {
-  margin:30% 0;
+  margin: 30px 0;
 }
 
 .banner-text-index {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-text-mini {
+  margin: 30px 0;
 }
 
 .center-screen {
@@ -903,7 +904,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-top: 51px;
 }
 .banner-text > h2 {
-  color: #fff;
+  color: #1fb7a6;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -916,6 +917,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.banner-text-mini > h2 {
+  color: #1fb7a6;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .banner-text > p {
   color: #fff;
   font-size: 26px;
@@ -927,6 +935,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
     font-size: 26px;
     letter-spacing: 1px;
     padding: 30px 0 20px 0;
+}
+.banner-text-mini > p {
+  color: #333;
+  font-size: 26px;
+  letter-spacing: 1px;
+  padding: 30px 0 20px 0;
 }
 
 .banner-text > a {
@@ -945,6 +959,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
     width: 200px;
     padding: 15px 0;
     margin:5px;
+}
+.banner-text-mini > a {
+  border: 1px solid #333;
+  color: #333;
+  display: inline-block;
+  font-size: 18px;
+  width: 200px;
+  padding: 15px 0;
+  margin:5px;
 }
 /* Select Demo*/
 .animated-bg {
@@ -1389,7 +1412,7 @@ figure.effect-ming img {
 	transition: opacity 0.35s;
 }
 figure.effect-ming figcaption::before {
-	position: absolute;
+	position: sticky;
 	top:10px;
 	right:10px;
 	bottom:10px;
@@ -1400,7 +1423,7 @@ figure.effect-ming figcaption::before {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.4,1.4,1);
-	transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.5,1.5,1);
 }
 .popular-listing-box:hover figure.effect-ming figcaption::before,
 .best-things-details:hover figure.effect-ming figcaption::before {
@@ -2547,8 +2570,8 @@ footer#footer::after {
 }
 
 .places-list img{
-    height: 50px;
-    width: 50px;
+    height: 77px;
+    width: 77px;
 }
 
 #popular-listing .pagination > li > a, .pagination > li > span {
@@ -2654,9 +2677,9 @@ footer#footer::after {
 .social-register-icon li a{
 	display:block;
 	height:18px;
-	width:50%;
+	width:90px;
 	line-height:18px;
-	text-align:center;
+	text-align:left;
 	color:#fff;
 }
 .social-register-icon li:nth-child(1) a{
@@ -3593,25 +3616,6 @@ ul.day-open li:nth-child(3){
 	height: 400px;
 	background-color: #e7eaf0;
 }
-
-/** Para achicar y agrandar el logo **/
-
-.largeLogo{
-    width: 150px;
-    height: 148px;
-    padding: 27px 15px;
-    transition: all 0.3s ease 0s;
-}
-.smallLogo{
-    width: 110px;
-    height: 108px;
-    padding: 27px 15px;
-    transition: all 0.3s ease 0s;
-}
-
-/*************************************/
-
-
 /* ================================= */
 /* --------- Reponsive Css --------- */
 /* ================================= */
@@ -3624,6 +3628,42 @@ ul.day-open li:nth-child(3){
 	  line-height:0;
 	  font-size:14px;
 	}
+  img.logo  {
+  border: 0 none;
+  height: auto;
+  width: 35%;
+ }
+
+  .banner-text-mini > h2 {
+  color: #1fb7a6;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.banner-text-mini > p {
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 30px 0 20px 0;
+}
+.banner-text-mini > a {
+    border: 1px solid #333;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    width: 130px;
+    padding: 15px 0;
+    margin: 5px;
+}
+
+.popular-listing-img, .best-things-details {
+    position: relative;
+    overflow: hidden;
+    width: 330px;
+    height: 248px;
+}
+
 	.add-listing > a:hover{
 	  background: transparent;
 	  padding: 0;
@@ -3657,7 +3697,11 @@ ul.day-open li:nth-child(3){
 	.directory-category-box3 {
 	  margin: 0 9px 50px;
 	}
+  
 }
+
+
+
 @media (max-width: 992px) {
 	#main_header .navbar-brand {
 	  padding: 4px 15px;
@@ -3674,7 +3718,7 @@ ul.day-open li:nth-child(3){
 	  padding: 10px;
 	}
 	.banner-icons {
-	  top: 0;
+	  top: 310px;
 	  transform: translate(0px, 0px);
 	  left:0;
 	  right:0;
@@ -3881,13 +3925,22 @@ ul.day-open li:nth-child(3){
 	.ri-grid {
 	  height: 100%;
 	}
-	.social-icons.text-right,
+	.social-icons.text-right {
+    text-align: center;
+  }
 	.footer_logo {
 	  text-align: center;
 	}
+   .footer_logo > img {
+  width: 18%;
+  }
 	.footer_link {
 	  margin: 30px 0;
 	}
+  .footer_link > li > a {
+    color: #fff;
+    padding: 5px;
+}
 	.footer_botom p {
 	  text-align: center;
 	  margin-bottom:15px;
@@ -3939,6 +3992,7 @@ ul.day-open li:nth-child(3){
 	}
 	
 }
+
 @media (max-width: 480px) {
 	.directory-category-box {
 	  width: 100%;
@@ -3965,7 +4019,7 @@ ul.day-open li:nth-child(3){
 	  float:none;
 	}
 	.best-thing-model-feature li {
-	  width: 100%;
+	  width: 50%;
 	}
 	.best-thing-model-feature {
 	  height: 100%;

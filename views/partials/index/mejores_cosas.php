@@ -13,11 +13,11 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/RioGrande.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php __URL__ ?>/images/RioGrande.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=3&city_name=Rio Grande&city_class=rio_grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=3&city_name=Rio Grande&city_class=rio_grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -35,20 +35,20 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
 
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Tolhuin.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php __URL__ ?>/images/Tolhuin.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=2&city_name=Tolhuin&city_class=tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?city_id=2&city_name=Tolhuin&city_class=tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -66,9 +66,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -110,11 +110,11 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/images/Paisajes/20160206_165238.jpg" alt="image">
+                    <figure class="effect-ming"> <img src="<?php __URL__ ?>/images/Paisajes/20160206_165238.jpg" alt="image">
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php $_SERVER['DOCUMENT_ROOT']?>/app/controller/Main.php?city_id=1&city_name=Ushuaia&city_class=ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=1&city_name=Ushuaia&city_class=ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -132,9 +132,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="best-things-stars">
+                       <!-- <div class="best-things-stars">
                             <span>4.5 <img src="images/stars-2.png" alt="img"></span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

@@ -82,6 +82,22 @@ class AdvertsingsCategories
         return $result->advertsings_categories_id;
     }
 
+    public function getAdvCat($adv_cat)
+    {
+        $result = $this->db->where('name',$adv_cat)
+            ->objectBuilder()
+            ->getOne('advertsings_categories','advertsings_categories_id,permission');
+        return $result;
+    }
+
+    public function getAdvCatWithId($adv_cat_id)
+    {
+        $result = $this->db->where('advertsings_categories_id',$adv_cat_id)
+            ->objectBuilder()
+            ->getOne('advertsings_categories');
+        return $result;
+    }
+
     public function countCategories()
     {
         $this->db->where('enabled','1')->get('advertsings_categories');

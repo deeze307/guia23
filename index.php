@@ -15,8 +15,8 @@ $cities = $advertsingsController->getCities(false);
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
-    <script src="guia23/js/html5shiv.min.js"></script>
-    <script src="guia23/js/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 <style>
     body{

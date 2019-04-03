@@ -34,7 +34,7 @@ class Menu
 
         echo'
                 <li class="dropdown">
-                    <a href="http://'.$_SERVER["SERVER_NAME"].'/'.$obj->inicio->link.'"><i class="'.$obj->inicio->icon.'"></i> '.$obj->inicio->title.'</a>
+                    <a href="'.__URL__.'/'.$obj->inicio->link.'"><i class="'.$obj->inicio->icon.'" target="_self"></i> '.$obj->inicio->title.'</a>
                 </li>';
 
         // Se imprimen los items de Menu Simple
@@ -51,19 +51,19 @@ class Menu
             {
                 echo '
                     <li class="dropdown">
-                        <a href="http://'.$_SERVER["SERVER_NAME"].'/'.$menuSimple->link.'" class="dropdown-toggle" data-toggle="dropdown"><i class="'.$menuSimple->icon.'"></i> '.$menuSimple->title.'</a>
+                        <a href="'.__URL__.'/'.$menuSimple->link.'" class="dropdown-toggle" data-toggle="dropdown" target="_self"><i class="'.$menuSimple->icon.'"></i> '.$menuSimple->title.'</a>
                             <ul class="dropdown-menu">';
                             foreach($obj->submenuesSimple as $submenuSimple)
                             {
                                 if(!isset($submenuSimple->permission))
                                 {
-                                    echo'<li><a href="http://'.$_SERVER["SERVER_NAME"].'/'.$submenuSimple->link.'"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                    echo'<li><a href="'.__URL__.'/'.$submenuSimple->link.'" target="_self"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
                                 }
                                 else
                                 {
                                     if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $submenuSimple->permission)
                                     {
-                                        echo'<li><a href="http://'.$_SERVER["SERVER_NAME"].'/'.$submenuSimple->link.'"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                        echo'<li><a href="'.__URL__.'/'.$submenuSimple->link.'" target="_self"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
                                     }
                                 }
 
@@ -78,7 +78,7 @@ class Menu
                 {
                     echo '
                     <li class="dropdown">
-                        <a href="http://' . $_SERVER["SERVER_NAME"] . '/' . $menuSimple->link . '"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
+                        <a href="' . __URL__ . '/' . $menuSimple->link . '" target="_self"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
                     </li>';
                 }
                 else
@@ -87,7 +87,7 @@ class Menu
                     {
                         echo '
                         <li class="dropdown">
-                            <a href="http://' . $_SERVER["SERVER_NAME"] . '/' . $menuSimple->link . '"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
+                            <a href="' . __URL__ . '/' . $menuSimple->link . '" target="_self"><i class="' . $menuSimple->icon . '"></i> ' . $menuSimple->title . '</a>
                         </li>';
                     }
                 }
@@ -107,7 +107,7 @@ class Menu
             {
                 echo '
                     <li class="dropdown megamenu-fw">
-                        <a href="http://'.$_SERVER["SERVER_NAME"].'/'.$menuMega->link.'" class="dropdown-toggle" data-toggle="dropdown"><i class="'.$menuMega->icon.'"></i> '.$menuMega->title.'</a>
+                        <a href="'.__URL__.'/'.$menuMega->link.'" class="dropdown-toggle" data-toggle="dropdown" target="_self"><i class="'.$menuMega->icon.'"></i> '.$menuMega->title.'</a>
                             <ul class="dropdown-menu megamenu-content" role="menu">
                                 <div class="row">';
                                     foreach($obj->submenuesMega as $submenuMega)
@@ -126,7 +126,7 @@ class Menu
                                                             <ul class="menu-col">';
                                                             foreach($obj->submenuesMegaSegundoNivel as $submenuMegaSegundoNivel)
                                                             {
-                                                                echo'<li><a href="http://'.$_SERVER["SERVER_NAME"].'/'.$submenuMegaSegundoNivel->link.'">'.$submenuMegaSegundoNivel->title.'</a></li>';
+                                                                echo'<li><a href="'.__URL__.'/'.$submenuMegaSegundoNivel->link.'" target="_self">'.$submenuMegaSegundoNivel->title.'</a></li>';
                                                             }
                                                             echo'
                                                             </ul>
@@ -143,7 +143,7 @@ class Menu
             {
                 echo'
                 <li class="dropdown megamenu-fw">
-                    <a href="http://'.$_SERVER["SERVER_NAME"].'/'.$menuMega->link.'"><i class="'.$menuMega->icon.'"></i> '.$menuMega->title.'</a>
+                    <a href="'.__URL__.'/'.$menuMega->link.'" target="_self"><i class="'.$menuMega->icon.'"></i> '.$menuMega->title.'</a>
                 </li>';
             }
         }
