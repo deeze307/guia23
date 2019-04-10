@@ -1,8 +1,10 @@
 <?php
 require_once("../../app/controller/AdvertsingsController.php");
+require_once("../../app/controller/CarouselController.php");
 $adv = new AdvertsingsController();
 $adv_categories = $adv->getCategories("",true);
-
+$carouselController = new CarouselController();
+$carousel = $carouselController->getCarouselImages(false);
 
 ?>
 <!DOCTYPE html>
@@ -14,6 +16,8 @@ $adv_categories = $adv->getCategories("",true);
 <title>Guia23</title>
 <link rel="stylesheet" type="text/css" href="../../css/master.css">
 <link rel="stylesheet" type="text/css" href="../../css/color-green.css">
+<link rel="stylesheet" href="../../css/swiper.min.css">
+<link rel="stylesheet" href="../../css/swipper-style.css">
 <link rel="shortcut icon" href="../../images/short_icon.png">
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -33,7 +37,7 @@ $adv_categories = $adv->getCategories("",true);
     <!--LOADER-->
 
     <!-- HEADER -->
-    <?php include("../../app/controller/Main.php"); ?>
+    <?php require "../../app/controller/Main.php"; ?>
     <?php require "../partials/header.php"; ?>
     <!-- HEADER  --> 
 

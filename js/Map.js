@@ -1,6 +1,6 @@
 
 <script>
-   /*function initialize() {
+   function initialize() {
         var center = new google.maps.LatLng(-54.48300000, -68.18300000);
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -22,5 +22,5 @@
         var markerCluster = new MarkerClusterer(map, markers, options);
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);*/
+    google.maps.event.addDomListener(window, 'load', initialize);
 </script>
