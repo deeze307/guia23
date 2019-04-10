@@ -61,9 +61,9 @@ $new_added = $advertsingsController->getLastAdded();
     <?php require "views/partials/index/populares.php" ?>
     <!-- Popular  -->
 
-    <!-- Most visited places -->
+    <!-- Puntos de Interés -->
     <?php require "views/partials/index/puntos_de_interes.php" ?>
-    <!-- Most visited places -->
+    <!-- /Puntos de Interés -->
 
     <!-- Counter Section -->
     <?php require "views/partials/index/contador.php"?>

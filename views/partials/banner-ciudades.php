@@ -73,7 +73,9 @@ $bannerClass = $_SESSION['selected_city_class'];
       },
     });
   </script>
-
+<?php
+if(!isset($_GET['cat_id'])){
+?>
 <section id="banner-2">
 
   <div class="container">
@@ -106,5 +108,8 @@ $bannerClass = $_SESSION['selected_city_class'];
 
 
 </section>
+<?php
+}
+?>
 
 
