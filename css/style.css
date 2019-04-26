@@ -3661,7 +3661,7 @@ ul.day-open li:nth-child(3){
     position: relative;
     overflow: hidden;
     width: 330px;
-    height: 248px;
+    height: 170px;
 }
 
 	.add-listing > a:hover{
@@ -3883,6 +3883,18 @@ ul.day-open li:nth-child(3){
 	.call-to-action-btn > a {
 	  margin: 10px 0;
 	}
+  .popular-listing-img_home_message{
+    position: relative;
+    overflow:hidden;
+    width: 330px;
+    height: 250px;
+}
+ .popular-listing-img_home_home {
+    position: relative;
+    overflow: hidden;
+    width: 328;
+    height: 200px;
+}
 	.latest-news-2-img, .latest-news-2-details {
 	  float: none;
 	  position: relative;
