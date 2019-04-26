@@ -1,7 +1,5 @@
 <?php
-/**
- Esta vista muestra las categorías ( publicidades o no ) con solo proveer id de provincia, ciudad e id de categoría
- */
+ // Esta vista muestra las categorías ( publicidades o no ) con solo proveer id de provincia, ciudad e id de categoría
 
 require_once("../../app/controller/AdvertsingsController.php");
 

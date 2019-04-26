@@ -93,20 +93,20 @@ class Advertsings
     public function requestAllForCategory($category_id,$category_permisson)
     {
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
-        $this->db->join("advertsing_commerce acom","ad.commerce_id = acom.id");
-        $this->db->join("advertsing_commerce_detail acd","acom.advertsing_commerce_detail_id = acd.advertsing_commerce_detail_id");
-        $this->db->join("cities c","acd.city_id = c.city_id");
-        $this->db->join("provinces p","acd.province_id = p.province_id");
-        $this->db->join("advertsings_categories ac","acd.category_id = ac.advertsings_categories_id");
+        $this->db->join("advertsing_commerce acom","ad.commerce_id = acom.id","LEFT");
+        $this->db->join("advertsing_commerce_detail acd","acom.advertsing_commerce_detail_id = acd.advertsing_commerce_detail_id","LEFT");
+        $this->db->join("cities c","acd.city_id = c.city_id","LEFT");
+        $this->db->join("provinces p","acd.province_id = p.province_id","LEFT");
+        $this->db->join("advertsings_categories ac","acd.category_id = ac.advertsings_categories_id","LEFT");
         if($category_permisson == 1)
         {
-            $result = $this->db->where("acd.category_id",$category_id)->where('ad.city_id',$_SESSION['selected_city_id'])
+            $result = $this->db->where("acd.category_id",$category_id)->where('ad.province_id',$_SESSION['selected_province_id'])->where('ad.province_id',NULL, 'IS NOT')
                 ->objectBuilder()
                 ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
         }
         else
         {
-            $result = $this->db->where("acd.category_id",$category_id)->where('acd.city_id',$_SESSION['selected_city_id'])
+            $result = $this->db->where("acd.category_id",$category_id)->where('acd.province_id',$_SESSION['selected_province_id'])->where('ad.province_id',NULL, 'IS')
                 ->objectBuilder()
                 ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,acd.phone,acd.website,acd.latitude,acd.longitude,acd.description,acd.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
         }
@@ -210,36 +210,24 @@ class Advertsings
             {
                 if($a->category_id == NULL)
                 {
-                    /*
-                     * (SELECT IF((SELECT COUNT(*) FROM advertsings_categories WHERE advertsings_categories_id = ad.category_id) > 0 ,
-             (
-                 SELECT ac.name FROM advertsings
-                 LEFT JOIN advertsing_detail ad ON advertsing_detail_id = ad.advertsing_detail_id
-                 LEFT JOIN advertsings_categories ac ON ad.category_id = ac.advertsings_categories_id
-                 WHERE ac.advertsings_categories_id = ad.category_id LIMIT 1
-             ),
-             (
-                 SELECT ac.name FROM advertsings
-                 LEFT JOIN advertsing_detail ad ON advertsing_detail_id = ad.advertsing_detail_id
-                 LEFT JOIN advertsings_categories ac ON ad.category_id = ac.advertsings_categories_id
-                 LEFT JOIN advertsing_commerce acom ON acom.id = ad.commerce_id
-                 LEFT JOIN advertsing_commerce_detail acomdet ON acomdet.advertsing_commerce_detail_id = acom.advertsing_commerce_detail_id
-                 WHERE ac.advertsings_categories_id = acomdet.category_id LIMIT 1
-             ))) as cat_name,
-                     * */
                     $this->db->join("advertsing_detail ad","ad.advertsing_detail_id = $a->advertsing_detail_id","LEFT");
                     $this->db->join("advertsing_commerce acom","acom.id = ad.commerce_id");
                     $this->db->join("advertsing_commerce_detail acomdet","acomdet.advertsing_commerce_detail_id = acom.advertsing_commerce_detail_id");
                     $this->db->join("advertsings_categories ac","acomdet.category_id = ac.advertsings_categories_id");
                     $this->db->where("ac.advertsings_categories_id = acomdet.category_id");
-                    $name = $this->db->objectBuilder()->getOne("advertsings a","ac.name,ac.icon");
+                    $this->db->where("acomdet.province_id =".$_SESSION['selected_province_id']);
+                    $name = $this->db->objectBuilder()->getOne("advertsings a","ac.name,ac.icon,acomdet.province_id as commerce_province_id");
+                    // var_dump("Provincia del comercio: ".$a->province_id."| provincia seleccionada: ".$_SESSION['selected_province_id']."|||");
                 }
                 else
                 {
                     $this->db->join("advertsing_detail ad","ad.advertsing_detail_id = $a->advertsing_detail_id","LEFT");
                     $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id");
                     $this->db->where("ac.advertsings_categories_id = ad.category_id");
-                    $name = $this->db->objectBuilder()->getOne("advertsings a","ac.name,ac.icon");
+                    $this->db->where("ad.province_id =".$_SESSION['selected_province_id']);
+                    $name = $this->db->objectBuilder()->getOne("advertsings a","ac.name,ac.icon, ad.province_id as detail_province_id");
+                    // var_dump("Provincia del comercio: ".$a->province_id."| provincia seleccionada: ".$_SESSION['selected_province_id']."|||");
+
                 }
 
                 if(isset($name->name))
@@ -253,12 +241,8 @@ class Advertsings
                     $a->icon = $name;
                 }
             }
+
             return $adv;
-//            $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
-//            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
-//            $this->db->where("a.enabled","T")->where('ad.city_id',$_SESSION['selected_city_id']) ;
-//            $this->db->orderBy('a.advertsing_id','desc');
-//            $adv = $this->db->objectBuilder()->get('advertsings a',6,'a.*,ad.*,ac.*,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
         }catch(Exception $ex){
             return $ex->getMessage();
         }
