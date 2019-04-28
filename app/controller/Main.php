@@ -10,6 +10,7 @@ if(isset($_GET['city_id']))
     $_SESSION['selected_city_id'] = $_GET['city_id'];
     $_SESSION['selected_city_name'] = $_GET['city_name'];
     $_SESSION['selected_city_class'] = $_GET['city_class'];
+    $_SESSION['selected_province_id'] = $_GET['province_id'];
     header("Location: ".__URL__."/home.php");
 }
 

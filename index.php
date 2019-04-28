@@ -46,7 +46,7 @@ $cities = $advertsingsController->getCities(false);
         <?php
         foreach ($cities as $city)
         {
-            echo '<a href="app/controller/Main.php?city_id='.$city->city_id.'&city_name='.$city->name.'&city_class='.$city->class.'">'.$city->name.'</a>';
+            echo '<a href="app/controller/Main.php?city_id='.$city->city_id.'&city_name='.$city->name.'&city_class='.$city->class.'&province_id='.$city->province_id.'">'.$city->name.'</a>';
         }
         ?>
     </div>
