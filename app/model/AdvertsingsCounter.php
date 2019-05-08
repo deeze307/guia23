@@ -101,6 +101,8 @@ class AdvertsingsCounter
                                 ad.description,
                                 ad.commercial_image,
                                 aco.counter,
+                                acomdet.address,
+                                acomdet.category_id,
                                 (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
                         from advertsings a
                         left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
@@ -122,7 +124,14 @@ class AdvertsingsCounter
                 else
                 {
                     $visit = $this->db->objectBuilder()->rawQueryOne(
-                        "select a.advertsing_id,a.enabled,ac.name as category_name,c.name as city_name,p.name as province_name,ad.*,aco.counter,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
+                        "select a.advertsing_id,
+                                a.enabled,
+                                ac.name as category_name,
+                                c.name as city_name,
+                                p.name as province_name,
+                                ad.*,
+                                aco.counter,
+                                (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
                         from advertsings a
                         left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
                         left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id

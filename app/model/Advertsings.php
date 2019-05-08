@@ -199,7 +199,7 @@ class Advertsings
     {
         try{
             $last = $this->db->objectBuilder()->rawQuery("
-            SELECT a.*,
+            SELECT a.*,ad.*,
             (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
             FROM advertsings a
             LEFT JOIN advertsing_detail ad ON a.advertsing_detail_id = ad.advertsing_detail_id
@@ -226,6 +226,7 @@ class Advertsings
                                 ad.subtitle,
                                 ad.description,
                                 ad.commercial_image,
+                                acomdet.address,
                                 (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
                         from advertsings a
                         left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id
