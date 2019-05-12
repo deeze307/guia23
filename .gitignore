@@ -2,5 +2,6 @@
 *.PNG
 .idea/
 *.log
+logs/
 app/core/server\.php
 
