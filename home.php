@@ -1,6 +1,10 @@
 <?php
 require_once("app/controller/AdvertsingsController.php");
 require_once("app/controller/CarouselController.php");
+// SI no hay ciudad seleccionada se redirecciona al index
+if(!isset($_SESSION['selected_city_id'])){
+  header("Location: ".__URL__."/index.php");
+}
 $advertsingsController = new AdvertsingsController();
 $carouselController = new CarouselController();
 $carousel = $carouselController->getCarouselImages(false);

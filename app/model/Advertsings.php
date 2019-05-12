@@ -74,12 +74,15 @@ class Advertsings
     {
         try{
             $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
-            $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
+            $this->db->join("advertsing_commerce acom","ad.commerce_id = acom.id","LEFT");
+            $this->db->join("advertsing_commerce_detail acomdet","acom.advertsing_commerce_detail_id = acomdet.advertsing_commerce_detail_id","LEFT");
+            $this->db->join("advertsings_categories ac","acomdet.category_id = ac.advertsings_categories_id","LEFT");
             $this->db->where('a.enabled','T')->where('a.user_id',$user_id);
             $points = $this->db->objectBuilder()
                 ->get('advertsings a',null,'a.advertsing_id,
                                             a.advertsing_detail_id,
                                             a.enabled,ad.*,
+                                            acomdet.*,
                                             ac.name as category_name,
                                             (SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas,
                                             (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
