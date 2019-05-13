@@ -235,10 +235,10 @@ switch($adv_detail->valoraciones)
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="http://'. $_SERVER['SERVER_NAME'] .'/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image">
                                 <figcaption>
                                     <ul>
-                                        <li><a href="http://'. $_SERVER['SERVER_NAME'].'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                        <li><a href="'. __URL__.'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
                                 </figcaption>
@@ -246,7 +246,7 @@ switch($adv_detail->valoraciones)
                         </div>
 
                         <div class="popular-listing-detail">
-                            <h3><a href="http://'. $_SERVER['SERVER_NAME'] .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
+                            <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
                             <span>Categoria: <a href="#">'.$point->category_name.'</a></span>
                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
                         </div>
@@ -418,8 +418,8 @@ switch($adv_detail->valoraciones)
                                         $image_name_without_ext = $image_name_without_dir[0];
                                         echo $image_name_without_ext;
                                         echo '<li>
-                                            <a href="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
-                                            <img src="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" alt="Alt Image Text" /></a>
+                                            <a href="'.__URL__.'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
+                                            <img src="'.__URL__.'/images/'.$image.'" alt="Alt Image Text" /></a>
                                         </li>';
                                     }
                                 }

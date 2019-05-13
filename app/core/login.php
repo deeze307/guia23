@@ -24,12 +24,12 @@ if(isset($_POST["login"]))
         if($users->error == "")
         {
 
-            header("Location: https://".$_SERVER['SERVER_NAME']."/home.php");
+            header("Location: ".__URL__."/home.php");
         }
         else
         {
             $_SESSION["error"] = $users->error;
-            header("Location: http://".$_SERVER['SERVER_NAME']."/views/login/login-registerd.php");
+            header("Location: ".__URL__."/views/login/login-registerd.php");
         }
     }
 
@@ -59,7 +59,7 @@ else
 
         $login_social = new LoginSocial($origin);
         $login_social->login();
-        header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
+        header("Location: ".__URL__."/home.php");
     }
 
 }
@@ -141,7 +141,7 @@ class LoginSocial
 //        session_unset();
 //        session_destroy();
 
-        header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
+        header("Location: ".__URL__."/home.php");
     }
 
 

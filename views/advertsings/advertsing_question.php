@@ -8,7 +8,7 @@ $commerce = new AdvertsingsCommerceController();
 $comercios = $commerce->getCommercesForUserId($_SESSION["user_id"]);
 if(count($comercios) == 0){
     $_SESSION["add_commerce"] = true;
-    header("Location: http://".$_SERVER['SERVER_NAME']."/views/advertsings/packages.php");
+    header("Location: ".__URL__."/views/advertsings/packages.php");
 }
 
 ?>

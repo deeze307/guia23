@@ -52,7 +52,7 @@ if(isset($_POST['plan']))
 {
     setcookie("PLAN",$_POST['plan'],time() + 3600,"/");
     $_SESSION['add_commerce'] = true;
-    header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/advertsing_commerce.php");
+    header("Location: ".__URL__."/views/advertsings/advertsing_commerce.php");
 }
 
 class AdvertsingsCommerceController
@@ -210,7 +210,7 @@ class AdvertsingsCommerceController
             Logger::write("debug","[".date('d-m-Y h:i:s')."] ".$_SESSION['images']);
             unset($_SESSION['images']);
             unset($_SESSION['commerce_images']);
-            header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/require_advertsing.php");
+            header("Location: ".__URL__."/views/advertsings/require_advertsing.php");
         }
         catch(Exception $ex){
             echo $ex->getMessage();
@@ -305,7 +305,7 @@ class AdvertsingsCommerceController
                 $_SESSION['error'] = "Ocurrió un error al intentar editar el comercio. (".$upd.")";
                 Logger::write('commerce_'.date('d-m-Y'),"Comercio ".$post['titulo']." No se pudo editar || ".date('d-m-Y H:i:s'));
             }
-            header("Location: https://".$_SERVER['SERVER_NAME']."/views/advertsings/require_advertsing_response.php");
+            header("Location: ".__URL__."/views/advertsings/require_advertsing_response.php");
         }
         catch(Exception $ex)
         {

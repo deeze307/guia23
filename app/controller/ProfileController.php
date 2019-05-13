@@ -15,7 +15,7 @@ if(isset($_POST["submit"]))
     {
         $_SESSION["error"] = "No se localizó Perfil de Usuario";
     }
-    header("Location: http://".$_SERVER['SERVER_NAME']."/views/user_profile/home.php");
+    header("Location: ".__URL__."/views/user_profile/home.php");
 }
 
 

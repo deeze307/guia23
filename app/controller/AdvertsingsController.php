@@ -53,7 +53,15 @@ if(isset($_GET['listing_detail_adv_id']) || isset($_POST['listing_detail_adv_id'
     $_SESSION["adv_detail"] = $adv_detail;
     if($cat_name != 'Hoteles')
     {
-        header("Location: ".__URL__."/views/listing-details.php");
+        if(!isset($_SESSION["sale"]))
+        {
+            header("Location: ".__URL__."/views/listing-details.php");
+        }
+        else
+        {
+            unset($_SESSION["sale"]);
+            header("Location: ".__URL__."/views/listing-details-ofertas.php");
+        }
     }
     else
     {

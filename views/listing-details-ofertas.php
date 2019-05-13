@@ -4,6 +4,13 @@ require_once("../app/controller/ProfileController.php");
 require_once("../app/controller/AdvertsingsController.php");
 if (!isset($_SESSION))
 { session_start(); }
+
+if(!isset($_SESSION['selected_province_id']))
+{
+    header("Location: ".__URL__."/index.php");
+}
+
+// SI no hay ciudad seleccionada se redirecciona al index
 if(isset($_SESSION['adv_detail']->user_id))
 {
     $profile = new ProfileController();
@@ -234,8 +241,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                                         $image_name_without_ext = $image_name_without_dir[0];
                                         echo $image_name_without_ext;
                                         echo '<li>
-                                            <a href="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
-                                            <img src="http://'.$_SERVER['SERVER_NAME'].'/images/'.$image.'" alt="Alt Image Text" /></a>
+                                            <a href="'.__URL__.'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
+                                            <img src="'.__URL__.'/images/'.$image.'" alt="Alt Image Text" /></a>
                                         </li>';
                                     }
                                 }

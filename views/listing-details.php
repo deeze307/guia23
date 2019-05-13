@@ -38,6 +38,7 @@ $ad_counter = new AdvertsingsCounter();
 $ad_counter->index($_SESSION['adv_detail']->advertsing_id);
 
 
+
 // Valoraciones
 switch($adv_detail->valoraciones)
 {
@@ -152,7 +153,10 @@ switch($adv_detail->valoraciones)
 
     <!---   Ofertas Exclusivas del Negocio  -->
     <!--    Excepto para los las categorías de Admin  -->
-    <?php if($adv_detail->category_permission != 1){ ?>
+    <?php 
+    // Seteo variable para redireccionar a ofertas
+    $_SESSION["sale"]=true;
+    if($adv_detail->category_permission != 1){ ?>
     <section class="details-heading heading" id="#">
 
         <div class="container">
@@ -261,7 +265,7 @@ switch($adv_detail->valoraciones)
                             <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                             </li>-->
                             <div class="form-group">
-                           <button disabled="disabled" >Ver Oferta</button>
+                           <button type="button" onclick="window.location.href=`listing-details-ofertas.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'`">Ver Oferta</button>
 
                            </div>
 

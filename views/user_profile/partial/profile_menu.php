@@ -21,13 +21,13 @@
     <div class="profile-list">
         <ul>
             <li class="active">
-                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i> Mi Perfil</a>
+                <a href="<?php echo __URL__; ?>/views/user_profile/index.php"><i class="fa fa-user-o" aria-hidden="true"></i> Mi Perfil</a>
             </li>
             <li>
                 <a href="advertsings.php"><i class="fa fa-sliders" aria-hidden="true"></i> Publicidades</a>
             </li>
             <li>
-                <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/views/advertsings/packages.php"><i class="fa fa-plus-square" aria-hidden="true"></i>Publicar</a>
+                <a href="<?php echo __URL__; ?>/views/advertsings/packages.php"><i class="fa fa-plus-square" aria-hidden="true"></i>Publicar</a>
             </li>
             <li>
                 <a href="commerces.php"><i class="fa fa-suitcase" aria-hidden="true"></i> Mis Comercios</a>
