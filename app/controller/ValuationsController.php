@@ -27,7 +27,7 @@ class ValuationsController
             $_SESSION['error'] = "Ocurrió un error al intentar enviar el mensaje: ".$res;
         }
 
-        header("Location: http://".$_SERVER['SERVER_NAME']."/views/listing-details.php");
+        header("Location: ".__URL__."/views/listing-details.php");
     }
 
     public function getValuationsForAdvId($adv_id)

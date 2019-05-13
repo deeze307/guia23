@@ -93,7 +93,7 @@ class Advertsings
         }
     }
 
-    public function requestAllForCategory($category_id,$category_permisson)
+    public function requestAllForCategory($category_id,$category_permisson=1)
     {
         $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
         $this->db->join("advertsing_commerce acom","ad.commerce_id = acom.id","LEFT");

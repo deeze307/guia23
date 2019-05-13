@@ -24,7 +24,7 @@ if(isset($_SESSION["add_commerce"]) || isset($_COOKIE['add_commerce']) || isset(
 
 }
 else {
-    header("Location: http://".$_SERVER['SERVER_NAME']."/home.php");
+    header("Location: ".__URL__."/home.php");
 }
 ?>
 
