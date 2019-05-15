@@ -33,9 +33,6 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-
-
-
   </head>
 
   <body>
