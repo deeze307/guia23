@@ -23,7 +23,7 @@ $new_added = $advertsingsController->getLastAdded();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Guia233</title>
+    <title>Guia23</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
