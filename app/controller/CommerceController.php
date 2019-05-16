@@ -50,7 +50,7 @@ if(isset($_GET['cat']))
     if(!isset($_GET['only_data']))
     {
         $adv_cat_id = $adv->getAdvCatId($_GET['cat']);
-        $advertsings = $adv->getAdvsForCatId($adv_cat_id);
+        $advertsings = $adv->getAdvsForCatId($adv_cat_id,$_GET['cat_permission']);
         setcookie("CAT",$adv_cat_id,time() + 3600,"/");
         setcookie("CAT_NAME",$_GET['cat'],time() + 3600,"/");
     //    setcookie("ADVS_FOR_CAT",[$advertsings],time() + 3600,"/");
@@ -59,7 +59,7 @@ if(isset($_GET['cat']))
     }
     else
     {
-        $advertsings = $adv->getAdvsForCatId($_GET['cat']);
+        $advertsings = $adv->getAdvsForCatId($_GET['cat'],$_GET['cat_permission']);
         Logger::write("debug_custom_map","[".date('d-m-Y h:i:s')."] ");
         echo json_encode($advertsings);
     }
@@ -128,10 +128,10 @@ class AdvertsingsController
         return $result;
     }
 
-    public function getAdvsForCatId($category_id)
+    public function getAdvsForCatId($category_id,$category_permisson)
     {
         $ads = new Advertsings();
-        return $ads->requestAllForCategory($category_id);
+        return $ads->requestAllForCategory($category_id,$category_permisson);
     }
 
     public function getOnePlan($plan_id)

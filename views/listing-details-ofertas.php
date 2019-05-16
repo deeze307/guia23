@@ -5,12 +5,15 @@ require_once("../app/controller/AdvertsingsController.php");
 if (!isset($_SESSION))
 { session_start(); }
 
+// SI no hay ciudad seleccionada se redirecciona al index
 if(!isset($_SESSION['selected_province_id']))
 {
     header("Location: ".__URL__."/index.php");
 }
 
-// SI no hay ciudad seleccionada se redirecciona al index
+// Quito la variable de ofertas para que no redireccione si entro a otra publicación.
+unset($_SESSION['sale']);
+
 if(isset($_SESSION['adv_detail']->user_id))
 {
     $profile = new ProfileController();

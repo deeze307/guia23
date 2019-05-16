@@ -1,6 +1,12 @@
 <?php
 //require_once('../../../app/core/Core.php');
 
+// Se elimina la variable de Sale para no redireccionar a ofertas
+if(isset($_SESSION['sale']))
+{
+    unset($_SESSION['sale']);
+}
+
 $ad_counter = new AdvertsingsCounter();
 $populares = $ad_counter->mostVisited();
 ?>
