@@ -87,7 +87,9 @@ class AdvertsingsCounter
             {
                 $visit = [];
                 // Busco información de las publicaciones de los comercios
-                if($adv->category_id == NULL)
+                if(isset($adv->advertsing_id) && $adv->advertsing_id != NULL)
+                {
+                    if($adv->category_id == NULL)
                 {
                     // $this->db->join("advertsings_")
                     $visit = $this->db->objectBuilder()->rawQueryOne(
@@ -145,6 +147,8 @@ class AdvertsingsCounter
                         limit 1"
                     );
                 }
+                }
+                
                 if($visit && (count($most_visited)) < 9)
                 {
                     array_push($most_visited,$visit);
