@@ -5,7 +5,7 @@
         foreach($cat_counter as $cat)
         {
             echo '<li>';
-            echo '<a href="'.__URL__.'/app/controller/AdvertsingsController.php?cat='.$cat->name.'"><i class="'.$cat->icon.'" aria-hidden="true"></i> '.$cat->name.' <span>('.$cat->count.')</span></a>';
+            echo '<a href="'.__URL__.'/app/controller/AdvertsingsController.php?cat='.$cat->name.'&cat_permission='.$cat->permission.'"><i class="'.$cat->icon.'" aria-hidden="true"></i> '.$cat->name.' <span>('.$cat->count.')</span></a>';
             echo '<li>';
         }
         ?>
