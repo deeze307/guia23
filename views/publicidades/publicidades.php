@@ -16,6 +16,7 @@ $new_added = $advertsingsController->getLastAdded();
 <html lang="ES">
 
 <head>
+    <meta google-site-verification: google1cee8a07c04f871a.html>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
