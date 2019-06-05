@@ -15,7 +15,7 @@ if(!isset($_SESSION['selected_city_id'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Guia23</title>
+    <title>Guia23-Login</title>
     <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../css/master.css">
     <link rel="stylesheet" type="text/css" href="../../../css/color-green.css">
@@ -24,6 +24,22 @@ if(!isset($_SESSION['selected_city_id'])){
     <script src="../../js/html5shiv.min.js"></script>
     <script src="../../js/respond.min.js"></script>
     <![endif]-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138258750-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138258750-1');
+    </script>
+
+      <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?6Ws0LTdyhqiW5dpYbGb4zzdbpCzKQkNz";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
 </head>
 
 <body>

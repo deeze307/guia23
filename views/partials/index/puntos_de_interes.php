@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12 heading text-center">
                 <h2><span>Puntos de Interés</span></h2>
-                <p>Clave que no pueden dejar de Visitar</p>
+                <p>Lugares que no pueden dejar de Visitar</p>
             </div>
         </div>
 
