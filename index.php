@@ -19,6 +19,16 @@ $cities = $advertsingsController->getCities(false);
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138258750-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138258750-1');
+</script>
+
 <style>
     body{
         background-image: url("images/BG.png");
@@ -52,7 +62,7 @@ $cities = $advertsingsController->getCities(false);
         ?>
     </div>
     <!-- BANNER -->
-
+   
 
     <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
