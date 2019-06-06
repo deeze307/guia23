@@ -523,7 +523,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 /* ---------- Banner  Css  --------- */
 /* ================================= */
 #banner{
-	background:url(../images/banner-1.jpg);
+	background:url(../images/1.jpg);
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -816,7 +816,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 
 /* --- Banner - 2 Css  ---- */
 .banner-2-bg{
-	background:url(../images/banner-2.jpg);
+	background:url(../images/1.jpg);
 	background-position:center center;
 	background-size:cover;
 	position:relative;
@@ -824,21 +824,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 
 /**** BANNER DE CIUDADES  ****/
 .banner-ushuaia-bg{
-    background:url(../images/banner-2.jpg);
+    background:url(../images/1.jpg);
     background-position:center center;
     background-size:cover;
     position:relative;
 }
 
 .banner-tolhuin-bg{
-    background:url(../images/banner-2.jpg);
+    background:url(../images/1.jpg);
     background-position:center center;
     background-size:cover;
     position:relative;
 }
 
 .banner-rio_grande-bg{
-    background:url(../images/banner-2.jpg);
+    background:url(../images/1.jpg);
     background-position:center center;
     background-size:cover;
     position:relative;
@@ -1412,7 +1412,7 @@ figure.effect-ming img {
 	transition: opacity 0.35s;
 }
 figure.effect-ming figcaption::before {
-	position: sticky;
+	position: absolute;
 	top:10px;
 	right:10px;
 	bottom:10px;
@@ -1423,7 +1423,7 @@ figure.effect-ming figcaption::before {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.4,1.4,1);
-	transform: scale3d(1.5,1.5,1);
+	transform: scale3d(1.4,1.4,1);
 }
 .popular-listing-box:hover figure.effect-ming figcaption::before,
 .best-things-details:hover figure.effect-ming figcaption::before {
