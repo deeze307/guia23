@@ -8,10 +8,11 @@ $cities = $advertsingsController->getCities(false);
 
   <head>
     <meta google-site-verification: google1cee8a07c04f871a.html>
+    <meta name="description" content="Puntos de interes Turisticos, comercios, ofertas, publicidad">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Guia23</title>
+    <title>Guia23-Pagina de Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
@@ -27,7 +28,8 @@ $cities = $advertsingsController->getCities(false);
       gtag('js', new Date());
 
       gtag('config', 'UA-138258750-1');
-</script>
+     </script>
+
 
 <style>
     body{
