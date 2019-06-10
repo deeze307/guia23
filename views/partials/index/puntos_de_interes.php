@@ -104,10 +104,7 @@
                             <li>('.$point->visitas.' Visitas) </li>
                             <li>'.$valoracion.'
                             </li>
-                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                            </li>
+                           <div class="fb-like" data-href="https://guia23.com.ar" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                         </ul>
 
                     </div>
