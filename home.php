@@ -21,11 +21,17 @@ $new_added = $advertsingsController->getLastAdded();
 
   <head>
     <meta google-site-verification: google1cee8a07c04f871a.html>
-    <meta name="description" content="Puntos de Interés turistico, comercios, negocios, ofertas, publicidad">
+    <meta name="description" content="Puntos de Interés turistico, Tierra del Fuego, Santa Cruz, Chubut, Neuquen, Rio Nesgro, Argentina">
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url"           content="https://www.guia23.com.ar/views/publicidades/publicidades.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Guia23" />
+    <meta property="og:description"   content="Puntos de Interés turistico, Tierra del Fuego, Santa Cruz, Chubut, Neuquen, Rio Negro, Argentina" />
+    <meta property="og:image"         content="https://www.guia23.com.ar/images/1@.jpg" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Guia23-Pagina Principal,</title>
+    <title>Guia23</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
@@ -36,6 +42,7 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138258750-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -52,7 +59,10 @@ $new_added = $advertsingsController->getLastAdded();
     $.src="https://v2.zopim.com/?6Ws0LTdyhqiW5dpYbGb4zzdbpCzKQkNz";z.t=+new Date;$.
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </script>
-    
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2490201484323362&autoLogAppEvents=1"></script>
+
   </head>
 
   <body>
