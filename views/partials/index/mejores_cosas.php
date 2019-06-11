@@ -17,7 +17,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=3&city_name=Rio Grande&city_class=rio_grande"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=3&city_name=Rio Grande&city_class=rio_grande&province_id=1"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -48,7 +48,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?city_id=2&city_name=Tolhuin&city_class=tolhuin"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?city_id=2&city_name=Tolhuin&city_class=tolhuin&province_id=1"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
@@ -114,7 +114,7 @@
                         <figcaption>
                             <ul>
                                 <li>
-                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=1&city_name=Ushuaia&city_class=ushuaia"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <a data-toggle="modal"  href="<?php __URL__ ?>/app/controller/Main.php?city_id=1&city_name=Ushuaia&city_class=ushuaia&province_id=1"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </figcaption>
