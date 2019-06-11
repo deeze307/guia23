@@ -255,6 +255,7 @@ class AdvertsingsCommerceController
 
     public function toggleCommerce($commerce_id,$toggle)
     {
+        require_once("../model/AdvertsingsCommerce.php");
         $adv = new AdvertsingsCommerce();
         $result = $adv->toggleCommerce($commerce_id,$toggle);
             if($result == "exito")
