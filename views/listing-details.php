@@ -434,14 +434,14 @@ switch($adv_detail->valoraciones)
                                         $image_name = explode('/',$image);
                                         if(count($image_name) > 1)
                                         {
-                                            $image_name_without_dir = explode('.',$image_name[1]);
+                                            $image_name_without_dir = explode('.',$image_name[2]);
                                         }
                                         else{ $image_name_without_dir[0] = "";}
                                         $image_name_without_ext = $image_name_without_dir[0];
                                         echo $image_name_without_ext;
                                         echo '<li>
-                                            <a href="'. __URL__ .'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
-                                            <img src="'. __URL__ .'/images/'.$image.'" alt="Alt Image Text" /></a>
+                                            <a href="'. __URL__ .'/images/'.$image.'" title="'.$image_name_without_ext.'" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
+                                            <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'" /></a>
                                         </li>';
                                     }
                                 }
