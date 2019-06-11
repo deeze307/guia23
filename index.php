@@ -8,10 +8,10 @@ $cities = $advertsingsController->getCities(false);
 
   <head>
     <meta google-site-verification: google1cee8a07c04f871a.html>
-    <meta name="description" content="Puntos de Interés turistico, Tierra del Fuego, Santa Cruz, Chubut, Neuquen, Rio Nesgro, Argentina">
+    <meta name="description" content="Puntos de interes Turisticos, comercios, ofertas, publicidad">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Guia23-Pagina de Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
@@ -33,7 +33,7 @@ $cities = $advertsingsController->getCities(false);
 
 <style>
     body{
-        background-image: url("images/BG.webp");
+        background-image: url("images/BG.png");
     }
 </style>
 
