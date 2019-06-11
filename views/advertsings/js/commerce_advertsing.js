@@ -55,6 +55,7 @@ jQuery(document).ready(function() {
                         for (_i = 0, _len = this.files.length; _i < _len - 1; _i++) {
                             if (_ref[_i].name === file.name && _ref[_i].size === file.size) {
                                 this.removeFile(_ref[_i]);
+                                console.log("imagen eliminada!");
                             }
                         }
                     }
