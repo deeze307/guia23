@@ -21,7 +21,8 @@ $new_added = $advertsingsController->getLastAdded();
 
   <head>
     <meta google-site-verification: google1cee8a07c04f871a.html>
-    <meta name="description" content="Puntos de Interés turistico, Tierra del Fuego, Santa Cruz, Chubut, Neuquen, Rio Nesgro, Argentina">
+    <meta name="description" content="Puntos de Interés turistico, Tierra del Fuego, Santa Cruz, Chubut, Neuquen, Rio Negro, Argentina">
+    <link rel="canonical" href="https://www.guia23.com.ar">
     <meta property="og:locale" content="es_ES" />
     <meta property="og:url"           content="https://www.guia23.com.ar/views/publicidades/publicidades.php" />
     <meta property="og:type"          content="website" />
@@ -30,7 +31,7 @@ $new_added = $advertsingsController->getLastAdded();
     <meta property="og:image"         content="https://www.guia23.com.ar/images/1@.jpg" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, minimal-scale = 1, initial-scale=1">
     <title>Guia23</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
@@ -60,8 +61,7 @@ $new_added = $advertsingsController->getLastAdded();
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </script>
 
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2490201484323362&autoLogAppEvents=1"></script>
+    
 
   </head>
 
@@ -135,6 +135,8 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.gridrotator.js"></script>
     <script src="js/functions.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2490201484323362&autoLogAppEvents=1"></script>
 
   </body>
 
