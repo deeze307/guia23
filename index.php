@@ -12,10 +12,10 @@ $cities = $advertsingsController->getCities(false);
     <meta charset="utf-8">
     <link  rel = "canonical"  href = "https://www.guia23.com.ar" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, minimal-scale = 1, initial-scale = 1 ">
     <title>Guia23-Pagina de Inicio</title>
-    <!--<link rel="stylesheet" type="text/css" href="css/master.css">
-    <link rel="stylesheet" type="text/css" href="css/color-green.css">-->
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/color-green.css">
     <link rel="shortcut icon" href="images/short_icon.png">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -67,9 +67,9 @@ $cities = $advertsingsController->getCities(false);
     <!-- BANNER -->
    
 
-    <!--<script src="js/jquery.2.2.3.min.js"></script>
+    <script src="js/jquery.2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/functions.js"></script>-->
+    <script src="js/functions.js"></script>
 
   </body>
 
