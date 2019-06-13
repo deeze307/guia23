@@ -10,8 +10,9 @@ $cities = $advertsingsController->getCities(false);
     <meta google-site-verification: google1cee8a07c04f871a.html>
     <meta name="description" content="Puntos de interes Turisticos, comercios, ofertas, publicidad">
     <meta charset="utf-8">
+    <link  rel = "canonical"  href = "https://www.guia23.com.ar" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, minimal-scale = 1, initial-scale = 1 ">
     <title>Guia23-Pagina de Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/color-green.css">
@@ -33,7 +34,7 @@ $cities = $advertsingsController->getCities(false);
 
 <style>
     body{
-        background-image: url("images/BG.png");
+        background-image: url("images/BG.webp");
     }
 </style>
 
@@ -51,7 +52,7 @@ $cities = $advertsingsController->getCities(false);
     <!-- HEADER -->
     <?php require "app/controller/Main.php"; ?>
     <!-- HEADER  -->
-
+    
     <!-- BANNER -->
     <div class="banner-text-index center-screen">
         <h2><span>Bienvenido a Guía23</span></h2>
