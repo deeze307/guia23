@@ -103,7 +103,12 @@ elseif(isset($_SESSION["error"]))
                                     else{
                                         echo "<td><span class='label label-danger'>NO</span></td>";
                                     }
-                                    echo "<td>$adv->enabled_until</td>";
+                                    if(isset($adv->enabled_until)){
+                                        echo "<td>$adv->enabled_until</td>";
+                                    }else
+                                    {
+                                        echo "<td>N/A</td>";
+                                    }
                                     echo "<td><button class='btn btn-xs btn-info' onclick='edit_advertsing(" . $adv->advertsing_id . ",". $adv->plan_id .")'>Editar</button></td>";
                                     echo "<td><button class='btn btn-xs btn-danger' onclick='delete_advertsing(" . $adv->advertsing_id . ")'>Eliminar</button></td>";
                                 echo "</tr>";
