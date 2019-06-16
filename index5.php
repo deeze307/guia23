@@ -64,7 +64,7 @@ $new_added = $advertsingsController->getLastAdded();
 
 <!-- HEADER -->
 <?php require "app/controller/Main.php"; ?>
-<!-- HEADER  -->
+<!--Fin HEADER  -->
 
 <!-- Banner -->
 <section id="banner-2" class="banner-2-bg">
@@ -106,7 +106,7 @@ $new_added = $advertsingsController->getLastAdded();
     </div>
       
   </section>
-<!-- Banner -->
+<!-- Fin Banner -->
 
 <!-- Directorio Categorias -->
 <section id="directory-category-3" class="p_b70">
