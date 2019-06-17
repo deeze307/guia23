@@ -50,7 +50,9 @@ $new_added = $advertsingsController->getLastAdded();
 
     gtag('config', 'UA-138258750-1');
    </script>
+  <style>
 
+  </style>
 </head>
 
 <body>
@@ -233,9 +235,10 @@ $new_added = $advertsingsController->getLastAdded();
             <div class="col-md-4 col-sm-4 col-xs-12 text-center">
               <div class="right-bar">
                  <!--<img src="images/how-to-find1.png" alt="img">-->
+                
                 <!-- reproductor youtube-->
                 <h4><span>HAGALO ASÍ</span></h4>
-                <iframe width="350" height="240" align="center" src="https://www.youtube.com/embed/PGcIQdaysSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="330" height="240" align="center" src="https://www.youtube.com/embed/PGcIQdaysSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <!-- reproductor youtube--> 
               </div>
             </div>
