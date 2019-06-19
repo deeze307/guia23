@@ -139,7 +139,7 @@ $new_added = $advertsingsController->getLastAdded();
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="#"><h3>Río Negro</h3></a>
+            <a href="#"><h3>Neuquen</h3></a>
 
             <p>2, 34, 546</p>
             <div class="directory-category-overlay"></div>
@@ -147,7 +147,7 @@ $new_added = $advertsingsController->getLastAdded();
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="shoping.html"><h3>Neuquen</h3></a>
+            <a href="shoping.html"><h3>Río Negro</h3></a>
             <p>2,546</p>
             <div class="directory-category-overlay"></div>
           </div>
@@ -237,7 +237,7 @@ $new_added = $advertsingsController->getLastAdded();
                  <!--<img src="images/how-to-find1.png" alt="img">-->
                 
                 <!-- reproductor youtube-->
-                <h4><span>HAGALO ASÍ</span></h4>
+                <h4><span>PUBLIQUE ASÍ</span></h4>
                 <iframe width="330" height="240" align="center" src="https://www.youtube.com/embed/PGcIQdaysSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <!-- reproductor youtube--> 
               </div>

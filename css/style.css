@@ -1,6 +1,6 @@
 /* CSS Document 
 Author E-mail:info@guia23.com.ar
-Description: A default stylesheet for Find Do Directory Template.
+Description: stylesheet for Guia23.
 
 ------------ TABLE OF CONTENT ------------
 
@@ -1155,7 +1155,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 .sort-category > span{
   color: #3a2f2f;
-  font-size: 18px;
+  font-size: 32px;
   padding-right: 22px;
 }
 .sort-category .single-query {
@@ -1169,6 +1169,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 .sort-listing.nav-tabs {
   border-bottom: medium none;
+  float: right;
+  
 }
 .sort-listing.nav-tabs > li > a {
   border: 1px solid #e9e5e5;
@@ -1236,20 +1238,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .popular-listing-img_points_of_interest{
     position: relative;
     overflow:hidden;
-    height: 331px;
-
+    width: 383px;
+    height: 197px;
 }
 
 .popular-listing-img_home_profile{
     position: relative;
     overflow:hidden;
-   
+    width: 262px;
+    height: 138px;
 }
 
 .popular-listing-img_home_home{
     position: relative;
     overflow:hidden;
-   height: 250px;
 }
 
 .popular-listing-img_home_message{
@@ -1334,7 +1336,8 @@ figure.effect-ming ul {
   display: block;
   font-size: 22px;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  height: 70px;
 }
 .popular-listing-detail {
   margin: 15px 20px 0;
@@ -2405,7 +2408,7 @@ footer#footer::after {
   height: 77px;
 }
 .places-list h5 a{
-	font-size: 20px;
+	font-size: 18px;
 	padding-bottom:7px;
 	color:#3a2f2f;
 	display:block;
@@ -2419,8 +2422,8 @@ footer#footer::after {
 	font-size:12px;
 }
 .places-list img{
-    height: 77px;
-    width: 77px;
+    height: 62px;
+    width: 72px;
 }
 .places-list {
 	background: #f6f6f6;
@@ -3467,10 +3470,22 @@ ul.day-open li:nth-child(3){
 	  line-height:0;
 	  font-size:14px;
 	}
+  .sort-category > span{
+    color: #3a2f2f;
+    font-size: 22px;
+    padding-right: 22px;
+  }
+  
 	.add-listing > a:hover{
 	  background: transparent;
 	  padding: 0;
 	}
+  .popular-listing-img_home_profile{
+    position: relative;
+    overflow: hidden;
+    width:300px;
+    height:170px;
+  }
 	.top-contact > p {
 	  padding-top:0;
 	}
@@ -3488,6 +3503,14 @@ ul.day-open li:nth-child(3){
 	.directory-category-box3 {
 	  margin: 0 9px 50px;
 	}
+  .directory-category-box {
+  background: #fff;
+  float: right;
+  margin-right: 48px;
+  padding: 35px 0;
+  width: 220px;
+  margin-bottom:10px;
+}
   img.logo {
   border: 0 none;
   height: auto;

@@ -101,7 +101,7 @@ $new_added = $advertsingsController->getLastAdded();
     <!-- Counter Section -->
 
     <!-- Best Things -->
-    <?php require "views/partials/index/mejores_cosas.php"?>
+    <?php require "views/partials/index/mejores_cosas1.php"?>
     <!-- Best Things -->
 
     <!-- Latest News -->
