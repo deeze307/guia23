@@ -1151,11 +1151,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-bottom: 60px;
 }
 .sort-category {
-  padding: 15px 25px 0;
+  padding: 15px 25px ;
 }
 .sort-category > span{
   color: #3a2f2f;
-  font-size: 32px;
+  font-size: 28px;
   padding-right: 22px;
 }
 .sort-category .single-query {
@@ -3829,7 +3829,8 @@ ul.day-open li:nth-child(3){
 }
 @media (max-width: 459px) {
 	.sort-category {
-	  padding: 15px 25px 15px;
+	  padding: 2px 10px 20px;
+    padding-right: 10px;
 	}
 	.sort-category .single-query {
 	  width: 65%;

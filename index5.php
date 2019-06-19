@@ -147,7 +147,7 @@ $new_added = $advertsingsController->getLastAdded();
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="shoping.html"><h3>Río Negro</h3></a>
+            <a href="#"><h3>Río Negro</h3></a>
             <p>2,546</p>
             <div class="directory-category-overlay"></div>
           </div>
