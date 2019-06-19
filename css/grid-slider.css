@@ -1,5 +1,3 @@
-/* Grillas */
-
 .ri-grid ul li,
 .ri-grid ul li a{
 	width: 100px;
@@ -23,6 +21,7 @@
 	padding: 0;
 }
 
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .ri-grid ul:before,
 .ri-grid ul:after{

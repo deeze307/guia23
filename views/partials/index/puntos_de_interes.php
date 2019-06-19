@@ -83,7 +83,7 @@
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="'. __URL__.'/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img title=" Titulo "  src="'. __URL__.'/images/'.$image.'" alt="Paisajes de la Patagonia Argentina">
                                 <figcaption>
                                     <ul>
                                         <li><a href="'. __URL__.'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
