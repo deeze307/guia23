@@ -99,7 +99,7 @@
                                     <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="popular-listing-box">
                                             <div class="popular-listing-img_home_profile">
-                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image">
+                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image.'" title="'.$advertsing->title.'">
                                                     <figcaption>
                                                         <ul>
                                                            <!--<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
