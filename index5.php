@@ -81,7 +81,7 @@ $new_added = $advertsingsController->getLastAdded();
                   <div class="call-to-action">
                     <div class="banner-text-3">
                     <h2><span>Bienvenidos a Guía23</span></h2>
-                    <h3>Todo lo que necesitas está al alcance de tu mano y de una manera facil</h3>
+                    <h3>Todas las ciudades de la Patagonia Argentina ahora están al alcance de tu mano</h3>
                     </div>
                             
                     <div class="call-to-action-btn">
@@ -90,7 +90,7 @@ $new_added = $advertsingsController->getLastAdded();
                   </div>
                 </div>
             </div>
-          </div>
+          </div> 
         </section>
     
         <div class="row">
@@ -190,10 +190,10 @@ $new_added = $advertsingsController->getLastAdded();
 
             <div class="row">
               <div class="col-md-12 text-center heading"><br><br>
-                <h2><span>Trabajamos para Usted</span></h2>
-              
-                <p style="text-align: justify;">Guía23 incluye información turística del entorno, geolocalización, comercios, empresas, atrayendo al usuario a consultar el contenido, tus publicidades u ofertas, llegaran directamente al punto de demanda, sin invertir en formatos complementarios, sin que el cliente tenga que desplazarse a un lugar concreto para acceder a ellas, tu producto o servicio al alcance de todos, queremos que ofrezcas lo mejor a tus clientes dentro y fuera de tu negocio, a través de Guía23 proyectaras una imagen moderna y colaboraras con la eliminación de miles de folletos impresos en papel.</p>
-                 
+                <h2><span>Trabajamos para Usted</span></h2><br>
+                <div class="right-bar">
+                <p style="text-align: left;"><strong>Guía23 incluye información turística del entorno, geolocalización, comercios, empresas, atrayendo al usuario a consultar el contenido, tus publicidades u ofertas, llegaran directamente al punto de demanda, sin invertir en formatos complementarios, sin que el cliente tenga que desplazarse a un lugar concreto para acceder a ellas, tu producto o servicio al alcance de todos, queremos que ofrezcas lo mejor a tus clientes dentro y fuera de tu negocio, a través de Guía23 proyectaras una imagen moderna y colaboraras con la eliminación de miles de folletos impresos en papel.</strong></p>
+                </div> 
               </div>
 
             </div>
