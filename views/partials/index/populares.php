@@ -112,7 +112,7 @@ $populares = $ad_counter->mostVisited();
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="popular-listing-box">
                                     <div class="popular-listing-img_home_profile">
-                                        <figure class="effect-ming"> <img title="nombre de la foto" src="'. __URL__ .'/images/'.$image.'" alt="description de la foto" width="262" height="142">
+                                        <figure class="effect-ming"> <img title="'.$popular->title.'" src="'. __URL__ .'/images/'.$image.'" alt="'.$popular->title.','.$popular->category_name.','.$popular->city_name.'"  width="262" height="142">
                                             <figcaption>
                                                 <ul>
                                                     <!--<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
@@ -211,7 +211,7 @@ $populares = $ad_counter->mostVisited();
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="popular-listing-box">
                                     <div class="popular-listing-img_home_home">
-                                        <figure class="effect-ming"> <img title="nombre de la foto" src="'. __URL__ .'/images/'.$image.'" alt="description de la imagen" width="262" height="142">
+                                        <figure class="effect-ming"> <img title="'.$popular->title.'" src="'. __URL__ .'/images/'.$image.'" alt="'.$popular->title.','.$popular->category_name.','.$popular->city_name.','.$popular->province_id.'" width="262" height="142">
                                             <figcaption>
                                                 <ul>
                                                    <!-- <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
@@ -312,7 +312,7 @@ $populares = $ad_counter->mostVisited();
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-xs-12">
                                             <div class="popular-listing-img_home_message">
-                                                <figure class="effect-ming"> <img title="Nombre de la imagen" src="'. __URL__ .'/images/'.$image.'" alt="description de la imagen" width="262" height="142">
+                                                <figure class="effect-ming"> <img title="'.$popular->title.'" src="'. __URL__ .'/images/'.$image.'" alt="'.$popular->title.','.$popular->category_name.','.$popular->city_name.'" width="262" height="142">
                                                     <figcaption>
                                                         <ul>
                                                             <!--<li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
