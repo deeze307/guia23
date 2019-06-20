@@ -53,16 +53,7 @@ $new_added = $advertsingsController->getLastAdded();
       gtag('config', 'UA-138258750-1');
       </script>
        
-    <script type="text/javascript">
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-    $.src="https://v2.zopim.com/?6Ws0LTdyhqiW5dpYbGb4zzdbpCzKQkNz";z.t=+new Date;$.
-    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    </script>
-
     
-
   </head>
 
   <body>
@@ -135,8 +126,19 @@ $new_added = $advertsingsController->getLastAdded();
     <script src="js/modernizr.custom.26633.js"></script>
     <script src="js/jquery.gridrotator.js"></script>
     <script src="js/functions.js"></script>
+    <!--Facebook-->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2490201484323362&autoLogAppEvents=1"></script>
+     <!--Fin Facebook-->
+    <!--Chat-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?6Ws0LTdyhqiW5dpYbGb4zzdbpCzKQkNz";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--Fin chat-->
 
   </body>
 
