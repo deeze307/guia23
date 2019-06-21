@@ -66,7 +66,7 @@
             echo '<div class="media">';
                 echo '<div class="media-left">';
                     echo '<a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">';
-                        echo '<img class="media-object" width="50" height="50" src="'. __URL__ .'/images/'.$image.'">';
+                        echo '<img class="media-object" title="'.$new->title.'" src="'. __URL__ .'/images/'.$image.'" alt="'.$new->cat_name.', '.$new->title.', Nueva Publicidad" width="50" height="50" >';
                     echo '</a>';
                 echo '</div>';
                 echo '<div class="media-body">';
