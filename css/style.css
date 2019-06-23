@@ -282,6 +282,9 @@ h5 {
 .add-listing > a > .fa {
   padding-right: 10px;
 }
+.add-listing > button > .fa {
+    padding-right: 10px;
+}
 .top_right_links {
   text-align: right;
 }
@@ -349,6 +352,14 @@ h5 {
   line-height: 43px;
   padding: 0 44px;
   width: 100%;
+}
+.add-listing > button {
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    line-height: 43px;
+    padding: 0 44px;
+    width: 100%;
 }
 #main_header .navbar-brand {
   padding: 19px 15px;
@@ -423,6 +434,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   line-height: 39px;
   background:transparent;
 }
+.top_right_links2 .add-listing > button {
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 39px;
+    background:transparent;
+}
 #main_header_2 nav.navbar.bootsnav ul.nav > li > a {
   padding: 50px 15px 27px;
   transition: all 0.3s ease 0s;
@@ -438,6 +455,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 #main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{
 	padding: 27px 10px 27px;
 	transition: all 0.3s ease 0s;
+}
+#main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > button{
+    padding: 27px 10px 27px;
+    transition: all 0.3s ease 0s;
 }
 /* ---- Header - 3 Css  ---- */
 #main_header_3 {
@@ -458,6 +479,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   font-size: 17px;
   font-weight: 300;
 }
+#main_header_3 nav.navbar.bootsnav ul.nav > li > button {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
 #main_header_3 nav.navbar.bootsnav ul.nav > li.add-listing{
 	margin:15px 0 0 20px;
 }
@@ -470,6 +496,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 }
 #main_header_3 nav.navbar.bootsnav ul.nav > li.add-listing > a:hover{
   color:#fff;
+}
+#main_header_3 nav.navbar.bootsnav ul.nav > li.add-listing > button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    height: auto;
+    padding: 13px 21px;
+}
+#main_header_3 nav.navbar.bootsnav ul.nav > li.add-listing > button:hover{
+    color:#fff;
 }
 #main_header_3 .navbar-brand {
   padding: 18px 15px;
@@ -744,6 +780,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .banner-icons a:hover{
 	width:60px;
 	transition: all .3s ease;
+}
+.banner-icons button:hover{
+    width:60px;
+    transition: all .3s ease;
 }
 .banner-icons ul li:nth-child(1) a{
     background: #3b5998;
@@ -1231,9 +1271,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .popular-listing-img,
 .best-things-details{
   position: relative;
-  overflow:hidden;
-
-  
+  overflow:hidden;  
 }
 .popular-listing-img_points_of_interest{
     position: relative;
@@ -2306,7 +2344,7 @@ footer#footer::after {
 }
 /* ------ Inner Banner - 2 Css  ---- */
 #inner-banner-2{
-	background-image:url(../images/inner-banner.jpg);
+	background-image:url(../images/1.jpg);
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -3486,6 +3524,17 @@ ul.day-open li:nth-child(3){
     width:300px;
     height:170px;
   }
+  .add-listing > button {
+        background: transparent;
+        padding: 0;
+        height:auto;
+        line-height:0;
+        font-size:14px;
+  }
+  .add-listing > button:hover{
+        background: transparent;
+        padding: 0;
+  }
 	.top-contact > p {
 	  padding-top:0;
 	}
@@ -3556,6 +3605,9 @@ ul.day-open li:nth-child(3){
 	.add-listing > a > .fa {
 	  padding-right: 4px;
 	}
+  .add-listing > button > .fa {
+        padding-right: 4px;
+  }
 	#best-thing-model .modal-dialog {
 	  width: 600px;
 	}
@@ -3582,6 +3634,14 @@ ul.day-open li:nth-child(3){
 	  background:transparent;
 	  color:#123355;
 	}
+   .top_right_links2 .add-listing > button {
+        border: medium none;
+        height: auto;
+    }
+    .top_right_links2 .add-listing > button:hover {
+        background:transparent;
+        color:#123355;
+    }
 	#main_header_2 .navbar-brand,#main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand {
 	  padding:4px 15px;
 	}
