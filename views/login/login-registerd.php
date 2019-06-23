@@ -4,9 +4,9 @@ require_once "../../app/core/Core.php" ;
 if (!isset($_SESSION))
 { session_start(); }
 // SI no hay ciudad seleccionada se redirecciona al index
-if(!isset($_SESSION['selected_city_id'])){
-    header("Location: ".__URL__."/index.php");
-}
+// if(!isset($_SESSION['selected_city_id'])){
+//     header("Location: ".__URL__."/index.php");
+// }
 ?>
 <html lang="Es">
 
