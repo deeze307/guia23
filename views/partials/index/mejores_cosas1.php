@@ -5,7 +5,7 @@
 
       <div class="row">
           <div class="col-md-12 heading text-center">
-              <h2><span>Visite estas provincias de la Patagonia Argentina</span></h2>
+              <h2><span>Visite las provincias de la Patagonia Argentina</span></h2>
           </div>
       </div>
 
@@ -13,7 +13,7 @@
 
           <div class="col-md-7 col-sm-7 col-xs-12">
               <div class="best-things-details">
-                  <figure class="effect-ming"> <img title="Provincia de Tierra del Fuego" src="<?php __URL__ ?>/images/Paisajes/5/TierraDelFuego/PlazaMalvinas.jpg" width="653px" height="333px" alt="Patagonia Argentina">
+                  <figure class="effect-ming"> <img title="Provincia de Tierra del Fuego" src="<?php __URL__ ?>/images/Paisajes/5/TierraDelFuego/PlazaMalvinas.jpg" width="653px" height="333px" alt="Rio Grande,Ushuaia,Tolhuin,Patagonia Argentina">
                       <figcaption>
                           <ul>
                               <li>
@@ -44,7 +44,7 @@
 
           <div class="col-md-5 col-sm-5 col-xs-12">
               <div class="best-things-details">
-                  <figure class="effect-ming"> <img title="Provincia de Santa Cruz" src="<?php __URL__ ?>/images/Paisajes/5/SantaCruz/LagoRoca.jpg" width="458px" height="333px"alt="Patagonia Argentina">
+                  <figure class="effect-ming"> <img title="Provincia de Santa Cruz" src="<?php __URL__ ?>/images/Paisajes/5/SantaCruz/LagoRoca.jpg" width="458px" height="333px"alt="Rio Gallrgos,El Calafate,Perito Moreno,Patagonia Argentina">
                       <figcaption>
                           <ul>
                               <li>
