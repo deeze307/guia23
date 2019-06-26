@@ -2,7 +2,7 @@
 Author E-mail:info@guia23.com.ar
 Description: stylesheet for Guia23.
 
------------- TABLE OF CONTENT// ------------
+------------ TABLE OF CONTENT ------------
 
 -GENERRAL CSS
 -LOADER CSS
@@ -65,6 +65,7 @@ a {
     transition: 0.4s;
 }
 a:hover,
+button:hover,
 a:focus,
 .btn.active.focus, 
 .btn.active:focus, 
@@ -115,7 +116,7 @@ h3 {
     font-size: 24px;
 }
 h4 {
-    font-size: 18px;
+    font-size: 24px;
 }
 h2,
 h3,
@@ -283,7 +284,7 @@ h5 {
   padding-right: 10px;
 }
 .add-listing > button > .fa {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .top_right_links {
   text-align: right;
@@ -359,7 +360,6 @@ h5 {
     height: 45px;
     line-height: 43px;
     padding: 0 44px;
-    width: 100%;
 }
 #main_header .navbar-brand {
   padding: 19px 15px;
@@ -769,21 +769,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   border: 0 solid #828284;
   color: #fff;
   font-size: 16px;
-  height:40px;
+  height:52px;
   text-align: center;
-  width:50px;
+  width:52px;
   display:inline-block;
-  line-height:42px;
+  line-height:52px;
   text-align:center;
   transition: all .3s ease;
 }
 .banner-icons a:hover{
 	width:60px;
 	transition: all .3s ease;
-}
-.banner-icons button:hover{
-    width:60px;
-    transition: all .3s ease;
 }
 .banner-icons ul li:nth-child(1) a{
     background: #3b5998;
@@ -817,9 +813,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .banner-text-index {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .banner-text-mini {
   margin: 30px 0;
 }
+
 .center-screen {
     display: flex;
     flex-direction: column;
@@ -865,7 +863,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-top: 51px;
 }
 .banner-text > h2 {
-  color: #1fb7a6;
+  color: #fff;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1249,11 +1247,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-bottom: 60px;
 }
 .sort-category {
-  padding: 15px 25px ;
+  padding: 15px 25px 0;
 }
 .sort-category > span{
   color: #3a2f2f;
-  font-size: 28px;
+  font-size: 32px;
   padding-right: 22px;
 }
 .sort-category .single-query {
@@ -1329,7 +1327,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
 .popular-listing-img,
 .best-things-details{
   position: relative;
-  overflow:hidden;  
+  overflow:hidden;
+
+  
 }
 .popular-listing-img_points_of_interest{
     position: relative;
@@ -1430,10 +1430,10 @@ figure.effect-ming ul {
 .popular-listing-detail h3 a {
   color: #3a2f2f;
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   padding-bottom: 0px;
-  height: 70px;
+  height: 66px;
 }
 .popular-listing-detail {
   margin: 15px 20px 0;
@@ -1444,7 +1444,7 @@ figure.effect-ming ul {
   padding-bottom: 25px;
 }
 .popular-listing-add {
-  padding: 12px 15px 15px;
+  padding: 12px 2px 18px;
 }
 .popular-listing-add > span {
   color: #888;
@@ -2296,7 +2296,7 @@ footer#footer::after {
 	margin-top:20px;
 }
 #post-visited-places .popular-listing-detail h3 a{
-  font-size: 24px;
+  font-size: 18px;
   padding-bottom:10px;
 }
 #post-visited-places .popular-listing-detail > span {
@@ -2402,7 +2402,7 @@ footer#footer::after {
 }
 /* ------ Inner Banner - 2 Css  ---- */
 #inner-banner-2{
-	background-image:url(../images/1.jpg);
+	background-image:url(../images/inner-banner.jpg);
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -2518,7 +2518,7 @@ footer#footer::after {
 	font-size:12px;
 }
 .places-list img{
-    height: 62px;
+    height: 65px;
     width: 72px;
 }
 .places-list {
@@ -3566,28 +3566,9 @@ ul.day-open li:nth-child(3){
 	  line-height:0;
 	  font-size:14px;
 	}
-   .banner-text-mini > h2 {
-  color: #1fb7a6;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.banner-text-mini > p {
-  color: #333;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding: 30px 0 20px 0;
-}
-.banner-text-mini > a {
-    border: 1px solid #333;
-    color: #333;
-    display: inline-block;
-    font-size: 12px;
-    width: 130px;
-    padding: 15px 0;
-    margin: 5px;
-}
+  .sort-category {
+    padding: 15px 25px 0;
+  }
   .sort-category > span{
     color: #3a2f2f;
     font-size: 22px;
@@ -3603,17 +3584,6 @@ ul.day-open li:nth-child(3){
     overflow: hidden;
     width:300px;
     height:170px;
-  }
-  .add-listing > button {
-        background: transparent;
-        padding: 0;
-        height:auto;
-        line-height:0;
-        font-size:14px;
-  }
-  .add-listing > button:hover{
-        background: transparent;
-        padding: 0;
   }
 	.top-contact > p {
 	  padding-top:0;
@@ -3665,7 +3635,7 @@ ul.day-open li:nth-child(3){
 	}
 	
   .banner-icons {
-    top: 98px;
+    top: 470px;
     transform: translate(0px, 0px);
     left:0;
     right:0;
@@ -3685,9 +3655,6 @@ ul.day-open li:nth-child(3){
 	.add-listing > a > .fa {
 	  padding-right: 4px;
 	}
-  .add-listing > button > .fa {
-        padding-right: 4px;
-  }
 	#best-thing-model .modal-dialog {
 	  width: 600px;
 	}
@@ -3714,14 +3681,6 @@ ul.day-open li:nth-child(3){
 	  background:transparent;
 	  color:#123355;
 	}
-   .top_right_links2 .add-listing > button {
-        border: medium none;
-        height: auto;
-    }
-    .top_right_links2 .add-listing > button:hover {
-        background:transparent;
-        color:#123355;
-    }
 	#main_header_2 .navbar-brand,#main_header_2 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-brand {
 	  padding:4px 15px;
 	}
@@ -3969,9 +3928,13 @@ ul.day-open li:nth-child(3){
 }
 @media (max-width: 459px) {
 	.sort-category {
-	  padding: 2px 10px 20px;
-    padding-right: 10px;
+	  padding: 5px 5px 15px;
 	}
+  .sort-category > span {
+    color: #3a2f2f;
+    font-size: 25px;
+    padding-right: 22px;
+}
 	.sort-category .single-query {
 	  width: 65%;
 	}
