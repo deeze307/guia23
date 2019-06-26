@@ -1,6 +1,7 @@
 <?php
-$city_name ="";
-$bannerClass ="";
+$city_name = "";
+$province_name = "";
+$bannerClass = "";
 if(isset($_SESSION['selected_city_name']))
 {
   $city_name = $_SESSION['selected_city_name'];
