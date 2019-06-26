@@ -5,12 +5,13 @@ require_once $_SERVER["DOCUMENT_ROOT"]."/app/core/Core.php";
 if (!isset($_SESSION))
 { session_start(); }
 
-if(isset($_GET['city_id']))
+if(isset($_GET['city_id']) || isset($_GET['province_id']))
 {
-    $_SESSION['selected_city_id'] = $_GET['city_id'];
-    $_SESSION['selected_city_name'] = $_GET['city_name'];
-    $_SESSION['selected_city_class'] = $_GET['city_class'];
-    $_SESSION['selected_province_id'] = $_GET['province_id'];
+    if(isset($_GET['city_id'])){$_SESSION['selected_city_id'] = $_GET['city_id'];};
+    if(isset($_GET['city_name'])){$_SESSION['selected_city_name'] = $_GET['city_name'];};
+    if(isset($_GET['city_class'])){$_SESSION['selected_city_class'] = $_GET['city_class'];};
+    if(isset($_GET['province_id'])){$_SESSION['selected_province_id'] = $_GET['province_id'];};
+    if(isset($_GET['province_name'])){$_SESSION['selected_province_name'] = $_GET['province_name'];};
     header("Location: ".__URL__."/home.php");
 }
 

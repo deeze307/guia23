@@ -118,21 +118,21 @@ $new_added = $advertsingsController->getLastAdded();
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="#"><h3>Tierra del Fuego</h3></a>
+            <a href="app/controller/Main.php?province_id=1&province_name=Tierra del Fuego"><h3>Tierra del Fuego</h3></a>
             <p>152,546</p>
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="#"><h3>Santa Cruz</h3></a>
+            <a href="app/controller/Main.php?province_id=2&province_name=Santa Cruz"><h3>Santa Cruz</h3></a>
             <p>152,546</p>
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
-            <a href="#"><h3>Chubut</h3></a>
+            <a href="app/controller/Main.php?province_id=3&province_name=Chubut"><h3>Chubut</h3></a>
             <p>1,546</p>
             <div class="directory-category-overlay"></div>
           </div>

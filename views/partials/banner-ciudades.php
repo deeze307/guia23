@@ -5,6 +5,8 @@ if(isset($_SESSION['selected_city_name']))
 {
   $city_name = $_SESSION['selected_city_name'];
   $bannerClass = $_SESSION['selected_city_class'];
+}else if(isset($_SESSION['selected_province_name'])){
+  $province_name = $_SESSION['selected_province_name'];
 }
 
 ?>
@@ -88,7 +90,7 @@ if(!isset($_GET['cat_id'])){
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="banner-text-mini text-center">
-            <h2><span>Bienvenidos a Guía23 </span><span><?php if($city_name != "") {echo "($city_name)";} ?></span></h2>
+            <h2><span>Bienvenidos a Guía23 </span><span><?php if($city_name != "") {echo "($city_name)";}else if($province_name !="") {echo "($province_name)";} ?></span></h2>
           <p>Explore las mejores atracciones turisticas, actividades, comercios y mas..!</p>
           <?php if(!isset($_SESSION['user_id'])){ echo '<a href="views/login/login-registerd.php">REGÍSTRESE AHORA</a>';} ?>
           <a href=views/Ayuda.php>¿COMO PUBLICAR?</a>

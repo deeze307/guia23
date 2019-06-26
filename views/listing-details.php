@@ -196,10 +196,19 @@ switch($adv_detail->valoraciones)
                         if($image[0] != "" && $image[0] != "vacio")
                         {
                             $image = $image[0];
+                            
+                            $image_name = explode('/',$image);
+                            if(count($image_name) > 1)
+                            {
+                                $image_name_without_dir = explode('.',$image_name[2]);
+                            }
+                            else{ $image_name_without_dir[0] = "";}
+                            $image_name_without_ext = $image_name_without_dir[0];
                         }
                         else
                         {
                             $image = '1@.png';
+                            $image_name_without_ext = '1@';
                         }
 
                         if($point->visitas <= 0)
@@ -257,7 +266,7 @@ switch($adv_detail->valoraciones)
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'">
                                 <figcaption>
                                     <ul>
                                         <li><a href="'. __URL__ .'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
