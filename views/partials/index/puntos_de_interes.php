@@ -15,7 +15,6 @@
             <div id="places-slider" class="owl-carousel owl-theme">
 
                 <?php
-
                 foreach ($points_of_interest as $point)
                 {
                     $image = explode(',',$point->commercial_image);
@@ -106,7 +105,7 @@
                         <div class="popular-listing-detail">
                             <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
                             <span>Categoría: <a href="#">Puntos de Interés</a></span>
-                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->city_name.' ('.$point->province_name.')</p>
                         </div>
 
                         <ul class="place-listing-add">

@@ -103,28 +103,33 @@ class Advertsings
         $this->db->join("advertsings_categories ac","acd.category_id = ac.advertsings_categories_id","LEFT");
         if($category_permisson == 1)
         {
+            $this->db->where("acd.category_id",$category_id);
             if(isset($_SESSION['selected_province_id']))
-            {
-                $result = $this->db->where("acd.category_id",$category_id)->where('ad.province_id',$_SESSION['selected_province_id'])->where('ad.province_id',NULL, 'IS NOT')
-                    ->objectBuilder()
-                    ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones'); 
-            }else{
-                $result = $this->db->where("acd.category_id",$category_id)->where('ad.province_id',NULL, 'IS NOT')
-                    ->objectBuilder()
-                    ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones'); 
-            }
+            { $this->db->where('ad.province_id',$_SESSION['selected_province_id']); }
+            else
+            { $this->db->where('ad.province_id',NULL, 'IS NOT'); }
+
+            if(isset($_SESSION['selected_city_id']))
+            { $this->db->where('ad.city_id',$_SESSION['selected_city_id']); }
+            else
+            { $this->db->where('ad.city_id',NULL, 'IS NOT'); }
+                
+            $result = $this->db->objectBuilder()->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,ad.phone,ad.website,ad.latitude,ad.longitude,ad.description,ad.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones'); 
         }
         else
         {
-            if(isset($_SESSION['selected_province_id'])){
-                $result = $this->db->where("acd.category_id",$category_id)->where('acd.province_id',$_SESSION['selected_province_id'])->where('ad.province_id',NULL, 'IS')
-                ->objectBuilder()
-                ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,acd.phone,acd.website,acd.latitude,acd.longitude,acd.description,acd.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
-            }else{
-                $result = $this->db->where("acd.category_id",$category_id)->where('ad.province_id',NULL, 'IS')
-                ->objectBuilder()
-                ->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,acd.phone,acd.website,acd.latitude,acd.longitude,acd.description,acd.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
-            }
+            $this->db->where("acd.category_id",$category_id);
+            if(isset($_SESSION['selected_province_id']))
+            { $this->db->where('acd.province_id',$_SESSION['selected_province_id']);}
+            else
+            { $this->db->where('acd.province_id',NULL, 'IS'); }
+
+            if(isset($_SESSION['selected_city_id']))
+            { $this->db->where('acd.city_id',$_SESSION['selected_city_id']);}
+            else
+            { $this->db->where('acd.city_id',NULL, 'IS'); }
+
+            $result = $this->db->objectBuilder()->get('advertsings a',null,'a.*,p.name as province_name,c.name as city_name,acd.category_id,ac.name as cat_name,ad.title,ad.subtitle,acd.phone,acd.website,acd.latitude,acd.longitude,acd.description,acd.address,ad.commercial_image,(SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');
         }
 
         return $result;
@@ -228,11 +233,15 @@ class Advertsings
             {
                 $visit = [];
                 $province = "";
+                $city = "";
                 // Busco información de las publicaciones de los comercios
                 if($adv->category_id == NULL)
                 {
                     if(isset($_SESSION['selected_province_id'])){
                         $province = " and acomdet.province_id = ".$_SESSION['selected_province_id'];
+                    }
+                    if(isset($_SESSION['selected_city_id'])){
+                        $city = " and acomdet.city_id = ".$_SESSION['selected_city_id'];
                     }
                     $visit = $this->db->objectBuilder()->rawQueryOne(
                         "select a.advertsing_id,
@@ -257,6 +266,7 @@ class Advertsings
                         where a.advertsing_id  = ".$adv->advertsing_id."
                         and a.enabled = 'T'
                         ".$province."
+                        ".$city."
                         limit 1"
                     );
                     
@@ -266,6 +276,9 @@ class Advertsings
                 {
                     if(isset($_SESSION['selected_province_id'])){
                         $province = " and ad.province_id = ".$_SESSION['selected_province_id'];
+                    }
+                    if(isset($_SESSION['selected_city_id'])){
+                        $city = " and ad.city_id = ".$_SESSION['selected_city_id'];
                     }
                     $visit = $this->db->objectBuilder()->rawQueryOne(
                         "select a.advertsing_id,
@@ -283,6 +296,7 @@ class Advertsings
                         left join provinces p on ad.province_id = p.province_id
                         where a.advertsing_id  = ".$adv->advertsing_id." 
                         ".$province."
+                        ".$city."
                         and a.enabled = 'T'
                         limit 1"
                     );
@@ -381,7 +395,13 @@ class Advertsings
         try{
             $this->db->join("advertsing_detail ad","a.advertsing_detail_id = ad.advertsing_detail_id","LEFT");
             $this->db->join("advertsings_categories ac","ad.category_id = ac.advertsings_categories_id","LEFT");
+            $this->db->join("provinces p","p.province_id = ad.province_id","LEFT");
+            $this->db->join("cities c","c.city_id = ad.city_id","LEFT");
+
             $this->db->where('a.enabled','T')->where('ac.permission','1');
+            if(isset($_SESSION['selected_province_id'])){
+                $this->db->where('ad.province_id',$_SESSION['selected_province_id']);
+            }
             if(isset($_SESSION['selected_city_id'])){
                 $this->db->where('ad.city_id',$_SESSION['selected_city_id']);
             }
@@ -389,6 +409,8 @@ class Advertsings
                 ->get('advertsings a',null,'a.advertsing_id,
                                             a.advertsing_detail_id,
                                             a.enabled,ad.*,
+                                            c.name as city_name,
+                                            p.name as province_name,
                                             ac.name as category_name,
                                             (SELECT IFNULL(counter,0) from advertsings_counter where advertsings_id = a.advertsing_id) as visitas,
                                             (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones');

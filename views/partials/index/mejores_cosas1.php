@@ -17,7 +17,7 @@
                       <figcaption>
                           <ul>
                               <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                  <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?province_id=1&province_name=Tierra del Fuego"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                               </li>
                           </ul>
                       </figcaption>
@@ -48,7 +48,7 @@
                       <figcaption>
                           <ul>
                               <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                  <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?province_id=2&province_name=Santa Cruz"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                               </li>
                           </ul>
                       </figcaption>
@@ -83,7 +83,7 @@
                       <figcaption>
                           <ul>
                               <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                  <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?province_id=3&province_name=Chubut"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                               </li>
                           </ul>
                       </figcaption>
@@ -114,7 +114,7 @@
                       <figcaption>
                           <ul>
                               <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                  <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?province_id=4&province_name=Neuquen"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                               </li>
                           </ul>
                       </figcaption>
@@ -145,7 +145,7 @@
                       <figcaption>
                           <ul>
                               <li>
-                                  <a data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                  <a data-toggle="modal" href="<?php __URL__ ?>/app/controller/Main.php?province_id=5&province_name=Rio Negro"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
                               </li>
                           </ul>
                       </figcaption>
