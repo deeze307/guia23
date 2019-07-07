@@ -89,64 +89,78 @@ class AdvertsingsCounter
                 // Busco información de las publicaciones de los comercios
                 if(isset($adv->advertsing_id) && $adv->advertsing_id != NULL)
                 {
+                    $city ="";
+                    $province="";
                     if($adv->category_id == NULL)
-                {
-                    // $this->db->join("advertsings_")
-                    $visit = $this->db->objectBuilder()->rawQueryOne(
-                        "select a.advertsing_id,
-                                a.enabled,
-                                ac.name as category_name,
-                                c.name as city_name,
-                                p.name as province_name,
-                                ad.title,
-                                ad.subtitle,
-                                ad.description,
-                                ad.commercial_image,
-                                aco.counter,
-                                acomdet.address,
-                                acomdet.category_id,
-                                (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
-                        from advertsings a
-                        left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
-                        left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id
-                        left join advertsing_commerce acom on ad.commerce_id = acom.id
-                        left join advertsing_commerce_detail acomdet on acom.advertsing_commerce_detail_id = acomdet.advertsing_commerce_detail_id
-                        left join advertsings_categories ac on acomdet.category_id = ac.advertsings_categories_id
-                        left join cities c on acomdet.city_id = c.city_id
-                        left join provinces p on acomdet.province_id = p.province_id
-                        where a.advertsing_id  = ".$adv->advertsing_id."
-                        and a.enabled = 'T'
-                        and acomdet.city_id = ".$_SESSION['selected_city_id']."
-                        and acomdet.province_id = ".$_SESSION['selected_province_id']."
-                        limit 1"
-                    );
-                    
-                }
-                // Si no son comercios, son publicaciones de la página
-                else
-                {
-                    $visit = $this->db->objectBuilder()->rawQueryOne(
-                        "select a.advertsing_id,
-                                a.enabled,
-                                ac.name as category_name,
-                                c.name as city_name,
-                                p.name as province_name,
-                                ad.*,
-                                aco.counter,
-                                (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
-                        from advertsings a
-                        left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
-                        left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id
-                        left join advertsings_categories ac on ad.category_id = ac.advertsings_categories_id
-                        left join cities c on ad.city_id = c.city_id
-                        left join provinces p on ad.province_id = p.province_id
-                        where a.advertsing_id  = ".$adv->advertsing_id."
-                        and a.enabled = 'T'
-                        and ad.city_id = ".$_SESSION['selected_city_id']."
-                        and ad.province_id = ".$_SESSION['selected_province_id']."
-                        limit 1"
-                    );
-                }
+                    {
+                        if(isset($_SESSION['selected_city_id'])){
+                            $city = " and acomdet.city_id = ".$_SESSION['selected_city_id'];
+                        }
+                        if(isset($_SESSION['selected_province_id'])){
+                            $province = " and acomdet.province_id = ".$_SESSION['selected_province_id'];
+                        }
+                        // $this->db->join("advertsings_")
+                        $visit = $this->db->objectBuilder()->rawQueryOne(
+                            "select a.advertsing_id,
+                                    a.enabled,
+                                    ac.name as category_name,
+                                    c.name as city_name,
+                                    p.name as province_name,
+                                    ad.title,
+                                    ad.subtitle,
+                                    ad.description,
+                                    ad.commercial_image,
+                                    aco.counter,
+                                    acomdet.address,
+                                    acomdet.category_id,
+                                    (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
+                            from advertsings a
+                            left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
+                            left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id
+                            left join advertsing_commerce acom on ad.commerce_id = acom.id
+                            left join advertsing_commerce_detail acomdet on acom.advertsing_commerce_detail_id = acomdet.advertsing_commerce_detail_id
+                            left join advertsings_categories ac on acomdet.category_id = ac.advertsings_categories_id
+                            left join cities c on acomdet.city_id = c.city_id
+                            left join provinces p on acomdet.province_id = p.province_id
+                            where a.advertsing_id  = ".$adv->advertsing_id."
+                            and a.enabled = 'T'
+                            $city
+                            $province
+                            limit 1"
+                        );
+                        
+                    }
+                    // Si no son comercios, son publicaciones de la página
+                    else
+                    {
+                        if(isset($_SESSION['selected_city_id'])){
+                            $city = " and ad.city_id = ".$_SESSION['selected_city_id'];
+                        }
+                        if(isset($_SESSION['selected_province_id'])){
+                            $province = " and ad.province_id = ".$_SESSION['selected_province_id'];
+                        }
+                        $visit = $this->db->objectBuilder()->rawQueryOne(
+                            "select a.advertsing_id,
+                                    a.enabled,
+                                    ac.name as category_name,
+                                    c.name as city_name,
+                                    p.name as province_name,
+                                    ad.*,
+                                    aco.counter,
+                                    (SELECT IFNULL( ROUND(AVG(quantity)),0) from valuations where advertsing_id = a.advertsing_id limit 1) as valoraciones
+                            from advertsings a
+                            left join advertsings_counter aco on a.advertsing_id = aco.advertsings_id
+                            left join advertsing_detail ad on a.advertsing_detail_id = ad.advertsing_detail_id
+                            left join advertsings_categories ac on ad.category_id = ac.advertsings_categories_id
+                            left join cities c on ad.city_id = c.city_id
+                            left join provinces p on ad.province_id = p.province_id
+                            where a.advertsing_id  = ".$adv->advertsing_id."
+                            and a.enabled = 'T'
+                            $city
+                            $province
+                            limit 1"
+                        );
+                    }
                 }
                 
                 if($visit && (count($most_visited)) < 9)

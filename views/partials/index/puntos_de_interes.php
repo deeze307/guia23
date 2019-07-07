@@ -15,17 +15,25 @@
             <div id="places-slider" class="owl-carousel owl-theme">
 
                 <?php
-
                 foreach ($points_of_interest as $point)
                 {
                     $image = explode(',',$point->commercial_image);
                     if($image[0] != "")
                     {
                         $image = $image[0];
+
+                        $image_name = explode('/',$image);
+                        if(count($image_name) > 1)
+                        {
+                            $image_name_without_dir = explode('.',$image_name[2]);
+                        }
+                        else{ $image_name_without_dir[0] = "";}
+                        $image_name_without_ext = $image_name_without_dir[0];
                     }
                     else
                     {
                         $image = '1@.png';
+                        $image_name_without_ext = '1@';
                     }
 
                     if($point->visitas <= 0)
@@ -43,34 +51,35 @@
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>';
                             break;
-                        case '1':
+                        case "1":
                             $valoracion = '<span class="fa fa-star"/> 
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>
-                                            <span class="fa fa-star-o"/>';                                           break;
-                        case '2':
+                                            <span class="fa fa-star-o"/>';
+                            break;
+                        case "2":
                             $valoracion = '<span class="fa fa-star"/> 
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>';
                             break;
-                        case '3':
+                        case "3":
                             $valoracion = '<span class="fa fa-star"/> 
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star-o"/>
                                             <span class="fa fa-star-o"/>';
                             break;
-                        case '4':
+                        case "4":
                             $valoracion = '<span class="fa fa-star"/> 
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star-o"/>';
                             break;
-                        case '5':
+                        case "5":
                             $valoracion = '<span class="fa fa-star"/> 
                                             <span class="fa fa-star"/>
                                             <span class="fa fa-star"/>
@@ -83,7 +92,7 @@
                     <div class="item">
                     <div class="popular-listing-box">
                         <div class="popular-listing-img_points_of_interest">
-                            <figure class="effect-ming"> <img src="'. __URL__.'/images/'.$image.'" alt="image">
+                            <figure class="effect-ming"> <img title="'.$point->title.'"  src="'. __URL__.'/images/'.$image.'" alt="'.$image_name_without_ext.'">
                                 <figcaption>
                                     <ul>
                                         <li><a href="'. __URL__.'/views/listing/listing.php?cat_id='.$point->category_id.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
@@ -96,7 +105,7 @@
                         <div class="popular-listing-detail">
                             <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
                             <span>Categoría: <a href="#">Puntos de Interés</a></span>
-                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->city_name.' ('.$point->province_name.')</p>
                         </div>
 
                         <ul class="place-listing-add">
@@ -116,15 +125,5 @@
             </div>
         </div>
     </div>
-
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 text-center discover">-->
-<!--                <h2>Descubra las Empresas Provinciales</h2>-->
-<!--                <a href="--><?php //$_SERVER['DOCUMENT_ROOT']?><!--/views/Index-tdf.php">Ir</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--    </div>-->
 
 </section>

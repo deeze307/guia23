@@ -255,7 +255,7 @@ switch($adv_detail->valoraciones)
                                         echo $image_name_without_ext;
                                         echo '<li>
                                             <a href="'.__URL__.'/images/'.$image.'" title="'.$image_name_without_ext.'" data-subtitle="#" data-caption="<strong></strong><a href=´#´ target=´_blank´><span></span></a>">
-                                            <img src="'.__URL__.'/images/'.$image.'" alt="Alt Image Text" /></a>
+                                            <img src="'.__URL__.'/images/'.$image.'" alt="'.$image_name_without_ext.'" /></a>
                                         </li>';
                                     }
                                 }

@@ -13,7 +13,7 @@
 
             <div class="col-md-7 col-sm-7 col-xs-12">
                 <div class="best-things-details">
-                    <figure class="effect-ming"> <img src="<?php __URL__ ?>/images/RioGrande.jpg" alt="image">
+                    <figure class="effect-ming"> <img height="" width="" src="<?php __URL__ ?>/images/RioGrande.jpg">
                         <figcaption>
                             <ul>
                                 <li>

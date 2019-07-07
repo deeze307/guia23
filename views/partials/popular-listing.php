@@ -8,7 +8,7 @@
                 <div class="col-md-9 col-sm-9 col-xs-12">
 
                     <div class="sort-by">
-                        <div class="sort-category"> <span>Ordenar</span>
+                        <div class="sort-category"> <span>ORDENAR</span>
                             <div class="single-query form-group">
                                 <div class="intro">
                                     <select>
@@ -41,8 +41,18 @@
                                     $image = explode(',', $advertsing->commercial_image);
                                     if ($image[0] != "" && $image[0] != "vacio") {
                                         $image = $image[0];
+
+                                        $image_name = explode('/',$image);
+                                        if(count($image_name) > 1)
+                                        {
+                                            $image_name_without_dir = explode('.',$image_name[2]);
+                                        }
+                                        else{ $image_name_without_dir[0] = "";}
+                                        $image_name_without_ext = $image_name_without_dir[0];
+
                                     } else {
                                         $image = '1@.png';
+                                        $image_name_without_ext = '1@';
                                     }
 
                                     if (isset($advertsing->address) && $advertsing->address != '') {
@@ -99,7 +109,7 @@
                                     <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="popular-listing-box">
                                             <div class="popular-listing-img_home_profile">
-                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image">
+                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'" title="'.$advertsing->title.'">
                                                     <figcaption>
                                                         <ul>
                                                            <!--<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
@@ -135,10 +145,19 @@
                                     if($image[0] != "" && $image[0] != "vacio")
                                     {
                                         $image = $image[0];
+
+                                        $image_name = explode('/',$image);
+                                        if(count($image_name) > 1)
+                                        {
+                                            $image_name_without_dir = explode('.',$image_name[2]);
+                                        }
+                                        else{ $image_name_without_dir[0] = "";}
+                                        $image_name_without_ext = $image_name_without_dir[0];
                                     }
                                     else
                                     {
                                         $image = '1@.png';
+                                        $image_name_without_ext = '1@';
                                     }
 
                                     if(isset($advertsing->address))
@@ -195,7 +214,7 @@
                                     echo '<div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="popular-listing-box">
                                                 <div class="popular-listing-img_home_home">
-                                                    <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image" height="300" width="400">
+                                                    <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'" height="300" width="400">
                                                         <figcaption>
                                                             <ul>
                                                                 <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>
@@ -231,10 +250,19 @@
                                 if($image[0] != "")
                                 {
                                     $image = $image[0];
+
+                                    $image_name = explode('/',$image);
+                                    if(count($image_name) > 1)
+                                    {
+                                        $image_name_without_dir = explode('.',$image_name[2]);
+                                    }
+                                    else{ $image_name_without_dir[0] = "";}
+                                    $image_name_without_ext = $image_name_without_dir[0];
                                 }
                                 else
                                 {
                                     $image = '1@.png';
+                                    $image_name_without_ext = '1@';
                                 }
 
                                 if(isset($advertsing->address))
@@ -296,7 +324,7 @@
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-xs-12">
                                             <div class="popular-listing-img_home_message">
-                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="image">
+                                                <figure class="effect-ming"> <img src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'">
                                                     <figcaption>
                                                         <ul>
                                                            <!-- <li><a href="#!"><i class="fa fa-heart" aria-hidden="true"></i></a> </li>-->
@@ -360,60 +388,6 @@
                     <?php require "categories-widget.php";?>
 
                     <?php require "new-added-widget.php";?>
-
-                    <!--<div class="right-bar">
-                        <h4><span>Recientes</span></h4>
-                        <div id="recent-listing" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-1.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="../../Vehiculos.html" class="recent-jobs">Vehiculos</a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="../../Hogar.html" class="recent-jobs">Hogar</a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-1.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="../../Turismo.html" class="recent-jobs">Turismo</a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="../../Hoteles.html" class="recent-jobs">Hoteles </a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-1.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="../../Enseñanza.html" class="recent-jobs">Enseñanza</a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                                <div class="recent-listing-img">
-                                    <img src="images/recent-2.jpg" alt="image">
-                                    <div class="recent-listing-links">
-                                        <a href="#" class="recent-jobs">Puntos de Interes</a>
-                                        <a href="listing/listing.php" class="recent-readmore">Vea Mas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
 
                 </div>
 
