@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_SESSION))
+{ session_start(); }
+
+
 class Menu
 {
 
@@ -15,6 +19,9 @@ class Menu
                         ->where("title","Inicio")->objectBuilder()->getOne("menu");
 
         //Se listan los items primarios (nivel 0) del menú de tipo SIMPLE
+
+        // Si no tiene provincia, no se muestran las ciudades
+        if (!isset($_SESSION["selected_province_id"])) $db->where("title <> 'Ciudades'");
         $obj->menuesSimple = $db->where("app","%w%","LIKE")
                                 ->where("root",0)
                                 ->where("title <> 'Inicio'")
@@ -40,12 +47,19 @@ class Menu
         // Se imprimen los items de Menu Simple
         foreach($obj->menuesSimple as $menuSimple) //Entregara los datos en forma de $menu[columna],
         {  //Repetira el siguiente echo con todos los datos de la consulta
-            $obj->submenuesSimple = $db->where("app","%w%","LIKE")
-                                        ->where('root',$menuSimple->menu_id)
-                                        ->where("enabled","T")
-                                        ->orderBy('title','ASC')
-                                        ->objectBuilder()->get('menu');
-
+            if($menuSimple->title == "Ciudades"){
+                $obj->submenuesSimple = $db->where('province_id',$_SESSION['selected_province_id'])
+                ->where("enabled",1)
+                ->orderBy('name','ASC')
+                ->objectBuilder()->get('cities');
+            }else{
+                $obj->submenuesSimple = $db->where("app","%w%","LIKE")
+                ->where('root',$menuSimple->menu_id)
+                ->where("enabled","T")
+                ->orderBy('title','ASC')
+                ->objectBuilder()->get('menu');
+            }
+            
             //Si la cantidad de filas submenues es mayor a 0, los imprimirá en su menú padre
             if(count($obj->submenuesSimple) > 0)
             {
@@ -55,17 +69,22 @@ class Menu
                             <ul class="dropdown-menu">';
                             foreach($obj->submenuesSimple as $submenuSimple)
                             {
-                                if(!isset($submenuSimple->permission))
-                                {
-                                    echo'<li><a href="'.__URL__.'/'.$submenuSimple->link.'" target="_self"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
-                                }
-                                else
-                                {
-                                    if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $submenuSimple->permission)
+                                if($menuSimple->title == "Ciudades"){
+                                    echo'<li><a href="'.__URL__.'/app/controller/Main.php?city_id=1&city_name='.$submenuSimple->name.'&city_class='.$submenuSimple->class.'&province_id='.$submenuSimple->province_id.'" target="_self">'.$submenuSimple->name.'</a></li>';
+                                }else{
+                                    if(!isset($submenuSimple->permission))
                                     {
                                         echo'<li><a href="'.__URL__.'/'.$submenuSimple->link.'" target="_self"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
                                     }
+                                    else
+                                    {
+                                        if(isset($_SESSION["role_id"]) && $_SESSION["role_id"] == $submenuSimple->permission)
+                                        {
+                                            echo'<li><a href="'.__URL__.'/'.$submenuSimple->link.'" target="_self"><i class="'.$submenuSimple->icon.'"></i> '.$submenuSimple->title.'</a></li>';
+                                        }
+                                    }
                                 }
+                                
 
                             }
                             echo'
