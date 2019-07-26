@@ -116,7 +116,7 @@ h3 {
     font-size: 24px;
 }
 h4 {
-    font-size: 24px;
+    font-size: 23px;
 }
 h2,
 h3,
@@ -1247,7 +1247,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-bottom: 60px;
 }
 .sort-category {
-  padding: 15px 25px 0;
+  padding: 15px 25px;
 }
 .sort-category > span{
   color: #3a2f2f;
@@ -2518,7 +2518,7 @@ footer#footer::after {
 	font-size:12px;
 }
 .places-list img{
-    height: 65px;
+    height: 60px;
     width: 72px;
 }
 .places-list {
@@ -3585,6 +3585,12 @@ ul.day-open li:nth-child(3){
     width:300px;
     height:170px;
   }
+  .popular-listing-img_points_of_interest{
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    height: 197px;
+  }
 	.top-contact > p {
 	  padding-top:0;
 	}
@@ -3635,7 +3641,7 @@ ul.day-open li:nth-child(3){
 	}
 	
   .banner-icons {
-    top: 470px;
+    top: 466px;
     transform: translate(0px, 0px);
     left:0;
     right:0;
@@ -3928,7 +3934,8 @@ ul.day-open li:nth-child(3){
 }
 @media (max-width: 459px) {
 	.sort-category {
-	  padding: 5px 5px 15px;
+	  padding: 15px 7px 15px;
+    padding-bottom: 25px;
 	}
   .sort-category > span {
     color: #3a2f2f;
