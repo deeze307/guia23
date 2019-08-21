@@ -119,39 +119,37 @@ $new_added = $advertsingsController->getLastAdded();
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <a href="app/controller/Main.php?province_id=1&province_name=Tierra del Fuego"><h3>Tierra del Fuego</h3></a>
-            <p>152,546</p>
+            <!-- <p>152,546</p> -->
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <a href="app/controller/Main.php?province_id=2&province_name=Santa Cruz"><h3>Santa Cruz</h3></a>
-            <p>152,546</p>
+            <!-- <p>152,546</p> -->
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <a href="app/controller/Main.php?province_id=3&province_name=Chubut"><h3>Chubut</h3></a>
-            <p>1,546</p>
+            <!-- <p>1,546</p> -->
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <a href="app/controller/Main.php?province_id=4&province_name=Neuquen"><h3>Neuquen</h3></a>
-
-            <p>2, 34, 546</p>
+            <!-- <p>2, 34, 546</p> -->
             <div class="directory-category-overlay"></div>
           </div>
 
           <div class="directory-category-box3">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <a href="app/controller/Main.php?province_id=5&province_name=Rio Negro"><h3>Río Negro</h3></a>
-            <p>2,546</p>
+            <!-- <p>2,546</p> -->
             <div class="directory-category-overlay"></div>
           </div>
-
         </div>
       </div>
     </div>

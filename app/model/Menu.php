@@ -45,7 +45,7 @@ class Menu
                 </li>';
 
         // Se imprimen los items de Menu Simple
-        foreach($obj->menuesSimple as $menuSimple) //Entregara los datos en forma de $menu[columna],
+        foreach($obj->menuesSimple as $menuSimple) //Entregará los datos en forma de $menu[columna],
         {  //Repetira el siguiente echo con todos los datos de la consulta
             if($menuSimple->title == "Ciudades"){
                 $obj->submenuesSimple = $db->where('province_id',$_SESSION['selected_province_id'])
@@ -70,7 +70,7 @@ class Menu
                             foreach($obj->submenuesSimple as $submenuSimple)
                             {
                                 if($menuSimple->title == "Ciudades"){
-                                    echo'<li><a href="'.__URL__.'/app/controller/Main.php?city_id=1&city_name='.$submenuSimple->name.'&city_class='.$submenuSimple->class.'&province_id='.$submenuSimple->province_id.'" target="_self">'.$submenuSimple->name.'</a></li>';
+                                    echo'<li><a href="'.__URL__.'/app/controller/Main.php?city_id='.$submenuSimple->city_id.'&city_name='.$submenuSimple->name.'&city_class='.$submenuSimple->class.'&province_id='.$submenuSimple->province_id.'" target="_self">'.$submenuSimple->name.'</a></li>';
                                 }else{
                                     if(!isset($submenuSimple->permission))
                                     {

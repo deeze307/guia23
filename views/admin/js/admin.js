@@ -66,7 +66,7 @@ function view_advertsing(listing_detail_adv_id,cat_name){
 function handle_advertsing(adv_id,action){
     $.get( "../../app/controller/AdvertsingsController.php", { adv_id: adv_id, toggle: action },
         function(){
-            location.reload(true);
+            // location.reload(true);
         });
 
 }
@@ -133,9 +133,17 @@ function view_commerce(commerce_detail_id,cat_name){
 }
 
 function handle_commerce(commerce_id,action){
-    $.get( "../../app/controller/AdvertsingsCommerceController.php", { commerce_id: commerce_id, toggle: action },
-        function(){
-            location.reload(true);
-        });
-
+    $.ajax({
+        type:"GET",
+        url: "../../app/controller/AdvertsingsCommerceController.php",
+        data: { commerce_id: commerce_id, toggle: action },
+        success: function(response){
+            console.log(response);
+            location.reload();
+        },
+        error: function(error){
+            console.log("Ocurrió un error",error);
+            location.reload();
+        }
+    });
 }
