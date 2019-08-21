@@ -119,7 +119,7 @@ elseif(isset($_SESSION["error"]))
                                         {
                                             echo "<td><button class='btn btn-xs btn-success' id='toggle' onclick='handle_commerce(" . $commerce->id . ",1)'>Habilitar</button></td>";
                                         }
-                                        echo "<td><button class='btn btn-xs btn-info' onclick='view_commerce(" . $commerce->id . ",`" . $commerce->cat_name . "`)'><span><i class='fa fa-eye'></i></span></button></td>";
+                                        // echo "<td><button class='btn btn-xs btn-info' onclick='view_commerce(" . $commerce->id . ",`" . $commerce->cat_name . "`)'><span><i class='fa fa-eye'></i></span></button></td>";
                                         echo "<td><button class='btn btn-xs btn-default' onclick='edit_commerce(" . $commerce->id . "," . $commerce->plan_id . ")'><span><i class='fa fa-pencil'></button></td>";
                                         echo "<td><button class='btn btn-xs btn-danger' onclick='delete_commerce(" . $commerce->id . ")'>Eliminar</button></td>";
                                         echo "</tr>";

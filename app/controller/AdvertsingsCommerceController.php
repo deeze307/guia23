@@ -1,4 +1,7 @@
 <?php
+
+use PHPMailer\PHPMailer\Exception;
+
 require_once(dirname(dirname(__FILE__)).'/core/Core.php');
 if (!isset($_SESSION))
 { session_start(); }
@@ -7,7 +10,7 @@ require("UploadFile.php");
 if(isset($_GET['commerce_id']))
 {
     $commerceController = new AdvertsingsCommerceController();
-    return $commerceController->toggleCommerce($_GET['commerce_id'],$_GET['toggle']);
+    echo $commerceController->toggleCommerce($_GET['commerce_id'],$_GET['toggle']);
 }
 
 
@@ -37,7 +40,7 @@ if(isset($_POST['edit']))
 {
     unset($_POST['edit']);
     $adv = new AdvertsingsCommerceController();
-    return $adv->editAdvertsing($_POST['commerce_id']);
+    return $adv->editCommerce($_POST['commerce_id']);
 
 }
 
@@ -255,9 +258,10 @@ class AdvertsingsCommerceController
 
     public function toggleCommerce($commerce_id,$toggle)
     {
-        require_once("../model/AdvertsingsCommerce.php");
-        $adv = new AdvertsingsCommerce();
-        $result = $adv->toggleCommerce($commerce_id,$toggle);
+        require_once("../model/AdvertsingCommerce.php");
+        $adv = new AdvertsingCommerce;
+        try{
+            $result = $adv->toggleCommerce($commerce_id,$toggle);
             if($result == "exito")
             {
                 $_SESSION['message'] = "Estado de Comercio Actualizado!";
@@ -266,7 +270,12 @@ class AdvertsingsCommerceController
             {
                 $_SESSION['error'] = "Ocurrió un error al intentar actualizar el estado del Comercio.";
             }
-        return $result;
+            return $result;
+        }catch(Exception $ex){
+            $_SESSION['error'] = $ex->getMessage();
+            return $ex->getMessage();
+        }
+        
     }
 
     public function updateCommerce($post)
