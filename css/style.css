@@ -769,7 +769,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   border: 0 solid #828284;
   color: #fff;
   font-size: 16px;
-  height:52px;
+  height:42px;
   text-align: center;
   width:52px;
   display:inline-block;
@@ -1247,11 +1247,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a{
   margin-bottom: 60px;
 }
 .sort-category {
-  padding: 15px 25px;
+  padding: 10px 25px 23px;
 }
-.sort-category > span{
+.sort-category > span {
   color: #3a2f2f;
-  font-size: 32px;
+  font-size: 24px;
   padding-right: 22px;
 }
 .sort-category .single-query {
@@ -2518,7 +2518,7 @@ footer#footer::after {
 	font-size:12px;
 }
 .places-list img{
-    height: 60px;
+    height: 72px;
     width: 72px;
 }
 .places-list {
@@ -3641,7 +3641,7 @@ ul.day-open li:nth-child(3){
 	}
 	
   .banner-icons {
-    top: 466px;
+    top: 470px;
     transform: translate(0px, 0px);
     left:0;
     right:0;
@@ -3650,10 +3650,18 @@ ul.day-open li:nth-child(3){
 	.banner-icons li {
 	  display: inline-block;
 	}
+  .banner-text-mini > h2 {
+    color: #1fb7a6;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 	.directory-category-box:nth-child(5),
 	.directory-category-box:nth-child(10) {
 	  margin-right: 10px;
 	}
+
 	.top_links li a {
 	  font-size: 14px;
 	  padding: 0 3px;
