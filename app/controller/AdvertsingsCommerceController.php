@@ -142,8 +142,8 @@ class AdvertsingsCommerceController
             $date = date("Y-m-d h:i", $date_format);
 
             $data_for_ads_detail = Array(
-                "commerce_name"=>$post["titulo"],
-                "commerce_subtitle"=>$post["subtitulo"],
+                "commerce_name"=>$post["commerce_name"],
+                "commerce_subtitle"=>$post["commerce_subtitle"],
                 "category_id"=>$post["categoria"],
                 "province_id"=>$post["provincia"],
                 "city_id"=>$post["ciudad"],
@@ -282,13 +282,12 @@ class AdvertsingsCommerceController
     {
         try{
             $data = Array(
-                'title'=>$post['titulo'],
-                'subtitle'=>$post['subtitulo'],
+                'commerce_name'=>$post['commerce_name'],
+                'commerce_subtitle'=>$post['commerce_subtitle'],
                 'category_id'=>$post['categoria'],
                 'province_id'=>$post['provincia'],
                 'city_id'=>$post['ciudad'],
                 'phone'=>$post['telefono'],
-                'price'=>$post['precio'],
                 'address'=>$post['direccion'],
                 'latitude'=>$post['latitud'],
                 'longitude'=>$post['longitud'],
@@ -304,8 +303,8 @@ class AdvertsingsCommerceController
                 'email_notify'=>$post['email_notify'],
                 'social_networks'=>'facebook_url='.$post["facebook_url"].',google+_url='.$post["google+_url"].',instagram_url='.$post["instagram_url"].',twitter_url='.$post["twitter_url"].',linkedin_url='.$post["linkedin_url"].',youtube_url='.$post["youtube_url"]
             );
-            $ad = new AdvertsingDetail();
-            $upd = $ad->update($data,$post['_adv_detail_id']);
+            $ad = new AdvertsingCommerceDetail();
+            $upd = $ad->update($data,$post['_commerce_detail_id']);
             if( $upd == "exito")
             {
                 $_SESSION['message'] = "Comercio Editado Exitosamente!";

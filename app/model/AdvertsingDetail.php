@@ -50,7 +50,7 @@ class AdvertsingDetail
     public function update($post_data,$adv_detail_id)
     {
         $this->db->where('advertsing_detail_id',$adv_detail_id);
-        if ($this->db->update ('advertsing_detail', $post_data))
+        if ($this->db->update('advertsing_detail', $post_data))
         {
             $ad = new Advertsings();
             if ($ad->updateTimeFromAdvertsingDetail($adv_detail_id))

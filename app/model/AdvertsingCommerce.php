@@ -34,38 +34,47 @@ class AdvertsingCommerce
         }
     }
 
-    public function request($for_widget=false,$adv_cat_id="")
+    public function request($commerce_id="")
     {
-        if($adv_cat_id=="")
-        {
-            $this->db->where('enabled','1');
-            if(isset($_SESSION["role_id"]))
-            {
-                if($_SESSION["role_id"] == 3 )
-                {
-                    if(!$for_widget)
-                    {
-                        $this->db->where('permission',NULL,'IS');
-                    }
-                }
-            }
-            else
-            {
-                if(!$for_widget)
-                {
-                    $this->db->where('permission',NULL,'IS');
-                }
-            }
-            $result = $this->db->objectBuilder()->get('advertsings_categories');
+        //MALA LOGICA
+        // if($adv_cat_id=="")
+        // {
+        //     $this->db->where('enabled','1');
+        //     if(isset($_SESSION["role_id"]))
+        //     {
+        //         if($_SESSION["role_id"] == 3 )
+        //         {
+        //             if(!$for_widget)
+        //             {
+        //                 $this->db->where('permission',NULL,'IS');
+        //             }
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if(!$for_widget)
+        //         {
+        //             $this->db->where('permission',NULL,'IS');
+        //         }
+        //     }
+        //     $result = $this->db->objectBuilder()->get('advertsings_categories');
+        // }
+        // else
+        // {
+        //     $result = $this->db->where('enabled','1')
+        //                         ->where('advertsings_categories_id',$adv_cat_id)
+        //                         ->objectBuilder()
+        //                         ->getOne('advertsings_categories');
+        // }
+        try{
+            $this->db->join("advertsing_commerce_detail acomd","ac.advertsing_commerce_detail_id = acomd.advertsing_commerce_detail_id","LEFT");
+            $adv = $this->db->where("ac.id",$commerce_id)
+                        ->objectBuilder()
+                        ->getOne('advertsing_commerce ac',null,'ac.*,acomd.*');
+            return $adv;
+        }catch(Exception $ex){
+            return false;
         }
-        else
-        {
-            $result = $this->db->where('enabled','1')
-                                ->where('advertsings_categories_id',$adv_cat_id)
-                                ->objectBuilder()
-                                ->getOne('advertsings_categories');
-        }
-        return $result;
     }
 
     public function update()
@@ -153,5 +162,22 @@ class AdvertsingCommerce
     {
         $this->db->where('enabled','1')->get('advertsings_categories');
         return $this->db->count;
+    }
+
+    public function updateTimeFromAdvertsingCommerceDetail($ad_commerce_detail_id)
+    {
+        // Recolecto los datos para guardar en la tabla de detalle de la publicación
+        $date_format = strtotime('now');
+        $date = date("Y-m-d h:i", $date_format);
+
+        $this->db->where('advertsing_commerce_detail_id',$ad_commerce_detail_id);
+        if($this->db->update('advertsing_commerce',['updated_at'=>$date]))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
