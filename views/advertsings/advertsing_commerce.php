@@ -4,7 +4,6 @@ require_once("../../app/controller/AdvertsingsCommerceController.php");
 
 if (!isset($_SESSION))
 { session_start(); }
-
 if(isset($_SESSION["add_commerce"]) || isset($_COOKIE['add_commerce']) || isset($_COOKIE["PLAN"]))
 {
     unset($_SESSION["add_commerce"]);
@@ -17,7 +16,7 @@ if(isset($_SESSION["add_commerce"]) || isset($_COOKIE['add_commerce']) || isset(
     $cities = $commerce->getCities();
     if(isset($_COOKIE["EDIT"]))
     {
-        $adv_data = $commerce->editCommerce($_COOKIE["COMMERCE_ID"]);
+        $adv_data = $commerce->editCommerce($_COOKIE["COMM_ID"]);
         setcookie("EDIT","true",time()-3600,"/");
     }
 
@@ -134,7 +133,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                                 {
                                     echo '
                                     <h3 class="p_b40">
-                                        Veamos, usted ya posée '.((count($counterCommerces) > 1)?" Comercio" : " Comercios") .' 
+                                        Veamos, usted ya posée '.((count($counterCommerces) > 1)?" un Comercio" : " Comercios") .' 
                                     </h3>
                                     <h4>
                                         Pero si lo desea, a continuación podremos crear otro.
@@ -153,11 +152,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                                     <div class="form-group">
                                         <label><span>Titulo del Comercio </span>
                                         </label>
-                                        <input type="text" name="titulo" class="form-control" placeholder="Ingrse el Titulo de su Comercio." value="<?php if(isset($adv_data->title)){echo $adv_data->title;} ?>" required>
+                                        <input type="text" name="commerce_name" class="form-control" placeholder="Ingrse el Nombre de su Comercio." value="<?php if(isset($adv_data->commerce_name)){echo $adv_data->commerce_name;} ?>" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="text" name="subtitulo" class="form-control" placeholder="Escriba el Subtitulo" value="<?php if(isset($adv_data->subtitle)){echo $adv_data->subtitle;} ?>">
+                                        <input type="text" name="commerce_subtitle" class="form-control" placeholder="Escriba el Subtitulo" value="<?php if(isset($adv_data->commerce_subtitle)){echo $adv_data->commerce_subtitle;} ?>">
                                     </div>
 
                                 </div>
@@ -529,8 +528,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                                                 if(isset($_COOKIE['EDIT']))
                                                 {
                                                     unset($_COOKIE['EDIT']);
-                                                    echo '<button type="submit" id ="upd_ad" name="upd_ad">Guardar Cambios</button>';
-                                                    echo '<input type="hidden" name="_adv_detail_id" value="'.$adv_data->advertsing_commerce_detail_id.'"/>';
+                                                    echo '<button type="submit" id ="upd_commerce" name="upd_commerce">Guardar Cambios</button>';
+                                                    echo '<input type="hidden" name="_commerce_detail_id" value="'.$adv_data->advertsing_commerce_detail_id.'"/>';
                                                 }
                                                 else
                                                 {

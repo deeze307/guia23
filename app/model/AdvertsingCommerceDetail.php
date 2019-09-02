@@ -1,5 +1,7 @@
 <?php
 
+use PHPMailer\PHPMailer\Exception;
+
 require_once dirname(dirname(__FILE__))."/core/Core.php" ;
 
 class AdvertsingCommerceDetail
@@ -49,25 +51,32 @@ class AdvertsingCommerceDetail
 
     public function update($post_data,$adv_detail_id)
     {
-        $this->db->where('advertsing_detail_id',$adv_detail_id);
-        if ($this->db->update ('advertsing_detail', $post_data))
-        {
-            $ad = new Advertsings();
-            if ($ad->updateTimeFromAdvertsingDetail($adv_detail_id))
+        try{
+            $this->db->where('advertsing_commerce_detail_id',$adv_detail_id);
+            if ($this->db->update('advertsing_commerce_detail', $post_data))
             {
+                $ad = new AdvertsingCommerce();
+                if ($ad->updateTimeFromAdvertsingCommerceDetail($adv_detail_id))
+                {
+                    return "exito";
+                }
+                else
+                {
+                    return "update failed: " . $this->db->getLastError();
+                }
                 return "exito";
             }
+
             else
             {
                 return "update failed: " . $this->db->getLastError();
+                Logger::write('commerce_'.date('d-m-Y'),"Comercio ".$post_data['commerce_name']." No se pudo editar || ".date('d-m-Y H:i:s'));
             }
-
         }
-
-        else
-        {
-            return "update failed: " . $this->db->getLastError();
+        catch(Exception $ex){
+            Logger::write('commerce_'.date('d-m-Y'),"Comercio ".$post_data['commerce_name']." No se pudo editar || ".date('d-m-Y H:i:s'));
         }
+        
     }
 
     public function delete($advertsing_id)
