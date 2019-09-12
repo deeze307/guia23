@@ -123,7 +123,7 @@ $populares = $ad_counter->mostVisited();
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
+                                        <h3><a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
                                     </div>
                                     <div class="popular-listing-add"> 
                                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$popular->city_name.'</span>
@@ -135,6 +135,8 @@ $populares = $ad_counter->mostVisited();
                             </div>
                                 
                                 ';
+                                // Listing details link viejo
+                                // href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a>
                                 }
                             }
                             catch(Exception $ex){
@@ -222,7 +224,7 @@ $populares = $ad_counter->mostVisited();
                                         </figure>
                                     </div>
                                     <div class="popular-listing-detail">
-                                        <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>                                    </div>
+                                        <h3><a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>                                    </div>
                                     <div class="popular-listing-add"> 
                                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> '.$popular->city_name.'</span> 
                                         <div class="pull-right">
@@ -326,7 +328,7 @@ $populares = $ad_counter->mostVisited();
                                         <div class="col-md-7 col-sm-7 col-xs-12">
                                        
                                             <div class="popular-listing-detail">
-                                                <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
+                                                <h3><a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$popular->advertsing_id.'&cat_name='.$popular->category_name.'">'.$popular->title.'</a></h3>
                                                 <p>'.$popular->description.'</p>
                                             </div>
                                             <div class="popular-listing-add"> 

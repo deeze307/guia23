@@ -3,20 +3,29 @@ require_once("../app/controller/ValuationsController.php");
 require_once("../app/controller/ProfileController.php");
 require_once("../app/controller/AdvertsingsController.php");
 
-
+$advController = new AdvertsingsController();
+$adv_detail = $advController->getForListingDetails($_GET["listing_detail_adv_id"],$_GET["cat_name"]);
 if (!isset($_SESSION))
 { session_start(); }
-if(isset($_SESSION['adv_detail']->user_id))
+// if(isset($_SESSION['adv_detail']->user_id))
+// {
+//     $profile = new ProfileController();
+//     $perfil_de_usuario = $profile->getFullProfile($_SESSION['adv_detail']->user_id);
+//     if(isset($perfil_de_usuario->user_id))
+//     {
+//         $_SESSION['adv_detail']->first_name = $perfil_de_usuario->name;
+//     }
+// }
+if(isset($adv_detail->user_id))
 {
     $profile = new ProfileController();
-    $perfil_de_usuario = $profile->getFullProfile($_SESSION['adv_detail']->user_id);
+    $perfil_de_usuario = $profile->getFullProfile($adv_detail->user_id);
     if(isset($perfil_de_usuario->user_id))
     {
-        $_SESSION['adv_detail']->first_name = $perfil_de_usuario->name;
+        $adv_detail->first_name = $perfil_de_usuario->name;
     }
 }
 
-$adv_detail = $_SESSION['adv_detail'];
 $advertsings = new Advertsings();
 $adv_from_user = $advertsings->requestAllForUser($adv_detail->user_id);
 $advertsingsController = new AdvertsingsController();
@@ -31,11 +40,11 @@ if(isset($adv_detail->address) && ($adv_detail->address != '' || $adv_detail->ad
 }
 
 $val = new ValuationsController();
-$valuations = $val->getValuationsForAdvId($_SESSION['adv_detail']->advertsing_id);
+$valuations = $val->getValuationsForAdvId($adv_detail->advertsing_id);
 
 // Iniciamos contador de visitas
 $ad_counter = new AdvertsingsCounter();
-$ad_counter->index($_SESSION['adv_detail']->advertsing_id);
+$ad_counter->index($adv_detail->advertsing_id);
 
 
 
