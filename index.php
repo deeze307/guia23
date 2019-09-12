@@ -1,4 +1,15 @@
 <?php
+if (!isset($_SESSION))
+{ session_start(); }
+if(isset($_SESSION['selected_city_id']))
+{
+  unset($_SESSION['selected_city_id']);
+}
+if(isset($_SESSION['selected_province_id']))
+{
+  unset($_SESSION['selected_province_id']);
+}
+
 require_once("app/controller/AdvertsingsController.php");
 require_once("app/controller/CarouselController.php");
 // SI no hay ciudad seleccionada se redirecciona al index

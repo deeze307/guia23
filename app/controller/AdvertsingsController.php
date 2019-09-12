@@ -4,7 +4,7 @@ if (!isset($_SESSION))
 { session_start(); }
 require("UploadFile.php");
 
-if(isset($_GET['listing_detail_adv_id']) || isset($_POST['listing_detail_adv_id']))
+if(/*isset($_GET['listing_detail_adv_id']) ||*/ isset($_POST['listing_detail_adv_id']))
 {
     if(isset($_GET['listing_detail_adv_id']))
     {
@@ -155,6 +155,57 @@ class AdvertsingsController
     public function __construct()
     {
 
+    }
+
+    public function getForListingDetails($listing_detail_id,$cat_name)
+    {
+        $adv = new Advertsings();
+        $adv_detail = $adv->requestWithDetail($listing_detail_id);
+        require_once(dirname(dirname(__FILE__)).'/controller/AdvertsingsCommerceController.php');
+        $commerce = new AdvertsingsCommerceController();
+        $commerce_data = $commerce->getCommerceDetail($adv_detail->commerce_id);
+
+        if($adv_detail->category_permission != 1)
+        {
+            $adv_detail->category_id = $commerce_data->category_id;
+            $adv_detail->province_id = $commerce_data->province_id;
+            $adv_detail->city_id = $commerce_data->city_id;
+            $adv_detail->phone = $commerce_data->phone;
+            $adv_detail->website = $commerce_data->website;
+            $adv_detail->address = $commerce_data->address;
+            $adv_detail->latitude= $commerce_data->latitude;
+            $adv_detail->longitude = $commerce_data->longitude;
+            $adv_detail->first_schedule_attention = $commerce_data->first_schedule_attention;
+            $adv_detail->first_schedule_attention_from = $commerce_data->first_schedule_attention_from;
+            $adv_detail->first_schedule_attention_to = $commerce_data->first_schedule_attention_to;
+            $adv_detail->second_schedule_attention = $commerce_data->second_schedule_attention;
+            $adv_detail->second_schedule_attention_from = $commerce_data->second_schedule_attention->from;
+            $adv_detail->second_schedule_attention_to = $commerce_data->second_schedule_attention->to;
+            $adv_detail->description= $commerce_data->description;
+            $adv_detail->plan_id = $commerce_data->plan_id;
+            $adv_detail->social_networks = $commerce_data->social_networks;
+            $adv_detail->email_notify = $commerce_data->email_notify;
+        }
+        else
+        {
+            $adv_detail->category_id = $commerce_data->category_id;
+            $adv_detail->province_id = $commerce_data->province_id;
+            $adv_detail->city_id = $commerce_data->city_id;
+            $adv_detail->plan_id = $commerce_data->plan_id;
+        }
+        return $adv_detail;
+        // if($cat_name != 'Hoteles')
+        // {
+        //     if(!isset($_SESSION["sale"]))
+        //     {
+        //         header("Location: ".__URL__."/views/listing-details.php");
+        //     }
+        //     else
+        //     {
+        //         unset($_SESSION["sale"]);
+        //         header("Location: ".__URL__."/views/listing-details-ofertas.php");
+        //     }
+        // }
     }
 
     public function getAllPlans()
