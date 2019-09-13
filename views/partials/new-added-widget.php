@@ -70,11 +70,11 @@
         }
 
         echo '<div class="places-list">';
-            echo '<h5><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">'.$new->title.'</a></h5>';
+            echo '<h5><a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">'.$new->title.'</a></h5>';
             echo '<p>'.$new->address.'</p>';
             echo '<div class="media">';
                 echo '<div class="media-left">';
-                    echo '<a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">';
+                    echo '<a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$new->advertsing_id.'&cat_name='.$new->cat_name.'">';
                         echo '<img class="media-object" title="'.$new->title.'" src="'. __URL__ .'/images/'.$image.'" alt="'.$image_name_without_ext.'" width="50" height="50" >';
                     echo '</a>';
                 echo '</div>';
