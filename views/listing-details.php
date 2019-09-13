@@ -286,7 +286,7 @@ switch($adv_detail->valoraciones)
                         </div>
 
                         <div class="popular-listing-detail">
-                            <h3><a href="'. __URL__  .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
+                            <h3><a href="'. __URL__  .'/views/listing-details.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
                             <span>Categoria: <a href="#">'.$point->category_name.'</a></span>
                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->address.'</p>
                         </div>
