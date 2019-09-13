@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="popular-listing-detail">
-                            <h3><a href="'. __URL__ .'/app/controller/AdvertsingsController.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
+                            <h3><a href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'">'.$point->title.'</a></h3>
                             <span>Categoría: <a href="#">Puntos de Interés</a></span>
                             <p><i class="fa fa-map-marker" aria-hidden="true"></i> '.$point->city_name.' ('.$point->province_name.')</p>
                         </div>
@@ -113,7 +113,7 @@
                             <li>('.$point->visitas.' Visitas) </li>
                             <li>'.$valoracion.'
                             </li>
-                           <div class="fb-like" data-href="https://guia23.com.ar" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                           <div class="fb-like" data-href="'. __URL__ .'/views/listing-details.php?listing_detail_adv_id='.$point->advertsing_id.'&cat_name='.$point->category_name.'" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                         </ul>
 
                     </div>

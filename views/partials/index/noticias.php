@@ -81,6 +81,11 @@
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
+                <?php
+                $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+                unset($_SESSION['msg']);
+                echo $statusMsg;
+                ?>
 
                 <div class="row">
                     <div class="col-md-12 heading">
@@ -95,16 +100,19 @@
                             </div>
 
                             <p class="p_b20">Suscribase y recibira las noticias mas recientes. </p>
-                            <form class="p-t-25">
+                            <form class="p-t-25" action="app/controller/Mailchimp.php" method="POST">
                                 <div class="col-md-12">
-                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" name="nombre" placeholder="Nombre">
                                 </div>
-                                <div class="col-md-10">
-                                    <input type="email" class="email" placeholder="E-mail">
+                                <div class="col-md-12">
+                                    <input type="email" name="email" class="email" placeholder="E-mail">
                                 </div>
-                                <div class="col-md-2">
-                                    <input type="submit" class="submit" value="">
-                                    <span><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></span>
+                                <div class="col-md-12">
+                                    <div class="form-group"> 
+                                        <button type="submit" class="" name="submit" value="send">Suscribirse</button>
+                                    </div>
+                                    <!-- <button type="submit" class="submit" value="">Suscribir</button>
+                                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> -->
                                     
                                 </div>
                             </form>
@@ -120,3 +128,8 @@
     
     </div>
 </section>
+
+<?php
+// Para enviar a Mailchimp
+
+?>
