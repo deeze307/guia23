@@ -179,8 +179,8 @@ class AdvertsingsController
             $adv_detail->first_schedule_attention_from = $commerce_data->first_schedule_attention_from;
             $adv_detail->first_schedule_attention_to = $commerce_data->first_schedule_attention_to;
             $adv_detail->second_schedule_attention = $commerce_data->second_schedule_attention;
-            $adv_detail->second_schedule_attention_from = $commerce_data->second_schedule_attention->from;
-            $adv_detail->second_schedule_attention_to = $commerce_data->second_schedule_attention->to;
+            $adv_detail->second_schedule_attention_from = $commerce_data->second_schedule_attention_from;
+            $adv_detail->second_schedule_attention_to = $commerce_data->second_schedule_attention_to;
             $adv_detail->description= $commerce_data->description;
             $adv_detail->plan_id = $commerce_data->plan_id;
             $adv_detail->social_networks = $commerce_data->social_networks;
